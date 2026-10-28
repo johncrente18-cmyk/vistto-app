@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+# o app e o config sempre buscam a versão mais nova
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "no-cache"

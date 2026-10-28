@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vistto · Editor do checklist</title>
+<link rel="icon" href="icon-192.png">
+<style>
+  :root {
+    --bg: #161826; --surface: #232532; --surface-2: #2c2f3f; --text: #e9e9ed; --muted: #9397ab;
+    --accent: #9184d9; --accent-ink: #161826; --line: rgba(233,233,237,.14);
+    --ok: #5cc28a; --warn: #e3b55a; --bad: #e46b6b;
+    --r: 12px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px 80px; }
+  header { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .bar { max-width: 860px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 12px; }
+  .brand { font-weight: 700; letter-spacing: .2px; }
+  .brand small { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
+  .grow { flex: 1; }
+  .pill { font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--surface); color: var(--muted); white-space: nowrap; }
+  .pill.ok { color: var(--ok); } .pill.busy { color: var(--warn); } .pill.bad { color: var(--bad); }
+  .tabs { max-width: 860px; margin: 0 auto; padding: 0 16px 10px; display: flex; gap: 6px; overflow-x: auto; }
+  .tab { border: 1px solid var(--line); background: transparent; padding: 7px 14px; border-radius: 999px; white-space: nowrap; color: var(--muted); }
+  .tab[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
+  .ghost { border: 1px solid var(--line); background: transparent; border-radius: 8px; padding: 6px 12px; }
+  .ghost:hover { border-color: var(--muted); }
+  .primary { border: 0; background: var(--accent); color: var(--accent-ink); font-weight: 600; border-radius: 10px; padding: 10px 16px; }
+  .primary:disabled { opacity: .5; }
+  .hint { color: var(--muted); font-size: 13px; margin: 14px 0; }
+  .group { background: var(--surface); border-radius: var(--r); margin: 16px 0; overflow: hidden; }
+  .ghead { padding: 14px 16px 10px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+  .ghead h2 { margin: 0; font-size: 16px; }
+  .ghead .uses { color: var(--muted); font-size: 12px; }
+  .item { display: grid; grid-template-columns: 26px 1fr auto; gap: 10px; padding: 10px 16px; border-top: 1px solid var(--line); align-items: start; }
+  .num { color: var(--muted); font-size: 13px; padding-top: 9px; text-align: right; }
+  .fields { display: grid; gap: 6px; min-width: 0; }
+  textarea, input[type=text], input[type=email], input[type=password], select {
+    width: 100%; background: var(--surface-2); border: 1px solid transparent; border-radius: 8px; padding: 8px 10px; outline: none;
+  }
+  textarea { resize: vertical; min-height: 40px; }
+  textarea:focus, input:focus, select:focus { border-color: var(--accent); }
+  .sec { font-size: 13px; padding: 5px 10px; max-width: 260px; color: var(--muted); }
+  .acts { display: flex; gap: 4px; padding-top: 4px; }
+  .icon { width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--line); background: transparent; display: grid; place-items: center; font-size: 14px; }
+  .icon:disabled { opacity: .3; cursor: default; }
+  .icon.del:hover { border-color: var(--bad); color: var(--bad); }
+  .add { padding: 10px 16px 14px; border-top: 1px solid var(--line); display: flex; gap: 8px; flex-wrap: wrap; }
+  details.off { padding: 0 16px 12px; color: var(--muted); font-size: 13px; }
+  details.off summary { cursor: pointer; padding: 6px 0; }
+  .offrow { display: flex; gap: 10px; align-items: center; padding: 6px 0; border-top: 1px dashed var(--line); }
+  .offrow span { flex: 1; text-decoration: line-through; }
+  .ativ { display: grid; gap: 8px; padding: 12px 16px; border-top: 1px solid var(--line); }
+  .ativ .row { display: grid; grid-template-columns: 1fr 120px; gap: 8px; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip { display: inline-flex; gap: 6px; align-items: center; padding: 5px 10px; border-radius: 999px; background: var(--surface-2); font-size: 13px; cursor: pointer; user-select: none; }
+  .chip input { accent-color: var(--accent); margin: 0; }
+  .login { max-width: 380px; margin: 12vh auto 0; padding: 0 16px; }
+  .login .card { background: var(--surface); border-radius: var(--r); padding: 22px; display: grid; gap: 12px; }
+  .login h1 { margin: 0 0 4px; font-size: 20px; }
+  .err { color: var(--bad); font-size: 13px; }
+  code { background: var(--surface-2); padding: 2px 6px; border-radius: 6px; font-size: 12px; word-break: break-all; }
+  .toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--surface-2); padding: 10px 16px; border-radius: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.4); font-size: 14px; max-width: calc(100% - 32px); }
+  @media (max-width: 560px) {
+    .item { grid-template-columns: 1fr; gap: 6px; }
+    .num { display: none; }
+    .acts { justify-content: flex-end; }
+    .ativ .row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script src="supabase.js"></script>
+<script>
+(() => {
+  const MOD_NOMES = { base: 'Itens de todas as inspeções', escavacao: 'Escavação', eletrica: 'Eletricidade', icamento: 'Içamento', carga: 'Movimentação de carga' };
+  const TIPOS = { caminhada: 'Caminhada de segurança', vivencia: 'Vivência (Meta 01)' };
+  const $app = document.getElementById('app');
+  const S = { sb: null, user: null, papel: null, itens: [], ativ: [], tab: 'caminhada', status: 'ok', pend: 0, err: '', novoMod: '' };
+  const timers = {};
+
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const slug = s => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const modNome = m => MOD_NOMES[m] || (m.charAt(0).toUpperCase() + m.slice(1).replace(/-/g, ' '));
+  const novoId = p => p + Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+
+  function toast(msg) {
+    const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg; document.body.appendChild(t);
+    setTimeout(() => t.remove(), 3500);
+  }
+  function setStatus() {
+    const el = document.getElementById('st'); if (!el) return;
+    if (S.err) { el.className = 'pill bad'; el.textContent = 'Erro ao salvar'; el.title = S.err; }
+    else if (S.pend > 0) { el.className = 'pill busy'; el.textContent = 'Salvando…'; el.title = ''; }
+    else { el.className = 'pill ok'; el.textContent = 'Tudo salvo ✓'; el.title = 'Os celulares recebem as mudanças em até 30 segundos'; }
+  }
+  async function run(p) {
+    S.pend++; S.err = ''; setStatus();
+    try { const r = await p; if (r && r.error) throw r.error; return r; }
+    catch (e) { S.err = e.message || String(e); toast('Não foi possível salvar: ' + S.err); throw e; }
+    finally { S.pend--; setStatus(); }
+  }
+
+  // ---------- inicialização ----------
+  async function boot() {
+    let cfg;
+    try { cfg = await (await fetch('config.json', { cache: 'no-store' })).json(); } catch (e) {}
+    if (!cfg || !cfg.supabaseUrl || !cfg.supabaseAnonKey) return fatal('Não encontrei o <code>config.json</code> com as chaves do banco.');
+    const url = cfg.supabaseUrl.trim().replace(/\/rest\/v1\/?$/, '').replace(/\/+$/, '');
+    S.sb = window.supabase.createClient(url, cfg.supabaseAnonKey, { auth: { persistSession: true, storageKey: 'vistto_auth' } });
+    const { data } = await S.sb.auth.getSession();
+    if (data && data.session) { S.user = data.session.user; return entrar(); }
+    telaLogin();
+  }
+  function fatal(html) { $app.innerHTML = `<div class="login"><div class="card"><h1>Editor do checklist</h1><div class="err">${html}</div></div></div>`; }
+
+  function telaLogin(msg) {
+    const emAnt = (document.getElementById('em') || {}).value || '';
+    $app.innerHTML = `
+      <div class="login"><form class="card" id="f">
+        <div><h1>Editor do checklist</h1><div class="hint" style="margin:0">Entre com a mesma conta de administrador do app Vistto.</div></div>
+        <input type="email" id="em" placeholder="E-mail" autocomplete="username" required value="${esc(emAnt)}">
+        <input type="password" id="pw" placeholder="Senha" autocomplete="current-password" required>
+        ${msg ? `<div class="err">${msg}</div>` : ''}
+        <button class="primary" id="go">Entrar</button>
+      </form></div>`;
+    document.getElementById('f').onsubmit = async e => {
+      e.preventDefault();
+      const b = document.getElementById('go'); b.disabled = true; b.textContent = 'Entrando…';
+      const { data, error } = await S.sb.auth.signInWithPassword({ email: document.getElementById('em').value.trim(), password: document.getElementById('pw').value });
+      if (error) return telaLogin(/invalid/i.test(error.message) ? 'E-mail ou senha incorretos.' : esc(error.message));
+      S.user = data.user; entrar();
+    };
+  }
+
+  async function entrar() {
+    $app.innerHTML = '<div class="login"><div class="hint">Carregando…</div></div>';
+    const [p, it, at] = await Promise.all([
+      S.sb.from('profiles').select('papel,nome').eq('id', S.user.id).maybeSingle(),
+      S.sb.from('checklist_itens').select('*').order('ordem'),
+      S.sb.from('atividades').select('*').order('ordem'),
+    ]);
+    if (p.error || it.error || at.error) return fatal('Erro ao ler o banco: ' + esc((p.error || it.error || at.error).message));
+    S.papel = p.data && p.data.papel;
+    if (S.papel !== 'admin') {
+      return fatal(`A conta <b>${esc(S.user.email)}</b> não é administradora, então não pode alterar o checklist.<br><br>
+        No Supabase › SQL Editor, rode:<br><code>update public.profiles set papel = 'admin' where email = '${esc(S.user.email)}';</code>
+        <br><br><button class="ghost" onclick="location.reload()">Tentar de novo</button> <button class="ghost" id="out">Sair</button>`)
+        || (document.getElementById('out').onclick = sair);
+    }
+    S.itens = it.data; S.ativ = at.data;
+    render();
+  }
+  async function sair() { await S.sb.auth.signOut(); location.reload(); }
+
+  // ---------- tela principal ----------
+  function render() {
+    const tabs = [['caminhada', TIPOS.caminhada], ['vivencia', TIPOS.vivencia], ['atividades', 'Atividades e riscos']];
+    $app.innerHTML = `
+      <header>
+        <div class="bar">
+          <div class="brand">Vistto · Checklist<small>${esc(S.user.email)}</small></div>
+          <div class="grow"></div>
+          <span id="st" class="pill ok"></span>
+          <button class="ghost" id="sair">Sair</button>
+        </div>
+        <div class="tabs" role="tablist">${tabs.map(([k, n]) => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${S.tab === k}">${n}</button>`).join('')}</div>
+      </header>
+      <main class="wrap" id="main"></main>`;
+    document.getElementById('sair').onclick = sair;
+    $app.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { S.tab = b.dataset.tab; render(); });
+    setStatus();
+    if (S.tab === 'atividades') renderAtividades(); else renderItens(S.tab);
+  }
+
+  function modulosDe(tipo) {
+    const ms = new Set(S.itens.filter(i => i.tipo === tipo).map(i => i.modulo || 'base'));
+    if (tipo === 'caminhada') S.ativ.forEach(a => (a.modulos || []).forEach(m => ms.add(m)));
+    ms.add('base');
+    const ord = ['base', 'escavacao', 'eletrica', 'icamento', 'carga'];
+    return [...ms].sort((a, b) => ((ord.indexOf(a) + 1 || 99) - (ord.indexOf(b) + 1 || 99)) || a.localeCompare(b));
+  }
+
+  function renderItens(tipo) {
+    const main = document.getElementById('main');
+    const mods = modulosDe(tipo);
+    const secoes = [...new Set(S.itens.filter(i => i.tipo === tipo).map(i => i.secao).filter(Boolean))];
+    let h = `<p class="hint">As mudanças são salvas sozinhas e chegam aos celulares em até 30 segundos (ou na hora em que o app é aberto).
+      ${tipo === 'caminhada' ? 'Os itens de um risco só aparecem nas subfrentes cuja atividade usa aquele risco (veja a aba <b>Atividades e riscos</b>).' : ''}</p>
+      <datalist id="secs">${secoes.map(s => `<option value="${esc(s)}">`).join('')}</datalist>`;
+    let n = 0;
+    for (const m of mods) {
+      const ativos = S.itens.filter(i => i.tipo === tipo && (i.modulo || 'base') === m && i.ativo !== false).sort((a, b) => a.ordem - b.ordem);
+      const off = S.itens.filter(i => i.tipo === tipo && (i.modulo || 'base') === m && i.ativo === false);
+      const usam = m === 'base' ? '' : S.ativ.filter(a => (a.modulos || []).includes(m)).map(a => a.nome).join(', ');
+      h += `<section class="group">
+        <div class="ghead"><h2>${esc(modNome(m))}</h2>${tipo === 'caminhada' && m !== 'base' ? `<span class="uses">${usam ? 'Usado em: ' + esc(usam) : 'Nenhuma atividade usa este risco ainda'}</span>` : ''}</div>
+        ${ativos.map((i, k) => `
+          <div class="item" data-id="${esc(i.id)}">
+            <div class="num">${++n}</div>
+            <div class="fields">
+              <textarea rows="1" data-f="pergunta" aria-label="Pergunta">${esc(i.pergunta)}</textarea>
+              <input type="text" class="sec" data-f="secao" list="secs" placeholder="Seção (ex.: EPI)" value="${esc(i.secao || '')}" aria-label="Seção">
+            </div>
+            <div class="acts">
+              <button class="icon" data-mv="-1" title="Subir" ${k === 0 ? 'disabled' : ''}>↑</button>
+              <button class="icon" data-mv="1" title="Descer" ${k === ativos.length - 1 ? 'disabled' : ''}>↓</button>
+              <button class="icon del" data-off title="Tirar do checklist">✕</button>
+            </div>
+          </div>`).join('')}
+        <div class="add"><button class="ghost" data-add="${esc(m)}">+ Adicionar item</button></div>
+        ${off.length ? `<details class="off"><summary>Itens retirados (${off.length})</summary>${off.map(i => `
+          <div class="offrow" data-id="${esc(i.id)}"><span>${esc(i.pergunta)}</span><button class="ghost" data-on>Voltar ao checklist</button></div>`).join('')}</details>` : ''}
+      </section>`;
+    }
+    if (tipo === 'caminhada') h += `<section class="group"><div class="ghead"><h2>Novo risco</h2><span class="uses">Cria um grupo de itens para um risco novo (ex.: trabalho em altura)</span></div>
+      <div class="add"><input type="text" id="nm" placeholder="Nome do risco" style="max-width:280px"><button class="ghost" id="nmb">Criar</button></div></section>`;
+    main.innerHTML = h;
+
+    main.querySelectorAll('textarea').forEach(autosize);
+    main.querySelectorAll('.item [data-f]').forEach(el => {
+      el.addEventListener('input', () => { if (el.tagName === 'TEXTAREA') autosize(el); agendar(el.closest('.item').dataset.id, el.dataset.f, el.value); });
+    });
+    main.querySelectorAll('[data-mv]').forEach(b => b.onclick = () => mover(b.closest('.item').dataset.id, +b.dataset.mv));
+    main.querySelectorAll('[data-off]').forEach(b => b.onclick = () => ativar(b.closest('.item').dataset.id, false));
+    main.querySelectorAll('[data-on]').forEach(b => b.onclick = () => ativar(b.closest('.offrow').dataset.id, true));
+    main.querySelectorAll('[data-add]').forEach(b => b.onclick = () => adicionar(tipo, b.dataset.add));
+    const nmb = document.getElementById('nmb');
+    if (nmb) nmb.onclick = () => {
+      const nome = document.getElementById('nm').value.trim(); if (!nome) return;
+      const m = slug(nome); if (!m) return;
+      MOD_NOMES[m] = MOD_NOMES[m] || nome;
+      adicionar(tipo, m, nome);
+    };
+  }
+
+  function autosize(t) { t.style.height = 'auto'; t.style.height = (t.scrollHeight + 2) + 'px'; }
+
+  function agendar(id, campo, valor) {
+    const it = S.itens.find(i => i.id === id); if (!it) return;
+    it[campo] = valor;
+    const k = id + campo;
+    if (timers[k]) clearTimeout(timers[k]); else { S.pend++; setStatus(); }
+    timers[k] = setTimeout(async () => {
+      timers[k] = null; S.pend--;
+      const v = campo === 'pergunta' ? valor.trim() : (valor.trim() || null);
+      if (campo === 'pergunta' && !v) { setStatus(); return toast('A pergunta não pode ficar vazia.'); }
+      await run(S.sb.from('checklist_itens').update({ [campo]: v }).eq('id', id)).catch(() => {});
+    }, 700);
+  }
+
+  async function mover(id, dir) {
+    const it = S.itens.find(i => i.id === id);
+    const grupo = S.itens.filter(i => i.tipo === it.tipo && (i.modulo || 'base') === (it.modulo || 'base') && i.ativo !== false).sort((a, b) => a.ordem - b.ordem);
+    const k = grupo.indexOf(it), outro = grupo[k + dir]; if (!outro) return;
+    let [a, b] = [it.ordem, outro.ordem];
+    if (a === b) b = a + dir;
+    it.ordem = b; outro.ordem = a; render();
+    await run(S.sb.from('checklist_itens').update({ ordem: it.ordem }).eq('id', it.id)).catch(() => {});
+    await run(S.sb.from('checklist_itens').update({ ordem: outro.ordem }).eq('id', outro.id)).catch(() => {});
+  }
+
+  async function ativar(id, on) {
+    const it = S.itens.find(i => i.id === id); it.ativo = on; render();
+    if (!on) toast('Item retirado. Ele continua guardado nas inspeções antigas e pode voltar quando quiser.');
+    await run(S.sb.from('checklist_itens').update({ ativo: on }).eq('id', id)).catch(() => { it.ativo = !on; render(); });
+  }
+
+  async function adicionar(tipo, modulo, secaoPadrao) {
+    const grupo = S.itens.filter(i => i.tipo === tipo && (i.modulo || 'base') === modulo);
+    const doTipo = S.itens.filter(i => i.tipo === tipo);
+    const ordem = grupo.length ? Math.max(...grupo.map(i => i.ordem)) + 1 : (doTipo.length ? Math.max(...doTipo.map(i => i.ordem)) + 10 : 1);
+    const ult = grupo.filter(i => i.ativo !== false).sort((a, b) => a.ordem - b.ordem).pop();
+    const row = { id: novoId(tipo === 'caminhada' ? 'c' : 'v'), tipo, modulo, secao: (ult && ult.secao) || secaoPadrao || null, ordem, pergunta: 'Novo item, escreva a pergunta aqui', ativo: true };
+    S.itens.push(row); render();
+    const el = document.querySelector(`.item[data-id="${row.id}"] textarea`);
+    if (el) { el.focus(); el.select(); el.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
+    await run(S.sb.from('checklist_itens').insert(row)).catch(() => { S.itens = S.itens.filter(i => i !== row); render(); });
+  }
+
+  // ---------- atividades ----------
+  function renderAtividades() {
+    const main = document.getElementById('main');
+    const mods = modulosDe('caminhada').filter(m => m !== 'base');
+    main.innerHTML = `
+      <p class="hint">Cada atividade define quais riscos entram na caminhada de segurança, além dos itens de todas as inspeções. A atividade de cada subfrente é escolhida no app.</p>
+      <section class="group">
+        ${S.ativ.map(a => `
+          <div class="ativ" data-id="${esc(a.id)}">
+            <div class="row">
+              <input type="text" data-f="nome" value="${esc(a.nome)}" aria-label="Nome da atividade">
+              <select data-f="risco" aria-label="Nível de risco">${['Alto', 'Médio', 'Baixo'].map(r => `<option ${a.risco === r ? 'selected' : ''}>${r}</option>`).join('')}</select>
+            </div>
+            <div class="chips">${mods.map(m => `<label class="chip"><input type="checkbox" value="${esc(m)}" ${(a.modulos || []).includes(m) ? 'checked' : ''}>${esc(modNome(m))}</label>`).join('') || '<span class="hint">Nenhum risco cadastrado.</span>'}</div>
+          </div>`).join('')}
+        <div class="add"><input type="text" id="na" placeholder="Nova atividade (ex.: Montagem de inversores)" style="max-width:340px"><button class="ghost" id="nab">Adicionar</button></div>
+      </section>`;
+    main.querySelectorAll('.ativ').forEach(box => {
+      const a = S.ativ.find(x => x.id === box.dataset.id);
+      box.querySelector('[data-f=nome]').addEventListener('input', e => {
+        a.nome = e.target.value; const k = 'a' + a.id;
+        if (timers[k]) clearTimeout(timers[k]); else { S.pend++; setStatus(); }
+        timers[k] = setTimeout(() => { timers[k] = null; S.pend--; if (!a.nome.trim()) { setStatus(); return toast('O nome não pode ficar vazio.'); }
+          run(S.sb.from('atividades').update({ nome: a.nome.trim() }).eq('id', a.id)).catch(() => {}); }, 700);
+      });
+      box.querySelector('[data-f=risco]').onchange = e => { a.risco = e.target.value; run(S.sb.from('atividades').update({ risco: a.risco }).eq('id', a.id)).catch(() => {}); };
+      box.querySelectorAll('.chip input').forEach(c => c.onchange = () => {
+        a.modulos = [...box.querySelectorAll('.chip input:checked')].map(x => x.value);
+        run(S.sb.from('atividades').update({ modulos: a.modulos }).eq('id', a.id)).catch(() => {});
+      });
+    });
+    document.getElementById('nab').onclick = async () => {
+      const nome = document.getElementById('na').value.trim(); if (!nome) return;
+      let id = slug(nome) || novoId('a'); if (S.ativ.some(a => a.id === id)) id += '-' + Date.now().toString(36).slice(-4);
+      const row = { id, nome, risco: 'Médio', modulos: [], ordem: S.ativ.length ? Math.max(...S.ativ.map(a => a.ordem)) + 1 : 1 };
+      S.ativ.push(row); render();
+      await run(S.sb.from('atividades').insert(row)).catch(() => { S.ativ = S.ativ.filter(a => a !== row); render(); });
+    };
+  }
+
+  window.addEventListener('resize', () => document.querySelectorAll('textarea').forEach(autosize));
+  window.addEventListener('beforeunload', e => { if (S.pend > 0) { e.preventDefault(); e.returnValue = ''; } });
+  boot();
+})();
+</script>
+</body>
+</html>
