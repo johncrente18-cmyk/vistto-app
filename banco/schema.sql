@@ -41,6 +41,7 @@ create table public.frentes (
   atividade_id text references public.atividades(id),  -- atividade programada atual
   lider_nome text,
   lider_telefone text,  -- com DDD, ex: 86999990000
+  tecnico_id uuid,      -- técnico de segurança responsável pela área (MAR)
   ativo boolean not null default true
 );
 
@@ -117,6 +118,7 @@ create table public.ncs (
 );
 
 create index on public.frentes (obra_id, parent_id);
+alter table public.frentes add constraint frentes_tecnico_fk foreign key (tecnico_id) references public.profiles(id) on delete set null;
 create index on public.inspecoes (obra_id, criado_em desc);
 create index on public.inspecoes (autor_id, criado_em desc);
 create index on public.inspecoes (frente_id, criado_em desc);
