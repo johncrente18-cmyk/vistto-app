@@ -134,9 +134,13 @@
 <script>
 (() => {
   const MOD_NOMES = { base: 'Itens de todas as inspeções', escavacao: 'Escavação', eletrica: 'Eletricidade', icamento: 'Içamento', carga: 'Movimentação de carga' };
-  const TIPOS = { caminhada: 'Caminhada de segurança', vivencia: 'Vivência (Meta 01)' };
+  const TIPOS_PADRAO = [{ id: 'caminhada', nome: 'Caminhada de segurança', descricao: 'Ferramentas, EPI, documentação e os riscos da atividade do dia', usa_atividade: true, ordem: 1, ativo: true },
+    { id: 'vivencia', nome: 'Área de vivência (Meta 01)', descricao: 'Documentação e estrutura da área de vivência', usa_atividade: false, ordem: 2, ativo: true }];
+  const RESERVADOS = ['tipos', 'atividades', 'pessoas'];
+  const tipoDe = id => (S.tipos || []).find(t => t.id === id) || TIPOS_PADRAO.find(t => t.id === id) || { id, nome: id, usa_atividade: false };
+  const usaAtiv = id => !!tipoDe(id).usa_atividade;
   const $app = document.getElementById('app');
-  const S = { sb: null, user: null, papel: null, itens: [], ativ: [], tab: 'caminhada', status: 'ok', pend: 0, err: '', novoMod: '' };
+  const S = { sb: null, user: null, papel: null, itens: [], ativ: [], tipos: null, semTabelaTipos: false, tab: 'caminhada', status: 'ok', pend: 0, err: '', novoMod: '' };
   const timers = {};
 
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -212,6 +216,8 @@
         || (document.getElementById('out').onclick = sair);
     }
     S.itens = it.data; S.ativ = at.data;
+    const tp = await S.sb.from('tipos_inspecao').select('*').order('ordem');
+    if (tp.error) { S.tipos = TIPOS_PADRAO.slice(); S.semTabelaTipos = true; } else S.tipos = tp.data.length ? tp.data : TIPOS_PADRAO.slice();
     render();
   }
   async function sair() { await S.sb.auth.signOut(); location.reload(); }
@@ -224,10 +230,14 @@
     users: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.6c2.6.2 4.6 1.9 5.3 4.9"/></svg>',
     user: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="9.5" r="3.6"/><path d="M5.6 19.2c1.3-3 3.6-4.5 6.4-4.5s5.1 1.5 6.4 4.5"/></svg>',
     eye: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+    clip: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></svg>',
+    list: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.2"/><circle cx="4.5" cy="12" r="1.2"/><circle cx="4.5" cy="18" r="1.2"/></svg>',
     up: '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V5M7 9l5-5 5 5M5 20h14"/></svg>' };
 
   function render() {
-    const nav = [['Checklist', [['caminhada', TIPOS.caminhada, 'walk'], ['vivencia', TIPOS.vivencia, 'tent'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
+    const tps = [...S.tipos].sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
+    const nav = [['Checklists', tps.map(t => [t.id, t.nome + (t.ativo === false ? ' (desativado)' : ''), t.id === 'caminhada' ? 'walk' : t.id === 'vivencia' ? 'tent' : 'clip'])],
+      ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
     $app.innerHTML = `
       <header>
         <div class="bar">
@@ -244,12 +254,12 @@
     document.getElementById('sair').onclick = sair;
     $app.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { S.tab = b.dataset.tab; render(); window.scrollTo(0, 0); });
     setStatus();
-    if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else renderItens(S.tab);
+    if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else renderItens(S.tab);
   }
 
   function modulosDe(tipo) {
     const ms = new Set(S.itens.filter(i => i.tipo === tipo).map(i => i.modulo || 'base'));
-    if (tipo === 'caminhada') S.ativ.forEach(a => (a.modulos || []).forEach(m => ms.add(m)));
+    if (usaAtiv(tipo)) S.ativ.forEach(a => (a.modulos || []).forEach(m => ms.add(m)));
     ms.add('base');
     const ord = ['base', 'escavacao', 'eletrica', 'icamento', 'carga'];
     return [...ms].sort((a, b) => ((ord.indexOf(a) + 1 || 99) - (ord.indexOf(b) + 1 || 99)) || a.localeCompare(b));
@@ -259,8 +269,8 @@
     const main = document.getElementById('main');
     const mods = modulosDe(tipo);
     const secoes = [...new Set(S.itens.filter(i => i.tipo === tipo).map(i => i.secao).filter(Boolean))];
-    let h = `<h1 style="font-size:22px;margin:22px 0 0">${TIPOS[tipo]}</h1><p class="hint">As mudanças são salvas sozinhas e chegam aos celulares em até 30 segundos (ou na hora em que o app é aberto).
-      ${tipo === 'caminhada' ? 'Os itens de um risco só aparecem nas subfrentes cuja atividade usa aquele risco (veja a aba <b>Atividades e riscos</b>).' : ''}</p>
+    let h = `<h1 style="font-size:22px;margin:22px 0 0">${esc(tipoDe(tipo).nome)}</h1><p class="hint">As mudanças são salvas sozinhas e chegam aos celulares em até 30 segundos (ou na hora em que o app é aberto).
+      ${usaAtiv(tipo) ? 'Os itens de um risco só aparecem nas subfrentes cuja atividade usa aquele risco (veja a aba <b>Atividades e riscos</b>).' : ''}</p>
       <datalist id="secs">${secoes.map(s => `<option value="${esc(s)}">`).join('')}</datalist>`;
     let n = 0;
     for (const m of mods) {
@@ -268,7 +278,7 @@
       const off = S.itens.filter(i => i.tipo === tipo && (i.modulo || 'base') === m && i.ativo === false);
       const usam = m === 'base' ? '' : S.ativ.filter(a => (a.modulos || []).includes(m)).map(a => a.nome).join(', ');
       h += `<section class="group">
-        <div class="ghead"><h2>${esc(modNome(m))}</h2>${tipo === 'caminhada' && m !== 'base' ? `<span class="uses">${usam ? 'Usado em: ' + esc(usam) : 'Nenhuma atividade usa este risco ainda'}</span>` : ''}</div>
+        <div class="ghead"><h2>${esc(m === 'base' && !usaAtiv(tipo) ? 'Itens do checklist' : modNome(m))}</h2>${usaAtiv(tipo) && m !== 'base' ? `<span class="uses">${usam ? 'Usado em: ' + esc(usam) : 'Nenhuma atividade usa este risco ainda'}</span>` : ''}</div>
         ${ativos.map((i, k) => `
           <div class="item" data-id="${esc(i.id)}">
             <div class="num">${++n}</div>
@@ -287,7 +297,7 @@
           <div class="offrow" data-id="${esc(i.id)}"><span>${esc(i.pergunta)}</span><button class="ghost" data-on>Voltar ao checklist</button></div>`).join('')}</details>` : ''}
       </section>`;
     }
-    if (tipo === 'caminhada') h += `<section class="group"><div class="ghead"><h2>Novo risco</h2><span class="uses">Cria um grupo de itens para um risco novo (ex.: trabalho em altura)</span></div>
+    if (usaAtiv(tipo)) h += `<section class="group"><div class="ghead"><h2>Novo risco</h2><span class="uses">Cria um grupo de itens para um risco novo (ex.: trabalho em altura)</span></div>
       <div class="add"><input type="text" id="nm" placeholder="Nome do risco" style="max-width:280px"><button class="ghost" id="nmb">Criar</button></div></section>`;
     main.innerHTML = h;
 
@@ -345,7 +355,7 @@
     const doTipo = S.itens.filter(i => i.tipo === tipo);
     const ordem = grupo.length ? Math.max(...grupo.map(i => i.ordem)) + 1 : (doTipo.length ? Math.max(...doTipo.map(i => i.ordem)) + 10 : 1);
     const ult = grupo.filter(i => i.ativo !== false).sort((a, b) => a.ordem - b.ordem).pop();
-    const row = { id: novoId(tipo === 'caminhada' ? 'c' : 'v'), tipo, modulo, secao: (ult && ult.secao) || secaoPadrao || null, ordem, pergunta: 'Novo item, escreva a pergunta aqui', ativo: true };
+    const row = { id: novoId(tipo === 'caminhada' ? 'c' : tipo === 'vivencia' ? 'v' : 'i'), tipo, modulo, secao: (ult && ult.secao) || secaoPadrao || null, ordem, pergunta: 'Novo item, escreva a pergunta aqui', ativo: true };
     S.itens.push(row); render();
     const el = document.querySelector(`.item[data-id="${row.id}"] textarea`);
     if (el) { el.focus(); el.select(); el.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
@@ -355,7 +365,7 @@
   // ---------- atividades ----------
   function renderAtividades() {
     const main = document.getElementById('main');
-    const mods = modulosDe('caminhada').filter(m => m !== 'base');
+    const mods = [...new Set(S.tipos.filter(t => t.usa_atividade).flatMap(t => modulosDe(t.id)))].filter(m => m !== 'base');
     main.innerHTML = `
       <h1 style="font-size:22px;margin:22px 0 0">Atividades e riscos</h1><p class="hint">Cada atividade define quais riscos entram na caminhada de segurança, além dos itens de todas as inspeções. A atividade de cada subfrente é escolhida no app.</p>
       <section class="group">
@@ -392,6 +402,68 @@
     };
   }
 
+
+  // ---------- tipos de inspeção ----------
+  function renderTipos() {
+    const main = document.getElementById('main');
+    const tps = [...S.tipos].sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
+    const cnt = id => S.itens.filter(i => i.tipo === id && i.ativo !== false).length;
+    main.innerHTML = `<h1 style="font-size:22px;margin:22px 0 0">Tipos de inspeção</h1>
+      <p class="hint">São as inspeções que aparecem na pesquisa “Nova inspeção” do app. Depois de criar um tipo, monte o checklist dele no menu <b>Checklists</b>.</p>
+      ${S.semTabelaTipos ? '<p class="err">O banco ainda não tem a tabela de tipos de inspeção. Rode a migração 04 no Supabase para poder criar tipos novos.</p>' : ''}
+      <section class="group">
+        ${tps.map((t, k) => `
+          <div class="ativ" data-id="${esc(t.id)}" style="${t.ativo === false ? 'opacity:.6' : ''}">
+            <div style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:start">
+              <div style="display:grid;gap:6px;min-width:0">
+                <input type="text" data-f="nome" value="${esc(t.nome)}" aria-label="Nome do tipo" style="font-weight:600">
+                <input type="text" data-f="descricao" value="${esc(t.descricao || '')}" placeholder="Descrição curta (aparece na pesquisa)" aria-label="Descrição" style="font-size:13px">
+              </div>
+              <div class="acts">
+                <button class="icon" data-mv="-1" title="Subir" ${k === 0 ? 'disabled' : ''}>↑</button>
+                <button class="icon" data-mv="1" title="Descer" ${k === tps.length - 1 ? 'disabled' : ''}>↓</button>
+              </div>
+            </div>
+            <div class="chips" style="align-items:center">
+              <label class="chip"><input type="checkbox" data-f="usa_atividade" ${t.usa_atividade ? 'checked' : ''}>Soma os riscos da atividade do dia</label>
+              <label class="chip"><input type="checkbox" data-f="ativo" ${t.ativo !== false ? 'checked' : ''}>Aparece no app</label>
+              <span class="hint" style="margin:0">${cnt(t.id)} item(ns) no checklist</span>
+              <button class="ghost" data-go="${esc(t.id)}" style="margin-left:auto">Editar checklist →</button>
+            </div>
+          </div>`).join('')}
+        <div class="add"><input type="text" id="nt" placeholder="Novo tipo (ex.: Inspeção de andaime)" style="max-width:340px"><button class="ghost" id="ntb">Criar tipo</button></div>
+      </section>`;
+    main.querySelectorAll('.ativ').forEach(box => {
+      const t = S.tipos.find(x => x.id === box.dataset.id);
+      box.querySelectorAll('input[type=text]').forEach(inp => inp.addEventListener('input', () => {
+        t[inp.dataset.f] = inp.value; const k = 't' + t.id + inp.dataset.f;
+        if (timers[k]) clearTimeout(timers[k]); else { S.pend++; setStatus(); }
+        timers[k] = setTimeout(() => { timers[k] = null; S.pend--; const v = inp.value.trim();
+          if (inp.dataset.f === 'nome' && !v) { setStatus(); return toast('O nome não pode ficar vazio.'); }
+          salvarTipo(t, { [inp.dataset.f]: v || null }); }, 700);
+      }));
+      box.querySelectorAll('input[type=checkbox]').forEach(c => c.onchange = () => { t[c.dataset.f] = c.checked; salvarTipo(t, { [c.dataset.f]: c.checked }).then(() => render()); });
+      box.querySelectorAll('[data-mv]').forEach(b => b.onclick = async () => {
+        const i = tps.indexOf(t), o = tps[i + +b.dataset.mv]; if (!o) return;
+        let [a, c] = [t.ordem || 0, o.ordem || 0]; if (a === c) c = a + +b.dataset.mv; t.ordem = c; o.ordem = a; render();
+        await salvarTipo(t, { ordem: t.ordem }); await salvarTipo(o, { ordem: o.ordem });
+      });
+      box.querySelector('[data-go]').onclick = () => { S.tab = t.id; render(); window.scrollTo(0, 0); };
+    });
+    document.getElementById('ntb').onclick = async () => {
+      if (S.semTabelaTipos) return toast('Rode a migração 04 no Supabase antes de criar tipos novos.');
+      const nome = document.getElementById('nt').value.trim(); if (!nome) return;
+      let id = slug(nome) || novoId('t'); if (RESERVADOS.includes(id) || S.tipos.some(x => x.id === id)) id += '-' + Date.now().toString(36).slice(-4);
+      const row = { id, nome, descricao: null, usa_atividade: false, ordem: S.tipos.length ? Math.max(...S.tipos.map(x => x.ordem || 0)) + 1 : 1, ativo: true };
+      S.tipos.push(row); S.tab = id; render(); window.scrollTo(0, 0);
+      await run(S.sb.from('tipos_inspecao').insert(row)).then(() => toast('Tipo criado. Agora adicione os itens do checklist.')).catch(() => { S.tipos = S.tipos.filter(x => x !== row); S.tab = 'tipos'; render(); });
+    };
+  }
+  async function salvarTipo(t, patch) {
+    if (S.semTabelaTipos) return toast('Rode a migração 04 no Supabase para salvar tipos de inspeção.');
+    // Caminhada e Vivência podem não estar no banco ainda: grava a linha inteira
+    await run(S.sb.from('tipos_inspecao').upsert({ id: t.id, nome: t.nome, descricao: t.descricao || null, usa_atividade: !!t.usa_atividade, ordem: t.ordem || 0, ativo: t.ativo !== false, ...patch })).catch(() => {});
+  }
 
   // ---------- pessoas ----------
   const PAPEIS = { engenheiro: 'Engenheiro', tecnico: 'Técnico de segurança', supervisor: 'Supervisor', gestor: 'Gestor de obra', admin: 'Administrador' };

@@ -11,6 +11,7 @@ drop table if exists public.inspecoes cascade;
 drop table if exists public.fotos cascade;
 drop table if exists public.profiles cascade;
 drop table if exists public.checklist_itens cascade;
+drop table if exists public.tipos_inspecao cascade;
 drop table if exists public.frentes cascade;
 drop table if exists public.atividades cascade;
 drop table if exists public.obras cascade;
@@ -45,9 +46,18 @@ create table public.frentes (
   ativo boolean not null default true
 );
 
+create table public.tipos_inspecao (
+  id text primary key,
+  nome text not null,
+  descricao text,
+  usa_atividade boolean not null default false,  -- soma os itens de risco da atividade do dia
+  ordem int not null default 0,
+  ativo boolean not null default true
+);
+
 create table public.checklist_itens (
   id text primary key,
-  tipo text not null check (tipo in ('caminhada','vivencia')),
+  tipo text not null,   -- id do tipo de inspeção
   modulo text not null default 'base',   -- base | escavacao | eletrica | icamento | carga
   secao text,
   ordem int not null default 0,
@@ -82,7 +92,7 @@ create table public.inspecoes (
   id uuid primary key default gen_random_uuid(),
   obra_id text not null references public.obras(id),
   frente_id text not null references public.frentes(id),
-  tipo text not null check (tipo in ('caminhada','vivencia')),
+  tipo text not null,
   atividade_id text references public.atividades(id),
   autor_id uuid not null default auth.uid() references public.profiles(id),
   lider_nome text,
@@ -170,6 +180,7 @@ alter table public.obras enable row level security;
 alter table public.atividades enable row level security;
 alter table public.frentes enable row level security;
 alter table public.checklist_itens enable row level security;
+alter table public.tipos_inspecao enable row level security;
 alter table public.profiles enable row level security;
 alter table public.fotos enable row level security;
 alter table public.inspecoes enable row level security;
@@ -180,6 +191,7 @@ create policy ler on public.obras for select to authenticated using (true);
 create policy ler on public.atividades for select to authenticated using (true);
 create policy ler on public.frentes for select to authenticated using (true);
 create policy ler on public.checklist_itens for select to authenticated using (true);
+create policy ler on public.tipos_inspecao for select to authenticated using (true);
 create policy ler on public.profiles for select to authenticated using (true);
 create policy ler on public.fotos for select to authenticated using (true);
 create policy ler on public.inspecoes for select to authenticated using (true);
@@ -188,6 +200,7 @@ create policy ler on public.ncs for select to authenticated using (true);
 -- cadastros: administrador (frentes também o gestor)
 create policy admin_obras on public.obras for all to authenticated using (public.meu_papel() = 'admin') with check (public.meu_papel() = 'admin');
 create policy admin_ativ on public.atividades for all to authenticated using (public.meu_papel() = 'admin') with check (public.meu_papel() = 'admin');
+create policy admin_tipos on public.tipos_inspecao for all to authenticated using (public.meu_papel() = 'admin') with check (public.meu_papel() = 'admin');
 create policy admin_itens on public.checklist_itens for all to authenticated using (public.meu_papel() = 'admin') with check (public.meu_papel() = 'admin');
 create policy admin_frentes_ins on public.frentes for insert to authenticated with check (public.meu_papel() = 'admin');
 create policy admin_frentes_del on public.frentes for delete to authenticated using (public.meu_papel() = 'admin');
@@ -278,6 +291,10 @@ from generate_series(1, 8) m;
 insert into public.frentes (id, obra_id, parent_id, codigo, nome, ordem)
 select 'mar-' || m || '-' || s, 'ufv-paraiso', 'mar-' || m, m || '.' || s, 'MAR ' || m || ' · ' || m || '.' || s, m * 100 + s
 from generate_series(1, 8) m, generate_series(1, 8) s;
+
+insert into public.tipos_inspecao (id, nome, descricao, usa_atividade, ordem) values
+  ('caminhada', 'Caminhada de segurança', 'Ferramentas, EPI, documentação e os riscos da atividade do dia', true, 1),
+  ('vivencia', 'Área de vivência (Meta 01)', 'Documentação e estrutura da área de vivência', false, 2);
 
 insert into public.checklist_itens (id, tipo, modulo, secao, ordem, pergunta) values
   -- Caminhada de segurança · base
