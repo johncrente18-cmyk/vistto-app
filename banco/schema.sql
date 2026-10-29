@@ -61,6 +61,9 @@ create table public.profiles (
   nome text not null default '',
   email text,
   telefone text,
+  matricula text,
+  usuario text,
+  foto text,           -- foto de perfil (JPEG comprimido, data URL)
   papel text not null default 'engenheiro' check (papel in ('engenheiro','tecnico','supervisor','gestor','admin')),
   obra_id text references public.obras(id),
   ativo boolean not null default true,
@@ -241,6 +244,12 @@ begin
   return true;
 end $$;
 
+create unique index if not exists profiles_usuario_uniq on public.profiles (lower(usuario)) where usuario is not null;
+create or replace function public.email_por_usuario(p_usuario text) returns text
+language sql stable security definer set search_path = public as $$
+  select email from public.profiles where lower(usuario) = lower(trim(p_usuario)) and ativo limit 1
+$$;
+grant execute on function public.email_por_usuario(text) to anon, authenticated;
 grant execute on function public.nc_publica(text) to anon, authenticated;
 grant execute on function public.nc_responder(text, text, text) to anon, authenticated;
 

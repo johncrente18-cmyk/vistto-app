@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vistto · Editor do checklist</title>
+<title>Vistto · Painel</title>
 <meta name="vistto-versao" content="2026-10-28-auto">
 <link rel="icon" href="icon-192.png">
 <style>
@@ -17,9 +17,50 @@
   html, body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
   button, input, select, textarea { font: inherit; color: inherit; }
   button { cursor: pointer; }
-  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px 80px; }
+  .wrap { max-width: 900px; padding: 0 24px 80px; min-width: 0; }
+  .shell { display: grid; grid-template-columns: 232px 1fr; max-width: 1200px; margin: 0 auto; }
+  .side { position: sticky; top: 61px; align-self: start; height: calc(100vh - 61px); overflow: auto; padding: 14px 10px; border-right: 1px solid var(--line); }
+  .side h3 { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 14px 12px 6px; font-weight: 600; }
+  .side h3:first-child { margin-top: 4px; }
+  .nav { display: flex; width: 100%; text-align: left; gap: 10px; align-items: center; border: 0; background: transparent; padding: 9px 12px; border-radius: 8px; color: var(--muted); font-size: 14px; }
+  .nav:hover { color: var(--text); background: rgba(255,255,255,.03); }
+  .nav[aria-current="page"] { background: var(--surface); color: var(--text); box-shadow: inset 3px 0 0 var(--accent); font-weight: 600; }
+  .nav svg { width: 18px; height: 18px; flex: 0 0 auto; }
+  .ptabs { display: flex; gap: 0; border-bottom: 1px solid var(--line); margin: 18px 0 16px; overflow-x: auto; }
+  .ptab { border: 0; background: transparent; padding: 10px 14px; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); border-bottom: 2px solid transparent; white-space: nowrap; }
+  .ptab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+  .pform { background: var(--surface); border-radius: var(--r); padding: 20px; display: grid; grid-template-columns: 170px 1fr; gap: 20px; }
+  .pfoto { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+  .pfoto .lbl { font-size: 13px; color: var(--muted); }
+  .avatar { width: 140px; height: 140px; border-radius: 50%; background: var(--surface-2); display: grid; place-items: center; overflow: hidden; color: var(--muted); }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .avatar svg { width: 70%; height: 70%; }
+  .upbtn { display: inline-flex; gap: 6px; align-items: center; background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 12px; letter-spacing: .03em; text-transform: uppercase; padding: 7px 12px; border-radius: 6px; border: 0; }
+  .pgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-content: start; }
+  .fl { position: relative; display: block; }
+  .pform .fl input, .pform .fl select { width: 100%; padding: 18px 12px 6px; min-height: 48px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); outline: none; }
+  .pform .fl input:focus, .pform .fl select:focus { border-color: var(--accent); }
+  .pform .fl input[readonly] { color: var(--muted); }
+  .fl span { position: absolute; left: 13px; top: 5px; font-size: 11px; color: var(--muted); pointer-events: none; }
+  .fl.pw input { padding-right: 42px; }
+  .eye { position: absolute; right: 6px; top: 8px; width: 32px; height: 30px; border: 0; background: transparent; color: var(--accent); display: grid; place-items: center; }
+  .eye svg { width: 18px; height: 18px; }
+  .pfoot { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .check { display: inline-flex; gap: 8px; align-items: center; font-size: 14px; cursor: pointer; }
+  .check input { width: 18px; height: 18px; accent-color: var(--accent); }
+  .okbox { background: color-mix(in srgb, var(--ok) 12%, var(--surface)); border: 1px solid color-mix(in srgb, var(--ok) 40%, transparent); border-radius: var(--r); padding: 14px 16px; margin-bottom: 14px; display: grid; gap: 10px; }
+  .okbox .row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .search { display: grid; grid-template-columns: 1fr 200px; gap: 10px; margin-bottom: 12px; }
+  .ulist { background: var(--surface); border-radius: var(--r); overflow: hidden; }
+  .urow { display: grid; grid-template-columns: 40px 1.4fr 1fr 0.8fr auto; gap: 12px; align-items: center; padding: 10px 14px; border-top: 1px solid var(--line); }
+  .urow:first-child { border-top: 0; }
+  .urow .av { width: 40px; height: 40px; border-radius: 50%; background: var(--surface-2); overflow: hidden; display: grid; place-items: center; font-size: 14px; font-weight: 600; color: var(--muted); }
+  .urow .av img { width: 100%; height: 100%; object-fit: cover; }
+  .urow .n { font-weight: 600; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .urow .m { font-size: 12px; color: var(--muted); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .badge { display: inline-block; font-size: 12px; padding: 3px 9px; border-radius: 999px; background: var(--surface-2); white-space: nowrap; }
   header { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
-  .bar { max-width: 860px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 12px; }
+  .bar { max-width: 1200px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 12px; }
   .brand { font-weight: 700; letter-spacing: .2px; }
   .brand small { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
   .grow { flex: 1; }
@@ -66,7 +107,20 @@
   .err { color: var(--bad); font-size: 13px; }
   code { background: var(--surface-2); padding: 2px 6px; border-radius: 6px; font-size: 12px; word-break: break-all; }
   .toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--surface-2); padding: 10px 16px; border-radius: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.4); font-size: 14px; max-width: calc(100% - 32px); }
+  @media (max-width: 820px) {
+    .shell { grid-template-columns: 1fr; }
+    .side { position: static; height: auto; display: flex; gap: 4px; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--line); padding: 8px 12px; }
+    .side h3 { display: none; }
+    .nav { width: auto; white-space: nowrap; }
+    .nav[aria-current="page"] { box-shadow: inset 0 -2px 0 var(--accent); }
+    .wrap { padding: 0 16px 80px; }
+    .pform { grid-template-columns: 1fr; }
+    .urow { grid-template-columns: 40px 1fr auto; }
+    .urow .hide-sm { display: none; }
+  }
   @media (max-width: 560px) {
+    .pgrid { grid-template-columns: 1fr; }
+    .search { grid-template-columns: 1fr; }
     .item { grid-template-columns: 1fr; gap: 6px; }
     .num { display: none; }
     .acts { justify-content: flex-end; }
@@ -113,6 +167,7 @@
     try { cfg = await (await fetch('config.json', { cache: 'no-store' })).json(); } catch (e) {}
     if (!cfg || !cfg.supabaseUrl || !cfg.supabaseAnonKey) return fatal('Não encontrei o <code>config.json</code> com as chaves do banco.');
     const url = cfg.supabaseUrl.trim().replace(/\/rest\/v1\/?$/, '').replace(/\/+$/, '');
+    S.url = url; S.key = cfg.supabaseAnonKey;
     S.sb = window.supabase.createClient(url, cfg.supabaseAnonKey, { auth: { persistSession: true, storageKey: 'vistto_auth' } });
     const { data } = await S.sb.auth.getSession();
     if (data && data.session) { S.user = data.session.user; return entrar(); }
@@ -124,8 +179,8 @@
     const emAnt = (document.getElementById('em') || {}).value || '';
     $app.innerHTML = `
       <div class="login"><form class="card" id="f">
-        <div><h1>Editor do checklist</h1><div class="hint" style="margin:0">Entre com a mesma conta de administrador do app Vistto.</div></div>
-        <input type="email" id="em" placeholder="E-mail" autocomplete="username" required value="${esc(emAnt)}">
+        <div><h1>Painel Vistto</h1><div class="hint" style="margin:0">Entre com a mesma conta de administrador do app Vistto.</div></div>
+        <input type="text" id="em" placeholder="E-mail ou usuário" autocomplete="username" autocapitalize="none" inputmode="email" required value="${esc(emAnt)}">
         <input type="password" id="pw" placeholder="Senha" autocomplete="current-password" required>
         ${msg ? `<div class="err">${msg}</div>` : ''}
         <button class="primary" id="go">Entrar</button>
@@ -133,7 +188,9 @@
     document.getElementById('f').onsubmit = async e => {
       e.preventDefault();
       const b = document.getElementById('go'); b.disabled = true; b.textContent = 'Entrando…';
-      const { data, error } = await S.sb.auth.signInWithPassword({ email: document.getElementById('em').value.trim(), password: document.getElementById('pw').value });
+      let em = document.getElementById('em').value.trim();
+      if (em && !em.includes('@')) { const r = await S.sb.rpc('email_por_usuario', { p_usuario: em }); if (r.error || !r.data) return telaLogin('Usuário não encontrado.'); em = r.data; }
+      const { data, error } = await S.sb.auth.signInWithPassword({ email: em, password: document.getElementById('pw').value });
       if (error) return telaLogin(/invalid/i.test(error.message) ? 'E-mail ou senha incorretos.' : esc(error.message));
       S.user = data.user; entrar();
     };
@@ -160,23 +217,34 @@
   async function sair() { await S.sb.auth.signOut(); location.reload(); }
 
   // ---------- tela principal ----------
+  const ICON = {
+    walk: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="2"/><path d="M7 21l3-6 2 2v4M10 15l1-5 3 3h3M8 12l3-2"/></svg>',
+    tent: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18L12 4z"/><path d="M12 4v16M9 20l3-6 3 6"/></svg>',
+    bolt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L4 14h7l-1 7 9-11h-7z"/></svg>',
+    users: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.6c2.6.2 4.6 1.9 5.3 4.9"/></svg>',
+    user: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="9.5" r="3.6"/><path d="M5.6 19.2c1.3-3 3.6-4.5 6.4-4.5s5.1 1.5 6.4 4.5"/></svg>',
+    eye: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+    up: '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V5M7 9l5-5 5 5M5 20h14"/></svg>' };
+
   function render() {
-    const tabs = [['caminhada', TIPOS.caminhada], ['vivencia', TIPOS.vivencia], ['atividades', 'Atividades e riscos']];
+    const nav = [['Checklist', [['caminhada', TIPOS.caminhada, 'walk'], ['vivencia', TIPOS.vivencia, 'tent'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
     $app.innerHTML = `
       <header>
         <div class="bar">
-          <div class="brand">Vistto · Checklist<small>${esc(S.user.email)}</small></div>
+          <div class="brand">Vistto · Painel<small>${esc(S.user.email)}</small></div>
           <div class="grow"></div>
           <span id="st" class="pill ok"></span>
           <button class="ghost" id="sair">Sair</button>
         </div>
-        <div class="tabs" role="tablist">${tabs.map(([k, n]) => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${S.tab === k}">${n}</button>`).join('')}</div>
       </header>
-      <main class="wrap" id="main"></main>`;
+      <div class="shell">
+        <nav class="side" aria-label="Menu">${nav.map(([g, its]) => `<h3>${g}</h3>` + its.map(([k, n, ic]) => `<button class="nav" data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[ic]}<span>${n}</span></button>`).join('')).join('')}</nav>
+        <main class="wrap" id="main"></main>
+      </div>`;
     document.getElementById('sair').onclick = sair;
-    $app.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { S.tab = b.dataset.tab; render(); });
+    $app.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { S.tab = b.dataset.tab; render(); window.scrollTo(0, 0); });
     setStatus();
-    if (S.tab === 'atividades') renderAtividades(); else renderItens(S.tab);
+    if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else renderItens(S.tab);
   }
 
   function modulosDe(tipo) {
@@ -191,7 +259,7 @@
     const main = document.getElementById('main');
     const mods = modulosDe(tipo);
     const secoes = [...new Set(S.itens.filter(i => i.tipo === tipo).map(i => i.secao).filter(Boolean))];
-    let h = `<p class="hint">As mudanças são salvas sozinhas e chegam aos celulares em até 30 segundos (ou na hora em que o app é aberto).
+    let h = `<h1 style="font-size:22px;margin:22px 0 0">${TIPOS[tipo]}</h1><p class="hint">As mudanças são salvas sozinhas e chegam aos celulares em até 30 segundos (ou na hora em que o app é aberto).
       ${tipo === 'caminhada' ? 'Os itens de um risco só aparecem nas subfrentes cuja atividade usa aquele risco (veja a aba <b>Atividades e riscos</b>).' : ''}</p>
       <datalist id="secs">${secoes.map(s => `<option value="${esc(s)}">`).join('')}</datalist>`;
     let n = 0;
@@ -289,7 +357,7 @@
     const main = document.getElementById('main');
     const mods = modulosDe('caminhada').filter(m => m !== 'base');
     main.innerHTML = `
-      <p class="hint">Cada atividade define quais riscos entram na caminhada de segurança, além dos itens de todas as inspeções. A atividade de cada subfrente é escolhida no app.</p>
+      <h1 style="font-size:22px;margin:22px 0 0">Atividades e riscos</h1><p class="hint">Cada atividade define quais riscos entram na caminhada de segurança, além dos itens de todas as inspeções. A atividade de cada subfrente é escolhida no app.</p>
       <section class="group">
         ${S.ativ.map(a => `
           <div class="ativ" data-id="${esc(a.id)}">
@@ -322,6 +390,159 @@
       S.ativ.push(row); render();
       await run(S.sb.from('atividades').insert(row)).catch(() => { S.ativ = S.ativ.filter(a => a !== row); render(); });
     };
+  }
+
+
+  // ---------- pessoas ----------
+  const PAPEIS = { engenheiro: 'Engenheiro', tecnico: 'Técnico de segurança', supervisor: 'Supervisor', gestor: 'Gestor de obra', admin: 'Administrador' };
+  const APP_URL = location.href.replace(/checklist\.html.*$/, '');
+  const vazio = () => ({ id: null, nome: '', papel: 'engenheiro', email: '', telefone: '', usuario: '', matricula: '', senha: '', senha2: '', foto: '', enviar: true });
+  S.ptab = 'busca'; S.form = vazio(); S.people = null; S.q = ''; S.qp = ''; S.done = null;
+  const iniciais = n => String(n || '?').trim().split(/\s+/).slice(0, 2).map(x => x[0]).join('').toUpperCase();
+  const soDig = v => String(v || '').replace(/\D/g, '');
+  const fmtTel = v => { const d = soDig(v); return d.length === 11 ? `(${d.slice(0, 2)}) ${d.slice(2, 7)}-${d.slice(7)}` : d.length === 10 ? `(${d.slice(0, 2)}) ${d.slice(2, 6)}-${d.slice(6)}` : v || ''; };
+
+  async function carregarPessoas() {
+    const r = await S.sb.from('profiles').select('*').order('nome');
+    if (r.error) { toast('Erro ao ler pessoas: ' + r.error.message); S.people = []; } else S.people = r.data;
+  }
+
+  async function renderPessoas() {
+    const main = document.getElementById('main');
+    if (!S.people) { main.innerHTML = '<p class="hint">Carregando pessoas…</p>'; await carregarPessoas(); if (S.tab !== 'pessoas') return; }
+    const t = [['busca', 'Busca de usuários'], ['cad', S.form.id ? 'Editar usuário' : 'Cadastro de usuários']];
+    main.innerHTML = `<h1 style="font-size:22px;margin:22px 0 0">Pessoas</h1>
+      <div class="ptabs" role="tablist">${t.map(([k, n]) => `<button class="ptab" role="tab" data-pt="${k}" aria-selected="${S.ptab === k}">${n}</button>`).join('')}</div>
+      <div id="pbody"></div>`;
+    main.querySelectorAll('[data-pt]').forEach(b => b.onclick = () => { S.ptab = b.dataset.pt; if (S.ptab === 'cad' && S.done) S.done = null; renderPessoas(); });
+    if (S.ptab === 'busca') renderBusca(); else renderCadastro();
+  }
+
+  function renderBusca() {
+    const box = document.getElementById('pbody');
+    const q = S.q.trim().toLowerCase();
+    const lista = S.people.filter(p => (!S.qp || p.papel === S.qp) && (!q || [p.nome, p.email, p.usuario, p.matricula, p.telefone].some(v => String(v || '').toLowerCase().includes(q))));
+    box.innerHTML = `
+      <div class="search">
+        <input type="text" id="q" placeholder="Buscar por nome, e-mail, usuário, matrícula ou telefone" value="${esc(S.q)}">
+        <select id="qp"><option value="">Todos os perfis</option>${Object.entries(PAPEIS).map(([v, l]) => `<option value="${v}" ${S.qp === v ? 'selected' : ''}>${l}</option>`).join('')}</select>
+      </div>
+      <p class="hint" style="margin:0 0 10px">${lista.length} de ${S.people.length} pessoa(s) · <a href="#" id="novo" style="color:var(--accent)">+ cadastrar nova pessoa</a></p>
+      <div class="ulist">${lista.map(p => `
+        <div class="urow">
+          <div class="av">${p.foto ? `<img src="${esc(p.foto)}" alt="">` : esc(iniciais(p.nome))}</div>
+          <div style="min-width:0"><div class="n">${esc(p.nome || '—')}</div><div class="m">${esc(p.email || '')}${p.usuario ? ' · ' + esc(p.usuario) : ''}</div></div>
+          <div class="m hide-sm">${p.matricula ? 'Matrícula ' + esc(p.matricula) : 'Sem matrícula'}<br>${esc(fmtTel(p.telefone)) || 'Sem telefone'}</div>
+          <div class="hide-sm"><span class="badge">${esc(PAPEIS[p.papel] || p.papel)}</span></div>
+          <button class="ghost" data-ed="${esc(p.id)}">Editar</button>
+        </div>`).join('') || '<div class="urow" style="grid-template-columns:1fr"><span class="m">Ninguém encontrado.</span></div>'}</div>`;
+    const qi = document.getElementById('q');
+    qi.oninput = () => { S.q = qi.value; const pos = qi.selectionStart; renderBusca(); const n = document.getElementById('q'); n.focus(); n.setSelectionRange(pos, pos); };
+    document.getElementById('qp').onchange = e => { S.qp = e.target.value; renderBusca(); };
+    document.getElementById('novo').onclick = e => { e.preventDefault(); S.form = vazio(); S.done = null; S.ptab = 'cad'; renderPessoas(); };
+    box.querySelectorAll('[data-ed]').forEach(b => b.onclick = () => { const p = S.people.find(x => x.id === b.dataset.ed);
+      S.form = { ...vazio(), id: p.id, nome: p.nome || '', papel: p.papel, email: p.email || '', telefone: p.telefone || '', usuario: p.usuario || '', matricula: p.matricula || '', foto: p.foto || '', enviar: false };
+      S.done = null; S.ptab = 'cad'; renderPessoas(); });
+  }
+
+  function campo(id, label, tipo = 'text', extra = '') {
+    return `<label class="fl"><span>${label}</span><input type="${tipo}" id="f_${id}" value="${esc(S.form[id])}" ${extra}></label>`;
+  }
+
+  function renderCadastro() {
+    const box = document.getElementById('pbody'), F = S.form, ed = !!F.id;
+    const D = S.done;
+    box.innerHTML = `
+      ${D ? `<div class="okbox"><div><b>${esc(D.nome)}</b> ${D.novo ? 'foi cadastrado(a).' : 'foi atualizado(a).'} ${D.novo ? 'Já pode entrar no app com o e-mail ou o usuário e a senha definida.' : ''}</div>
+        ${D.novo ? `<div class="row"><button class="ghost" id="d_mail">Enviar por e-mail</button><button class="ghost" id="d_wa">Enviar por WhatsApp</button><button class="ghost" id="d_cp">Copiar dados de acesso</button><button class="ghost" id="d_new">Cadastrar outra pessoa</button></div>` : `<div class="row"><button class="ghost" id="d_new">Cadastrar nova pessoa</button></div>`}</div>` : ''}
+      <form class="pform" id="pf" autocomplete="off">
+        <div class="pfoto">
+          <div class="lbl">Importar imagem de perfil:</div>
+          <button type="button" class="upbtn" id="up">${ICON.up} Upload imagem</button>
+          <input type="file" id="file" accept="image/*" hidden>
+          <div class="avatar">${F.foto ? `<img src="${esc(F.foto)}" alt="Foto de perfil">` : ICON.user}</div>
+          ${F.foto ? '<button type="button" class="ghost" id="rmfoto" style="font-size:12px">Remover foto</button>' : ''}
+        </div>
+        <div class="pgrid">
+          ${campo('nome', 'Nome *', 'text', 'required')}
+          <label class="fl"><span>Perfil *</span><select id="f_papel">${Object.entries(PAPEIS).map(([v, l]) => `<option value="${v}" ${F.papel === v ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
+          ${campo('email', 'Email *', 'email', ed ? 'readonly title="O e-mail de login não pode ser trocado por aqui"' : 'required')}
+          ${campo('telefone', 'Telefone *', 'tel', 'required inputmode="tel" placeholder=" "')}
+          ${campo('usuario', 'Nome de usuário *', 'text', 'required autocapitalize="none"')}
+          ${campo('matricula', 'Matrícula *', 'text', 'required')}
+          ${ed ? `<p class="hint" style="grid-column:1/-1;margin:0">A senha só pode ser trocada pela própria pessoa. Para criar um acesso novo, cadastre outra conta.</p>` : `
+          <label class="fl pw"><span>Senha *</span><input type="password" id="f_senha" value="${esc(F.senha)}" required minlength="6" autocomplete="new-password"><button type="button" class="eye" id="eye" title="Mostrar senha">${ICON.eye}</button></label>
+          <label class="fl pw"><span>Confirme a senha *</span><input type="password" id="f_senha2" value="${esc(F.senha2)}" required minlength="6" autocomplete="new-password"></label>`}
+          <div class="pfoot">
+            <div class="err" id="perr"></div>
+            ${ed ? '' : `<label class="check">Enviar e-mail com login e senha <input type="checkbox" id="f_enviar" ${F.enviar ? 'checked' : ''}></label>`}
+          </div>
+          <div class="pfoot" style="justify-content:flex-end">
+            <button type="button" class="ghost" id="limpar">${ed ? 'Cancelar' : 'Limpar'}</button>
+            <button class="primary" id="salvar">${ed ? 'Salvar alterações' : 'Cadastrar'}</button>
+          </div>
+        </div>
+      </form>`;
+    const keep = () => { ['nome', 'email', 'telefone', 'usuario', 'matricula', 'senha', 'senha2'].forEach(k => { const el = document.getElementById('f_' + k); if (el) F[k] = el.value; });
+      F.papel = document.getElementById('f_papel').value; const en = document.getElementById('f_enviar'); if (en) F.enviar = en.checked; };
+    document.getElementById('up').onclick = () => document.getElementById('file').click();
+    document.getElementById('file').onchange = async e => { const f = e.target.files[0]; if (!f) return; keep(); try { F.foto = await reduzir(f); } catch (err) { toast('Não foi possível ler a imagem.'); } renderCadastro(); };
+    const rm = document.getElementById('rmfoto'); if (rm) rm.onclick = () => { keep(); F.foto = ''; renderCadastro(); };
+    const eye = document.getElementById('eye'); if (eye) eye.onclick = () => { ['f_senha', 'f_senha2'].forEach(id => { const el = document.getElementById(id); el.type = el.type === 'password' ? 'text' : 'password'; }); };
+    document.getElementById('limpar').onclick = () => { S.form = vazio(); S.done = null; if (ed) { S.ptab = 'busca'; } renderPessoas(); };
+    if (D) {
+      const msg = acessoTexto(D);
+      const b = id => document.getElementById(id);
+      if (b('d_mail')) b('d_mail').onclick = () => abrirEmail(D);
+      if (b('d_wa')) b('d_wa').onclick = () => window.open(`https://wa.me/${D.tel ? '55' + soDig(D.tel).replace(/^55/, '') : ''}?text=${encodeURIComponent(msg)}`, '_blank');
+      if (b('d_cp')) b('d_cp').onclick = () => navigator.clipboard.writeText(msg).then(() => toast('Dados de acesso copiados.'), () => prompt('Copie:', msg));
+      b('d_new').onclick = () => { S.form = vazio(); S.done = null; renderPessoas(); };
+    }
+    document.getElementById('pf').onsubmit = async e => { e.preventDefault(); keep(); await salvarPessoa(); };
+  }
+
+  function acessoTexto(D) {
+    return `Olá, ${D.nome.split(' ')[0]}! Seu acesso ao Vistto Inspeções foi criado.\n\nApp: ${APP_URL}\nE-mail: ${D.email}\nUsuário: ${D.usuario}\nSenha: ${D.senha}\n\nAbra o link no celular, entre com o e-mail (ou o usuário) e a senha e toque em "Adicionar à tela inicial" para instalar.`;
+  }
+  function abrirEmail(D) {
+    location.href = `mailto:${encodeURIComponent(D.email)}?subject=${encodeURIComponent('Seu acesso ao Vistto Inspeções')}&body=${encodeURIComponent(acessoTexto(D))}`;
+  }
+
+  function reduzir(file) {
+    return new Promise((res, rej) => { const fr = new FileReader(); fr.onerror = rej; fr.onload = () => { const img = new Image(); img.onerror = rej; img.onload = () => {
+      const L = 320, sz = Math.min(img.width, img.height), c = document.createElement('canvas'); c.width = c.height = L;
+      c.getContext('2d').drawImage(img, (img.width - sz) / 2, (img.height - sz) / 2, sz, sz, 0, 0, L, L); res(c.toDataURL('image/jpeg', 0.82)); }; img.src = fr.result; }; fr.readAsDataURL(file); });
+  }
+
+  async function salvarPessoa() {
+    const F = S.form, ed = !!F.id, err = m => { const el = document.getElementById('perr'); if (el) el.textContent = m; else toast(m); };
+    F.nome = F.nome.trim(); F.email = F.email.trim().toLowerCase(); F.usuario = F.usuario.trim().toLowerCase(); F.matricula = F.matricula.trim(); F.telefone = soDig(F.telefone);
+    if (!F.nome || !F.email || !F.usuario || !F.matricula || !F.telefone) return err('Preencha todos os campos com *.');
+    if (!/^[a-z0-9._-]{3,}$/.test(F.usuario)) return err('Nome de usuário: use letras, números, ponto, hífen ou _, sem espaços (mínimo 3).');
+    if (F.telefone.length < 10) return err('Telefone com DDD, por exemplo (67) 99999-0000.');
+    if (S.people.some(p => p.id !== F.id && (p.usuario || '').toLowerCase() === F.usuario)) return err('Este nome de usuário já está em uso.');
+    if (!ed && S.people.some(p => (p.email || '').toLowerCase() === F.email)) return err('Já existe uma pessoa com este e-mail.');
+    if (S.people.some(p => p.id !== F.id && p.matricula && p.matricula === F.matricula)) return err('Esta matrícula já está cadastrada para outra pessoa.');
+    if (!ed) { if (F.senha.length < 6) return err('A senha precisa de pelo menos 6 caracteres.'); if (F.senha !== F.senha2) return err('As senhas não conferem.'); }
+    const btn = document.getElementById('salvar'); btn.disabled = true; btn.textContent = 'Salvando…';
+    const dados = { nome: F.nome, papel: F.papel, telefone: F.telefone, usuario: F.usuario, matricula: F.matricula, foto: F.foto || null };
+    try {
+      let id = F.id;
+      if (!ed) {
+        const tmp = window.supabase.createClient(S.url, S.key, { auth: { persistSession: false, autoRefreshToken: false, storageKey: 'vistto_tmp' } });
+        const r = await tmp.auth.signUp({ email: F.email, password: F.senha, options: { data: { nome: F.nome } } });
+        if (r.error) throw new Error(/registered|exists/i.test(r.error.message) ? 'Já existe uma conta com este e-mail.' : /password/i.test(r.error.message) ? 'Senha fraca: use pelo menos 6 caracteres.' : r.error.message);
+        if (!r.data.user || (r.data.user.identities && r.data.user.identities.length === 0)) throw new Error('Já existe uma conta com este e-mail.');
+        id = r.data.user.id; try { await tmp.auth.signOut(); } catch (e) {}
+      }
+      const u = await run(S.sb.from('profiles').update(dados).eq('id', id).select());
+      if (!u.data || !u.data.length) throw new Error('A conta foi criada, mas o perfil não apareceu ainda. Atualize a página e edite a pessoa na Busca.');
+      const D = { nome: F.nome, email: F.email, usuario: F.usuario, senha: F.senha, tel: F.telefone, novo: !ed };
+      await carregarPessoas();
+      S.done = D; S.form = vazio(); if (!ed) S.form.enviar = F.enviar;
+      renderPessoas(); window.scrollTo(0, 0);
+      if (!ed && F.enviar) abrirEmail(D);
+    } catch (e) { btn.disabled = false; btn.textContent = ed ? 'Salvar alterações' : 'Cadastrar'; err(e.message || String(e)); }
   }
 
   window.addEventListener('resize', () => document.querySelectorAll('textarea').forEach(autosize));
