@@ -61,7 +61,7 @@ create table public.profiles (
   nome text not null default '',
   email text,
   telefone text,
-  papel text not null default 'engenheiro' check (papel in ('engenheiro','tecnico','gestor','admin')),
+  papel text not null default 'engenheiro' check (papel in ('engenheiro','tecnico','supervisor','gestor','admin')),
   obra_id text references public.obras(id),
   ativo boolean not null default true,
   criado_em timestamptz not null default now()
