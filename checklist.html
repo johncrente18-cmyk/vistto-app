@@ -172,7 +172,9 @@
   const MOD_NOMES = { base: 'Itens de todas as inspeções', escavacao: 'Escavação', eletrica: 'Eletricidade', icamento: 'Içamento', carga: 'Movimentação de carga' };
   const TIPOS_PADRAO = [{ id: 'caminhada', nome: 'Caminhada de segurança', descricao: 'Ferramentas, EPI, documentação e os riscos da atividade do dia', usa_atividade: true, ordem: 1, ativo: true },
     { id: 'vivencia', nome: 'Área de vivência (Meta 01)', descricao: 'Documentação e estrutura da área de vivência', usa_atividade: false, ordem: 2, ativo: true }];
-  const RESERVADOS = ['tipos', 'atividades', 'pessoas'];
+  const RESERVADOS = ['tipos', 'atividades', 'pessoas', 'historico'];
+  const GRUPOS = [['veiculos', 'Inspeções de Veículos'], ['gerencia', 'Inspeção Gerência'], ['campo', 'Inspeções de Campo TSTs']];
+  const grupoDe = t => t.grupo || (t.id === 'caminhada' || t.id === 'vivencia' ? 'gerencia' : 'campo');
   const tipoDe = id => (S.tipos || []).find(t => t.id === id) || TIPOS_PADRAO.find(t => t.id === id) || { id, nome: id, usa_atividade: false };
   const ehForm = id => { const t = tipoDe(id); return t.modo === 'formulario' && t.estrutura && Array.isArray(t.estrutura.itens); };
   const nCampos = id => ehForm(id) ? tipoDe(id).estrutura.itens.reduce((a, it) => a + (it.subitens || []).length, 0) : 0;
@@ -712,7 +714,7 @@
     const tps = [...S.tipos].sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
     const cnt = id => S.itens.filter(i => i.tipo === id && i.ativo !== false).length;
     main.innerHTML = `<h1 style="font-size:22px;margin:22px 0 0">Tipos de inspeção</h1>
-      <p class="hint">São as inspeções que aparecem na pesquisa “Nova inspeção” do app. Depois de criar um tipo, monte o checklist dele no menu <b>Checklists</b>.</p>
+      <p class="hint">São as inspeções do app. Cada uma fica num dos 3 botões do Radar (Veículos, Gerência ou Campo TSTs). Depois de criar um tipo, monte o checklist dele no menu <b>Checklists</b>.</p>
       ${S.semTabelaTipos ? '<p class="err">O banco ainda não tem a tabela de tipos de inspeção. Rode a migração 04 no Supabase para poder criar tipos novos.</p>' : ''}
       <section class="group">
         ${tps.map((t, k) => `
@@ -728,6 +730,7 @@
               </div>
             </div>
             <div class="chips" style="align-items:center">
+              <label class="chip" style="cursor:default">Botão no app: <select data-f="grupo" style="width:auto;padding:3px 6px;font-size:13px">${GRUPOS.map(([v, l]) => `<option value="${v}" ${grupoDe(t) === v ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
               ${ehForm(t.id) ? '<span class="badge">Formulário</span>' : `<label class="chip"><input type="checkbox" data-f="usa_atividade" ${t.usa_atividade ? 'checked' : ''}>Soma os riscos da atividade do dia</label>`}
               <label class="chip"><input type="checkbox" data-f="ativo" ${t.ativo !== false ? 'checked' : ''}>Aparece no app</label>
               <span class="hint" style="margin:0">${ehForm(t.id) ? nCampos(t.id) + ' campo(s)' : cnt(t.id) + ' item(ns) no checklist'}</span>
@@ -746,6 +749,7 @@
           salvarTipo(t, { [inp.dataset.f]: v || null }); }, 700);
       }));
       box.querySelectorAll('input[type=checkbox]').forEach(c => c.onchange = () => { t[c.dataset.f] = c.checked; salvarTipo(t, { [c.dataset.f]: c.checked }).then(() => render()); });
+      box.querySelector('select[data-f=grupo]').onchange = e => { t.grupo = e.target.value; salvarTipo(t, { grupo: t.grupo }); };
       box.querySelectorAll('[data-mv]').forEach(b => b.onclick = async () => {
         const i = tps.indexOf(t), o = tps[i + +b.dataset.mv]; if (!o) return;
         let [a, c] = [t.ordem || 0, o.ordem || 0]; if (a === c) c = a + +b.dataset.mv; t.ordem = c; o.ordem = a; render();
@@ -757,7 +761,7 @@
       if (S.semTabelaTipos) return toast('Rode a migração 04 no Supabase antes de criar tipos novos.');
       const nome = document.getElementById('nt').value.trim(); if (!nome) return;
       let id = slug(nome) || novoId('t'); if (RESERVADOS.includes(id) || S.tipos.some(x => x.id === id)) id += '-' + Date.now().toString(36).slice(-4);
-      const row = { id, nome, descricao: null, usa_atividade: false, ordem: S.tipos.length ? Math.max(...S.tipos.map(x => x.ordem || 0)) + 1 : 1, ativo: true };
+      const row = { id, nome, descricao: null, usa_atividade: false, grupo: 'campo', ordem: S.tipos.length ? Math.max(...S.tipos.map(x => x.ordem || 0)) + 1 : 1, ativo: true };
       S.tipos.push(row); S.tab = id; render(); window.scrollTo(0, 0);
       await run(S.sb.from('tipos_inspecao').insert(row)).then(() => toast('Tipo criado. Agora adicione os itens do checklist.')).catch(() => { S.tipos = S.tipos.filter(x => x !== row); S.tab = 'tipos'; render(); });
     };
@@ -765,7 +769,7 @@
   async function salvarTipo(t, patch) {
     if (S.semTabelaTipos) return toast('Rode a migração 04 no Supabase para salvar tipos de inspeção.');
     // Caminhada e Vivência podem não estar no banco ainda: grava a linha inteira
-    await run(S.sb.from('tipos_inspecao').upsert({ id: t.id, nome: t.nome, descricao: t.descricao || null, usa_atividade: !!t.usa_atividade, ordem: t.ordem || 0, ativo: t.ativo !== false, ...patch })).catch(() => {});
+    await run(S.sb.from('tipos_inspecao').upsert({ id: t.id, nome: t.nome, descricao: t.descricao || null, usa_atividade: !!t.usa_atividade, ordem: t.ordem || 0, ativo: t.ativo !== false, grupo: grupoDe(t), ...patch })).catch(() => {});
   }
 
   // ---------- pessoas ----------

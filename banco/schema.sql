@@ -54,6 +54,7 @@ create table public.tipos_inspecao (
   ordem int not null default 0,
   ativo boolean not null default true,
   modo text not null default 'checklist',        -- checklist | formulario
+  grupo text,                                    -- botão do Radar: veiculos | gerencia | campo
   estrutura jsonb                                 -- itens/subitens quando modo = formulario
 );
 
@@ -294,9 +295,9 @@ insert into public.frentes (id, obra_id, parent_id, codigo, nome, ordem)
 select 'mar-' || m || '-' || s, 'ufv-paraiso', 'mar-' || m, m || '.' || s, 'MAR ' || m || ' · ' || m || '.' || s, m * 100 + s
 from generate_series(1, 8) m, generate_series(1, 8) s;
 
-insert into public.tipos_inspecao (id, nome, descricao, usa_atividade, ordem) values
-  ('caminhada', 'Caminhada de segurança', 'Ferramentas, EPI, documentação e os riscos da atividade do dia', true, 1),
-  ('vivencia', 'Área de vivência (Meta 01)', 'Documentação e estrutura da área de vivência', false, 2);
+insert into public.tipos_inspecao (id, nome, descricao, usa_atividade, ordem, grupo) values
+  ('caminhada', 'Caminhada de segurança', 'Ferramentas, EPI, documentação e os riscos da atividade do dia', true, 1, 'gerencia'),
+  ('vivencia', 'Área de vivência (Meta 01)', 'Documentação e estrutura da área de vivência', false, 2, 'gerencia');
 
 insert into public.checklist_itens (id, tipo, modulo, secao, ordem, pergunta) values
   -- Caminhada de segurança · base
