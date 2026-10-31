@@ -87,7 +87,7 @@ create table public.profiles (
   matricula text,
   usuario text,
   foto text,           -- foto de perfil (JPEG comprimido, data URL)
-  papel text not null default 'engenheiro' check (papel in ('engenheiro','tecnico','supervisor','gestor','admin')),
+  papel text not null default 'engenheiro' check (papel in ('engenheiro','tecnico','supervisor','gestor','admin','lider')),
   obra_id text references public.obras(id),
   ativo boolean not null default true,
   criado_em timestamptz not null default now()
@@ -142,6 +142,10 @@ create table public.ncs (
   nota_encerramento text,
   autor_id uuid default auth.uid() references public.profiles(id),
   equipamento text,
+  responsavel_id uuid,
+  email_enviado_em timestamptz,
+  email_para text,
+  email_erro text,
   criado_em timestamptz not null default now(),
   atualizado_em timestamptz not null default now()
 );
@@ -350,3 +354,5 @@ insert into public.checklist_itens (id, tipo, modulo, secao, ordem, pergunta) va
 -- para virar administrador:
 -- update public.profiles set papel = 'admin' where email = 'seu@email.com';
 -- ============================================================
+
+-- E-mail automático das NCs: ver banco/migracao-08-email-nc.sql (gatilho ncs_email + função supabase/functions/enviar-nc)
