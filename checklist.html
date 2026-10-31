@@ -107,7 +107,43 @@
   .err { color: var(--bad); font-size: 13px; }
   code { background: var(--surface-2); padding: 2px 6px; border-radius: 6px; font-size: 12px; word-break: break-all; }
   .toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--surface-2); padding: 10px 16px; border-radius: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.4); font-size: 14px; max-width: calc(100% - 32px); }
+  .hf { background: var(--surface); border-radius: var(--r); padding: 16px; margin: 16px 0; display: grid; gap: 12px; }
+  .hf .row2 { display: grid; grid-template-columns: 1fr 1fr auto; gap: 10px; align-items: end; }
+  .hf .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .hf label.lb { display: grid; gap: 4px; font-size: 12px; color: var(--muted); }
+  .hf input[type=date], .hf input[type=number] { width: 100%; background: var(--surface-2); border: 1px solid transparent; border-radius: 8px; padding: 8px 10px; outline: none; color-scheme: dark; }
+  .hf .fhead { display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none; }
+  .ms { position: relative; }
+  .ms > button { width: 100%; text-align: left; display: flex; justify-content: space-between; gap: 8px; align-items: center; background: var(--surface-2); border: 1px solid transparent; border-radius: 8px; padding: 9px 10px; color: var(--muted); }
+  .ms > button.on { color: var(--text); border-color: var(--accent); }
+  .ms > button span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ms .dd { position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + 4px); background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.45); padding: 8px; max-height: 320px; display: flex; flex-direction: column; gap: 6px; }
+  .ms .dd input { background: var(--bg); }
+  .ms .dd .ops { overflow: auto; display: grid; gap: 2px; }
+  .ms .dd label { display: flex; gap: 8px; align-items: center; padding: 6px 8px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+  .ms .dd label:hover { background: rgba(255,255,255,.05); }
+  .ms .dd input[type=checkbox] { accent-color: var(--accent); width: 16px; height: 16px; }
+  .htab { background: var(--surface); border-radius: var(--r); overflow: hidden; }
+  .htab .tb { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; gap: 10px; flex-wrap: wrap; }
+  .htab .tb h2 { margin: 0; font-size: 16px; }
+  .htab .tools { display: flex; gap: 6px; position: relative; }
+  .htab .scroll { overflow-x: auto; }
+  .htab table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .htab th { text-align: left; color: var(--muted); font-weight: 600; padding: 9px 10px; border-top: 1px solid var(--line); white-space: nowrap; }
+  .htab td { padding: 9px 10px; border-top: 1px solid var(--line); vertical-align: top; }
+  .htab tbody tr { cursor: pointer; }
+  .htab tbody tr:hover td { background: rgba(255,255,255,.03); }
+  .htab .pg { display: flex; justify-content: flex-end; align-items: center; gap: 10px; padding: 10px 14px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+  .sc { font-weight: 700; }
+  .colmenu { position: absolute; right: 0; top: calc(100% + 4px); z-index: 20; background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; padding: 8px; display: grid; gap: 2px; min-width: 200px; box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+  .colmenu label { display: flex; gap: 8px; padding: 5px 6px; font-size: 14px; cursor: pointer; }
+  .rep-ov { position: fixed; inset: 0; z-index: 50; background: rgba(8,9,16,.75); display: flex; justify-content: center; align-items: flex-start; overflow: auto; padding: 24px 12px; }
+  .rep-box { background: var(--surface); border-radius: 14px; width: 100%; max-width: 860px; }
+  .rep-bar { position: sticky; top: 0; z-index: 2; background: var(--surface); border-radius: 14px 14px 0 0; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .rep-bar h3 { margin: 0 auto 0 0; font-size: 15px; }
+  .paper { background: #fff; color: #1d1f2b; margin: 14px; border-radius: 8px; padding: 22px; font-size: 14px; }
   @media (max-width: 820px) {
+    .hf .row2, .hf .grid { grid-template-columns: 1fr; }
     .shell { grid-template-columns: 1fr; }
     .side { position: static; height: auto; display: flex; gap: 4px; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--line); padding: 8px 12px; }
     .side h3 { display: none; }
@@ -220,6 +256,8 @@
     S.itens = it.data; S.ativ = at.data;
     const tp = await S.sb.from('tipos_inspecao').select('*').order('ordem');
     if (tp.error) { S.tipos = TIPOS_PADRAO.slice(); S.semTabelaTipos = true; } else S.tipos = tp.data.length ? tp.data : TIPOS_PADRAO.slice();
+    const hm = location.hash.match(/^#insp=([0-9a-f-]{36})$/i);
+    if (hm) { S.tab = 'historico'; render(); abrirRelatorio(hm[1]); return; }
     render();
   }
   async function sair() { await S.sb.auth.signOut(); location.reload(); }
@@ -232,6 +270,7 @@
     users: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.6c2.6.2 4.6 1.9 5.3 4.9"/></svg>',
     user: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="9.5" r="3.6"/><path d="M5.6 19.2c1.3-3 3.6-4.5 6.4-4.5s5.1 1.5 6.4 4.5"/></svg>',
     eye: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+    chart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>',
     clip: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></svg>',
     list: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.2"/><circle cx="4.5" cy="12" r="1.2"/><circle cx="4.5" cy="18" r="1.2"/></svg>',
     up: '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V5M7 9l5-5 5 5M5 20h14"/></svg>' };
@@ -239,7 +278,7 @@
   function render() {
     const tps = [...S.tipos].sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
     const nav = [['Checklists', tps.map(t => [t.id, t.nome + (t.ativo === false ? ' (desativado)' : ''), t.id === 'caminhada' ? 'walk' : t.id === 'vivencia' ? 'tent' : 'clip'])],
-      ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
+      ['Relatórios', [['historico', 'Histórico de inspeções', 'chart']]], ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
     $app.innerHTML = `
       <header>
         <div class="bar">
@@ -256,7 +295,7 @@
     document.getElementById('sair').onclick = sair;
     $app.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { S.tab = b.dataset.tab; render(); window.scrollTo(0, 0); });
     setStatus();
-    if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
+    if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (S.tab === 'historico') renderHistorico(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
   }
 
   function modulosDe(tipo) {
@@ -404,6 +443,249 @@
     };
   }
 
+
+  // ---------- histórico de inspeções ----------
+  const isoD = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  const fDT = v => { const d = new Date(v); return d.toLocaleDateString('pt-BR') + ', ' + d.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }); };
+  const semAc = v => String(v || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const H = { de: isoD(new Date(Date.now() - 6 * 864e5)), ate: isoD(new Date()), open: true, f: { areas: [], subs: [], users: [], tipos: [], ativs: [], lideres: [] }, sit: '', scoreOn: false, sMin: 0, sMax: 100,
+    rows: null, ncs: [], ref: null, page: 0, per: 10, cols: null, loading: false, err: '' };
+  const COLS = [['data', 'Data / hora'], ['tipo', 'Inspeção'], ['score', 'Score'], ['user', 'Usuário'], ['area', 'Área'], ['sub', 'Subfrente'], ['lider', 'Líder'], ['ativ', 'Atividade'], ['nc', 'NCs']];
+  try { H.cols = JSON.parse(localStorage.getItem('vistto_hcols')) || null; } catch (e) {}
+  if (!Array.isArray(H.cols)) H.cols = COLS.map(c => c[0]);
+
+  async function refHist() {
+    if (H.ref) return H.ref;
+    const [ob, fr, pr] = await Promise.all([S.sb.from('obras').select('*'), S.sb.from('frentes').select('*').order('ordem'), S.sb.from('profiles').select('id,nome,email,papel')]);
+    H.ref = { obra: (ob.data || [])[0] || { nome: 'Obra' }, frentes: fr.data || [], people: pr.data || [] };
+    return H.ref;
+  }
+  async function buscarHist() {
+    H.loading = true; H.err = ''; drawHist();
+    try {
+      const R = await refHist();
+      const a = new Date(H.de + 'T00:00').toISOString(), b = new Date(H.ate + 'T23:59:59.999').toISOString();
+      const [ins, nc] = await Promise.all([
+        S.sb.from('inspecoes').select('*').gte('criado_em', a).lte('criado_em', b).order('criado_em', { ascending: false }).limit(5000),
+        S.sb.from('ncs').select('id,inspecao_id,frente_id,status,prazo,pergunta,responsavel_nome,criado_em').gte('criado_em', a).lte('criado_em', b).limit(10000)]);
+      if (ins.error || nc.error) throw (ins.error || nc.error);
+      H.rows = ins.data; H.ncs = nc.data; H.page = 0;
+      const fr = {}; R.frentes.forEach(f => { fr[f.id] = f; }); H.fr = fr;
+    } catch (e) { H.err = e.message || String(e); H.rows = []; }
+    H.loading = false; drawHist();
+  }
+  const marDe = fid => { const f = H.fr && H.fr[fid]; return f ? (f.parent_id || f.id) : null; };
+  const nomeP = id => { const p = H.ref && H.ref.people.find(x => x.id === id); return p ? (p.nome || p.email) : '—'; };
+  const ncsDe = id => H.ncs.filter(n => n.inspecao_id === id);
+  function linhas() {
+    if (!H.rows) return [];
+    const F = H.f, now = new Date();
+    return H.rows.filter(r => {
+      if (F.areas.length && !F.areas.includes(marDe(r.frente_id))) return false;
+      if (F.subs.length && !F.subs.includes(r.frente_id)) return false;
+      if (F.users.length && !F.users.includes(r.autor_id)) return false;
+      if (F.tipos.length && !F.tipos.includes(r.tipo)) return false;
+      if (F.ativs.length && !F.ativs.includes(r.atividade_id || '')) return false;
+      if (F.lideres.length && !F.lideres.includes(semAc(r.lider_nome).trim())) return false;
+      if (H.scoreOn && (r.conformidade == null || r.conformidade < +H.sMin || r.conformidade > +H.sMax)) return false;
+      if (H.sit) { const n = ncsDe(r.id), ab = n.filter(x => x.status === 'aberta' || x.status === 'vista');
+        if (H.sit === 'com' && !n.length) return false; if (H.sit === 'sem' && n.length) return false; if (H.sit === 'aberta' && !ab.length) return false;
+        if (H.sit === 'vencida' && !ab.some(x => x.prazo && new Date(x.prazo) < now)) return false; }
+      return true; });
+  }
+  function celulas(r) {
+    const f = H.fr[r.frente_id], m = H.fr[marDe(r.frente_id)], a = S.ativ.find(x => x.id === r.atividade_id), n = ncsDe(r.id), ab = n.filter(x => x.status === 'aberta' || x.status === 'vista').length;
+    const sc = r.conformidade == null ? '—' : r.conformidade + '%';
+    return { data: fDT(r.criado_em), tipo: tipoDe(r.tipo).nome, score: sc, user: nomeP(r.autor_id), area: m ? m.nome : '—', sub: f ? (f.codigo || f.nome) : '—', lider: r.lider_nome || '—', ativ: a ? a.nome : '—', nc: n.length ? `${n.length}${ab ? ` (${ab} aberta${ab > 1 ? 's' : ''})` : ''}` : '0',
+      scC: r.conformidade == null ? 'var(--muted)' : r.conformidade >= 90 ? 'var(--ok)' : r.conformidade >= 75 ? 'var(--warn)' : 'var(--bad)' };
+  }
+
+  function renderHistorico() {
+    const main = document.getElementById('main');
+    main.innerHTML = `<h1 style="font-size:22px;margin:22px 0 0">Histórico de inspeções</h1><div id="hbox"></div>`;
+    if (!H.rows && !H.loading) buscarHist(); else drawHist();
+  }
+  function msel(key, label, opts) {
+    const sel = H.f[key], txt = sel.length ? (sel.length === 1 ? (opts.find(o => o[0] === sel[0]) || [, '1 selecionado'])[1] : `${sel.length} selecionados`) : label;
+    return `<div class="ms" data-ms="${key}"><button type="button" class="${sel.length ? 'on' : ''}"><span>${esc(txt)}</span><span>▾</span></button></div>`;
+  }
+  function drawHist() {
+    const box = document.getElementById('hbox'); if (!box || S.tab !== 'historico') return;
+    const R = H.ref, fr = R ? R.frentes : [], mars = fr.filter(f => !f.parent_id), subs = fr.filter(f => f.parent_id);
+    const lideres = {}; (H.rows || []).forEach(r => { const k = semAc(r.lider_nome).trim(); if (k && !lideres[k]) lideres[k] = r.lider_nome.trim(); });
+    const OP = { areas: mars.map(m => [m.id, m.nome]), subs: subs.filter(s => !H.f.areas.length || H.f.areas.includes(s.parent_id)).map(s => [s.id, s.nome]),
+      users: (R ? R.people : []).map(p => [p.id, p.nome || p.email]).sort((a, b) => a[1].localeCompare(b[1])), tipos: S.tipos.map(t => [t.id, t.nome]),
+      ativs: [['', 'Sem atividade']].concat(S.ativ.map(a => [a.id, a.nome])), lideres: Object.entries(lideres).sort((a, b) => a[1].localeCompare(b[1])) };
+    H.OP = OP;
+    const L = linhas(), pages = Math.max(1, Math.ceil(L.length / H.per)); if (H.page >= pages) H.page = pages - 1;
+    const vis = L.slice(H.page * H.per, H.page * H.per + H.per), cols = COLS.filter(c => H.cols.includes(c[0]));
+    const nAct = Object.values(H.f).reduce((a, v) => a + (v.length ? 1 : 0), 0) + (H.sit ? 1 : 0) + (H.scoreOn ? 1 : 0);
+    box.innerHTML = `
+      <div class="hf">
+        <div style="font-weight:600">Configurações de filtro de pesquisa</div>
+        <div class="row2">
+          <label class="lb">Período de<input type="date" id="h_de" value="${H.de}"></label>
+          <label class="lb">Até<input type="date" id="h_ate" value="${H.ate}"></label>
+          <button class="primary" id="h_buscar">${H.loading ? 'Buscando…' : 'Buscar'}</button>
+        </div>
+        <div class="fhead" id="h_tog"><b style="color:var(--muted)">Filtros${nAct ? ` · ${nAct} ativo(s)` : ''}</b><span>${H.open ? '▴' : '▾'}</span></div>
+        ${H.open ? `<div class="grid">
+          ${msel('areas', 'Selecione uma ou mais áreas (MAR)', OP.areas)}
+          ${msel('users', 'Selecione um ou mais usuários', OP.users)}
+          ${msel('subs', 'Selecione uma ou mais subfrentes', OP.subs)}
+          ${msel('tipos', 'Selecione um ou mais tipos de inspeção', OP.tipos)}
+          ${msel('ativs', 'Selecione uma ou mais atividades', OP.ativs)}
+          ${msel('lideres', 'Selecione um ou mais líderes', OP.lideres)}
+          <label class="lb">Situação das NCs<select id="h_sit">${[['', 'Todas as inspeções'], ['com', 'Com NC'], ['sem', 'Sem NC'], ['aberta', 'Com NC em aberto'], ['vencida', 'Com NC vencida']].map(([v, l]) => `<option value="${v}" ${H.sit === v ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
+          <div class="lb"><label class="check" style="font-size:13px;color:var(--text)"><input type="checkbox" id="h_son" ${H.scoreOn ? 'checked' : ''}> Filtrar por faixa de score</label>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><input type="number" id="h_smin" min="0" max="100" value="${H.sMin}" ${H.scoreOn ? '' : 'disabled'} aria-label="Score de"><input type="number" id="h_smax" min="0" max="100" value="${H.sMax}" ${H.scoreOn ? '' : 'disabled'} aria-label="Score até"></div></div>
+        </div>${nAct ? '<div><button class="ghost" id="h_limpar">Limpar filtros</button></div>' : ''}` : ''}
+      </div>
+      <div class="htab">
+        <div class="tb"><h2>Histórico de inspeções <span class="hint" style="font-weight:400">· ${H.loading ? 'carregando…' : `${L.length} de ${(H.rows || []).length} no período`}</span></h2>
+          <div class="tools"><button class="ghost" id="h_csv">Baixar CSV</button><button class="ghost" id="h_print">Imprimir</button><button class="ghost" id="h_cols">Colunas</button><div id="h_colmenu"></div></div></div>
+        ${H.err ? `<p class="err" style="padding:0 14px">Erro ao buscar: ${esc(H.err)}</p>` : ''}
+        <div class="scroll"><table><thead><tr>${cols.map(c => `<th>${c[1]}</th>`).join('')}</tr></thead><tbody>
+          ${vis.map(r => { const c = celulas(r); return `<tr data-id="${r.id}">${cols.map(([k]) => `<td${k === 'score' ? ` class="sc" style="color:${c.scC}"` : ''}>${esc(c[k])}</td>`).join('')}</tr>`; }).join('') || `<tr><td colspan="${cols.length}" class="hint" style="padding:16px">${H.loading ? 'Carregando…' : 'Nenhuma inspeção com estes filtros.'}</td></tr>`}
+        </tbody></table></div>
+        <div class="pg">Linhas por página <select id="h_per" style="width:auto">${[10, 25, 50, 100].map(n => `<option ${H.per === n ? 'selected' : ''}>${n}</option>`).join('')}</select>
+          <span>${L.length ? `${H.page * H.per + 1}–${Math.min(L.length, (H.page + 1) * H.per)} de ${L.length}` : '0'}</span>
+          <button class="icon" id="h_prev" ${H.page === 0 ? 'disabled' : ''} title="Página anterior">‹</button><button class="icon" id="h_next" ${H.page >= pages - 1 ? 'disabled' : ''} title="Próxima página">›</button></div>
+      </div>`;
+    const $ = id => document.getElementById(id);
+    $('h_de').onchange = e => { H.de = e.target.value; }; $('h_ate').onchange = e => { H.ate = e.target.value; };
+    $('h_buscar').onclick = () => { if (!H.de || !H.ate) return toast('Informe o período.'); if (H.de > H.ate) return toast('A data inicial é depois da final.'); buscarHist(); };
+    $('h_tog').onclick = () => { H.open = !H.open; drawHist(); };
+    if (H.open) {
+      $('h_sit').onchange = e => { H.sit = e.target.value; H.page = 0; drawHist(); };
+      $('h_son').onchange = e => { H.scoreOn = e.target.checked; H.page = 0; drawHist(); };
+      [['h_smin', 'sMin'], ['h_smax', 'sMax']].forEach(([id, k]) => { $(id).onchange = e => { H[k] = Math.max(0, Math.min(100, +e.target.value || 0)); H.page = 0; drawHist(); }; });
+      if ($('h_limpar')) $('h_limpar').onclick = () => { Object.keys(H.f).forEach(k => { H.f[k] = []; }); H.sit = ''; H.scoreOn = false; H.page = 0; drawHist(); };
+      box.querySelectorAll('[data-ms]').forEach(el => el.querySelector('button').onclick = ev => { ev.stopPropagation(); abrirMs(el); });
+    }
+    $('h_per').onchange = e => { H.per = +e.target.value; H.page = 0; drawHist(); };
+    $('h_prev').onclick = () => { H.page--; drawHist(); }; $('h_next').onclick = () => { H.page++; drawHist(); };
+    $('h_csv').onclick = () => baixarCSV(L);
+    $('h_print').onclick = () => imprimirLista(L);
+    $('h_cols').onclick = ev => { ev.stopPropagation(); const m = $('h_colmenu'); if (m.innerHTML) { m.innerHTML = ''; return; }
+      m.innerHTML = `<div class="colmenu">${COLS.map(([k, l]) => `<label><input type="checkbox" value="${k}" ${H.cols.includes(k) ? 'checked' : ''}>${l}</label>`).join('')}</div>`;
+      m.onclick = e => e.stopPropagation();
+      m.querySelectorAll('input').forEach(c => c.onchange = () => { H.cols = COLS.map(x => x[0]).filter(k => m.querySelector(`input[value="${k}"]`).checked); if (!H.cols.length) H.cols = ['data'];
+        try { localStorage.setItem('vistto_hcols', JSON.stringify(H.cols)); } catch (e) {} drawHist(); $('h_cols').click(); }); };
+    box.querySelectorAll('tbody tr[data-id]').forEach(tr => tr.onclick = () => abrirRelatorio(tr.dataset.id));
+  }
+  function abrirMs(el) {
+    const key = el.dataset.ms, opts = H.OP[key]; document.querySelectorAll('.ms .dd').forEach(d => d.remove());
+    const dd = document.createElement('div'); dd.className = 'dd';
+    dd.innerHTML = `${opts.length > 8 ? '<input type="text" placeholder="Pesquisar…">' : ''}<div class="ops"></div><div style="display:flex;justify-content:space-between"><button class="ghost" data-c>Limpar</button><button class="primary" data-ok style="padding:6px 14px">OK</button></div>`;
+    el.appendChild(dd); dd.onclick = e => e.stopPropagation();
+    const ops = dd.querySelector('.ops'), q = dd.querySelector('input[type=text]'), sel = new Set(H.f[key]);
+    const draw = () => { const w = semAc(q ? q.value : ''); ops.innerHTML = opts.filter(o => !w || semAc(o[1]).includes(w)).map(([v, l]) => `<label><input type="checkbox" value="${esc(v)}" ${sel.has(v) ? 'checked' : ''}>${esc(l)}</label>`).join('') || '<span class="hint" style="margin:6px">Nada encontrado.</span>';
+      ops.querySelectorAll('input').forEach(c => c.onchange = () => { c.checked ? sel.add(c.value) : sel.delete(c.value); }); };
+    if (q) { q.oninput = draw; setTimeout(() => q.focus(), 0); } draw();
+    const fechar = () => { H.f[key] = [...sel]; if (key === 'areas') H.f.subs = H.f.subs.filter(s => !H.f.areas.length || H.f.areas.includes((H.fr[s] || {}).parent_id)); H.page = 0; document.removeEventListener('click', fora); drawHist(); };
+    const fora = () => fechar();
+    dd.querySelector('[data-ok]').onclick = fechar; dd.querySelector('[data-c]').onclick = () => { sel.clear(); draw(); };
+    setTimeout(() => document.addEventListener('click', fora), 0);
+  }
+  function csvDe(linhas) { return '﻿' + linhas.map(l => l.map(v => { const t = String(v == null ? '' : v); return /[;"\n]/.test(t) ? '"' + t.replace(/"/g, '""') + '"' : t; }).join(';')).join('\r\n'); }
+  function baixar(nome, texto) { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([texto], { type: 'text/csv;charset=utf-8' })); a.download = nome; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500); }
+  function baixarCSV(L) {
+    if (!L.length) return toast('Nada para baixar.');
+    const cols = COLS.filter(c => H.cols.includes(c[0]));
+    baixar(`historico-inspecoes_${H.de}_a_${H.ate}.csv`, csvDe([cols.map(c => c[1])].concat(L.map(r => { const c = celulas(r); return cols.map(([k]) => c[k]); }))));
+  }
+  const PAPER_CSS = `body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1d1f2b;margin:24px;font-size:13px}h1{font-size:20px;text-align:center;margin:6px 0 4px}h2{font-size:15px;margin:22px 0 8px;padding-bottom:4px;border-bottom:2px solid #e3e5ee;text-transform:uppercase;letter-spacing:.04em}
+    table{width:100%;border-collapse:collapse}th,td{border-bottom:1px solid #e6e7ee;padding:6px 8px;text-align:left;vertical-align:top}th{background:#f4f5f9}.band{background:#f2d58a;text-align:center;font-weight:700;padding:10px;border-radius:4px;letter-spacing:.04em}
+    .info{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px;border:1px solid #e3e5ee;border-radius:6px;padding:10px 12px;margin:12px 0}.info b{color:#55596b;font-weight:600}.q{padding:9px 0;border-bottom:1px solid #eef0f5}.q .t{font-weight:600}
+    .ok{color:#178a4c;font-weight:700}.nc{color:#c43a3a;font-weight:700}.na{color:#6b6f80;font-weight:700}.ans{margin-top:3px}.com{color:#55596b;margin-top:3px;font-style:italic}.imgs{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}.imgs img{width:150px;height:150px;object-fit:cover;border-radius:4px;border:1px solid #ddd}
+    .sig{height:90px;border:1px solid #ddd;border-radius:4px;background:#fff}.ncbox{background:#fdf2f2;border:1px solid #f1c9c9;border-radius:6px;padding:8px 10px;margin-top:6px}.leg{font-size:12px;color:#55596b}.muted{color:#6b6f80}
+    @media print{body{margin:10mm}.noimg .imgs{display:none}}`;
+  const escopo = css => css.replace(/@media[^{]*\{([^{}]*\{[^}]*\})*[^}]*\}/g, '').replace(/(^|\})\s*([^{}]+)\{/g, (m, a, sel) => `${a} ${sel.split(',').map(x => /^body$/.test(x.trim()) ? '#paper' : '#paper ' + x.trim()).join(',')}{`);
+  function imprimirLista(L) {
+    const cols = COLS.filter(c => H.cols.includes(c[0])), w = window.open('', '_blank'); if (!w) return toast('Permita pop-ups para imprimir.');
+    w.document.write(`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Histórico de inspeções</title><style>${PAPER_CSS}</style></head><body>
+      <div class="band">${esc((H.ref && H.ref.obra.nome) || '')} · Histórico de inspeções</div><p class="muted">Período: ${new Date(H.de + 'T00:00').toLocaleDateString('pt-BR')} a ${new Date(H.ate + 'T00:00').toLocaleDateString('pt-BR')} · ${L.length} inspeção(ões)</p>
+      <table><thead><tr>${cols.map(c => `<th>${c[1]}</th>`).join('')}</tr></thead><tbody>${L.map(r => { const c = celulas(r); return `<tr>${cols.map(([k]) => `<td>${esc(c[k])}</td>`).join('')}</tr>`; }).join('')}</tbody></table>
+      <script>setTimeout(function(){print()},300)<\/script></body></html>`);
+    w.document.close();
+  }
+
+  // ---------- relatório de uma inspeção ----------
+  async function abrirRelatorio(id) {
+    const ov = document.createElement('div'); ov.className = 'rep-ov'; ov.innerHTML = '<div class="rep-box"><div class="rep-bar"><h3>Carregando relatório…</h3><button class="ghost" data-x>Fechar</button></div></div>';
+    document.body.appendChild(ov); const fechar = () => { ov.remove(); if (location.hash.startsWith('#insp=')) history.replaceState(null, '', location.pathname); };
+    ov.onclick = e => { if (e.target === ov) fechar(); }; ov.querySelector('[data-x]').onclick = fechar;
+    try {
+      const R = await refHist(); if (!H.fr) { H.fr = {}; R.frentes.forEach(f => { H.fr[f.id] = f; }); }
+      const [ir, nr] = await Promise.all([S.sb.from('inspecoes').select('*').eq('id', id).maybeSingle(), S.sb.from('ncs').select('*').eq('inspecao_id', id)]);
+      if (ir.error || !ir.data) throw new Error(ir.error ? ir.error.message : 'Inspeção não encontrada.');
+      const I = ir.data, N = nr.data || [], T = tipoDe(I.tipo), resp = I.respostas || {};
+      const ids = new Set([I.foto_local_id, ...N.map(n => n.foto_id), ...N.map(n => n.foto_correcao_id)]);
+      Object.values(resp).forEach(r => { if (r && typeof r === 'object') { (r.f || []).forEach(x => ids.add(x)); if (r.assinatura) ids.add(r.assinatura); } });
+      const lista = [...ids].filter(Boolean), fotos = {};
+      for (let k = 0; k < lista.length; k += 30) { const fr = await S.sb.from('fotos').select('id,dados').in('id', lista.slice(k, k + 30)); (fr.data || []).forEach(f => { fotos[f.id] = f.dados; }); }
+      const html = relatorioHTML(I, N, T, fotos, R);
+      const titulo = `${T.nome} · ${fDT(I.criado_em)}`;
+      ov.querySelector('.rep-box').innerHTML = `<div class="rep-bar"><h3>${esc(T.nome)}</h3>
+        <button class="primary" data-pdf>Imprimir e gerar PDF</button><button class="ghost" data-csv>Baixar CSV</button><button class="ghost" data-share>Compartilhar</button><button class="ghost" data-img>Ocultar imagens</button><button class="ghost" data-x>Fechar</button></div>
+        <div class="paper" id="paper"><style>${escopo(PAPER_CSS)}</style>${html}</div>`;
+      const q = s => ov.querySelector(s);
+      q('[data-x]').onclick = fechar;
+      q('[data-img]').onclick = e => { const p = q('#paper'); p.classList.toggle('noimg'); p.querySelectorAll('.imgs,.sig').forEach(x => { x.style.display = p.classList.contains('noimg') ? 'none' : ''; }); e.target.textContent = p.classList.contains('noimg') ? 'Mostrar imagens' : 'Ocultar imagens'; };
+      q('[data-pdf]').onclick = () => { const w = window.open('', '_blank'); if (!w) return toast('Permita pop-ups para gerar o PDF.');
+        const noimg = q('#paper').classList.contains('noimg');
+        w.document.write(`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${esc(titulo)}</title><style>${PAPER_CSS}</style></head><body class="${noimg ? 'noimg' : ''}">${html}<script>window.onload=function(){setTimeout(function(){print()},300)}<\/script></body></html>`); w.document.close(); };
+      q('[data-csv]').onclick = () => baixar(`${slug(T.nome)}_${I.criado_em.slice(0, 10)}.csv`, csvDe(linhasRelatorio(I, N, T)));
+      q('[data-share]').onclick = () => { const link = `${location.origin}${location.pathname}#insp=${I.id}`; (navigator.clipboard ? navigator.clipboard.writeText(link) : Promise.reject()).then(() => toast('Link copiado. Quem abrir precisa entrar no Painel como administrador.'), () => prompt('Copie o link:', link)); };
+    } catch (e) { ov.querySelector('.rep-box').innerHTML = `<div class="rep-bar"><h3>Não foi possível abrir</h3><button class="ghost" data-x>Fechar</button></div><p class="err" style="padding:16px">${esc(e.message || String(e))}</p>`; ov.querySelector('[data-x]').onclick = fechar; }
+  }
+  const ST_NC = { aberta: 'Enviada ao líder', vista: 'Vista pelo líder', corrigida: 'Corrigida (aguardando validação)', encerrada: 'Encerrada' };
+  function camposForm(T) { return (T.estrutura && T.estrutura.itens || []).map(it => ({ nome: it.nome, campos: it.subitens || [] })); }
+  function respTexto(f, r) {
+    if (!r) return ''; if (f.tipo === 'assinatura') return r.assinatura ? 'Assinado' : '';
+    if (Array.isArray(r.v)) return r.v.join(', ');
+    if (f.tipo === 'data' && r.v) return new Date(r.v + 'T00:00').toLocaleDateString('pt-BR');
+    return r.v == null ? '' : String(r.v);
+  }
+  function relatorioHTML(I, N, T, fotos, R) {
+    const fr = H.fr[I.frente_id], mar = H.fr[marDe(I.frente_id)], at = S.ativ.find(a => a.id === I.atividade_id), resp = I.respostas || {};
+    const img = id => fotos[id] ? `<img src="${fotos[id]}" alt="">` : '';
+    const ncDo = key => N.find(n => n.item_id === key);
+    const ncBox = n => n ? `<div class="ncbox"><b>NC:</b> ${esc(ST_NC[n.status] || n.status)} · responsável ${esc(n.responsavel_nome || '—')} · prazo ${n.prazo ? fDT(n.prazo) : '—'}${n.descricao ? `<div>${esc(n.descricao)}</div>` : ''}
+      ${n.comentario_correcao ? `<div class="com">Correção: ${esc(n.comentario_correcao)}</div>` : ''}<div class="imgs">${img(n.foto_id)}${img(n.foto_correcao_id)}</div></div>` : '';
+    let corpo = '';
+    if (T.modo === 'formulario' && T.estrutura) {
+      corpo = camposForm(T).map(sec => `<h2>${esc(sec.nome)}</h2>` + sec.campos.map(f => { const r = resp[f.id]; const tx = respTexto(f, r);
+        const cls = f.tipo === 'avaliacao' && r ? (r.nc ? 'nc' : r.na ? 'na' : 'ok') : '';
+        return `<div class="q"><div class="t">${esc(f.id ? f.id + ' - ' : '')}${esc(f.nome)}</div><div class="ans ${cls}">${cls === 'ok' ? '✔ ' : cls === 'nc' ? '✖ ' : ''}${tx ? esc(tx) : '<span class="muted">Não respondido</span>'}</div>
+          ${r && r.c ? `<div class="com">Comentário: ${esc(r.c)}</div>` : ''}${r && r.assinatura && fotos[r.assinatura] ? `<img class="sig" src="${fotos[r.assinatura]}" alt="Assinatura">` : ''}
+          ${r && (r.f || []).length ? `<div class="imgs">${r.f.map(img).join('')}</div>` : ''}${r && r.nc ? ncBox(ncDo(T.id + ':' + f.id)) : ''}</div>`; }).join('')).join('');
+    } else {
+      const its = S.itens.filter(i => i.tipo === I.tipo && resp[i.id] != null).sort((a, b) => a.ordem - b.ordem), grupos = [];
+      its.forEach(i => { let g = grupos.find(x => x.n === (i.secao || 'Itens')); if (!g) { g = { n: i.secao || 'Itens', l: [] }; grupos.push(g); } g.l.push(i); });
+      const orf = Object.keys(resp).filter(k => !its.some(i => i.id === k));
+      corpo = grupos.map(g => `<h2>${esc(g.n)}</h2>` + g.l.map(i => { const v = resp[i.id];
+        return `<div class="q"><div class="t">${esc(i.pergunta)}</div><div class="ans ${v === 'C' ? 'ok' : v === 'NC' ? 'nc' : 'na'}">${v === 'C' ? '✔ Conforme' : v === 'NC' ? '✖ Não conforme' : 'Não se aplica'}</div>${v === 'NC' ? ncBox(ncDo(i.id)) : ''}</div>`; }).join('')).join('')
+        + (orf.length ? `<h2>Itens retirados do checklist</h2>` + orf.map(k => `<div class="q"><div class="t muted">${esc((N.find(n => n.item_id === k) || {}).pergunta || k)}</div><div class="ans">${esc(resp[k])}</div></div>`).join('') : '');
+    }
+    return `<div class="band">${esc(R.obra.nome)}</div>
+      <p class="leg">Legenda: <span class="ok">✔</span> conforme · <span class="nc">✖</span> não conforme</p>
+      <h1>${esc(T.nome)}</h1>
+      <div class="info"><div><b>Obra:</b> ${esc(R.obra.nome)}</div><div><b>Usuário:</b> ${esc(nomeP(I.autor_id))}</div>
+        <div><b>Área:</b> ${esc(mar ? mar.nome : '—')}</div><div><b>Data:</b> ${fDT(I.criado_em)}</div>
+        <div><b>Subfrente:</b> ${esc(fr ? fr.nome : '—')}</div><div><b>Líder:</b> ${esc(I.lider_nome || '—')}</div>
+        <div><b>Atividade:</b> ${esc(at ? at.nome : '—')}</div><div><b>Score:</b> ${I.conformidade == null ? '—' : I.conformidade + '%'}${N.length ? ` · ${N.length} NC(s)` : ''}</div></div>
+      ${I.foto_local_id && fotos[I.foto_local_id] && T.modo !== 'formulario' ? `<h2>Foto do local</h2><div class="imgs">${img(I.foto_local_id)}</div>` : ''}
+      ${corpo}${I.observacoes ? `<h2>Observações</h2><p>${esc(I.observacoes)}</p>` : ''}`;
+  }
+  function linhasRelatorio(I, N, T) {
+    const resp = I.respostas || {}, out = [['Seção', 'Pergunta', 'Resposta', 'Comentário', 'NC']];
+    if (T.modo === 'formulario' && T.estrutura) camposForm(T).forEach(sec => sec.campos.forEach(f => { const r = resp[f.id]; out.push([sec.nome, (f.id ? f.id + ' - ' : '') + f.nome, respTexto(f, r), r && r.c || '', r && r.nc ? 'Sim' : '']); }));
+    else S.itens.filter(i => i.tipo === I.tipo && resp[i.id] != null).sort((a, b) => a.ordem - b.ordem).forEach(i => { const v = resp[i.id], n = N.find(x => x.item_id === i.id);
+      out.push([i.secao || '', i.pergunta, v === 'C' ? 'Conforme' : v === 'NC' ? 'Não conforme' : 'Não se aplica', n && n.descricao || '', v === 'NC' ? 'Sim' : '']); });
+    return [['Inspeção', T.nome], ['Data', fDT(I.criado_em)], ['Usuário', nomeP(I.autor_id)], ['Subfrente', (H.fr[I.frente_id] || {}).nome || ''], ['Líder', I.lider_nome || ''], ['Score', I.conformidade == null ? '' : I.conformidade + '%'], []].concat(out);
+  }
 
   // ---------- formulários (somente leitura) ----------
   const TIPO_CAMPO = { texto: 'Texto', selecao: 'Seleção', avaliacao: 'Avaliação', data: 'Data', hora: 'Hora', numero: 'Número', assinatura: 'Assinatura', email: 'E-mail', telefone: 'Telefone', cpfcnpj: 'CPF/CNPJ', cep: 'CEP', placa: 'Placa', valorMedida: 'Valor/medida', lista: 'Lista de textos' };
