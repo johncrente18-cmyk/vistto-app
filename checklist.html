@@ -173,7 +173,7 @@
   const TIPOS_PADRAO = [{ id: 'caminhada', nome: 'Caminhada de segurança', descricao: 'Ferramentas, EPI, documentação e os riscos da atividade do dia', usa_atividade: true, ordem: 1, ativo: true },
     { id: 'vivencia', nome: 'Área de vivência (Meta 01)', descricao: 'Documentação e estrutura da área de vivência', usa_atividade: false, ordem: 2, ativo: true }];
   const RESERVADOS = ['tipos', 'atividades', 'pessoas', 'historico'];
-  const GRUPOS = [['veiculos', 'Inspeções de Veículos'], ['gerencia', 'Inspeção Gerência'], ['campo', 'Inspeções de Campo TSTs']];
+  const GRUPOS = [['veiculos', 'Inspeções de Veículos-Máquinas-Equipamentos'], ['gerencia', 'Inspeção Gerência'], ['campo', 'Inspeções de Campo TSTs']];
   const grupoDe = t => t.grupo || (t.id === 'caminhada' || t.id === 'vivencia' ? 'gerencia' : 'campo');
   const tipoDe = id => (S.tipos || []).find(t => t.id === id) || TIPOS_PADRAO.find(t => t.id === id) || { id, nome: id, usa_atividade: false };
   const ehForm = id => { const t = tipoDe(id); return t.modo === 'formulario' && t.estrutura && Array.isArray(t.estrutura.itens); };
@@ -279,7 +279,8 @@
 
   function render() {
     const tps = [...S.tipos].sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
-    const nav = [['Checklists', tps.map(t => [t.id, t.nome + (t.ativo === false ? ' (desativado)' : ''), t.id === 'caminhada' ? 'walk' : t.id === 'vivencia' ? 'tent' : 'clip'])],
+    const navT = t => [t.id, t.nome + (t.ativo === false ? ' (desativado)' : ''), t.id === 'caminhada' ? 'walk' : t.id === 'vivencia' ? 'tent' : 'clip'];
+    const nav = [...GRUPOS.slice().reverse().map(([g, l]) => [l.replace('Inspeções de ', '').replace('Inspeção ', ''), tps.filter(t => grupoDe(t) === g).map(navT)]).filter(x => x[1].length),
       ['Relatórios', [['historico', 'Histórico de inspeções', 'chart']]], ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
     $app.innerHTML = `
       <header>

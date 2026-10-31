@@ -1,0 +1,447 @@
+{
+ "origem": "ObraSoft · Controle de Vencimentos · Máquinas e Equipamentos (SPGA - Consórcio Solar Paraíso)",
+ "lido_em": "2026-10-31",
+ "total": 44,
+ "tipos": [
+  {
+   "id": "vme-carros-leve-e-4x4-csp",
+   "nome": "Carros Leve e 4x4 - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 100,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-caminhao-betoneira-csp",
+   "nome": "Caminhão Betoneira - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 101,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-equipamentos-csp",
+   "nome": "Equipamentos - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 102,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-motobomba-csp",
+   "nome": "Motobomba CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 103,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-onibus-csp",
+   "nome": "Ônibus - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 104,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-caminhao-cabinado-csp",
+   "nome": "Caminhão Cabinado - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 105,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-escavadeira-hidraulica-20t-csp",
+   "nome": "Escavadeira Hidráulica 20T CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 106,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-caminhao-basculante-csp",
+   "nome": "Caminhão Basculante CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 107,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-caminhao-prancha-csp",
+   "nome": "Caminhão Prancha CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 108,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-gerador-csp",
+   "nome": "Gerador - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 109,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-retroescavadeira-csp",
+   "nome": "Retroescavadeira - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 110,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-ambulancia-csp",
+   "nome": "Ambulância - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 111,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-andaimes-csp",
+   "nome": "Andaimes - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 112,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-manipulador-telescopico-csp",
+   "nome": "Manipulador Telescópico - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 113,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-motoniveladora-csp",
+   "nome": "Motoniveladora - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 114,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-serra-circular-csp",
+   "nome": "Serra Circular - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 115,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-maquina-de-solda-csp",
+   "nome": "Máquina de Solda CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 116,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-retificadora-de-corpo-de-prova-csp",
+   "nome": "Retificadora de Corpo de Prova - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 117,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-extrusora-csp",
+   "nome": "Extrusora - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 118,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-rolo-compactador-csp",
+   "nome": "Rolo Compactador - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 119,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-betoneira-csp",
+   "nome": "Betoneira - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 120,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-dumper-csp",
+   "nome": "Dumper - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 121,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-caminhao-pipa-csp",
+   "nome": "Caminhão Pipa - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 122,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-posto-de-abastecimento-csp",
+   "nome": "Posto de Abastecimento - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 123,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-trator-pneu-esteira-csp",
+   "nome": "Trator (Pneu/Esteira) CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 124,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-munck-csp",
+   "nome": "Munck - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 125,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-pemt-csp",
+   "nome": "PEMT - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 126,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-bate-estaca-cravadora-csp",
+   "nome": "Bate Estaca/Cravadora CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 127,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-pa-carregadeira-csp",
+   "nome": "Pá Carregadeira - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 128,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-rocadeira-costal-csp",
+   "nome": "Roçadeira Costal - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 129,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-caminhao-comboio-csp",
+   "nome": "Caminhão Comboio - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 130,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "nome": "Cavalo Mecânico/ Caminhão Prancha - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 131,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-combustivel-reboque-csp",
+   "nome": "Combustível (Reboque) - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 132,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-carretinha-reboque-csp",
+   "nome": "Carretinha (Reboque) - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 133,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-torre-de-iluminacao-csp",
+   "nome": "Torre de Iluminação - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 134,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-triturador-de-arraste-palhada-csp",
+   "nome": "Triturador de Arraste/ Palhada - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 135,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-compressor-csp",
+   "nome": "Compressor - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 136,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-guindaste-csp",
+   "nome": "Guindaste - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 137,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-valetadeira-sso-csp",
+   "nome": "Valetadeira - SSO - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 138,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-conjunto-oxicort-csp",
+   "nome": "Conjunto Oxicort - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 139,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-caminhao-perfuratriz-csp",
+   "nome": "Caminhão Perfuratriz - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 140,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-vibrador-de-concreto-csp",
+   "nome": "Vibrador de Concreto - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 141,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-compactador-de-solo-manual-csp",
+   "nome": "Compactador de Solo Manual - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 142,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-esmeril-de-bancada-csp",
+   "nome": "Esmeril de Bancada - CSP",
+   "descricao": null,
+   "usa_atividade": false,
+   "ordem": 143,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  }
+ ]
+}
