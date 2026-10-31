@@ -1,0 +1,152 @@
+{
+ "tipo": "vme-escavadeira-hidraulica-20t-csp",
+ "nome": "Escavadeira Hidráulica 20T CSP",
+ "criterio": "Segurança do Trabalho, só a máquina, sem documentação e sem itens mecânicos (verificável pelo TST)",
+ "criado_em": "2026-10-31",
+ "itens": [
+  {
+   "id": "esc01",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 1,
+   "pergunta": "Estrutura de proteção da cabine (ROPS/FOPS e grade frontal) presente e sem danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "esc02",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 2,
+   "pergunta": "Vidros íntegros, sem trincas que prejudiquem a visão",
+   "ativo": true
+  },
+  {
+   "id": "esc03",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 3,
+   "pergunta": "Porta fecha e trava, e a saída de emergência da cabine está desobstruída",
+   "ativo": true
+  },
+  {
+   "id": "esc04",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 4,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "esc05",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Alavanca de bloqueio dos comandos (trava de segurança) presente e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "esc06",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Alarme de ré e de translação e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "esc07",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Giroflex, faróis e iluminação de trabalho funcionando",
+   "ativo": true
+  },
+  {
+   "id": "esc08",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 8,
+   "pergunta": "Espelhos retrovisores presentes e íntegros, e câmera funcionando (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "esc09",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Acesso à máquina",
+   "ordem": 9,
+   "pergunta": "Degraus, estribos, corrimãos e pega-mãos presentes, firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "esc10",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 10,
+   "pergunta": "Proteções de partes móveis (correias, polias, ventilador) instaladas, e tampas fechadas",
+   "ativo": true
+  },
+  {
+   "id": "esc11",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 11,
+   "pergunta": "Engate rápido da caçamba com trava de segurança acionada (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "esc12",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 12,
+   "pergunta": "Ponto de içamento com trava de segurança no gancho (quando a máquina for usada para içar)",
+   "ativo": true
+  },
+  {
+   "id": "esc13",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 13,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível na máquina ou no solo",
+   "ativo": true
+  },
+  {
+   "id": "esc14",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 14,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "esc15",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 15,
+   "pergunta": "Kit de mitigação ambiental presente na máquina",
+   "ativo": true
+  },
+  {
+   "id": "esc16",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Sinalização na máquina",
+   "ordem": 16,
+   "pergunta": "Adesivos de segurança legíveis (área de giro, esmagamento, içamento) e faixas refletivas presentes",
+   "ativo": true
+  }
+ ]
+}
