@@ -1,0 +1,546 @@
+{
+ "origem": "Menu de Check-List - Consórcio Solar Paraíso (imagem enviada pelo usuário em 31/10/2026): itens que não estavam no ObraSoft",
+ "total": 54,
+ "tipos": [
+  {
+   "id": "vme-mini-escavadeira",
+   "nome": "Mini Escavadeira",
+   "descricao": "Veículos e máquinas",
+   "usa_atividade": false,
+   "ordem": 200,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-mini-carregadeira",
+   "nome": "Mini Carregadeira",
+   "descricao": "Veículos e máquinas",
+   "usa_atividade": false,
+   "ordem": 201,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-mini-rolo",
+   "nome": "Mini Rolo",
+   "descricao": "Veículos e máquinas",
+   "usa_atividade": false,
+   "ordem": 202,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-bobcat",
+   "nome": "Bobcat",
+   "descricao": "Veículos e máquinas",
+   "usa_atividade": false,
+   "ordem": 203,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-caminhao-bomba-lanca",
+   "nome": "Caminhão Bomba Lança",
+   "descricao": "Veículos e máquinas",
+   "usa_atividade": false,
+   "ordem": 204,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-caminhao-carroceria",
+   "nome": "Caminhão Carroceria",
+   "descricao": "Veículos e máquinas",
+   "usa_atividade": false,
+   "ordem": 205,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-van",
+   "nome": "Van",
+   "descricao": "Veículos e máquinas",
+   "usa_atividade": false,
+   "ordem": 206,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-perfuratriz",
+   "nome": "Perfuratriz",
+   "descricao": "Veículos e máquinas",
+   "usa_atividade": false,
+   "ordem": 207,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-policorte",
+   "nome": "Policorte",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 208,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-lixadeira",
+   "nome": "Lixadeira",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 209,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-placa-vibratoria",
+   "nome": "Placa Vibratória",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 210,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-macarico",
+   "nome": "Maçarico",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 211,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-tripe-sondagem",
+   "nome": "Tripé-Sondagem",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 212,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-mantelete-eletrico-pneumatico",
+   "nome": "Mantelete/Elétrico/Pneumático",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 213,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-mesa-vibratoria",
+   "nome": "Mesa Vibratória",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 214,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-kit-resgate",
+   "nome": "Kit Resgate",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 215,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-pneumatica",
+   "nome": "Pneumática",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 216,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-prensa-manual-de-concreto",
+   "nome": "Prensa Manual de Concreto",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 217,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-acessorios-de-lancamento",
+   "nome": "Acessórios de Lançamento",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 218,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-instalacoes-eletricas",
+   "nome": "Instalações Elétricas",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 219,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-conjunto-macarico",
+   "nome": "Conjunto Maçarico",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 220,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-soprador-de-folhas",
+   "nome": "Soprador de Folhas",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 221,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-serra-marmore",
+   "nome": "Serra Mármore",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 222,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-furadeira",
+   "nome": "Furadeira",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 223,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-furadeira-magnetica",
+   "nome": "Furadeira Magnética",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 224,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-parafusadeira",
+   "nome": "Parafusadeira",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 225,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-lixadeira-de-piso-mosaico",
+   "nome": "Lixadeira de Piso Mosaico",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 226,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-alisadora-de-concreto",
+   "nome": "Alisadora de Concreto",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 227,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-cinto-paraquedista",
+   "nome": "Cinto Paraquedista",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 228,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-motosserra",
+   "nome": "Motosserra",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 229,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-acessorio-de-guindar",
+   "nome": "Acessório de Guindar",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 230,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-estufa-de-secagem",
+   "nome": "Estufa de Secagem",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 231,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-maquina-de-vulcanizar",
+   "nome": "Máquina de Vulcanizar",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 232,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-macarico-portatil",
+   "nome": "Maçarico Portátil",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 233,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-prensa-eletrica-de-concreto",
+   "nome": "Prensa Elétrica de Concreto",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 234,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-area-de-vivencia",
+   "nome": "Área de Vivência",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 235,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-prensa-cabo",
+   "nome": "Prensa Cabo",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 236,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-lixadeira-c-led",
+   "nome": "Lixadeira c/ LED",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 237,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-espora-p-poste",
+   "nome": "Espora p/ Poste",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 238,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-compressor-de-pintura",
+   "nome": "Compressor de Pintura",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 239,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-furadeira-de-impacto",
+   "nome": "Furadeira de Impacto",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 240,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-serra-cortadora-angular",
+   "nome": "Serra Cortadora Angular",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 241,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-serra-cliper",
+   "nome": "Serra Cliper",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 242,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-usina-de-concreto",
+   "nome": "Usina de Concreto",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 243,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-trado-manual",
+   "nome": "Trado Manual",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 244,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-serra-tico-tico",
+   "nome": "Serra Tico-Tico",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 245,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-trava-quedas",
+   "nome": "Trava-Quedas",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 246,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-quadro-eletrico",
+   "nome": "Quadro Elétrico",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 247,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-bomba-de-lavagem",
+   "nome": "Bomba de Lavagem",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 248,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-retifica-eletrica",
+   "nome": "Retífica Elétrica",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 249,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-prensa-manual-de-cbr",
+   "nome": "Prensa Manual de CBR",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 250,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-corta-cabo",
+   "nome": "Corta Cabo",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 251,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-rebitadeira",
+   "nome": "Rebitadeira",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 252,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-ferramentas-manuais",
+   "nome": "Ferramentas Manuais",
+   "descricao": "Ferramentas e adversos",
+   "usa_atividade": false,
+   "ordem": 253,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  }
+ ]
+}
