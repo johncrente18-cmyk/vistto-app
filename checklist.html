@@ -138,7 +138,9 @@
     { id: 'vivencia', nome: 'Área de vivência (Meta 01)', descricao: 'Documentação e estrutura da área de vivência', usa_atividade: false, ordem: 2, ativo: true }];
   const RESERVADOS = ['tipos', 'atividades', 'pessoas'];
   const tipoDe = id => (S.tipos || []).find(t => t.id === id) || TIPOS_PADRAO.find(t => t.id === id) || { id, nome: id, usa_atividade: false };
-  const usaAtiv = id => !!tipoDe(id).usa_atividade;
+  const ehForm = id => { const t = tipoDe(id); return t.modo === 'formulario' && t.estrutura && Array.isArray(t.estrutura.itens); };
+  const nCampos = id => ehForm(id) ? tipoDe(id).estrutura.itens.reduce((a, it) => a + (it.subitens || []).length, 0) : 0;
+  const usaAtiv = id => !ehForm(id) && !!tipoDe(id).usa_atividade;
   const $app = document.getElementById('app');
   const S = { sb: null, user: null, papel: null, itens: [], ativ: [], tipos: null, semTabelaTipos: false, tab: 'caminhada', status: 'ok', pend: 0, err: '', novoMod: '' };
   const timers = {};
@@ -254,7 +256,7 @@
     document.getElementById('sair').onclick = sair;
     $app.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { S.tab = b.dataset.tab; render(); window.scrollTo(0, 0); });
     setStatus();
-    if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else renderItens(S.tab);
+    if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
   }
 
   function modulosDe(tipo) {
@@ -403,6 +405,25 @@
   }
 
 
+  // ---------- formulários (somente leitura) ----------
+  const TIPO_CAMPO = { texto: 'Texto', selecao: 'Seleção', avaliacao: 'Avaliação', data: 'Data', hora: 'Hora', numero: 'Número', assinatura: 'Assinatura', email: 'E-mail', telefone: 'Telefone', cpfcnpj: 'CPF/CNPJ', cep: 'CEP', placa: 'Placa', valorMedida: 'Valor/medida', lista: 'Lista de textos' };
+  function renderForm(id) {
+    const t = tipoDe(id), E = t.estrutura, o = E.origem || {};
+    const det = f => { const p = f.permite || {}, x = [];
+      if (f.tipo === 'texto' && f.longo) x.push('texto longo');
+      if (f.tipo === 'selecao') x.push(`${(f.opcoes || []).length} opções${f.multipla ? ', várias respostas' : ''}`);
+      if (f.tipo === 'avaliacao') x.push((f.opcoes || []).map(q => `${q.rotulo} (${q.valor})`).join(' / ') + (f.na ? ' / ' + f.na : '') + ' · NÃO CONFORME abre NC');
+      const perm = ['foto', 'galeria', 'arquivo', 'comentario'].filter(k => p[k]); if (perm.length) x.push('permite ' + perm.join(', ').replace('comentario', 'comentário'));
+      return x.join(' · '); };
+    document.getElementById('main').innerHTML = `<h1 style="font-size:22px;margin:22px 0 0">${esc(t.nome)}</h1>
+      <p class="hint">Formulário com ${nCampos(id)} campos${o.sistema ? ` · importado do ${esc(o.sistema)} (versão ${esc(o.versao)}, lido em ${esc(o.lido_em || '')})` : ''}. Para mudar campos ou opções, peça ao Claude. Os campos com * são obrigatórios.</p>
+      ${E.itens.map(it => `<section class="group"><div class="ghead"><h2>${esc(it.nome)}</h2></div>${(it.subitens || []).map(f => `
+        <div class="item" style="grid-template-columns:44px 1fr"><div class="num">${esc(f.id || '')}</div>
+          <div class="fields"><div><b>${esc(f.nome)}</b>${f.obrigatorio ? ' <span style="color:var(--bad)">*</span>' : ''} <span class="badge" style="margin-left:6px">${esc(TIPO_CAMPO[f.tipo] || f.tipo)}</span></div>
+          <div class="hint" style="margin:0">${esc(det(f))}</div>
+          ${f.tipo === 'selecao' && (f.opcoes || []).length ? `<details><summary class="hint" style="margin:0;cursor:pointer">Ver opções</summary><div class="chips" style="margin-top:6px">${f.opcoes.map(x => `<span class="chip" style="cursor:default">${esc(x)}</span>`).join('')}</div></details>` : ''}</div></div>`).join('')}</section>`).join('')}`;
+  }
+
   // ---------- tipos de inspeção ----------
   function renderTipos() {
     const main = document.getElementById('main');
@@ -425,10 +446,10 @@
               </div>
             </div>
             <div class="chips" style="align-items:center">
-              <label class="chip"><input type="checkbox" data-f="usa_atividade" ${t.usa_atividade ? 'checked' : ''}>Soma os riscos da atividade do dia</label>
+              ${ehForm(t.id) ? '<span class="badge">Formulário</span>' : `<label class="chip"><input type="checkbox" data-f="usa_atividade" ${t.usa_atividade ? 'checked' : ''}>Soma os riscos da atividade do dia</label>`}
               <label class="chip"><input type="checkbox" data-f="ativo" ${t.ativo !== false ? 'checked' : ''}>Aparece no app</label>
-              <span class="hint" style="margin:0">${cnt(t.id)} item(ns) no checklist</span>
-              <button class="ghost" data-go="${esc(t.id)}" style="margin-left:auto">Editar checklist →</button>
+              <span class="hint" style="margin:0">${ehForm(t.id) ? nCampos(t.id) + ' campo(s)' : cnt(t.id) + ' item(ns) no checklist'}</span>
+              <button class="ghost" data-go="${esc(t.id)}" style="margin-left:auto">${ehForm(t.id) ? 'Ver formulário →' : 'Editar checklist →'}</button>
             </div>
           </div>`).join('')}
         <div class="add"><input type="text" id="nt" placeholder="Novo tipo (ex.: Inspeção de andaime)" style="max-width:340px"><button class="ghost" id="ntb">Criar tipo</button></div>

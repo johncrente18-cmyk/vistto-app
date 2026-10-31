@@ -1,0 +1,352 @@
+{
+ "id": "rci",
+ "nome": "RCI - Relatório de Condição Insegura",
+ "descricao": "Condição insegura: local, tipologia, causa, risco e ações",
+ "usa_atividade": false,
+ "ordem": 3,
+ "ativo": true,
+ "modo": "formulario",
+ "estrutura": {
+  "versao": 1,
+  "origem": {
+   "sistema": "Axyma Forms",
+   "modelo": "RCI - RELATÓRIO DE CONDIÇÃO INSEGURA ( SEGURANÇA )",
+   "versao": 15,
+   "id": "-Op-Y33p8VCY5Dpd-Tk9",
+   "lido_em": "2026-10-31"
+  },
+  "itens": [
+   {
+    "id": "1",
+    "nome": "IDENTIFICAÇÃO",
+    "subitens": [
+     {
+      "id": "1.1",
+      "nome": "Local da Condição Insegura",
+      "tipo": "texto",
+      "longo": true,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "galeria": true
+      }
+     },
+     {
+      "id": "1.2",
+      "nome": "Atividade em Execução",
+      "tipo": "texto",
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "galeria": true
+      }
+     },
+     {
+      "id": "1.3",
+      "nome": "Responsável (Nome e Sobrenome)",
+      "tipo": "texto",
+      "permite": {
+       "foto": true,
+       "galeria": true,
+       "arquivo": true
+      }
+     },
+     {
+      "id": "1.4",
+      "nome": "Engenheiro / Supervisor",
+      "tipo": "selecao",
+      "opcoes": [
+       "AILTON RIBEIRO DA SILVA",
+       "ALBERICO VIANA COSTA",
+       "ALEX FABIANO COSTA PEREIRA",
+       "ANTONIO CHAVES FELIX",
+       "ANTONIO JOSE DA CRUZ PEREIRA",
+       "ANTONIO JOSE DE SOUZA JUNIOR",
+       "ANTONIO LEITE PEREIRA FILHO",
+       "ARMSTRONG TEIXEIRA DE SOUZA",
+       "BRENO FREITAS DE SOUZA GOMES",
+       "CAIO BARBOZA CAMELO",
+       "CARLOS MIRANDA DA SILVA MALAQUIAS",
+       "CLENILSON LAURENTINO DA CUNHA",
+       "CLERISTON SILVA DE SOUSA",
+       "ELIEL AMANCIO DE LIMA",
+       "EMERSON MEDEIROS DE LIMA",
+       "FELIPE JOSE TRAVASSO OLIVEIRA",
+       "FERNANDO BRAZ DE OLIVEIRA BARRETO",
+       "FLAUDNEI VALBNER SANTOS DE SANTANA",
+       "FLAVIO RODRIGUES FREIRE",
+       "FRANCIELTON PEREIRA DA SILVA",
+       "FRANCISCO ALBERTO DE OLIVEIRA LIMA",
+       "FRANCISCO CANINDE PEREIRA DA SILVA",
+       "FRANCISCO JOHNATAN SOARES DE SOUZA",
+       "GABRIEL BARBOSA MARQUES",
+       "GENIVALDO DOS SANTOS",
+       "GEORGE RODRIGUES DE SENA",
+       "GEOVANE NEGRAO EVANGELISTA",
+       "GUSTAVO FRANCISCO DOS SANTOS",
+       "HIGOR ANTONIO SOUZA MATOS DOS ANJOS",
+       "HIORLANDO CICERO BRITO ARAUJO",
+       "ISAAC GABRIEL PEIXOTO BORGES DE OLIVEIRA",
+       "IVANILDO DA SILVA RAMOS",
+       "JAIRO DE SOUSA NEVES",
+       "JAKSON DA SILVA VIEIRA",
+       "JOAO MARCELO DE LIMA RODRIGUES",
+       "JONAS PESSOA DA SILVA",
+       "JOSE FELIPE DA SILVA NETO",
+       "JOSE JARIAN CAMARA",
+       "JOSE MARIA DE MOURA FE GOMES",
+       "JOSE ROBERTO DE ARAUJO DIAS",
+       "JULIO PEREIRA DE SOUZA",
+       "JULISMAR JOSE DE MELO",
+       "LAERCIO AMANCIO DE LIMA",
+       "LEONARDO GOMES PINHEIRO MARQUES",
+       "MARLON BRUNO ALVES PEREIRA",
+       "ODAECIO DE FRANCA",
+       "ODIVAL JOSE DA SILVA",
+       "OLAVO DA SILVA SOUSA",
+       "OSCAR MAURICIO BORBOREMA PORTO",
+       "PABLO ROBERTO DE LIMA OLIVEIRA",
+       "PAULO HENRIQUE ALMEIDA MELO",
+       "RAFAEL SOUSA DA COSTA",
+       "RAIMUNDO NONATO LOPES DE CASTRO",
+       "RAUL TEIXEIRA SILVA",
+       "REGINALDO PEREIRA DA SILVA JUNIOR",
+       "REINALDO FRANCISCO DE SANTANA JUNIOR",
+       "ROGER BATISTA DURAES MAGALHAES",
+       "ROGER DIONYS MARQUES GONCALVES",
+       "RUBENS CARVALHO DE LIMA",
+       "SAULO ADILSON DE AZEVEDO OLIVEIRA",
+       "SAVIO SIQUEIRA PEREIRA",
+       "SIMAO FERREIRA DO NASCIMENTO",
+       "THUANNY RAVELLY BENICIO DE ASSIS",
+       "VALDENE JOEL DA SILVA",
+       "VALDERLANIO DANIEL SANTOS",
+       "VICTOR GEIMERSON RODRIGUES DE ALMEIDA",
+       "WALDEZ JOSE MONTEIRO",
+       "Outro - Comente"
+      ],
+      "permite": {
+       "foto": true,
+       "galeria": true,
+       "arquivo": true,
+       "comentario": true
+      }
+     },
+     {
+      "id": "1.5",
+      "nome": "Setor",
+      "tipo": "selecao",
+      "opcoes": [
+       "Acessos externos",
+       "Acesso interno",
+       "Administração",
+       "Alojamento",
+       "Civil",
+       "Comissionamento",
+       "Elétrica",
+       "Eletromecânica",
+       "Drenagem",
+       "Logística",
+       "Meio Ambiente",
+       "Manutenção mecânica",
+       "Pré - Montagem",
+       "Terraplenagem",
+       "Topografia",
+       "Transporte",
+       "Refeição / Cozinha",
+       "Usina de Concreto",
+       "RMT",
+       "Supressão Vegetal",
+       "Outro: Comente"
+      ],
+      "permite": {
+       "foto": true,
+       "galeria": true,
+       "arquivo": true,
+       "comentario": true
+      }
+     }
+    ]
+   },
+   {
+    "id": "2",
+    "nome": "SITUAÇÃO",
+    "subitens": [
+     {
+      "id": "2.1",
+      "nome": "Tipologia do desvio",
+      "tipo": "selecao",
+      "multipla": true,
+      "opcoes": [
+       "Alojamento",
+       "Área de Vivência",
+       "Armazenamento Inadequado de Materiais",
+       "Bloqueio em Energia ( LOTO )",
+       "Condições de Ferramentas Manuais",
+       "Documentação",
+       "Extintor",
+       "EPI´s / EPC´s",
+       "Escada e Andaimes",
+       "Excesso de Carga em Equipamentos / Veículos",
+       "Iluminação Insuficiente",
+       "Improviso de Ferramentas",
+       "Máquinas e Equipamentos",
+       "Ônibus",
+       "Organização e Limpeza",
+       "Procedimento Operacional",
+       "Sinalização / Isolamento",
+       "Veículos Leves",
+       "Veículos Pesados",
+       "Outros - Comente"
+      ],
+      "permite": {
+       "foto": true,
+       "galeria": true,
+       "arquivo": true,
+       "comentario": true
+      }
+     },
+     {
+      "id": "2.2",
+      "nome": "Tipo de Registro",
+      "tipo": "selecao",
+      "opcoes": [
+       "Ver e Agir",
+       "Notificação",
+       "Paralisação"
+      ],
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "galeria": true,
+       "arquivo": true,
+       "comentario": true
+      }
+     },
+     {
+      "id": "2.3",
+      "nome": "Causa Provável",
+      "tipo": "selecao",
+      "multipla": true,
+      "opcoes": [
+       "Comportamental",
+       "Procedimento",
+       "Equipamento",
+       "Ferramenta",
+       "Estrutura Física",
+       "5S/Organização",
+       "Sinalização",
+       "Treinamento",
+       "EPI",
+       "EPC",
+       "Armazenamento",
+       "Condições Inadequadas",
+       "Proteção",
+       "Fatores Ambientais",
+       "Fatores Pessoais",
+       "Movimentação de Carga",
+       "Produtos Perigosos",
+       "Eletricidade",
+       "Outro: Especifique"
+      ],
+      "obrigatorio": true,
+      "permite": {
+       "comentario": true
+      }
+     },
+     {
+      "id": "2.4",
+      "nome": "Categoria do Risco",
+      "tipo": "selecao",
+      "opcoes": [
+       "Muito Alto",
+       "Alto",
+       "Médio",
+       "Baixo",
+       "Muito Baixo"
+      ],
+      "obrigatorio": true
+     },
+     {
+      "id": "2.5",
+      "nome": "A condição insegura foi devidamente sanada?",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "na": "Não se Aplica",
+      "peso": 1,
+      "permite": {
+       "foto": true,
+       "galeria": true,
+       "arquivo": true,
+       "comentario": true
+      }
+     }
+    ]
+   },
+   {
+    "id": "3",
+    "nome": "DESCRIÇÃO",
+    "subitens": [
+     {
+      "id": "3.1",
+      "nome": "Descrição",
+      "tipo": "texto",
+      "longo": true,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "galeria": true
+      }
+     },
+     {
+      "id": "3.2",
+      "nome": "Ação Imediata",
+      "tipo": "texto",
+      "longo": true,
+      "permite": {
+       "foto": true,
+       "galeria": true
+      }
+     },
+     {
+      "id": "3.3",
+      "nome": "Plano de Ação",
+      "tipo": "texto",
+      "longo": true
+     },
+     {
+      "id": "3.4",
+      "nome": "Prazo para Encerramento",
+      "tipo": "data",
+      "permite": {
+       "comentario": true
+      }
+     },
+     {
+      "id": "3.5",
+      "nome": "Responsável pelas Ações",
+      "tipo": "texto",
+      "permite": {
+       "foto": true,
+       "galeria": true
+      }
+     },
+     {
+      "id": "3.6",
+      "nome": "Assinatura do Responsável",
+      "tipo": "assinatura"
+     }
+    ]
+   }
+  ]
+ }
+}

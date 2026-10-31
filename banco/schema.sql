@@ -52,7 +52,9 @@ create table public.tipos_inspecao (
   descricao text,
   usa_atividade boolean not null default false,  -- soma os itens de risco da atividade do dia
   ordem int not null default 0,
-  ativo boolean not null default true
+  ativo boolean not null default true,
+  modo text not null default 'checklist',        -- checklist | formulario
+  estrutura jsonb                                 -- itens/subitens quando modo = formulario
 );
 
 create table public.checklist_itens (
