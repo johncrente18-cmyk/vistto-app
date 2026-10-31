@@ -258,6 +258,7 @@
     S.itens = it.data; S.ativ = at.data;
     const tp = await S.sb.from('tipos_inspecao').select('*').order('ordem');
     if (tp.error) { S.tipos = TIPOS_PADRAO.slice(); S.semTabelaTipos = true; } else S.tipos = tp.data.length ? tp.data : TIPOS_PADRAO.slice();
+    try { const eq = await S.sb.from('equipamentos').select('*').order('prefixo'); S.equip = eq.error ? [] : eq.data; } catch (e) { S.equip = []; }
     const hm = location.hash.match(/^#insp=([0-9a-f-]{36})$/i);
     if (hm) { S.tab = 'historico'; render(); abrirRelatorio(hm[1]); return; }
     render();
@@ -313,7 +314,8 @@
     const main = document.getElementById('main');
     const mods = modulosDe(tipo);
     const secoes = [...new Set(S.itens.filter(i => i.tipo === tipo).map(i => i.secao).filter(Boolean))];
-    let h = `<h1 style="font-size:22px;margin:22px 0 0">${esc(tipoDe(tipo).nome)}</h1><p class="hint">As mudanças são salvas sozinhas e chegam aos celulares em até 30 segundos (ou na hora em que o app é aberto).
+    const eqs = (S.equip || []).filter(e => e.tipo === tipo);
+    let h = `<h1 style="font-size:22px;margin:22px 0 0">${esc(tipoDe(tipo).nome)}</h1>${eqs.length ? `<details class="group" style="padding:12px 16px"><summary style="cursor:pointer"><b>Máquinas cadastradas (${eqs.length})</b> <span class="hint">· escolhidas no cabeçalho da inspeção</span></summary><div class="chips" style="margin-top:10px">${eqs.map(e => `<span class="chip" style="cursor:default"><b>${esc(e.prefixo || '')}</b> ${esc(e.modelo || '')} · ${esc(e.serie || '')}</span>`).join('')}</div></details>` : ''}<p class="hint">As mudanças são salvas sozinhas e chegam aos celulares em até 30 segundos (ou na hora em que o app é aberto).
       ${usaAtiv(tipo) ? 'Os itens de um risco só aparecem nas subfrentes cuja atividade usa aquele risco (veja a aba <b>Atividades e riscos</b>).' : ''}</p>
       <datalist id="secs">${secoes.map(s => `<option value="${esc(s)}">`).join('')}</datalist>`;
     let n = 0;
@@ -453,9 +455,9 @@
   const semAc = v => String(v || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
   const H = { de: isoD(new Date(Date.now() - 6 * 864e5)), ate: isoD(new Date()), open: true, f: { areas: [], subs: [], users: [], tipos: [], ativs: [], lideres: [] }, sit: '', scoreOn: false, sMin: 0, sMax: 100,
     rows: null, ncs: [], ref: null, page: 0, per: 10, cols: null, loading: false, err: '' };
-  const COLS = [['data', 'Data / hora'], ['tipo', 'Inspeção'], ['score', 'Score'], ['user', 'Usuário'], ['area', 'Área'], ['sub', 'Subfrente'], ['lider', 'Líder'], ['ativ', 'Atividade'], ['nc', 'NCs']];
+  const COLS = [['data', 'Data / hora'], ['tipo', 'Inspeção'], ['maq', 'Máquina'], ['score', 'Score'], ['user', 'Usuário'], ['area', 'Área'], ['sub', 'Subfrente'], ['lider', 'Líder'], ['ativ', 'Atividade'], ['nc', 'NCs']];
   try { H.cols = JSON.parse(localStorage.getItem('vistto_hcols')) || null; } catch (e) {}
-  if (!Array.isArray(H.cols)) H.cols = COLS.map(c => c[0]);
+  if (!Array.isArray(H.cols)) H.cols = COLS.map(c => c[0]); else if (!H.cols.includes('maq')) H.cols.splice(2, 0, 'maq');
 
   async function refHist() {
     if (H.ref) return H.ref;
@@ -499,7 +501,7 @@
   function celulas(r) {
     const f = H.fr[r.frente_id], m = H.fr[marDe(r.frente_id)], a = S.ativ.find(x => x.id === r.atividade_id), n = ncsDe(r.id), ab = n.filter(x => x.status === 'aberta' || x.status === 'vista').length;
     const sc = r.conformidade == null ? '—' : r.conformidade + '%';
-    return { data: fDT(r.criado_em), tipo: tipoDe(r.tipo).nome, score: sc, user: nomeP(r.autor_id), area: m ? m.nome : '—', sub: f ? (f.codigo || f.nome) : '—', lider: r.lider_nome || '—', ativ: a ? a.nome : '—', nc: n.length ? `${n.length}${ab ? ` (${ab} aberta${ab > 1 ? 's' : ''})` : ''}` : '0',
+    return { data: fDT(r.criado_em), tipo: tipoDe(r.tipo).nome, maq: r.equipamento || '—', score: sc, user: nomeP(r.autor_id), area: m ? m.nome : '—', sub: f ? (f.codigo || f.nome) : '—', lider: r.lider_nome || '—', ativ: a ? a.nome : '—', nc: n.length ? `${n.length}${ab ? ` (${ab} aberta${ab > 1 ? 's' : ''})` : ''}` : '0',
       scC: r.conformidade == null ? 'var(--muted)' : r.conformidade >= 90 ? 'var(--ok)' : r.conformidade >= 75 ? 'var(--warn)' : 'var(--bad)' };
   }
 
@@ -678,6 +680,7 @@
       <div class="info"><div><b>Obra:</b> ${esc(R.obra.nome)}</div><div><b>Usuário:</b> ${esc(nomeP(I.autor_id))}</div>
         <div><b>Área:</b> ${esc(mar ? mar.nome : '—')}</div><div><b>Data:</b> ${fDT(I.criado_em)}</div>
         <div><b>Subfrente:</b> ${esc(fr ? fr.nome : '—')}</div><div><b>Líder:</b> ${esc(I.lider_nome || '—')}</div>
+        ${I.equipamento ? `<div style="grid-column:1/-1"><b>Máquina / equipamento:</b> ${esc(I.equipamento)}</div>` : ''}
         <div><b>Atividade:</b> ${esc(at ? at.nome : '—')}</div><div><b>Score:</b> ${I.conformidade == null ? '—' : I.conformidade + '%'}${N.length ? ` · ${N.length} NC(s)` : ''}</div></div>
       ${I.foto_local_id && fotos[I.foto_local_id] && T.modo !== 'formulario' ? `<h2>Foto do local</h2><div class="imgs">${img(I.foto_local_id)}</div>` : ''}
       ${corpo}${I.observacoes ? `<h2>Observações</h2><p>${esc(I.observacoes)}</p>` : ''}`;
@@ -687,7 +690,7 @@
     if (T.modo === 'formulario' && T.estrutura) camposForm(T).forEach(sec => sec.campos.forEach(f => { const r = resp[f.id]; out.push([sec.nome, (f.id ? f.id + ' - ' : '') + f.nome, respTexto(f, r), r && r.c || '', r && r.nc ? 'Sim' : '']); }));
     else S.itens.filter(i => i.tipo === I.tipo && resp[i.id] != null).sort((a, b) => a.ordem - b.ordem).forEach(i => { const v = resp[i.id], n = N.find(x => x.item_id === i.id);
       out.push([i.secao || '', i.pergunta, v === 'C' ? 'Conforme' : v === 'NC' ? 'Não conforme' : 'Não se aplica', n && n.descricao || '', v === 'NC' ? 'Sim' : '']); });
-    return [['Inspeção', T.nome], ['Data', fDT(I.criado_em)], ['Usuário', nomeP(I.autor_id)], ['Subfrente', (H.fr[I.frente_id] || {}).nome || ''], ['Líder', I.lider_nome || ''], ['Score', I.conformidade == null ? '' : I.conformidade + '%'], []].concat(out);
+    return [['Inspeção', T.nome]].concat(I.equipamento ? [['Máquina', I.equipamento]] : []).concat([['Data', fDT(I.criado_em)], ['Usuário', nomeP(I.autor_id)], ['Subfrente', (H.fr[I.frente_id] || {}).nome || ''], ['Líder', I.lider_nome || ''], ['Score', I.conformidade == null ? '' : I.conformidade + '%'], []]).concat(out);
   }
 
   // ---------- formulários (somente leitura) ----------

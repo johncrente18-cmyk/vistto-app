@@ -68,6 +68,16 @@ create table public.checklist_itens (
   ativo boolean not null default true
 );
 
+create table public.equipamentos (
+  id text primary key,
+  tipo text not null,          -- tipo de inspeção a que a máquina pertence
+  prefixo text, modelo text, serie text,
+  descricao text not null,
+  ativo boolean not null default true,
+  origem text,
+  criado_em timestamptz not null default now()
+);
+
 -- ---------- Pessoas ----------
 create table public.profiles (
   id uuid primary key references auth.users(id) on delete cascade,
@@ -104,6 +114,8 @@ create table public.inspecoes (
   xp int not null default 0,
   foto_local_id uuid references public.fotos(id),
   observacoes text,
+  equipamento_id text,
+  equipamento text,
   criado_em timestamptz not null default now()
 );
 
@@ -129,6 +141,7 @@ create table public.ncs (
   encerrado_por uuid references public.profiles(id),
   nota_encerramento text,
   autor_id uuid default auth.uid() references public.profiles(id),
+  equipamento text,
   criado_em timestamptz not null default now(),
   atualizado_em timestamptz not null default now()
 );
@@ -184,6 +197,7 @@ alter table public.atividades enable row level security;
 alter table public.frentes enable row level security;
 alter table public.checklist_itens enable row level security;
 alter table public.tipos_inspecao enable row level security;
+alter table public.equipamentos enable row level security;
 alter table public.profiles enable row level security;
 alter table public.fotos enable row level security;
 alter table public.inspecoes enable row level security;
@@ -195,6 +209,8 @@ create policy ler on public.atividades for select to authenticated using (true);
 create policy ler on public.frentes for select to authenticated using (true);
 create policy ler on public.checklist_itens for select to authenticated using (true);
 create policy ler on public.tipos_inspecao for select to authenticated using (true);
+create policy ler on public.equipamentos for select to authenticated using (true);
+create policy admin_equip on public.equipamentos for all to authenticated using (public.meu_papel() = 'admin') with check (public.meu_papel() = 'admin');
 create policy ler on public.profiles for select to authenticated using (true);
 create policy ler on public.fotos for select to authenticated using (true);
 create policy ler on public.inspecoes for select to authenticated using (true);

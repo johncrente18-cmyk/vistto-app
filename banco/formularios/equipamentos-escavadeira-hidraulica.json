@@ -1,0 +1,146 @@
+{
+ "tipo": "vme-escavadeira-hidraulica-20t-csp",
+ "total": 14,
+ "equipamentos": [
+  {
+   "id": "eq-1f9210gxtnd522777",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "EH-03",
+   "modelo": "John Deere 210G",
+   "serie": "1F9210GXTND522777",
+   "descricao": "John Deere 210G / 1F9210GXTND522777 / EH-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-1f9210gxcmd522064",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "EH-02",
+   "modelo": "John Deere 210G",
+   "serie": "1F9210GXCMD522064",
+   "descricao": "Johnn Deere 210G / 1F9210GXCMD522064 / EH-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-0000sy021cfx575s8",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "EH-04",
+   "modelo": "SANY SY215H",
+   "serie": "0000SY021CFX575S8",
+   "descricao": "SANY SY215H / 0000SY021CFX575S8 / EH-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-0000sy021cfx576s8",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "EH-05",
+   "modelo": "SANY SY215H",
+   "serie": "0000SY021CFX576S8",
+   "descricao": "SANY SY215H / 0000SY021CFX576S8 / EH-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-sy003cf2705k8",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "ME-01",
+   "modelo": "SANY SY35U",
+   "serie": "SY003CF2705K8",
+   "descricao": "SANY SY35U / SY003CF2705K8 / ME-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-sy003cf3209k8",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "ME-02",
+   "modelo": "SANY SY35U",
+   "serie": "SY003CF3209K8",
+   "descricao": "SANY SY35U / SY003CF3209K8 / ME-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-xug00225atpa00184",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "EH-09",
+   "modelo": "XCMG XE225BR",
+   "serie": "XUG00225ATPA00184",
+   "descricao": "XCMG XE225BR / XUG00225ATPA00184 / EH-09",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-xug00225ctpa00179",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "EH-06",
+   "modelo": "XCMG XE225BR",
+   "serie": "XUG00225CTPA00179",
+   "descricao": "XCMG XE225BR / XUG00225CTPA00179 / EH-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-xug00225jtpa00178",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "EH-07",
+   "modelo": "XCMG XE225BR",
+   "serie": "XUG00225JTPA00178",
+   "descricao": "XCMG XE225BR / XUG00225JTPA00178 / EH-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-xug00225jtpa00407",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "EH-11",
+   "modelo": "XCMG XE225BR",
+   "serie": "XUG00225JTPA00407",
+   "descricao": "XCMG XE225BR / XUG00225JTPA00407 / EH-11",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-xug00225ktpa00177",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "EH-08",
+   "modelo": "XCMG XE225BR",
+   "serie": "XUG00225KTPA00177",
+   "descricao": "XCMG XE225BR / XUG00225KTPA00177 / EH-08",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-xug00225ltpa00879",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "EH-01",
+   "modelo": "XCMG XE225BR",
+   "serie": "XUG00225LTPA00879",
+   "descricao": "XCMG XE225BR / XUG00225LTPA00879 / EH-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-xug00225vtpa00183",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "EH-10",
+   "modelo": "XCMG XE225BR",
+   "serie": "XUG00225VTPA00183",
+   "descricao": "XCMG XE225BR / XUG00225VTPA00183 / EH-10",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  },
+  {
+   "id": "eq-bh260",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "prefixo": "ME-03",
+   "modelo": "YANMAR VIO35",
+   "serie": "BH260",
+   "descricao": "YANMAR VIO35 / BH260 / ME-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Escavadeira Hidráulica 20T CSP (lido em 31/10/2026)"
+  }
+ ]
+}
