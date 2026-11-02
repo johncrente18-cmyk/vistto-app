@@ -168,8 +168,10 @@ $$;
 create or replace function public.handle_new_user() returns trigger
 language plpgsql security definer set search_path = public as $$
 begin
-  insert into public.profiles (id, nome, email, obra_id)
-  values (new.id, coalesce(new.raw_user_meta_data->>'nome', split_part(new.email,'@',1)), new.email, 'ufv-paraiso')
+  -- dados do cadastro (telefone, usuário e matrícula vêm do formulário do app; ver migracao-10)
+  insert into public.profiles (id, nome, email, obra_id, telefone, usuario, matricula)
+  values (new.id, coalesce(nullif(trim(new.raw_user_meta_data->>'nome'), ''), split_part(new.email,'@',1)), new.email, 'ufv-paraiso',
+          nullif(trim(new.raw_user_meta_data->>'telefone'), ''), nullif(lower(trim(new.raw_user_meta_data->>'usuario')), ''), nullif(trim(new.raw_user_meta_data->>'matricula'), ''))
   on conflict (id) do nothing;
   return new;
 end $$;
@@ -286,6 +288,14 @@ language sql stable security definer set search_path = public as $$
   select email from public.profiles where lower(usuario) = lower(trim(p_usuario)) and ativo limit 1
 $$;
 grant execute on function public.email_por_usuario(text) to anon, authenticated;
+create or replace function public.foto_cadastro(p_email text, p_foto text) returns boolean
+language plpgsql security definer set search_path = public as $$
+begin
+  if p_foto is null or p_foto not like 'data:image/%' or length(p_foto) > 400000 then return false; end if;
+  update public.profiles set foto = p_foto where lower(email) = lower(trim(p_email)) and foto is null and criado_em > now() - interval '15 minutes';
+  return found;
+end $$;
+grant execute on function public.foto_cadastro(text, text) to anon, authenticated;
 grant execute on function public.nc_publica(text) to anon, authenticated;
 grant execute on function public.nc_responder(text, text, text) to anon, authenticated;
 
