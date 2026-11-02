@@ -87,7 +87,7 @@ create table public.profiles (
   matricula text,
   usuario text,
   foto text,           -- foto de perfil (JPEG comprimido, data URL)
-  papel text not null default 'engenheiro' check (papel in ('engenheiro','tecnico','supervisor','gestor','admin','lider')),
+  papel text not null default 'usuario' check (papel in ('engenheiro','tecnico','supervisor','gestor','admin','lider','usuario')),
   obra_id text references public.obras(id),
   ativo boolean not null default true,
   criado_em timestamptz not null default now()

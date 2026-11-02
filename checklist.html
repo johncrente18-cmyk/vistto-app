@@ -777,7 +777,7 @@
   }
 
   // ---------- pessoas ----------
-  const PAPEIS = { engenheiro: 'Engenheiro', tecnico: 'Técnico de segurança', supervisor: 'Supervisor', gestor: 'Gestor de obra', admin: 'Administrador', lider: 'Líder / encarregado' };
+  const PAPEIS = { engenheiro: 'Engenheiro', tecnico: 'Técnico de segurança', supervisor: 'Supervisor', gestor: 'Gestor de obra', admin: 'Administrador', lider: 'Líder / encarregado', usuario: 'Usuário (sem acesso)' };
   const APP_URL = location.href.replace(/checklist\.html.*$/, '');
   const vazio = () => ({ id: null, nome: '', papel: 'engenheiro', email: '', telefone: '', usuario: '', matricula: '', senha: '', senha2: '', foto: '', enviar: true });
   S.ptab = 'busca'; S.form = vazio(); S.people = null; S.q = ''; S.qp = ''; S.done = null;
