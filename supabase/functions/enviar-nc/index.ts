@@ -61,7 +61,7 @@ Deno.serve(async (req) => {
     const anexo = typeof fotoR.data?.dados === 'string' && fotoR.data.dados.startsWith('data:') ? [{ name: 'nao-conformidade.jpg', content: fotoR.data.dados.split(',')[1] }] : undefined;
     const r = await fetch('https://api.brevo.com/v3/smtp/email', {
       method: 'POST',
-      headers: { 'api-key': Deno.env.get('BREVO_API_KEY')!, 'content-type': 'application/json', accept: 'application/json' },
+      headers: { 'api-key': (Deno.env.get('BREVO_API_KEY') || Deno.env.get('BRE_API_KEY'))!, 'content-type': 'application/json', accept: 'application/json' },
       body: JSON.stringify({
         sender: { email: Deno.env.get('REMETENTE_EMAIL')!, name: 'Vistto Inspeções' },
         to, ...(cc.length ? { cc } : {}),
