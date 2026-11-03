@@ -1,0 +1,479 @@
+[
+ {
+  "id": "aloj-b1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": null,
+  "codigo": "BLOCO 1",
+  "nome": "Bloco 1 · Lobo Guará",
+  "ordem": 1010,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b1-1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b1",
+  "codigo": "LG-01",
+  "nome": "Bloco 1 · Lobo Guará · LG-01",
+  "ordem": 1011,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b1-2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b1",
+  "codigo": "LG-02",
+  "nome": "Bloco 1 · Lobo Guará · LG-02",
+  "ordem": 1012,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b1-3",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b1",
+  "codigo": "LG-03",
+  "nome": "Bloco 1 · Lobo Guará · LG-03",
+  "ordem": 1013,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": null,
+  "codigo": "BLOCO 2",
+  "nome": "Bloco 2 · Jacarandá",
+  "ordem": 1020,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b2-1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b2",
+  "codigo": "JÁ-01",
+  "nome": "Bloco 2 · Jacarandá · JÁ-01",
+  "ordem": 1021,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b2-2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b2",
+  "codigo": "JÁ-02",
+  "nome": "Bloco 2 · Jacarandá · JÁ-02",
+  "ordem": 1022,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b2-3",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b2",
+  "codigo": "JÁ-03",
+  "nome": "Bloco 2 · Jacarandá · JÁ-03",
+  "ordem": 1023,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b3",
+  "obra_id": "ufv-paraiso",
+  "parent_id": null,
+  "codigo": "BLOCO 3",
+  "nome": "Bloco 3 · Onça Pintada",
+  "ordem": 1030,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b3-1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b3",
+  "codigo": "OP-01",
+  "nome": "Bloco 3 · Onça Pintada · OP-01",
+  "ordem": 1031,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b3-2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b3",
+  "codigo": "OP-02",
+  "nome": "Bloco 3 · Onça Pintada · OP-02",
+  "ordem": 1032,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b3-3",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b3",
+  "codigo": "OP-03",
+  "nome": "Bloco 3 · Onça Pintada · OP-03",
+  "ordem": 1033,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b4",
+  "obra_id": "ufv-paraiso",
+  "parent_id": null,
+  "codigo": "BLOCO 4",
+  "nome": "Bloco 4 · Ipê",
+  "ordem": 1040,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b4-1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b4",
+  "codigo": "IP-01",
+  "nome": "Bloco 4 · Ipê · IP-01",
+  "ordem": 1041,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b4-2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b4",
+  "codigo": "IP-02",
+  "nome": "Bloco 4 · Ipê · IP-02",
+  "ordem": 1042,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b4-3",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b4",
+  "codigo": "IP-03",
+  "nome": "Bloco 4 · Ipê · IP-03",
+  "ordem": 1043,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b5",
+  "obra_id": "ufv-paraiso",
+  "parent_id": null,
+  "codigo": "BLOCO 5",
+  "nome": "Bloco 5 · Arara",
+  "ordem": 1050,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b5-1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b5",
+  "codigo": "AR-01",
+  "nome": "Bloco 5 · Arara · AR-01",
+  "ordem": 1051,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b5-2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b5",
+  "codigo": "AR-02",
+  "nome": "Bloco 5 · Arara · AR-02",
+  "ordem": 1052,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b5-3",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b5",
+  "codigo": "AR-03",
+  "nome": "Bloco 5 · Arara · AR-03",
+  "ordem": 1053,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b6",
+  "obra_id": "ufv-paraiso",
+  "parent_id": null,
+  "codigo": "BLOCO 6",
+  "nome": "Bloco 6 · Murici",
+  "ordem": 1060,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b6-1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b6",
+  "codigo": "MU-01",
+  "nome": "Bloco 6 · Murici · MU-01",
+  "ordem": 1061,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b6-2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b6",
+  "codigo": "MU-02",
+  "nome": "Bloco 6 · Murici · MU-02",
+  "ordem": 1062,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b6-3",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b6",
+  "codigo": "MU-03",
+  "nome": "Bloco 6 · Murici · MU-03",
+  "ordem": 1063,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b7",
+  "obra_id": "ufv-paraiso",
+  "parent_id": null,
+  "codigo": "BLOCO 7",
+  "nome": "Bloco 7 · Seriema",
+  "ordem": 1070,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b7-1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b7",
+  "codigo": "SE-01",
+  "nome": "Bloco 7 · Seriema · SE-01",
+  "ordem": 1071,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b7-2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b7",
+  "codigo": "SE-02",
+  "nome": "Bloco 7 · Seriema · SE-02",
+  "ordem": 1072,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b7-3",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b7",
+  "codigo": "SE-03",
+  "nome": "Bloco 7 · Seriema · SE-03",
+  "ordem": 1073,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b8",
+  "obra_id": "ufv-paraiso",
+  "parent_id": null,
+  "codigo": "BLOCO 8",
+  "nome": "Bloco 8 · Buriti",
+  "ordem": 1080,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b8-1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b8",
+  "codigo": "BU-01",
+  "nome": "Bloco 8 · Buriti · BU-01",
+  "ordem": 1081,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b8-2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b8",
+  "codigo": "BU-02",
+  "nome": "Bloco 8 · Buriti · BU-02",
+  "ordem": 1082,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b8-3",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b8",
+  "codigo": "BU-03",
+  "nome": "Bloco 8 · Buriti · BU-03",
+  "ordem": 1083,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b9",
+  "obra_id": "ufv-paraiso",
+  "parent_id": null,
+  "codigo": "BLOCO 9",
+  "nome": "Bloco 9 · Tucano",
+  "ordem": 1090,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b9-1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b9",
+  "codigo": "TU-01",
+  "nome": "Bloco 9 · Tucano · TU-01",
+  "ordem": 1091,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b9-2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b9",
+  "codigo": "TU-02",
+  "nome": "Bloco 9 · Tucano · TU-02",
+  "ordem": 1092,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b9-3",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b9",
+  "codigo": "TU-03",
+  "nome": "Bloco 9 · Tucano · TU-03",
+  "ordem": 1093,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b10",
+  "obra_id": "ufv-paraiso",
+  "parent_id": null,
+  "codigo": "BLOCO 10",
+  "nome": "Bloco 10",
+  "ordem": 1100,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b10-1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b10",
+  "codigo": "TC-01",
+  "nome": "Bloco 10 · TC-01",
+  "ordem": 1101,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b10-2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b10",
+  "codigo": "TC-02",
+  "nome": "Bloco 10 · TC-02",
+  "ordem": 1102,
+  "ativo": true
+ },
+ {
+  "id": "aloj-b10-3",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "aloj-b10",
+  "codigo": "TC-03",
+  "nome": "Bloco 10 · TC-03",
+  "ordem": 1103,
+  "ativo": true
+ },
+ {
+  "id": "cant",
+  "obra_id": "ufv-paraiso",
+  "parent_id": null,
+  "codigo": "CANTEIRO",
+  "nome": "Canteiro",
+  "ordem": 1200,
+  "ativo": true
+ },
+ {
+  "id": "cant-1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "cant",
+  "codigo": "Administrativo",
+  "nome": "Canteiro · Administrativo",
+  "ordem": 1201,
+  "ativo": true
+ },
+ {
+  "id": "cant-2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "cant",
+  "codigo": "Elétrica",
+  "nome": "Canteiro · Elétrica",
+  "ordem": 1202,
+  "ativo": true
+ },
+ {
+  "id": "cant-3",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "cant",
+  "codigo": "Civil",
+  "nome": "Canteiro · Civil",
+  "ordem": 1203,
+  "ativo": true
+ },
+ {
+  "id": "cant-4",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "cant",
+  "codigo": "Armação",
+  "nome": "Canteiro · Armação",
+  "ordem": 1204,
+  "ativo": true
+ },
+ {
+  "id": "cant-5",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "cant",
+  "codigo": "Mecânica",
+  "nome": "Canteiro · Mecânica",
+  "ordem": 1205,
+  "ativo": true
+ },
+ {
+  "id": "cant-6",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "cant",
+  "codigo": "Almoxarifado",
+  "nome": "Canteiro · Almoxarifado",
+  "ordem": 1206,
+  "ativo": true
+ },
+ {
+  "id": "cant-7",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "cant",
+  "codigo": "Usina de Concreto",
+  "nome": "Canteiro · Usina de Concreto",
+  "ordem": 1207,
+  "ativo": true
+ },
+ {
+  "id": "cant-8",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "cant",
+  "codigo": "Laboratório",
+  "nome": "Canteiro · Laboratório",
+  "ordem": 1208,
+  "ativo": true
+ },
+ {
+  "id": "cant-9",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "cant",
+  "codigo": "Meio Ambiente",
+  "nome": "Canteiro · Meio Ambiente",
+  "ordem": 1209,
+  "ativo": true
+ },
+ {
+  "id": "cid",
+  "obra_id": "ufv-paraiso",
+  "parent_id": null,
+  "codigo": "ALOJ. CIDADE",
+  "nome": "Alojamentos Cidade",
+  "ordem": 1300,
+  "ativo": true
+ },
+ {
+  "id": "cid-1",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "cid",
+  "codigo": "Paraíso das Águas",
+  "nome": "Alojamento Cidade · Paraíso das Águas",
+  "ordem": 1301,
+  "ativo": true
+ },
+ {
+  "id": "cid-2",
+  "obra_id": "ufv-paraiso",
+  "parent_id": "cid",
+  "codigo": "Pouso Alto",
+  "nome": "Alojamento Cidade · Pouso Alto",
+  "ordem": 1302,
+  "ativo": true
+ }
+]
