@@ -328,7 +328,7 @@
   "obra_id": "ufv-paraiso",
   "parent_id": null,
   "codigo": "BLOCO 10",
-  "nome": "Bloco 10",
+  "nome": "Bloco 10 · Tatu Canastra",
   "ordem": 1100,
   "ativo": true
  },
@@ -337,7 +337,7 @@
   "obra_id": "ufv-paraiso",
   "parent_id": "aloj-b10",
   "codigo": "TC-01",
-  "nome": "Bloco 10 · TC-01",
+  "nome": "Bloco 10 · Tatu Canastra · TC-01",
   "ordem": 1101,
   "ativo": true
  },
@@ -346,7 +346,7 @@
   "obra_id": "ufv-paraiso",
   "parent_id": "aloj-b10",
   "codigo": "TC-02",
-  "nome": "Bloco 10 · TC-02",
+  "nome": "Bloco 10 · Tatu Canastra · TC-02",
   "ordem": 1102,
   "ativo": true
  },
@@ -355,7 +355,7 @@
   "obra_id": "ufv-paraiso",
   "parent_id": "aloj-b10",
   "codigo": "TC-03",
-  "nome": "Bloco 10 · TC-03",
+  "nome": "Bloco 10 · Tatu Canastra · TC-03",
   "ordem": 1103,
   "ativo": true
  },
