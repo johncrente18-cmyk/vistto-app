@@ -332,8 +332,8 @@
   function render() {
     const tps = [...S.tipos].sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
     const navT = t => [t.id, t.nome + (t.ativo === false ? ' (desativado)' : ''), t.id === 'caminhada' ? 'walk' : t.id === 'vivencia' ? 'tent' : 'clip'];
-    const nav = [...GRUPOS.slice().reverse().map(([g, l]) => [l.replace('Inspeções de ', '').replace('Inspeção ', ''), tps.filter(t => grupoDe(t) === g).map(navT)]).filter(x => x[1].length),
-      ['Relatórios', [['historico', 'Histórico de inspeções', 'chart']]], ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
+    const nav = [['Relatórios', [['historico', 'Histórico de inspeções', 'chart']]], ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]],
+      ...GRUPOS.slice().reverse().map(([g, l]) => ['Checklists · ' + l.replace('Inspeções de ', '').replace('Inspeção ', ''), tps.filter(t => grupoDe(t) === g).map(navT)]).filter(x => x[1].length)];
     $app.innerHTML = `
       <header>
         <div class="bar">
