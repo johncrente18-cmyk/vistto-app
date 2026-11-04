@@ -157,6 +157,13 @@
   .mbox label.lb { display: grid; gap: 5px; font-size: 12px; color: var(--muted); }
   .mbox .acts2 { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; margin-top: 4px; }
   @media (max-width: 760px) { .fgrid { grid-template-columns: 1fr; } .gsearch { grid-template-columns: 1fr; } .fcard { grid-template-columns: 1fr 96px; } }
+  .fcard .head { display: flex; gap: 12px; align-items: center; padding-bottom: 10px; border-bottom: 1px solid var(--line); min-width: 0; }
+  .fcard .head h4 { border: 0; padding: 0; }
+  .fcard .head .av { width: 46px; height: 46px; flex: 0 0 auto; border-radius: 50%; background: var(--surface-2); overflow: hidden; display: grid; place-items: center; font-weight: 700; color: var(--muted); }
+  .fcard .head .av img { width: 100%; height: 100%; object-fit: cover; }
+  .rk { display: inline-block; font-size: 11.5px; font-weight: 700; padding: 2px 9px; border-radius: 999px; }
+  .rk.Alto { background: color-mix(in srgb, var(--bad) 22%, transparent); color: var(--bad); } .rk.Médio { background: color-mix(in srgb, var(--warn) 22%, transparent); color: var(--warn); } .rk.Baixo { background: color-mix(in srgb, var(--ok) 22%, transparent); color: var(--ok); }
+  .mchips { display: flex; gap: 6px; flex-wrap: wrap; }
   .ms { position: relative; }
   .ms > button { width: 100%; text-align: left; display: flex; justify-content: space-between; gap: 8px; align-items: center; background: var(--surface-2); border: 1px solid transparent; border-radius: 8px; padding: 9px 10px; color: var(--muted); }
   .ms > button.on { color: var(--text); border-color: var(--accent); }
@@ -343,7 +350,7 @@
     document.getElementById('sair').onclick = sair;
     $app.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { S.tab = b.dataset.tab; render(); window.scrollTo(0, 0); });
     setStatus();
-    document.getElementById('main').classList.toggle('wide', S.tab === 'tipos');
+    document.getElementById('main').classList.toggle('wide', ['tipos', 'pessoas', 'atividades'].includes(S.tab));
     if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (S.tab === 'historico') renderHistorico(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
   }
 
@@ -454,45 +461,77 @@
   }
 
   // ---------- atividades ----------
-  function renderAtividades() {
-    const main = document.getElementById('main');
-    const mods = [...new Set(S.tipos.filter(t => t.usa_atividade).flatMap(t => modulosDe(t.id)))].filter(m => m !== 'base');
-    main.innerHTML = `
-      <h1 style="font-size:22px;margin:22px 0 0">Atividades e riscos</h1><p class="hint">Cada atividade define quais riscos entram na caminhada de segurança, além dos itens de todas as inspeções. A atividade de cada subfrente é escolhida no app.</p>
-      <section class="group">
-        ${S.ativ.map(a => `
-          <div class="ativ" data-id="${esc(a.id)}">
-            <div class="row">
-              <input type="text" data-f="nome" value="${esc(a.nome)}" aria-label="Nome da atividade">
-              <select data-f="risco" aria-label="Nível de risco">${['Alto', 'Médio', 'Baixo'].map(r => `<option ${a.risco === r ? 'selected' : ''}>${r}</option>`).join('')}</select>
-            </div>
-            <div class="chips">${mods.map(m => `<label class="chip"><input type="checkbox" value="${esc(m)}" ${(a.modulos || []).includes(m) ? 'checked' : ''}>${esc(modNome(m))}</label>`).join('') || '<span class="hint">Nenhum risco cadastrado.</span>'}</div>
-          </div>`).join('')}
-        <div class="add"><input type="text" id="na" placeholder="Nova atividade (ex.: Montagem de inversores)" style="max-width:340px"><button class="ghost" id="nab">Adicionar</button></div>
-      </section>`;
-    main.querySelectorAll('.ativ').forEach(box => {
-      const a = S.ativ.find(x => x.id === box.dataset.id);
-      box.querySelector('[data-f=nome]').addEventListener('input', e => {
-        a.nome = e.target.value; const k = 'a' + a.id;
-        if (timers[k]) clearTimeout(timers[k]); else { S.pend++; setStatus(); }
-        timers[k] = setTimeout(() => { timers[k] = null; S.pend--; if (!a.nome.trim()) { setStatus(); return toast('O nome não pode ficar vazio.'); }
-          run(S.sb.from('atividades').update({ nome: a.nome.trim() }).eq('id', a.id)).catch(() => {}); }, 700);
-      });
-      box.querySelector('[data-f=risco]').onchange = e => { a.risco = e.target.value; run(S.sb.from('atividades').update({ risco: a.risco }).eq('id', a.id)).catch(() => {}); };
-      box.querySelectorAll('.chip input').forEach(c => c.onchange = () => {
-        a.modulos = [...box.querySelectorAll('.chip input:checked')].map(x => x.value);
-        run(S.sb.from('atividades').update({ modulos: a.modulos }).eq('id', a.id)).catch(() => {});
-      });
-    });
-    document.getElementById('nab').onclick = async () => {
-      const nome = document.getElementById('na').value.trim(); if (!nome) return;
-      let id = slug(nome) || novoId('a'); if (S.ativ.some(a => a.id === id)) id += '-' + Date.now().toString(36).slice(-4);
-      const row = { id, nome, risco: 'Médio', modulos: [], ordem: S.ativ.length ? Math.max(...S.ativ.map(a => a.ordem)) + 1 : 1 };
-      S.ativ.push(row); render();
-      await run(S.sb.from('atividades').insert(row)).catch(() => { S.ativ = S.ativ.filter(a => a !== row); render(); });
-    };
-  }
 
+  // barra padrão das páginas em cartões: Novo · contador · paginação
+  function barraCartoes(novoTxt, contTxt, pag, nPag) {
+    const pgs = []; for (let k = 0; k < nPag; k++) if (k < 5 || k === nPag - 1 || Math.abs(k - pag) <= 1) pgs.push(k); else if (pgs[pgs.length - 1] !== '…') pgs.push('…');
+    return `<div class="gbar"><button class="novo" id="gnovo">${novoTxt} <span style="font-size:18px;line-height:1">⊕</span></button><span class="cnt">${contTxt}</span>
+      <div class="pag"><button data-pg="0" ${pag === 0 ? 'disabled' : ''} title="Primeira">|‹</button><button data-pg="${pag - 1}" ${pag === 0 ? 'disabled' : ''} title="Anterior">‹</button>
+      ${pgs.map(k => k === '…' ? '<button disabled>…</button>' : `<button data-pg="${k}" ${k === pag ? 'aria-current="page"' : ''}>${k + 1}</button>`).join('')}
+      <button data-pg="${pag + 1}" ${pag >= nPag - 1 ? 'disabled' : ''} title="Próxima">›</button><button data-pg="${nPag - 1}" ${pag >= nPag - 1 ? 'disabled' : ''} title="Última">›|</button></div></div>`;
+  }
+  function ligarPaginas(root, set) { root.querySelectorAll('[data-pg]').forEach(b => b.onclick = () => { if (b.disabled) return; set(+b.dataset.pg); window.scrollTo(0, 0); }); }
+  function buscaViva(id, set) { const el = document.getElementById(id); el.oninput = () => { set(el.value); clearTimeout(timers[id]); timers[id] = setTimeout(() => { const x = document.getElementById(id); if (x) { x.focus(); x.setSelectionRange(x.value.length, x.value.length); } }, 0); }; }
+  S.ta = { q: '', risco: '', pag: 0 };
+  function renderAtividades() {
+    const main = document.getElementById('main'), A = S.ta, POR = 12;
+    const mods = [...new Set(S.tipos.filter(t => t.usa_atividade).flatMap(t => modulosDe(t.id)))].filter(m => m !== 'base');
+    const q = semAc(A.q).trim();
+    const lista = [...S.ativ].sort((x, y) => (x.ordem || 0) - (y.ordem || 0)).filter(x => (!A.risco || x.risco === A.risco) && (!q || q.split(/\s+/).every(w => semAc(x.nome).includes(w))));
+    const nPag = Math.max(1, Math.ceil(lista.length / POR)); if (A.pag >= nPag) A.pag = nPag - 1;
+    const pagina = lista.slice(A.pag * POR, A.pag * POR + POR);
+    const abas = [['', `Todas (${S.ativ.length})`]].concat(['Alto', 'Médio', 'Baixo'].map(r => [r, `Risco ${r.toLowerCase()} (${S.ativ.filter(x => x.risco === r).length})`]));
+    main.innerHTML = `<div class="gtitle">Gestão de Atividades e Riscos</div>
+      <p class="hint" style="text-align:center;margin:0 0 6px">Cada atividade define quais riscos entram na caminhada de segurança. A atividade de cada subfrente é escolhida no app.</p>
+      <div class="ptabs" role="tablist">${abas.map(([k, l]) => `<button class="ptab" role="tab" data-aba="${k}" aria-selected="${A.risco === k}">${esc(l)}</button>`).join('')}</div>
+      ${barraCartoes('Nova', `Atividades cadastradas: ${lista.length}${lista.length !== S.ativ.length ? ` de ${S.ativ.length}` : ''}`, A.pag, nPag)}
+      <div class="gsearch" style="grid-template-columns:1fr"><input type="text" id="aq" placeholder="Procurar atividade" value="${esc(A.q)}"></div>
+      <div class="fgrid">${pagina.map(x => { const ms = (x.modulos || []).filter(m => m !== 'base');
+        return `<div class="fcard" data-id="${esc(x.id)}">
+          <h4 data-ac="ed">${esc(x.nome)}</h4>
+          <div class="bts"><button class="fbtn ed" data-ac="ed">Editar ${SVG_ED}</button><button class="fbtn du" data-ac="du">Duplicar ${SVG_DU}</button><button class="fbtn dl" data-ac="dl">Excluir ${SVG_DL}</button></div>
+          <div class="info">
+            <div>Nível de risco: <span class="rk ${esc(x.risco)}">${esc(x.risco)}</span></div>
+            <div>Riscos que entram na caminhada:</div>
+            <div class="mchips">${ms.length ? ms.map(m => `<span class="badge">${esc(modNome(m))}</span>`).join('') : '<b>só os itens de todas as inspeções</b>'}</div>
+          </div></div>`; }).join('')}</div>
+      ${pagina.length ? '' : '<p class="hint">Nenhuma atividade encontrada.</p>'}`;
+    main.querySelectorAll('[data-aba]').forEach(b => b.onclick = () => { A.risco = b.dataset.aba; A.pag = 0; renderAtividades(); });
+    ligarPaginas(main, k => { A.pag = k; renderAtividades(); });
+    buscaViva('aq', v => { A.q = v; A.pag = 0; renderAtividades(); });
+    document.getElementById('gnovo').onclick = () => editarAtiv(null, mods);
+    main.querySelectorAll('.fcard').forEach(box => { const x = S.ativ.find(y => y.id === box.dataset.id);
+      box.querySelectorAll('[data-ac=ed]').forEach(b => b.onclick = () => editarAtiv(x, mods));
+      box.querySelector('[data-ac=du]').onclick = async () => { const nome = x.nome + ' (cópia)'; let id = slug(nome); if (S.ativ.some(y => y.id === id)) id += '-' + Date.now().toString(36).slice(-4);
+        const row = { id, nome, risco: x.risco, modulos: [...(x.modulos || [])], ordem: (x.ordem || 0) + 1 };
+        try { await run(S.sb.from('atividades').insert(row)); S.ativ.push(row); renderAtividades(); toast('Cópia criada.'); } catch (e) {} };
+      box.querySelector('[data-ac=dl]').onclick = () => modal(`<h3>Excluir “${esc(x.nome)}”?</h3><p style="margin:0">A atividade some da lista do app. Se alguma subfrente estiver com ela hoje, o banco não deixa excluir: troque a atividade da subfrente antes.</p><div class="acts2"><button class="ghost" id="m_x">Cancelar</button><button class="primary" id="m_ok" style="background:var(--bad)">Excluir</button></div>`,
+        (m, fechar) => { m.querySelector('#m_x').onclick = fechar; m.querySelector('#m_ok').onclick = async () => { fechar();
+          const r = await S.sb.from('atividades').delete().eq('id', x.id);
+          if (r.error) return toast(/foreign|violat|referenc/i.test(r.error.message) ? 'Não deu para excluir: há subfrente usando esta atividade.' : 'Erro: ' + r.error.message);
+          S.ativ = S.ativ.filter(y => y.id !== x.id); renderAtividades(); toast('Atividade excluída.'); }; });
+    });
+  }
+  function editarAtiv(x, mods) {
+    const novo = !x;
+    modal(`<h3>${novo ? 'Nova atividade' : 'Editar atividade'}</h3>
+      <label class="lb">Nome *<input type="text" id="m_nome" value="${esc(x ? x.nome : '')}" placeholder="Ex.: Montagem de inversores"></label>
+      <label class="lb">Nível de risco<select id="m_risco">${['Alto', 'Médio', 'Baixo'].map(r => `<option ${(x ? x.risco : 'Médio') === r ? 'selected' : ''}>${r}</option>`).join('')}</select></label>
+      <div class="lb" style="display:grid;gap:6px;font-size:12px;color:var(--muted)">Riscos que entram na caminhada<div class="chips">${mods.map(m => `<label class="chip"><input type="checkbox" value="${esc(m)}" ${x && (x.modulos || []).includes(m) ? 'checked' : ''}>${esc(modNome(m))}</label>`).join('') || '<span class="hint" style="margin:0">Nenhum risco cadastrado.</span>'}</div></div>
+      <div class="acts2"><button class="ghost" id="m_x">Cancelar</button><button class="primary" id="m_ok">${novo ? 'Criar' : 'Salvar'}</button></div>`,
+    (m, fechar) => {
+      m.querySelector('#m_x').onclick = fechar;
+      m.querySelector('#m_ok').onclick = async () => {
+        const nome = m.querySelector('#m_nome').value.trim(); if (!nome) return toast('Preencha o nome.');
+        const risco = m.querySelector('#m_risco').value, modulos = [...m.querySelectorAll('.chip input:checked')].map(c => c.value);
+        fechar();
+        if (novo) { let id = slug(nome) || novoId('a'); if (S.ativ.some(a => a.id === id)) id += '-' + Date.now().toString(36).slice(-4);
+          const row = { id, nome, risco, modulos, ordem: S.ativ.length ? Math.max(...S.ativ.map(a => a.ordem || 0)) + 1 : 1 };
+          try { await run(S.sb.from('atividades').insert(row)); S.ativ.push(row); renderAtividades(); toast('Atividade criada.'); } catch (e) {} }
+        else { try { await run(S.sb.from('atividades').update({ nome, risco, modulos }).eq('id', x.id)); Object.assign(x, { nome, risco, modulos }); renderAtividades(); toast('Atividade salva.'); } catch (e) {} }
+      };
+    });
+  }
 
   // ---------- histórico de inspeções ----------
   const isoD = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
@@ -889,40 +928,53 @@
     const main = document.getElementById('main');
     if (!S.people) { main.innerHTML = '<p class="hint">Carregando pessoas…</p>'; await carregarPessoas(); if (S.tab !== 'pessoas') return; }
     const t = [['busca', 'Busca de usuários'], ['cad', S.form.id ? 'Editar usuário' : 'Cadastro de usuários']];
-    main.innerHTML = `<h1 style="font-size:22px;margin:22px 0 0">Pessoas</h1>
+    main.innerHTML = `<div class="gtitle">Gestão de Pessoas</div>
       <div class="ptabs" role="tablist">${t.map(([k, n]) => `<button class="ptab" role="tab" data-pt="${k}" aria-selected="${S.ptab === k}">${n}</button>`).join('')}</div>
       <div id="pbody"></div>`;
     main.querySelectorAll('[data-pt]').forEach(b => b.onclick = () => { S.ptab = b.dataset.pt; if (S.ptab === 'cad' && S.done) S.done = null; renderPessoas(); });
     if (S.ptab === 'busca') renderBusca(); else renderCadastro();
   }
 
+  S.pp = 0;
   function renderBusca() {
-    const box = document.getElementById('pbody');
+    const box = document.getElementById('pbody'), POR = 12;
     const q = S.q.trim().toLowerCase();
     const lista = S.people.filter(p => (!S.qp || p.papel === S.qp) && (!q || [p.nome, p.email, p.usuario, p.matricula, p.telefone].some(v => String(v || '').toLowerCase().includes(q))));
+    const nPag = Math.max(1, Math.ceil(lista.length / POR)); if (S.pp >= nPag) S.pp = nPag - 1;
+    const pagina = lista.slice(S.pp * POR, S.pp * POR + POR);
+    const espera = S.people.filter(p => p.papel === 'usuario').length;
     box.innerHTML = `
-      <div class="search">
+      ${barraCartoes('Novo', `Pessoas cadastradas: ${lista.length}${lista.length !== S.people.length ? ` de ${S.people.length}` : ''}${espera ? ` · <a href="#" id="esp" style="color:var(--warn)">${espera} aguardando liberação</a>` : ''}`, S.pp, nPag)}
+      <div class="gsearch">
         <input type="text" id="q" placeholder="Buscar por nome, e-mail, usuário, matrícula ou telefone" value="${esc(S.q)}">
         <select id="qp"><option value="">Todos os perfis</option>${Object.entries(PAPEIS).map(([v, l]) => `<option value="${v}" ${S.qp === v ? 'selected' : ''}>${l}</option>`).join('')}</select>
       </div>
-      <p class="hint" style="margin:0 0 10px">${lista.length} de ${S.people.length} pessoa(s) · <a href="#" id="novo" style="color:var(--accent)">+ cadastrar nova pessoa</a></p>
-      <div class="ulist">${lista.map(p => `
-        <div class="urow">
-          <div class="av">${p.foto ? `<img src="${esc(p.foto)}" alt="">` : esc(iniciais(p.nome))}</div>
-          <div style="min-width:0"><div class="n">${esc(p.nome || '—')}</div><div class="m">${esc(p.email || '')}${p.usuario ? ' · ' + esc(p.usuario) : ''}</div></div>
-          <div class="m hide-sm">${p.matricula ? 'Matrícula ' + esc(p.matricula) : 'Sem matrícula'}<br>${esc(fmtTel(p.telefone)) || 'Sem telefone'}</div>
-          <div class="hide-sm"><span class="badge">${esc(PAPEIS[p.papel] || p.papel)}</span></div>
-          <button class="ghost" data-ed="${esc(p.id)}">Editar</button>
-        </div>`).join('') || '<div class="urow" style="grid-template-columns:1fr"><span class="m">Ninguém encontrado.</span></div>'}</div>`;
-    const qi = document.getElementById('q');
-    qi.oninput = () => { S.q = qi.value; const pos = qi.selectionStart; renderBusca(); const n = document.getElementById('q'); n.focus(); n.setSelectionRange(pos, pos); };
-    document.getElementById('qp').onchange = e => { S.qp = e.target.value; renderBusca(); };
-    document.getElementById('novo').onclick = e => { e.preventDefault(); S.form = vazio(); S.done = null; S.ptab = 'cad'; renderPessoas(); };
-    box.querySelectorAll('[data-ed]').forEach(b => b.onclick = () => { const p = S.people.find(x => x.id === b.dataset.ed);
-      S.form = { ...vazio(), id: p.id, nome: p.nome || '', papel: p.papel, email: p.email || '', telefone: p.telefone || '', usuario: p.usuario || '', matricula: p.matricula || '', foto: p.foto || '', enviar: false };
-      S.done = null; S.ptab = 'cad'; renderPessoas(); });
+      <div class="fgrid">${pagina.map(p => `
+        <div class="fcard ${p.ativo === false ? 'off' : ''}" data-id="${esc(p.id)}">
+          <div class="head"><div class="av">${p.foto ? `<img src="${esc(p.foto)}" alt="">` : esc(iniciais(p.nome))}</div><h4 data-ac="ed" style="min-width:0;overflow:hidden;text-overflow:ellipsis">${esc(p.nome || '—')}</h4></div>
+          <div class="bts"><button class="fbtn ed" data-ac="ed">Editar ${SVG_ED}</button>${p.telefone ? `<a class="fbtn du" href="https://wa.me/${esc(soDig(p.telefone).length <= 11 ? '55' + soDig(p.telefone) : soDig(p.telefone))}" target="_blank" rel="noopener" style="text-decoration:none">WhatsApp</a>` : ''}
+            <label class="sw" title="Conta ativa"><input type="checkbox" data-ac="on" ${p.ativo !== false ? 'checked' : ''} ${p.id === S.user.id ? 'disabled' : ''}><span></span></label><div class="swl">${p.ativo !== false ? 'Ativo' : 'Desativado'}</div></div>
+          <div class="info">
+            <div>Perfil: <b style="color:${p.papel === 'usuario' ? 'var(--warn)' : 'var(--text)'}">${esc(PAPEIS[p.papel] || p.papel)}</b></div>
+            <div>E-mail: <b>${esc(p.email || '—')}</b></div>
+            <div>Usuário: <b>${esc(p.usuario || '—')}</b> · Matrícula: <b>${esc(p.matricula || '—')}</b></div>
+            <div>Telefone: <b>${esc(fmtTel(p.telefone)) || '—'}</b></div>
+          </div>
+        </div>`).join('')}</div>
+      ${pagina.length ? '' : '<p class="hint">Ninguém encontrado.</p>'}`;
+    ligarPaginas(box, k => { S.pp = k; renderBusca(); });
+    buscaViva('q', v => { S.q = v; S.pp = 0; renderBusca(); });
+    document.getElementById('qp').onchange = e => { S.qp = e.target.value; S.pp = 0; renderBusca(); };
+    const esp = document.getElementById('esp'); if (esp) esp.onclick = e => { e.preventDefault(); S.qp = 'usuario'; S.pp = 0; renderBusca(); };
+    document.getElementById('gnovo').onclick = () => { S.form = vazio(); S.done = null; S.ptab = 'cad'; renderPessoas(); };
+    box.querySelectorAll('.fcard').forEach(card => { const p = S.people.find(x => x.id === card.dataset.id);
+      card.querySelectorAll('[data-ac=ed]').forEach(b => b.onclick = () => {
+        S.form = { ...vazio(), id: p.id, nome: p.nome || '', papel: p.papel, email: p.email || '', telefone: p.telefone || '', usuario: p.usuario || '', matricula: p.matricula || '', foto: p.foto || '', enviar: false };
+        S.done = null; S.ptab = 'cad'; renderPessoas(); });
+      card.querySelector('[data-ac=on]').onchange = async e => { const v = e.target.checked;
+        try { await run(S.sb.from('profiles').update({ ativo: v }).eq('id', p.id)); p.ativo = v; renderBusca(); toast(v ? 'Conta ativada.' : 'Conta desativada: a pessoa some das listas do app.'); } catch (err) { renderBusca(); } };
+    });
   }
-
   function campo(id, label, tipo = 'text', extra = '') {
     return `<label class="fl"><span>${label}</span><input type="${tipo}" id="f_${id}" value="${esc(S.form[id])}" ${extra}></label>`;
   }
