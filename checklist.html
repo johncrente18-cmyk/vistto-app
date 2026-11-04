@@ -113,6 +113,50 @@
   .hf label.lb { display: grid; gap: 4px; font-size: 12px; color: var(--muted); }
   .hf input[type=date], .hf input[type=number] { width: 100%; background: var(--surface-2); border: 1px solid transparent; border-radius: 8px; padding: 8px 10px; outline: none; color-scheme: dark; }
   .hf .fhead { display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none; }
+
+  /* cartão do usuário no menu */
+  .me { display: grid; grid-template-columns: 52px 1fr; gap: 10px; align-items: center; padding: 6px 8px 14px; margin: 0 2px 6px; border-bottom: 1px solid var(--line); }
+  .me .av { width: 52px; height: 52px; border-radius: 50%; background: var(--surface-2); overflow: hidden; display: grid; place-items: center; font-weight: 700; color: var(--muted); }
+  .me .av img { width: 100%; height: 100%; object-fit: cover; }
+  .me b { display: block; font-size: 14px; line-height: 1.25; }
+  .me small { display: block; font-size: 11.5px; color: var(--muted); line-height: 1.45; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  /* gestão de tipos (cartões) */
+  .wrap.wide { max-width: none; }
+  .gtitle { text-align: center; font-size: 21px; font-weight: 500; color: var(--muted); margin: 22px 0 4px; }
+  .gbar { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin: 4px 0 12px; }
+  .gbar .novo { display: inline-flex; gap: 8px; align-items: center; background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 6px; padding: 10px 16px; font-weight: 800; font-size: 16px; }
+  .gbar .cnt { color: var(--muted); font-size: 13px; }
+  .pag { margin-left: auto; display: flex; gap: 2px; align-items: center; }
+  .pag button { min-width: 30px; height: 30px; border: 0; background: transparent; border-radius: 6px; color: var(--muted); font-size: 13px; }
+  .pag button[aria-current="page"] { background: var(--surface-2); color: var(--text); font-weight: 700; }
+  .pag button:disabled { opacity: .35; cursor: default; }
+  .gsearch { display: grid; grid-template-columns: 1fr 260px; gap: 10px; margin-bottom: 14px; }
+  .gsearch input, .gsearch select { padding: 12px; border: 1px solid var(--line); background: var(--surface); }
+  .fgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 12px; }
+  .fcard { background: var(--surface); border-radius: 6px; padding: 14px 14px 12px; display: grid; grid-template-columns: 1fr 108px; gap: 6px 14px; box-shadow: 0 1px 3px rgba(0,0,0,.25); }
+  .fcard.off { opacity: .6; }
+  .fcard h4 { margin: 0; font-size: 16.5px; color: var(--accent); font-weight: 800; letter-spacing: .01em; line-height: 1.3; padding-bottom: 10px; border-bottom: 1px solid var(--line); cursor: pointer; }
+  .fcard h4:hover { text-decoration: underline; }
+  .fcard .info { display: grid; gap: 6px; font-size: 12.5px; color: var(--muted); padding-top: 4px; }
+  .fcard .info b { color: var(--text); font-weight: 600; }
+  .fcard .bts { grid-row: 1 / span 2; grid-column: 2; display: flex; flex-direction: column; gap: 7px; align-items: stretch; }
+  .fbtn { display: flex; justify-content: center; align-items: center; gap: 8px; border-radius: 4px; padding: 7px 8px; font-size: 13px; font-weight: 700; background: transparent; border: 1px solid; }
+  .fbtn svg { width: 15px; height: 15px; }
+  .fbtn.ed { color: #6aa8ff; border-color: #6aa8ff; } .fbtn.du { color: var(--ok); border-color: var(--ok); } .fbtn.dl { color: var(--bad); border-color: var(--bad); }
+  .fbtn:hover { background: rgba(255,255,255,.04); }
+  .sw { position: relative; display: inline-block; width: 38px; height: 20px; margin: 6px auto 0; }
+  .sw input { opacity: 0; width: 0; height: 0; }
+  .sw span { position: absolute; inset: 0; border-radius: 20px; background: var(--surface-2); transition: .2s; cursor: pointer; }
+  .sw span:before { content: ''; position: absolute; width: 18px; height: 18px; left: 1px; top: 1px; border-radius: 50%; background: #c9cbd6; transition: .2s; }
+  .sw input:checked + span { background: color-mix(in srgb, var(--ok) 55%, transparent); }
+  .sw input:checked + span:before { transform: translateX(18px); background: var(--ok); }
+  .swl { text-align: center; font-size: 11px; color: var(--muted); }
+  .mbg { position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 50; display: grid; place-items: center; padding: 16px; }
+  .mbox { background: var(--surface); border-radius: var(--r); padding: 20px; width: min(560px, 100%); display: grid; gap: 12px; max-height: 90vh; overflow: auto; }
+  .mbox h3 { margin: 0; font-size: 18px; }
+  .mbox label.lb { display: grid; gap: 5px; font-size: 12px; color: var(--muted); }
+  .mbox .acts2 { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; margin-top: 4px; }
+  @media (max-width: 760px) { .fgrid { grid-template-columns: 1fr; } .gsearch { grid-template-columns: 1fr; } .fcard { grid-template-columns: 1fr 96px; } }
   .ms { position: relative; }
   .ms > button { width: 100%; text-align: left; display: flex; justify-content: space-between; gap: 8px; align-items: center; background: var(--surface-2); border: 1px solid transparent; border-radius: 8px; padding: 9px 10px; color: var(--muted); }
   .ms > button.on { color: var(--text); border-color: var(--accent); }
@@ -243,12 +287,12 @@
   async function entrar() {
     $app.innerHTML = '<div class="login"><div class="hint">Carregando…</div></div>';
     const [p, it, at] = await Promise.all([
-      S.sb.from('profiles').select('papel,nome').eq('id', S.user.id).maybeSingle(),
+      S.sb.from('profiles').select('papel,nome,foto,email').eq('id', S.user.id).maybeSingle(),
       S.sb.from('checklist_itens').select('*').order('ordem'),
       S.sb.from('atividades').select('*').order('ordem'),
     ]);
     if (p.error || it.error || at.error) return fatal('Erro ao ler o banco: ' + esc((p.error || it.error || at.error).message));
-    S.papel = p.data && p.data.papel;
+    S.papel = p.data && p.data.papel; S.eu = p.data || {};
     if (S.papel !== 'admin') {
       return fatal(`A conta <b>${esc(S.user.email)}</b> não é administradora, então não pode alterar o checklist.<br><br>
         No Supabase › SQL Editor, rode:<br><code>update public.profiles set papel = 'admin' where email = '${esc(S.user.email)}';</code>
@@ -293,12 +337,13 @@
         </div>
       </header>
       <div class="shell">
-        <nav class="side" aria-label="Menu">${nav.map(([g, its]) => `<h3>${g}</h3>` + its.map(([k, n, ic]) => `<button class="nav" data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[ic]}<span>${n}</span></button>`).join('')).join('')}</nav>
+        <nav class="side" aria-label="Menu"><div class="me"><div class="av">${S.eu && S.eu.foto ? `<img src="${esc(S.eu.foto)}" alt="">` : esc(String((S.eu && S.eu.nome) || S.user.email).trim().split(/\s+/).slice(0, 2).map(x => x[0]).join('').toUpperCase())}</div><div style="min-width:0"><b>${esc((S.eu && S.eu.nome) || 'Sem nome')}</b><small>${esc(S.user.email)}</small><small>Perfil: ${esc({ admin: 'Administrador', supervisor: 'Supervisor', gestor: 'Gestor de obra', tecnico: 'Técnico de segurança', engenheiro: 'Engenheiro' }[S.papel] || S.papel || '—')}</small><small>Obra: UFV Paraíso</small></div></div>${nav.map(([g, its]) => `<h3>${g}</h3>` + its.map(([k, n, ic]) => `<button class="nav" data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[ic]}<span>${n}</span></button>`).join('')).join('')}</nav>
         <main class="wrap" id="main"></main>
       </div>`;
     document.getElementById('sair').onclick = sair;
     $app.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { S.tab = b.dataset.tab; render(); window.scrollTo(0, 0); });
     setStatus();
+    document.getElementById('main').classList.toggle('wide', S.tab === 'tipos');
     if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (S.tab === 'historico') renderHistorico(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
   }
 
@@ -713,62 +758,112 @@
   }
 
   // ---------- tipos de inspeção ----------
+  const SVG_ED = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.8 9.94l-3.75-3.75L3 17.25zm17.7-10.2a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>';
+  const SVG_DU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h2"/></svg>';
+  const SVG_DL = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>';
+  S.tg = { aba: 'todos', q: '', pag: 0 };
   function renderTipos() {
-    const main = document.getElementById('main');
-    const tps = [...S.tipos].sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
+    const main = document.getElementById('main'), G = S.tg, POR = 12;
     const cnt = id => S.itens.filter(i => i.tipo === id && i.ativo !== false).length;
-    main.innerHTML = `<h1 style="font-size:22px;margin:22px 0 0">Tipos de inspeção</h1>
-      <p class="hint">São as inspeções do app. Cada uma fica num dos 3 botões do Radar (Veículos, Gerência ou Campo TSTs). Depois de criar um tipo, monte o checklist dele no menu <b>Checklists</b>.</p>
+    const neq = id => (S.equip || []).filter(e => e.tipo === id).length;
+    const nomeG = Object.fromEntries(GRUPOS);
+    const q = slug(G.q || '').replace(/-/g, ' ');
+    const todos = [...S.tipos].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
+    const lista = todos.filter(t => (G.aba === 'todos' || grupoDe(t) === G.aba) && (!q || q.split(' ').every(w => slug(t.nome + ' ' + (t.descricao || '')).replace(/-/g, ' ').includes(w))));
+    const nPag = Math.max(1, Math.ceil(lista.length / POR)); if (G.pag >= nPag) G.pag = nPag - 1;
+    const pagina = lista.slice(G.pag * POR, G.pag * POR + POR);
+    const pgs = []; for (let k = 0; k < nPag; k++) if (k < 5 || k === nPag - 1 || Math.abs(k - G.pag) <= 1) pgs.push(k); else if (pgs[pgs.length - 1] !== '…') pgs.push('…');
+    const abas = [['todos', `Todos (${S.tipos.length})`]].concat(GRUPOS.map(([g, l]) => [g, `${l.replace('Inspeções de ', '').replace('Inspeção ', '')} (${S.tipos.filter(t => grupoDe(t) === g).length})`]));
+    main.innerHTML = `<div class="gtitle">Gestão de Tipos de Inspeção</div>
       ${S.semTabelaTipos ? '<p class="err">O banco ainda não tem a tabela de tipos de inspeção. Rode a migração 04 no Supabase para poder criar tipos novos.</p>' : ''}
-      <section class="group">
-        ${tps.map((t, k) => `
-          <div class="ativ" data-id="${esc(t.id)}" style="${t.ativo === false ? 'opacity:.6' : ''}">
-            <div style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:start">
-              <div style="display:grid;gap:6px;min-width:0">
-                <input type="text" data-f="nome" value="${esc(t.nome)}" aria-label="Nome do tipo" style="font-weight:600">
-                <input type="text" data-f="descricao" value="${esc(t.descricao || '')}" placeholder="Descrição curta (aparece na pesquisa)" aria-label="Descrição" style="font-size:13px">
-              </div>
-              <div class="acts">
-                <button class="icon" data-mv="-1" title="Subir" ${k === 0 ? 'disabled' : ''}>↑</button>
-                <button class="icon" data-mv="1" title="Descer" ${k === tps.length - 1 ? 'disabled' : ''}>↓</button>
-              </div>
-            </div>
-            <div class="chips" style="align-items:center">
-              <label class="chip" style="cursor:default">Botão no app: <select data-f="grupo" style="width:auto;padding:3px 6px;font-size:13px">${GRUPOS.map(([v, l]) => `<option value="${v}" ${grupoDe(t) === v ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
-              ${ehForm(t.id) ? '<span class="badge">Formulário</span>' : `<label class="chip"><input type="checkbox" data-f="usa_atividade" ${t.usa_atividade ? 'checked' : ''}>Soma os riscos da atividade do dia</label>`}
-              <label class="chip"><input type="checkbox" data-f="ativo" ${t.ativo !== false ? 'checked' : ''}>Aparece no app</label>
-              <span class="hint" style="margin:0">${ehForm(t.id) ? nCampos(t.id) + ' campo(s)' : cnt(t.id) + ' item(ns) no checklist'}</span>
-              <button class="ghost" data-go="${esc(t.id)}" style="margin-left:auto">${ehForm(t.id) ? 'Ver formulário →' : 'Editar checklist →'}</button>
-            </div>
-          </div>`).join('')}
-        <div class="add"><input type="text" id="nt" placeholder="Novo tipo (ex.: Inspeção de andaime)" style="max-width:340px"><button class="ghost" id="ntb">Criar tipo</button></div>
-      </section>`;
-    main.querySelectorAll('.ativ').forEach(box => {
+      <div class="ptabs" role="tablist">${abas.map(([k, l]) => `<button class="ptab" role="tab" data-aba="${k}" aria-selected="${G.aba === k}">${esc(l)}</button>`).join('')}</div>
+      <div class="gbar">
+        <button class="novo" id="gnovo">Novo <span style="font-size:18px;line-height:1">⊕</span></button>
+        <span class="cnt">Modelos existentes: ${lista.length}${lista.length !== S.tipos.length ? ` de ${S.tipos.length}` : ''}</span>
+        <div class="pag"><button data-pg="0" ${G.pag === 0 ? 'disabled' : ''} title="Primeira">|‹</button><button data-pg="${G.pag - 1}" ${G.pag === 0 ? 'disabled' : ''} title="Anterior">‹</button>
+          ${pgs.map(k => k === '…' ? '<button disabled>…</button>' : `<button data-pg="${k}" ${k === G.pag ? 'aria-current="page"' : ''}>${k + 1}</button>`).join('')}
+          <button data-pg="${G.pag + 1}" ${G.pag >= nPag - 1 ? 'disabled' : ''} title="Próxima">›</button><button data-pg="${nPag - 1}" ${G.pag >= nPag - 1 ? 'disabled' : ''} title="Última">›|</button></div>
+      </div>
+      <div class="gsearch"><input type="text" id="gq" placeholder="Procurar tipo de inspeção" value="${esc(G.q)}"><select id="gab" aria-label="Botão no app"><option value="todos">Todos os botões do app</option>${GRUPOS.map(([v, l]) => `<option value="${v}" ${G.aba === v ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select></div>
+      <div class="fgrid">${pagina.map(t => { const fm = ehForm(t.id), n = fm ? nCampos(t.id) : cnt(t.id), e = neq(t.id);
+        return `<div class="fcard ${t.ativo === false ? 'off' : ''}" data-id="${esc(t.id)}">
+          <h4 data-ab="1" title="Abrir ${fm ? 'formulário' : 'itens do checklist'}">${esc(t.nome)}</h4>
+          <div class="bts"><button class="fbtn ed" data-ac="ed">Editar ${SVG_ED}</button><button class="fbtn du" data-ac="du">Duplicar ${SVG_DU}</button><button class="fbtn dl" data-ac="dl">Excluir ${SVG_DL}</button>
+            <label class="sw" title="Aparece no app"><input type="checkbox" data-ac="on" ${t.ativo !== false ? 'checked' : ''}><span></span></label><div class="swl">${t.ativo !== false ? 'Aparece no app' : 'Oculto no app'}</div></div>
+          <div class="info">
+            <div>Botão no app: <b>${esc(nomeG[grupoDe(t)] || '—')}</b></div>
+            <div>Modelo: <b>${fm ? 'Formulário' : 'Checklist'}</b>${!fm && t.usa_atividade ? ' · <b>soma os riscos da atividade</b>' : ''}</div>
+            <div>${fm ? 'Campos' : 'Itens'}: <b>${n ? n : 'em branco'}</b>${e ? ` · Máquinas cadastradas: <b>${e}</b>` : ''}</div>
+            ${t.descricao ? `<div>Descrição: <b>${esc(t.descricao)}</b></div>` : ''}
+          </div></div>`; }).join('')}</div>
+      ${pagina.length ? '' : '<p class="hint">Nenhum tipo de inspeção encontrado.</p>'}`;
+    const re = () => { renderTipos(); };
+    main.querySelectorAll('[data-aba]').forEach(b => b.onclick = () => { G.aba = b.dataset.aba; G.pag = 0; re(); });
+    main.querySelectorAll('[data-pg]').forEach(b => b.onclick = () => { if (b.disabled) return; G.pag = +b.dataset.pg; re(); window.scrollTo(0, 0); });
+    const gq = document.getElementById('gq'); gq.oninput = () => { G.q = gq.value; G.pag = 0; clearTimeout(timers.gq); timers.gq = setTimeout(() => { re(); const x = document.getElementById('gq'); x.focus(); x.setSelectionRange(x.value.length, x.value.length); }, 250); };
+    document.getElementById('gab').onchange = e => { G.aba = e.target.value; G.pag = 0; re(); };
+    document.getElementById('gnovo').onclick = () => editarTipo(null);
+    main.querySelectorAll('.fcard').forEach(box => {
       const t = S.tipos.find(x => x.id === box.dataset.id);
-      box.querySelectorAll('input[type=text]').forEach(inp => inp.addEventListener('input', () => {
-        t[inp.dataset.f] = inp.value; const k = 't' + t.id + inp.dataset.f;
-        if (timers[k]) clearTimeout(timers[k]); else { S.pend++; setStatus(); }
-        timers[k] = setTimeout(() => { timers[k] = null; S.pend--; const v = inp.value.trim();
-          if (inp.dataset.f === 'nome' && !v) { setStatus(); return toast('O nome não pode ficar vazio.'); }
-          salvarTipo(t, { [inp.dataset.f]: v || null }); }, 700);
-      }));
-      box.querySelectorAll('input[type=checkbox]').forEach(c => c.onchange = () => { t[c.dataset.f] = c.checked; salvarTipo(t, { [c.dataset.f]: c.checked }).then(() => render()); });
-      box.querySelector('select[data-f=grupo]').onchange = e => { t.grupo = e.target.value; salvarTipo(t, { grupo: t.grupo }); };
-      box.querySelectorAll('[data-mv]').forEach(b => b.onclick = async () => {
-        const i = tps.indexOf(t), o = tps[i + +b.dataset.mv]; if (!o) return;
-        let [a, c] = [t.ordem || 0, o.ordem || 0]; if (a === c) c = a + +b.dataset.mv; t.ordem = c; o.ordem = a; render();
-        await salvarTipo(t, { ordem: t.ordem }); await salvarTipo(o, { ordem: o.ordem });
-      });
-      box.querySelector('[data-go]').onclick = () => { S.tab = t.id; render(); window.scrollTo(0, 0); };
+      box.querySelector('[data-ab]').onclick = () => { S.tab = t.id; render(); window.scrollTo(0, 0); };
+      box.querySelector('[data-ac=ed]').onclick = () => editarTipo(t);
+      box.querySelector('[data-ac=du]').onclick = () => duplicarTipo(t);
+      box.querySelector('[data-ac=dl]').onclick = () => excluirTipo(t);
+      box.querySelector('[data-ac=on]').onchange = e => { t.ativo = e.target.checked; salvarTipo(t, { ativo: t.ativo }).then(() => re()); };
     });
-    document.getElementById('ntb').onclick = async () => {
-      if (S.semTabelaTipos) return toast('Rode a migração 04 no Supabase antes de criar tipos novos.');
-      const nome = document.getElementById('nt').value.trim(); if (!nome) return;
-      let id = slug(nome) || novoId('t'); if (RESERVADOS.includes(id) || S.tipos.some(x => x.id === id)) id += '-' + Date.now().toString(36).slice(-4);
-      const row = { id, nome, descricao: null, usa_atividade: false, grupo: 'campo', ordem: S.tipos.length ? Math.max(...S.tipos.map(x => x.ordem || 0)) + 1 : 1, ativo: true };
-      S.tipos.push(row); S.tab = id; render(); window.scrollTo(0, 0);
-      await run(S.sb.from('tipos_inspecao').insert(row)).then(() => toast('Tipo criado. Agora adicione os itens do checklist.')).catch(() => { S.tipos = S.tipos.filter(x => x !== row); S.tab = 'tipos'; render(); });
-    };
+  }
+  function modal(html, montar) {
+    const bg = document.createElement('div'); bg.className = 'mbg'; bg.innerHTML = `<div class="mbox" role="dialog" aria-modal="true">${html}</div>`;
+    document.body.appendChild(bg); const fechar = () => bg.remove(); bg.onclick = e => { if (e.target === bg) fechar(); };
+    montar(bg.querySelector('.mbox'), fechar); const f = bg.querySelector('input,select'); if (f) f.focus();
+  }
+  function editarTipo(t) {
+    const novo = !t, fm = t && ehForm(t.id);
+    modal(`<h3>${novo ? 'Novo tipo de inspeção' : 'Editar tipo de inspeção'}</h3>
+      <label class="lb">Nome *<input type="text" id="m_nome" value="${esc(t ? t.nome : '')}" placeholder="Ex.: Inspeção de andaime"></label>
+      <label class="lb">Descrição curta (aparece na pesquisa do app)<input type="text" id="m_desc" value="${esc(t ? t.descricao || '' : '')}"></label>
+      <label class="lb">Botão no app<select id="m_grupo">${GRUPOS.map(([v, l]) => `<option value="${v}" ${(t ? grupoDe(t) : (S.tg.aba !== 'todos' ? S.tg.aba : 'campo')) === v ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
+      ${fm ? '<div class="hint" style="margin:0">Modelo: <b>Formulário</b> (campos importados).</div>' : `<label class="check"><input type="checkbox" id="m_ativ" ${t && t.usa_atividade ? 'checked' : ''}> Soma os itens de risco da atividade do dia</label>`}
+      <div class="acts2">${novo ? '' : `<button class="ghost" id="m_itens">${fm ? 'Ver formulário →' : 'Abrir itens do checklist →'}</button>`}<button class="ghost" id="m_x">Cancelar</button><button class="primary" id="m_ok">${novo ? 'Criar e montar o checklist' : 'Salvar'}</button></div>`,
+    (box, fechar) => {
+      box.querySelector('#m_x').onclick = fechar;
+      if (!novo) box.querySelector('#m_itens').onclick = () => { fechar(); S.tab = t.id; render(); window.scrollTo(0, 0); };
+      box.querySelector('#m_ok').onclick = async () => {
+        const nome = box.querySelector('#m_nome').value.trim(); if (!nome) return toast('Preencha o nome.');
+        const desc = box.querySelector('#m_desc').value.trim() || null, grupo = box.querySelector('#m_grupo').value, ua = box.querySelector('#m_ativ');
+        if (novo) {
+          if (S.semTabelaTipos) return toast('Rode a migração 04 no Supabase antes de criar tipos novos.');
+          let id = slug(nome) || novoId('t'); if (RESERVADOS.includes(id) || S.tipos.some(x => x.id === id)) id += '-' + Date.now().toString(36).slice(-4);
+          const row = { id, nome, descricao: desc, usa_atividade: !!(ua && ua.checked), grupo, ordem: S.tipos.length ? Math.max(...S.tipos.map(x => x.ordem || 0)) + 1 : 1, ativo: true };
+          fechar(); S.tipos.push(row); S.tab = id; render(); window.scrollTo(0, 0);
+          await run(S.sb.from('tipos_inspecao').insert(row)).then(() => toast('Tipo criado. Agora adicione os itens do checklist.')).catch(() => { S.tipos = S.tipos.filter(x => x !== row); S.tab = 'tipos'; render(); });
+        } else {
+          const patch = { nome, descricao: desc, grupo }; if (ua) patch.usa_atividade = ua.checked;
+          Object.assign(t, patch); fechar(); render(); await salvarTipo(t, patch); toast('Tipo salvo.');
+        }
+      };
+    });
+  }
+  async function duplicarTipo(t) {
+    if (S.semTabelaTipos) return toast('Rode a migração 04 no Supabase antes de duplicar.');
+    const nome = t.nome + ' (cópia)'; let id = slug(nome); if (S.tipos.some(x => x.id === id)) id += '-' + Date.now().toString(36).slice(-4);
+    const row = { id, nome, descricao: t.descricao || null, usa_atividade: !!t.usa_atividade, grupo: grupoDe(t), ordem: (t.ordem || 0) + 1, ativo: false, modo: t.modo || 'checklist', estrutura: t.estrutura || null };
+    const itens = S.itens.filter(i => i.tipo === t.id).map(i => ({ ...i, id: novoId('i'), tipo: id }));
+    try {
+      await run(S.sb.from('tipos_inspecao').insert(row));
+      if (itens.length) await run(S.sb.from('checklist_itens').insert(itens));
+      S.tipos.push(row); S.itens.push(...itens); render(); toast(`Cópia criada (${itens.length || nCampos(id)} ${ehForm(id) ? 'campos' : 'itens'}). Ela começa oculta no app: edite e ative quando estiver pronta.`);
+    } catch (e) {}
+  }
+  async function excluirTipo(t) {
+    const r = await S.sb.from('inspecoes').select('id', { count: 'exact', head: true }).eq('tipo', t.id);
+    const n = r.count || 0;
+    if (n) return modal(`<h3>Não dá para excluir</h3><p style="margin:0">“${esc(t.nome)}” já tem <b>${n} inspeç${n === 1 ? 'ão' : 'ões'}</b> registradas. Excluir apagaria a referência do histórico.</p><p class="hint" style="margin:0">Para tirar do app, desligue a chave <b>Aparece no app</b> no cartão.</p><div class="acts2"><button class="primary" id="m_x">Entendi</button></div>`, (b, f) => { b.querySelector('#m_x').onclick = f; });
+    const ni = S.itens.filter(i => i.tipo === t.id).length;
+    modal(`<h3>Excluir “${esc(t.nome)}”?</h3><p style="margin:0">Ele ainda não tem inspeções. Serão apagados o tipo${ni ? ` e os <b>${ni} itens</b> do checklist dele` : ''}. Isso não pode ser desfeito.</p><div class="acts2"><button class="ghost" id="m_x">Cancelar</button><button class="primary" id="m_ok" style="background:var(--bad)">Excluir</button></div>`,
+      (box, fechar) => { box.querySelector('#m_x').onclick = fechar; box.querySelector('#m_ok').onclick = async () => { fechar();
+        try { if (ni) await run(S.sb.from('checklist_itens').delete().eq('tipo', t.id)); await run(S.sb.from('tipos_inspecao').delete().eq('id', t.id));
+          S.itens = S.itens.filter(i => i.tipo !== t.id); S.tipos = S.tipos.filter(x => x.id !== t.id); render(); toast('Tipo excluído.'); } catch (e) {} }; });
   }
   async function salvarTipo(t, patch) {
     if (S.semTabelaTipos) return toast('Rode a migração 04 no Supabase para salvar tipos de inspeção.');
