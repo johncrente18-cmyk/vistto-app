@@ -258,7 +258,7 @@ begin
     'id', n.id, 'pergunta', n.pergunta, 'descricao', n.descricao, 'status', n.status,
     'prazo', n.prazo, 'responsavel_nome', n.responsavel_nome,
     'frente', f.codigo, 'frente_nome', f.nome, 'obra', o.nome, 'autor', p.nome,
-    'foto', ft.dados, 'comentario_correcao', n.comentario_correcao)
+    'foto', ft.dados, 'comentario_correcao', n.comentario_correcao, 'equipamento', n.equipamento)
   into r
   from public.ncs n
   left join public.frentes f on f.id = n.frente_id
