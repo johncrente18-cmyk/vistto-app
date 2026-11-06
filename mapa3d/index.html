@@ -56,6 +56,8 @@
   #info b { color:var(--accent); }
   .lbl { position:absolute; transform:translate(-50%,-100%); white-space:nowrap; font-weight:600; pointer-events:none; text-shadow:0 1px 3px #000,0 0 6px #000; }
   .lbl.mar { font-size:18px; padding:2px 8px; border-radius:6px; background:rgba(0,0,0,.45); border-bottom:3px solid; }
+  .lbl.mar small { display:block; font-size:12px; font-weight:600; color:#fff; opacity:.95; margin-top:1px; text-align:center; }
+  .lbl.mar small::before { content:'⛑ '; }
   .lbl.sub { font-size:10px; color:#fff; opacity:.9; }
   .lbl.manobrador { font-size:11px; color:#ffd54f; }
   .lbl.manobrador::before { content:'⚡ '; }
@@ -246,9 +248,13 @@ site3d.add(ecGroup);
 
 // ---------- rotulos HTML ----------
 const labelBox = document.getElementById('labels');
+// técnico responsável de cada MAR (gravado pelo app Vistto ao abrir o 3D)
+let TEC = {}; try { TEC = JSON.parse(localStorage.getItem('vistto_mar_tecnicos')) || {}; } catch {}
+const tecDe = g => TEC[g] && TEC[g].nome ? TEC[g].nome : '';
+const curtoNome = n => { const w = String(n).trim().split(/\s+/); return w.length > 2 ? w[0] + ' ' + w[w.length - 1] : w.join(' '); };
 const labels = site.labels.filter(l => l.type !== 'ponto').map(l => {
   const el = document.createElement('div'); el.className = 'lbl ' + l.type; el.textContent = l.text.replace(/\s*-\s*A\s*=.*$/, m => ' · ' + m.replace(/^\s*-\s*/, ''));
-  if (l.type === 'mar') { el.style.borderColor = site.marColors[l.g]; }
+  if (l.type === 'mar') { el.style.borderColor = site.marColors[l.g]; const tn = tecDe(l.g); if (tn) { const sm = document.createElement('small'); sm.textContent = 'Téc. ' + curtoNome(tn); el.appendChild(sm); } }
   labelBox.appendChild(el);
   const h = l.type === 'mar' ? 60 : l.type === 'sub' ? 8 : 25;
   return { el, type: l.type, v: new THREE.Vector3(toX(l.x), h, toZ(l.y)), on: true };
@@ -272,7 +278,7 @@ const legend = document.getElementById('legend');
 const marOn = Array(9).fill(true);
 for (let gi = 1; gi <= 8; gi++) {
   const sp = document.createElement('span'); sp.innerHTML = `<i style="background:${site.marColors[gi]}"></i>MAR0${gi}`;
-  sp.title = 'Mostrar/ocultar MAR0' + gi;
+  sp.title = 'Mostrar/ocultar MAR0' + gi + (tecDe(gi) ? ' · Técnico: ' + tecDe(gi) : '');
   sp.onclick = () => { marOn[gi] = !marOn[gi]; sp.classList.toggle('off', !marOn[gi]); applyMarFilter(); };
   legend.appendChild(sp);
 }
@@ -417,12 +423,12 @@ renderer.domElement.addEventListener('pointerup', ev => {
   let html = '';
   if (hit.object === panels) {
     const r = rows[hit.instanceId]; const len = ((r[2] - r[1]) * K).toFixed(0);
-    html = `<b>Rastreador</b> · MAR0${r[3]}<br>Comprimento ≈ ${len} m · inclinação ${currentTilt.toFixed(0)}°`;
+    html = `<b>Rastreador</b> · MAR0${r[3]}<br>Comprimento ≈ ${len} m · inclinação ${currentTilt.toFixed(0)}°` + (tecDe(r[3]) ? `<br>Técnico responsável: <b>${tecDe(r[3]).replace(/[<>&]/g, '')}</b>` : '');
   } else {
     let o = hit.object; while (o && !o.userData.kind) o = o.parent;
     if (o?.userData.kind === 'ec') {
       const [x, y] = site.eletrocentros[o.userData.idx];
-      html = `<b>Eletrocentro</b> · MAR0${o.userData.mar}<br>Posição: ${toX(x).toFixed(0)} m E, ${(-toZ(y)).toFixed(0)} m N`;
+      html = `<b>Eletrocentro</b> · MAR0${o.userData.mar}<br>Posição: ${toX(x).toFixed(0)} m E, ${(-toZ(y)).toFixed(0)} m N` + (tecDe(o.userData.mar) ? `<br>Técnico responsável: <b>${tecDe(o.userData.mar).replace(/[<>&]/g, '')}</b>` : '');
     } else if (o?.userData.kind === 'se') html = '<b>Subestação</b>';
   }
   info.innerHTML = html + '<br><small style="color:#9fb0bf">toque fora para fechar</small>'; info.style.display = 'block';
@@ -504,7 +510,7 @@ function whereAmI(x, z) {
   for (const [rx, z0, z1, g] of rowPts) { const dx = Math.abs(rx - x); if (dx > bd) continue; const dz = z < z0 ? z0 - z : z > z1 ? z - z1 : 0; const d = Math.hypot(dx, dz); if (d < bd) { bd = d; mar = g; } }
   const [ec, dec] = nearest(ecRefs, x, z), [sub] = nearest(subRefs, x, z), [man, dman] = nearest(manRefs, x, z);
   const parts = [];
-  parts.push(mar ? `<b>MAR0${mar}</b>` : '<b>Fora dos blocos</b>');
+  parts.push(mar ? `<b>MAR0${mar}</b>` + (tecDe(mar) ? ` (téc. ${tecDe(mar).replace(/[<>&]/g, '')})` : '') : '<b>Fora dos blocos</b>');
   if (sub) parts.push(`perto de ${sub.name}`);
   if (ec) parts.push(`eletrocentro a ${dec.toFixed(0)} m`);
   if (man) parts.push(`${man.name.replace('MANOBRADOR', 'Manobrador')} a ${dman.toFixed(0)} m`);
