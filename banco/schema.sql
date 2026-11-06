@@ -366,3 +366,5 @@ insert into public.checklist_itens (id, tipo, modulo, secao, ordem, pergunta) va
 -- ============================================================
 
 -- E-mail automático das NCs: ver banco/migracao-08-email-nc.sql (gatilho ncs_email + função supabase/functions/enviar-nc)
+
+-- Segurança por papel (contas 'usuario' e desativadas sem acesso; líder só vê as NCs dele): ver banco/migracao-12-seguranca-por-papel.sql
