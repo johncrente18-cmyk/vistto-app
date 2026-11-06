@@ -231,7 +231,7 @@
   const nCampos = id => ehForm(id) ? tipoDe(id).estrutura.itens.reduce((a, it) => a + (it.subitens || []).length, 0) : 0;
   const usaAtiv = id => !ehForm(id) && !!tipoDe(id).usa_atividade;
   const $app = document.getElementById('app');
-  const S = { sb: null, user: null, papel: null, itens: [], ativ: [], tipos: null, semTabelaTipos: false, tab: 'caminhada', status: 'ok', pend: 0, err: '', novoMod: '' };
+  const S = { sb: null, user: null, papel: null, itens: [], ativ: [], tipos: null, semTabelaTipos: false, tab: 'tipos', status: 'ok', pend: 0, err: '', novoMod: '' };
   const timers = {};
 
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
