@@ -164,6 +164,71 @@
   .rk { display: inline-block; font-size: 11.5px; font-weight: 700; padding: 2px 9px; border-radius: 999px; }
   .rk.Alto { background: color-mix(in srgb, var(--bad) 22%, transparent); color: var(--bad); } .rk.Médio { background: color-mix(in srgb, var(--warn) 22%, transparent); color: var(--warn); } .rk.Baixo { background: color-mix(in srgb, var(--ok) 22%, transparent); color: var(--ok); }
   .mchips { display: flex; gap: 6px; flex-wrap: wrap; }
+
+  /* ---------- logo animada (futurista) ---------- */
+  .vlogo { position: relative; display: grid; place-items: center; }
+  .vlogo svg { overflow: visible; }
+  .vlogo .ring-o { transform-origin: 50px 50px; animation: vlSpin 14s linear infinite; }
+  .vlogo .ring-o2 { transform-origin: 50px 50px; animation: vlSpin 22s linear infinite reverse; }
+  .vlogo .ring-m { stroke-dasharray: 252; stroke-dashoffset: 252; transform: rotate(-90deg); transform-origin: 50px 50px; animation: vlDraw 1.4s cubic-bezier(.65,0,.35,1) .2s forwards, vlBreath 3.2s ease-in-out 1.6s infinite; }
+  .vlogo .core { transform-origin: 50px 50px; transform: scale(0); animation: vlPop .5s cubic-bezier(.34,1.56,.64,1) 1.2s forwards, vlPulse 2.4s ease-in-out 1.8s infinite; }
+  .vlogo .orb { transform-origin: 50px 50px; animation: vlSpin 6s linear infinite; }
+  .vlogo .orb.b { animation-duration: 9s; animation-direction: reverse; }
+  .vlogo .orb.c { animation-duration: 13s; }
+  .vlogo .sweep { transform-origin: 50px 50px; animation: vlSpin 4s linear infinite; opacity: .55; }
+  .vlogo .glow { filter: blur(14px); opacity: .45; animation: vlGlow 3.2s ease-in-out infinite; }
+  @keyframes vlSpin { to { transform: rotate(360deg); } }
+  @keyframes vlDraw { to { stroke-dashoffset: 0; } }
+  @keyframes vlBreath { 0%,100% { stroke-width: 9; } 50% { stroke-width: 11; } }
+  @keyframes vlPop { to { transform: scale(1); } }
+  @keyframes vlPulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+  @keyframes vlGlow { 0%,100% { opacity: .3; } 50% { opacity: .6; } }
+  .vname { font-weight: 800; letter-spacing: .32em; text-indent: .32em; background: linear-gradient(90deg, #9184d9, #67e8f9, #c4b5fd, #9184d9); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: vlShine 6s linear infinite; }
+  @keyframes vlShine { to { background-position: 300% 0; } }
+  @media (prefers-reduced-motion: reduce) { .vlogo *, .vname, .hero::after { animation: none !important; } .vlogo .ring-m { stroke-dashoffset: 0; } .vlogo .core { transform: none; } }
+  /* ---------- tela inicial ---------- */
+  .hero { position: relative; overflow: hidden; margin: 22px 0 18px; border-radius: 16px; padding: 34px 20px 28px; display: grid; justify-items: center; gap: 10px; text-align: center;
+    background: radial-gradient(120% 90% at 50% 0%, rgba(145,132,217,.22), transparent 60%), linear-gradient(180deg, #171a28, #12141f); border: 1px solid rgba(145,132,217,.25); }
+  .hero::before { content: ''; position: absolute; inset: 0; opacity: .35; background-image: linear-gradient(rgba(145,132,217,.18) 1px, transparent 1px), linear-gradient(90deg, rgba(145,132,217,.18) 1px, transparent 1px); background-size: 28px 28px; mask-image: radial-gradient(70% 70% at 50% 40%, #000, transparent); -webkit-mask-image: radial-gradient(70% 70% at 50% 40%, #000, transparent); }
+  .hero::after { content: ''; position: absolute; left: 0; right: 0; height: 90px; top: -90px; background: linear-gradient(180deg, transparent, rgba(103,232,249,.10), transparent); animation: vlScan 5s linear infinite; pointer-events: none; }
+  @keyframes vlScan { to { top: 110%; } }
+  .hero > * { position: relative; }
+  .hero .vname { font-size: 34px; }
+  .hero .sub { color: var(--muted); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; }
+  .hero .hi { font-size: 15px; margin-top: 4px; }
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+  .kpi { background: var(--surface); border-radius: 12px; padding: 14px; border: 1px solid var(--line); }
+  .kpi b { display: block; font-size: 26px; line-height: 1.1; }
+  .kpi span { font-size: 12px; color: var(--muted); }
+  .atalhos { display: grid; grid-template-columns: repeat(auto-fill, minmax(195px, 1fr)); gap: 10px; }
+  .atalho { display: grid; grid-template-columns: 42px 1fr; gap: 12px; align-items: center; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px; color: var(--text); transition: border-color .15s, transform .15s; }
+  .atalho:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .atalho .ic { width: 42px; height: 42px; border-radius: 10px; display: grid; place-items: center; background: rgba(145,132,217,.15); color: var(--accent); }
+  .atalho .ic svg { width: 22px; height: 22px; }
+  .atalho b { display: block; font-size: 15px; } .atalho small { color: var(--muted); font-size: 12px; }
+  /* ---------- menu em grupos compactos ---------- */
+  .grp { margin: 2px 0; }
+  .grp-h { display: flex; width: 100%; align-items: center; gap: 8px; border: 0; background: transparent; color: var(--muted); padding: 9px 12px; border-radius: 8px; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; text-align: left; }
+  .grp-h:hover { color: var(--text); background: rgba(255,255,255,.03); }
+  .grp-h .n { margin-left: auto; font-size: 11px; font-weight: 600; background: var(--surface-2); color: var(--muted); padding: 1px 7px; border-radius: 999px; letter-spacing: 0; }
+  .grp-h .chev { transition: transform .15s; font-size: 11px; }
+  .grp.open > .grp-h .chev { transform: rotate(90deg); }
+  .grp.open > .grp-h { color: var(--text); }
+  .grp-b { display: none; padding: 2px 0 6px 6px; }
+  .grp.open > .grp-b { display: block; }
+  .grp-b input { width: calc(100% - 12px); margin: 2px 6px 6px; padding: 7px 10px; font-size: 13px; border: 1px solid var(--line); background: var(--surface); border-radius: 8px; }
+  .grp-b .nav { font-size: 13px; padding: 7px 10px; }
+  .menu-btn { display: none; white-space: nowrap; }
+  @media (max-width: 820px) {
+    .menu-btn { display: inline-flex; padding: 8px 10px; }
+    .brand small { display: none; }
+    .side.side { display: none; flex-direction: column; overflow: auto; max-height: 70vh; padding: 8px 10px; }
+    body.menu-aberto .side.side { display: block; }
+    .side h3 { display: block !important; }
+    .side .nav { width: 100%; white-space: normal; }
+    .kpis { grid-template-columns: 1fr 1fr; }
+    .hero .vname { font-size: 28px; }
+  }
   .ms { position: relative; }
   .ms > button { width: 100%; text-align: left; display: flex; justify-content: space-between; gap: 8px; align-items: center; background: var(--surface-2); border: 1px solid transparent; border-radius: 8px; padding: 9px 10px; color: var(--muted); }
   .ms > button.on { color: var(--text); border-color: var(--accent); }
@@ -231,7 +296,7 @@
   const nCampos = id => ehForm(id) ? tipoDe(id).estrutura.itens.reduce((a, it) => a + (it.subitens || []).length, 0) : 0;
   const usaAtiv = id => !ehForm(id) && !!tipoDe(id).usa_atividade;
   const $app = document.getElementById('app');
-  const S = { sb: null, user: null, papel: null, itens: [], ativ: [], tipos: null, semTabelaTipos: false, tab: 'tipos', status: 'ok', pend: 0, err: '', novoMod: '' };
+  const S = { sb: null, user: null, papel: null, itens: [], ativ: [], tipos: null, semTabelaTipos: false, tab: 'inicio', status: 'ok', pend: 0, err: '', novoMod: '' };
   const timers = {};
 
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -270,11 +335,28 @@
   }
   function fatal(html) { $app.innerHTML = `<div class="login"><div class="card"><h1>Editor do checklist</h1><div class="err">${html}</div></div></div>`; }
 
+
+  // logo do Vistto animada (anel do ícone + órbitas, varredura e brilho)
+  function logoVistto(px) {
+    return `<div class="vlogo" style="width:${px}px;height:${px}px" aria-hidden="true"><svg viewBox="0 0 100 100" width="${px}" height="${px}">
+      <defs><linearGradient id="vg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9184d9"/><stop offset="1" stop-color="#67e8f9"/></linearGradient>
+        <radialGradient id="vg2"><stop offset="0" stop-color="#67e8f9" stop-opacity=".5"/><stop offset="1" stop-color="#67e8f9" stop-opacity="0"/></radialGradient></defs>
+      <circle class="glow" cx="50" cy="50" r="36" fill="#9184d9"/>
+      <g class="sweep"><path d="M50 50 L50 2 A48 48 0 0 1 84 16 Z" fill="url(#vg2)"/></g>
+      <g class="ring-o"><circle cx="50" cy="50" r="48" fill="none" stroke="#9184d9" stroke-opacity=".55" stroke-width="1" stroke-dasharray="2 5"/></g>
+      <g class="ring-o2"><circle cx="50" cy="50" r="44" fill="none" stroke="#67e8f9" stroke-opacity=".35" stroke-width="1.2" stroke-dasharray="18 10 4 10"/></g>
+      <circle class="ring-m" cx="50" cy="50" r="31" fill="none" stroke="url(#vg1)" stroke-width="9" stroke-linecap="round"/>
+      <circle class="core" cx="50" cy="50" r="10" fill="#f1f0f7"/>
+      <g class="orb"><circle cx="50" cy="2" r="2.6" fill="#67e8f9"/></g>
+      <g class="orb b"><circle cx="94" cy="50" r="2" fill="#c4b5fd"/></g>
+      <g class="orb c"><circle cx="50" cy="94" r="1.7" fill="#9184d9"/></g>
+    </svg></div>`;
+  }
   function telaLogin(msg) {
     const emAnt = (document.getElementById('em') || {}).value || '';
     $app.innerHTML = `
       <div class="login"><form class="card" id="f">
-        <div><h1>Painel Vistto</h1><div class="hint" style="margin:0">Entre com a mesma conta de administrador do app Vistto.</div></div>
+        <div style="display:grid;justify-items:center;gap:8px;text-align:center">${logoVistto(110)}<div class="vname" style="font-size:26px">VISTTO</div><div class="hint" style="margin:0">Painel · entre com a mesma conta de administrador do app.</div></div>
         <input type="text" id="em" placeholder="E-mail ou usuário" autocomplete="username" autocapitalize="none" inputmode="email" required value="${esc(emAnt)}">
         <input type="password" id="pw" placeholder="Senha" autocomplete="current-password" required>
         ${msg ? `<div class="err">${msg}</div>` : ''}
@@ -327,33 +409,61 @@
     chart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>',
     clip: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></svg>',
     list: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.2"/><circle cx="4.5" cy="12" r="1.2"/><circle cx="4.5" cy="18" r="1.2"/></svg>',
+    home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>',
     up: '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V5M7 9l5-5 5 5M5 20h14"/></svg>' };
 
   function render() {
     const tps = [...S.tipos].sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
     const navT = t => [t.id, t.nome + (t.ativo === false ? ' (desativado)' : ''), t.id === 'caminhada' ? 'walk' : t.id === 'vivencia' ? 'tent' : 'clip'];
-    const nav = [['Relatórios', [['historico', 'Histórico de inspeções', 'chart']]], ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]],
-      ...GRUPOS.slice().reverse().map(([g, l]) => ['Checklists · ' + l.replace('Inspeções de ', '').replace('Inspeção ', ''), tps.filter(t => grupoDe(t) === g).map(navT)]).filter(x => x[1].length)];
+    const nav = [['', [['inicio', 'Início', 'home']]], ['Relatórios', [['historico', 'Histórico de inspeções', 'chart']]], ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
+    const grupos = GRUPOS.slice().reverse().map(([g, l]) => ({ g, nome: l.replace('Inspeções de ', '').replace('Inspeção ', ''), its: tps.filter(t => grupoDe(t) === g).map(navT) })).filter(x => x.its.length);
+    if (!S.navAberto) { try { S.navAberto = JSON.parse(localStorage.getItem('vistto_painel_menu')) || {}; } catch (e) { S.navAberto = {}; } }
+    grupos.forEach(x => { if (x.its.some(([k]) => k === S.tab)) S.navAberto[x.g] = true; });
+    const navBtn = ([k, n, ic]) => `<button class="nav" data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[ic]}<span>${esc(n)}</span></button>`;
     $app.innerHTML = `
       <header>
         <div class="bar">
-          <div class="brand">Vistto · Painel<small>${esc(S.user.email)}</small></div>
+          <button class="ghost menu-btn" id="menuBtn" aria-label="Menu">☰ Menu</button>
+          <div class="brand" style="display:flex;align-items:center;gap:10px">${logoVistto(34)}<span>Vistto · Painel<small>${esc(S.user.email)}</small></span></div>
           <div class="grow"></div>
           <span id="st" class="pill ok"></span>
           <button class="ghost" id="sair">Sair</button>
         </div>
       </header>
       <div class="shell">
-        <nav class="side" aria-label="Menu"><div class="me"><div class="av">${S.eu && S.eu.foto ? `<img src="${esc(S.eu.foto)}" alt="">` : esc(String((S.eu && S.eu.nome) || S.user.email).trim().split(/\s+/).slice(0, 2).map(x => x[0]).join('').toUpperCase())}</div><div style="min-width:0"><b>${esc((S.eu && S.eu.nome) || 'Sem nome')}</b><small>${esc(S.user.email)}</small><small>Perfil: ${esc({ admin: 'Administrador', supervisor: 'Supervisor', gestor: 'Gestor de obra', tecnico: 'Técnico de segurança', engenheiro: 'Engenheiro' }[S.papel] || S.papel || '—')}</small><small>Obra: UFV Paraíso</small></div></div>${nav.map(([g, its]) => `<h3>${g}</h3>` + its.map(([k, n, ic]) => `<button class="nav" data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[ic]}<span>${n}</span></button>`).join('')).join('')}</nav>
+        <nav class="side" aria-label="Menu"><div class="me"><div class="av">${S.eu && S.eu.foto ? `<img src="${esc(S.eu.foto)}" alt="">` : esc(String((S.eu && S.eu.nome) || S.user.email).trim().split(/\s+/).slice(0, 2).map(x => x[0]).join('').toUpperCase())}</div><div style="min-width:0"><b>${esc((S.eu && S.eu.nome) || 'Sem nome')}</b><small>${esc(S.user.email)}</small><small>Perfil: ${esc({ admin: 'Administrador', supervisor: 'Supervisor', gestor: 'Gestor de obra', tecnico: 'Técnico de segurança', engenheiro: 'Engenheiro' }[S.papel] || S.papel || '—')}</small><small>Obra: UFV Paraíso</small></div></div>${nav.map(([g, its]) => (g ? `<h3>${g}</h3>` : '') + its.map(navBtn).join('')).join('')}
+          <h3>Checklists</h3>${grupos.map(x => `<div class="grp ${S.navAberto[x.g] ? 'open' : ''}" data-grp="${x.g}"><button class="grp-h" type="button"><span class="chev">▶</span>${esc(x.nome)}<span class="n">${x.its.length}</span></button>
+            <div class="grp-b">${x.its.length > 6 ? `<input type="search" placeholder="Buscar em ${esc(x.nome)}" data-busca="${x.g}">` : ''}${x.its.map(navBtn).join('')}</div></div>`).join('')}</nav>
         <main class="wrap" id="main"></main>
       </div>`;
     document.getElementById('sair').onclick = sair;
-    $app.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { S.tab = b.dataset.tab; render(); window.scrollTo(0, 0); });
+    $app.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { S.tab = b.dataset.tab; document.body.classList.remove('menu-aberto'); render(); window.scrollTo(0, 0); });
+    $app.querySelectorAll('.grp-h').forEach(h => h.onclick = () => { const g = h.parentElement, k = g.dataset.grp; g.classList.toggle('open'); S.navAberto[k] = g.classList.contains('open'); try { localStorage.setItem('vistto_painel_menu', JSON.stringify(S.navAberto)); } catch (e) {} });
+    $app.querySelectorAll('[data-busca]').forEach(inp => inp.oninput = () => { const q = semAc(inp.value).trim(); inp.parentElement.querySelectorAll('.nav').forEach(b => { b.style.display = !q || q.split(/\s+/).every(w => semAc(b.textContent).includes(w)) ? '' : 'none'; }); });
+    const mb = document.getElementById('menuBtn'); if (mb) mb.onclick = () => document.body.classList.toggle('menu-aberto');
     setStatus();
     document.getElementById('main').classList.toggle('wide', ['tipos', 'pessoas', 'atividades'].includes(S.tab));
-    if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (S.tab === 'historico') renderHistorico(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
+    if (S.tab === 'inicio') renderInicio(); else if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (S.tab === 'historico') renderHistorico(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
   }
 
+
+  async function renderInicio() {
+    const main = document.getElementById('main');
+    const nome = String((S.eu && S.eu.nome) || '').trim().split(/\s+/)[0] || '';
+    const hora = new Date().getHours(), saud = hora < 12 ? 'Bom dia' : hora < 18 ? 'Boa tarde' : 'Boa noite';
+    const atalhos = [['historico', 'chart', 'Histórico de inspeções', 'Filtrar, ver relatórios e exportar'], ['tipos', 'list', 'Tipos de inspeção', 'Criar, editar e duplicar checklists'], ['atividades', 'bolt', 'Atividades e riscos', 'O que entra na caminhada'], ['pessoas', 'users', 'Cadastro de pessoas', 'Perfis, acessos e liberação']];
+    main.innerHTML = `<section class="hero">${logoVistto(150)}<div class="vname">VISTTO</div><div class="sub">Inspeções de segurança · UFV Paraíso</div><div class="hi">${saud}${nome ? ', ' + esc(nome) : ''}.</div></section>
+      <div class="kpis" id="kpis">${['Inspeções nos últimos 7 dias', 'NCs abertas', 'Tipos de inspeção ativos', 'Pessoas aguardando liberação'].map(l => `<div class="kpi"><b>…</b><span>${l}</span></div>`).join('')}</div>
+      <div class="atalhos">${atalhos.map(([k, ic, t, d]) => `<button class="atalho" data-ir="${k}"><span class="ic">${ICON[ic]}</span><span><b>${t}</b><small>${d}</small></span></button>`).join('')}</div>`;
+    main.querySelectorAll('[data-ir]').forEach(b => b.onclick = () => { S.tab = b.dataset.ir; render(); window.scrollTo(0, 0); });
+    const desde = new Date(Date.now() - 7 * 864e5).toISOString();
+    const [i7, nab, esp] = await Promise.all([S.sb.from('inspecoes').select('id', { count: 'exact', head: true }).gte('criado_em', desde), S.sb.from('ncs').select('id', { count: 'exact', head: true }).in('status', ['aberta', 'vista']), S.sb.from('profiles').select('id', { count: 'exact', head: true }).eq('papel', 'usuario')]);
+    const box = document.getElementById('kpis'); if (!box || S.tab !== 'inicio') return;
+    const vals = [i7.count, nab.count, S.tipos.filter(t => t.ativo !== false).length, esp.count];
+    box.querySelectorAll('.kpi b').forEach((b, k) => { b.textContent = vals[k] == null ? '—' : vals[k].toLocaleString('pt-BR'); if (k === 1 && vals[1]) b.style.color = 'var(--bad)'; if (k === 3 && vals[3]) b.style.color = 'var(--warn)'; });
+    const kp = box.querySelectorAll('.kpi'); kp[3].style.cursor = 'pointer'; kp[3].onclick = () => { S.tab = 'pessoas'; S.ptab = 'busca'; S.qp = 'usuario'; render(); };
+    kp[1].style.cursor = 'pointer'; kp[1].onclick = () => { S.tab = 'historico'; render(); };
+  }
   function modulosDe(tipo) {
     const ms = new Set(S.itens.filter(i => i.tipo === tipo).map(i => i.modulo || 'base'));
     if (usaAtiv(tipo)) S.ativ.forEach(a => (a.modulos || []).forEach(m => ms.add(m)));
