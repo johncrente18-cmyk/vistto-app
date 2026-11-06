@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>UFV Paraíso 3D · Vistto</title>
+<meta name="theme-color" content="#0f1720">
+<style>
+  :root { --bg:#0f1720; --panel:rgba(15,23,32,.86); --fg:#e8eef3; --muted:#9fb0bf; --accent:#ffb300; --line:rgba(255,255,255,.12); }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; overflow:hidden; background:var(--bg); color:var(--fg); font:13px/1.35 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  #app { position:fixed; inset:0; }
+  #labels { position:fixed; inset:0; pointer-events:none; }
+  .ui { position:fixed; background:var(--panel); border:1px solid var(--line); border-radius:12px; backdrop-filter:blur(6px); }
+  #top { top:12px; left:12px; padding:10px 14px; max-width:calc(100vw - 24px); }
+  #top h1 { margin:0; font-size:16px; letter-spacing:.3px; display:flex; align-items:center; gap:10px; }
+  #voltar { display:inline-flex; align-items:center; gap:4px; padding:5px 10px; border-radius:8px; background:#9184d9; color:#161826; font-size:13px; font-weight:700; text-decoration:none; flex:0 0 auto; }
+  #top small { color:var(--muted); }
+  #ctrl { top:12px; right:12px; padding:10px 12px; width:230px; }
+  #ctrl h2 { margin:0 0 6px; font-size:12px; text-transform:uppercase; color:var(--muted); letter-spacing:.6px; }
+  #ctrl label { display:flex; align-items:center; gap:6px; margin:3px 0; cursor:pointer; }
+  #ctrl input[type=range] { width:100%; }
+  #ctrl button { width:100%; margin-top:6px; padding:7px; border-radius:8px; border:1px solid var(--line); background:#1d2a36; color:var(--fg); cursor:pointer; font:inherit; }
+  #ctrl button:hover { background:#26384a; }
+  #toggleCtrl { display:none; }
+  #ctrl { max-height:calc(100vh - 24px); overflow:auto; }
+  .mini { color:var(--muted); font-size:11px; margin:3px 0; }
+  #where { display:none; margin-top:6px; padding-top:6px; border-top:1px solid var(--line); font-size:12px; }
+  #where b { color:#64b5f6; }
+  #calib { left:12px; bottom:12px; width:330px; padding:12px 14px; display:none; z-index:4; max-height:calc(100vh - 100px); overflow:auto; }
+  #calib.open { display:block; }
+  #calib h3 { margin:0 0 6px; font-size:14px; color:var(--accent); }
+  #calib ol { margin:0 0 8px; padding-left:18px; color:var(--muted); font-size:12px; }
+  #calib ol li { margin:2px 0; }
+  #calib button { padding:7px 8px; border-radius:8px; border:1px solid var(--line); background:#1d2a36; color:var(--fg); cursor:pointer; font:inherit; }
+  #calib button.primary { width:100%; background:var(--accent); color:#111; font-weight:600; border-color:var(--accent); margin:6px 0; }
+  #calib button:disabled { opacity:.5; }
+  #calib .row { display:flex; gap:5px; margin-top:6px; } #calib .row button { flex:1; font-size:12px; }
+  #calList .pt { display:flex; justify-content:space-between; align-items:center; padding:3px 0; border-bottom:1px solid var(--line); font-size:12px; }
+  #calList .pt button { padding:2px 8px; }
+  #calState.warn { color:#ffcc80; } #calState.ok { color:#a5d6a7; }
+  body.tapping canvas { cursor:crosshair; }
+  .seg { display:flex; gap:4px; }
+  #ctrl .seg button { margin-top:0; padding:6px 4px; font-size:12px; }
+  #ctrl .seg button.on { background:var(--accent); color:#111; border-color:var(--accent); font-weight:600; }
+  #camHelp { color:var(--muted); font-size:11px; margin-top:5px; line-height:1.4; }
+  #flyPad { position:fixed; right:12px; bottom:70px; display:none; grid-template-columns:repeat(3,46px); gap:6px; z-index:2; }
+  #flyPad button { height:46px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--fg); font-size:18px; touch-action:none; }
+  @media (pointer:coarse) { body.fly #flyPad { display:grid; } }
+  body.fly canvas { cursor:crosshair; }
+  #legend { left:12px; bottom:12px; padding:8px 12px; display:grid; grid-template-columns:repeat(4,auto); gap:4px 12px; }
+  #legend span { display:flex; align-items:center; gap:5px; cursor:pointer; user-select:none; }
+  #legend span.off { opacity:.35; }
+  #legend i { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  #info { left:50%; transform:translateX(-50%); bottom:12px; padding:10px 14px; display:none; min-width:220px; }
+  #info b { color:var(--accent); }
+  .lbl { position:absolute; transform:translate(-50%,-100%); white-space:nowrap; font-weight:600; pointer-events:none; text-shadow:0 1px 3px #000,0 0 6px #000; }
+  .lbl.mar { font-size:18px; padding:2px 8px; border-radius:6px; background:rgba(0,0,0,.45); border-bottom:3px solid; }
+  .lbl.sub { font-size:10px; color:#fff; opacity:.9; }
+  .lbl.manobrador { font-size:11px; color:#ffd54f; }
+  .lbl.manobrador::before { content:'⚡ '; }
+  .lbl.acesso { font-size:10px; color:#e0c9a6; }
+  .lbl.area, .lbl.infra { font-size:10px; color:#b3e5fc; max-width:180px; white-space:normal; text-align:center; }
+  #loading { position:fixed; inset:0; display:grid; place-items:center; background:var(--bg); z-index:9; font-size:15px; }
+  @media (max-width:640px) {
+    #ctrl { width:auto; left:12px; top:auto; bottom:12px; right:12px; display:none; }
+    #ctrl.open { display:block; }
+    #toggleCtrl { display:block; position:fixed; right:12px; top:12px; z-index:3; padding:8px 12px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--fg); font:inherit; }
+    #legend { grid-template-columns:repeat(4,auto); font-size:11px; bottom:12px; }
+    #legend.hide { display:none; }
+    #top { right:90px; }
+    #top small { display:none; }
+  }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="loading">Carregando UFV Paraíso…</div>
+<div id="app"></div>
+<div id="labels"></div>
+<div id="top" class="ui"><h1><a id="voltar" href="../#/mapa">‹ Vistto</a>UFV Paraíso — Layout 3D</h1><small>Escala 1:11.000 · arraste para girar · roda/pinça para zoom · toque para detalhes</small><div id="where"></div></div>
+<button id="toggleCtrl">☰ Camadas</button>
+<div id="ctrl" class="ui">
+  <h2>Câmera</h2>
+  <div class="seg" id="camMode">
+    <button data-m="orbit" class="on">Órbita</button><button data-m="map">Mapa</button><button data-m="fly">Voo livre</button>
+  </div>
+  <div id="camHelp"></div>
+  <h2 style="margin-top:10px">GPS</h2>
+  <label><input type="checkbox" id="gpsOn"> Mostrar minha posição</label>
+  <label><input type="checkbox" id="gpsFollow"> Seguir minha posição</label>
+  <div id="gpsStatus" class="mini">Desligado</div>
+  <button id="btnCalib">Calibrar GPS…</button>
+  <h2 style="margin-top:10px">Camadas</h2>
+  <label><input type="checkbox" id="cPanels" checked> Rastreadores (painéis)</label>
+  <label><input type="checkbox" id="cMarColor"> Colorir painéis por MAR</label>
+  <label><input type="checkbox" id="cEc" checked> Eletrocentros</label>
+  <label><input type="checkbox" id="cFence" checked> Cerca perimetral</label>
+  <label><input type="checkbox" id="lMar" checked> Rótulos MAR</label>
+  <label><input type="checkbox" id="lSub"> Rótulos sub-blocos</label>
+  <label><input type="checkbox" id="lMan" checked> Manobradores</label>
+  <label><input type="checkbox" id="lAce"> Acessos</label>
+  <label><input type="checkbox" id="lArea" checked> Áreas / infraestrutura</label>
+  <h2 style="margin-top:10px">Sol / rastreamento <span id="hourTxt">10:00</span></h2>
+  <input type="range" id="hour" min="6" max="18" step="0.25" value="10">
+  <button id="btnTop">Vista de cima</button>
+  <button id="btnReset">Vista inicial</button>
+  <button id="btnGlb">Exportar modelo .glb</button>
+</div>
+<div id="legend" class="ui"></div>
+<div id="flyPad">
+  <button data-k="up" title="Subir">⤒</button><button data-k="fwd" title="Frente">▲</button><button data-k="down" title="Descer">⤓</button>
+  <button data-k="left" title="Esquerda">◀</button><button data-k="back" title="Trás">▼</button><button data-k="right" title="Direita">▶</button>
+</div>
+<div id="info" class="ui"></div>
+<div id="calib" class="ui">
+  <h3>Calibrar GPS em campo</h3>
+  <ol>
+    <li>Vá até um ponto fácil de achar no mapa: um <b>eletrocentro</b>, um cruzamento de vias ou um canto da cerca.</li>
+    <li>Toque em <b>Marcar ponto</b> e fique parado por 6 segundos.</li>
+    <li>Dê <b>zoom</b> no local e toque no mapa <b>exatamente onde você está</b>. Se tocar perto de um eletrocentro, o ponto vai direto para o centro dele.</li>
+    <li>Repita em <b>2 ou 3 pontos bem afastados</b> (ex.: MAR01 e MAR08).</li>
+  </ol>
+  <div id="calState" class="mini"></div>
+  <button id="calMark" class="primary">📍 Marcar ponto onde estou</button>
+  <div id="calList"></div>
+  <div class="row"><button id="calCopy">Copiar</button><button id="calPaste">Colar</button><button id="calClear">Apagar</button><button id="calClose">Fechar</button></div>
+</div>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFExporter } from 'three/addons/exporters/GLTFExporter.js';
+
+const site = await (await fetch('site.json')).json();
+const K = site.metersPerPt;                      // metros por ponto do PDF (1:11000)
+const [BX0, BY0, BX1, BY1] = site.bounds;
+const CX = (BX0 + BX1) / 2, CY = (BY0 + BY1) / 2;
+const toX = x => (x - CX) * K, toZ = y => -(y - CY) * K;   // norte = -Z
+const SIZE_X = (BX1 - BX0) * K, SIZE_Z = (BY1 - BY0) * K;
+const MAR = site.marColors.map(c => new THREE.Color(c));
+
+// ---------- renderer / cena ----------
+const renderer = new THREE.WebGLRenderer({ antialias: true, logarithmicDepthBuffer: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+document.getElementById('app').appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#9ec9ea');
+scene.fog = new THREE.Fog('#9ec9ea', 9000, 22000);
+const camera = new THREE.PerspectiveCamera(50, innerWidth / innerHeight, 0.5, 60000);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true; controls.maxPolarAngle = Math.PI * 0.495; controls.minDistance = 3; controls.maxDistance = 25000;
+controls.screenSpacePanning = false; controls.zoomToCursor = true; controls.keyPanSpeed = 40;
+controls.listenToKeyEvents(window);   // setas do teclado movem o mapa
+
+const hemi = new THREE.HemisphereLight('#dbeeff', '#6b5a3c', 1.1); scene.add(hemi);
+const sun = new THREE.DirectionalLight('#fff4e0', 2.2); scene.add(sun);
+
+const site3d = new THREE.Group(); site3d.name = 'UFV_Paraiso'; scene.add(site3d);
+
+// ---------- terreno ----------
+const tex = await new THREE.TextureLoader().loadAsync('ground.jpg');
+tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(SIZE_X, SIZE_Z), new THREE.MeshLambertMaterial({ map: tex }));
+ground.rotation.x = -Math.PI / 2; ground.name = 'Terreno'; site3d.add(ground);
+const outer = new THREE.Mesh(new THREE.PlaneGeometry(60000, 60000), new THREE.MeshLambertMaterial({ color: '#c3bd94' }));
+outer.rotation.x = -Math.PI / 2; outer.position.y = -0.5; scene.add(outer);
+
+// ---------- rastreadores (InstancedMesh) ----------
+const PANEL_W = 4.6, PANEL_T = 0.12, HUB = 2.3;   // largura 2P (~4,6 m), altura do eixo
+const rows = site.rows;
+const panelGeo = new THREE.BoxGeometry(PANEL_W, PANEL_T, 1);
+const panelMat = new THREE.MeshStandardMaterial({ color: '#ffffff', metalness: 0.35, roughness: 0.32 });
+const panels = new THREE.InstancedMesh(panelGeo, panelMat, rows.length); panels.name = 'Rastreadores';
+const postGeo = new THREE.BoxGeometry(0.25, HUB, 1);
+const posts = new THREE.InstancedMesh(postGeo, new THREE.MeshLambertMaterial({ color: '#8a8f96' }), rows.length); posts.name = 'Estrutura';
+const PANEL_BLUE = new THREE.Color('#1d3557');
+const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), s3 = new THREE.Vector3(), p3 = new THREE.Vector3(), e = new THREE.Euler();
+function layoutPanels(tiltDeg) {
+  e.set(0, 0, THREE.MathUtils.degToRad(tiltDeg)); q.setFromEuler(e);
+  for (let i = 0; i < rows.length; i++) {
+    const [x, y0, y1] = rows[i];
+    const len = (y1 - y0) * K;
+    p3.set(toX(x), HUB, toZ((y0 + y1) / 2)); s3.set(1, 1, len);
+    panels.setMatrixAt(i, m4.compose(p3, q, s3));
+  }
+  panels.instanceMatrix.needsUpdate = true;
+}
+function colorPanels(byMar) {
+  for (let i = 0; i < rows.length; i++) panels.setColorAt(i, byMar ? MAR[rows[i][3]] : PANEL_BLUE);
+  panels.instanceColor.needsUpdate = true;
+}
+{ const qi = new THREE.Quaternion();
+  for (let i = 0; i < rows.length; i++) { const [x, y0, y1] = rows[i];
+    posts.setMatrixAt(i, m4.compose(p3.set(toX(x), HUB / 2, toZ((y0 + y1) / 2)), qi, s3.set(1, 1, Math.max(0.5, (y1 - y0) * K * 0.92)))); } }
+// a "estrutura" e um septo fino sob o eixo (le-se como estacas/tubo de torque a distancia)
+layoutPanels(0); colorPanels(false);
+site3d.add(panels, posts);
+
+// ---------- eletrocentros ----------
+const ecGroup = new THREE.Group(); ecGroup.name = 'Eletrocentros';
+const ecBody = new THREE.BoxGeometry(12.2, 3.2, 3.0), ecRoof = new THREE.BoxGeometry(12.6, 0.35, 3.4), ecPad = new THREE.BoxGeometry(16, 0.3, 6);
+const ecMat = new THREE.MeshStandardMaterial({ color: '#f2f2f2', roughness: .6 }), padMat = new THREE.MeshLambertMaterial({ color: '#9e9e9e' });
+site.eletrocentros.forEach(([x, y, , , gi], idx) => {
+  const g = new THREE.Group(); g.position.set(toX(x), 0, toZ(y));
+  const pad = new THREE.Mesh(ecPad, padMat); pad.position.y = .15;
+  const body = new THREE.Mesh(ecBody, ecMat); body.position.y = 1.9;
+  const roof = new THREE.Mesh(ecRoof, new THREE.MeshStandardMaterial({ color: MAR[gi] || '#999', roughness: .5 })); roof.position.y = 3.65;
+  g.add(pad, body, roof); g.userData = { kind: 'ec', mar: gi, idx };
+  g.name = `Eletrocentro_${idx + 1}_MAR0${gi}`;
+  ecGroup.add(g);
+});
+site3d.add(ecGroup);
+
+// ---------- subestacao ----------
+{ const [a, b, c, d] = site.subestacao; const w = (c - a) * K, h = (d - b) * K;
+  const se = new THREE.Group(); se.name = 'Subestacao'; se.position.set(toX((a + c) / 2), 0, toZ((b + d) / 2));
+  const pad = new THREE.Mesh(new THREE.BoxGeometry(w, .4, h), new THREE.MeshLambertMaterial({ color: '#b0aca4' })); pad.position.y = .2; se.add(pad);
+  const trM = new THREE.MeshStandardMaterial({ color: '#7d8b97', roughness: .5 });
+  for (let i = 0; i < 3; i++) { const t = new THREE.Mesh(new THREE.BoxGeometry(w * .18, 7, h * .08), trM); t.position.set((i - 1) * w * .28, 3.9, -h * .15); se.add(t); }
+  const bay = new THREE.Mesh(new THREE.BoxGeometry(w * .8, 12, 1.2), new THREE.MeshLambertMaterial({ color: '#c9ccd1', transparent: true, opacity: .55 })); bay.position.set(0, 6, h * .2); se.add(bay);
+  const house = new THREE.Mesh(new THREE.BoxGeometry(w * .3, 4.5, h * .12), new THREE.MeshStandardMaterial({ color: '#e8e2d0' })); house.position.set(0, 2.6, h * .38); se.add(house);
+  se.userData = { kind: 'se' }; site3d.add(se);
+}
+
+// ---------- cerca ----------
+{ const pos = [], FH = 2.4;
+  for (const pl of site.fence) for (let j = 0; j + 3 < pl.length; j += 2) {
+    const ax = toX(pl[j]), az = toZ(pl[j + 1]), bx = toX(pl[j + 2]), bz = toZ(pl[j + 3]);
+    if (Math.hypot(bx - ax, bz - az) < .01) continue;
+    pos.push(ax, 0, az, bx, 0, bz, bx, FH, bz, ax, 0, az, bx, FH, bz, ax, FH, az);
+  }
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3)); g.computeVertexNormals();
+  var fence = new THREE.Mesh(g, new THREE.MeshLambertMaterial({ color: '#5d6d7e', side: THREE.DoubleSide, transparent: true, opacity: .75 }));
+  fence.name = 'Cerca'; site3d.add(fence);
+}
+
+// ---------- rotulos HTML ----------
+const labelBox = document.getElementById('labels');
+const labels = site.labels.filter(l => l.type !== 'ponto').map(l => {
+  const el = document.createElement('div'); el.className = 'lbl ' + l.type; el.textContent = l.text.replace(/\s*-\s*A\s*=.*$/, m => ' · ' + m.replace(/^\s*-\s*/, ''));
+  if (l.type === 'mar') { el.style.borderColor = site.marColors[l.g]; }
+  labelBox.appendChild(el);
+  const h = l.type === 'mar' ? 60 : l.type === 'sub' ? 8 : 25;
+  return { el, type: l.type, v: new THREE.Vector3(toX(l.x), h, toZ(l.y)), on: true };
+});
+const vis = { mar: true, sub: false, manobrador: true, acesso: false, area: true, info: true, infra: true };
+const tmpV = new THREE.Vector3();
+function updateLabels() {
+  const w = innerWidth, h = innerHeight, dist = camera.position.distanceTo(controls.target);
+  for (const L of labels) {
+    let show = vis[L.type];
+    if (L.type === 'sub' && dist > 3500) show = false;
+    if (show) { tmpV.copy(L.v).project(camera); show = tmpV.z < 1 && Math.abs(tmpV.x) < 1.1 && Math.abs(tmpV.y) < 1.1; }
+    if (!show) { if (L.on) { L.el.style.display = 'none'; L.on = false; } continue; }
+    if (!L.on) { L.el.style.display = ''; L.on = true; }
+    L.el.style.left = ((tmpV.x + 1) / 2 * w) + 'px'; L.el.style.top = ((1 - tmpV.y) / 2 * h) + 'px';
+  }
+}
+
+// ---------- legenda ----------
+const legend = document.getElementById('legend');
+const marOn = Array(9).fill(true);
+for (let gi = 1; gi <= 8; gi++) {
+  const sp = document.createElement('span'); sp.innerHTML = `<i style="background:${site.marColors[gi]}"></i>MAR0${gi}`;
+  sp.title = 'Mostrar/ocultar MAR0' + gi;
+  sp.onclick = () => { marOn[gi] = !marOn[gi]; sp.classList.toggle('off', !marOn[gi]); applyMarFilter(); };
+  legend.appendChild(sp);
+}
+function applyMarFilter() {
+  layoutPanels(currentTilt);
+  const zero = new THREE.Matrix4().makeScale(0, 0, 0);
+  for (let i = 0; i < rows.length; i++) if (!marOn[rows[i][3]]) { panels.setMatrixAt(i, zero); }
+  panels.instanceMatrix.needsUpdate = true;
+  ecGroup.children.forEach(g => g.visible = marOn[g.userData.mar]);
+}
+
+// ---------- sol + rastreamento ----------
+let currentTilt = 0;
+function setHour(hr) {
+  const ang = (hr - 12) * 15;                                   // angulo horario
+  currentTilt = THREE.MathUtils.clamp(-ang, -55, 55);           // rastreador segue o sol (leste->oeste)
+  const elev = THREE.MathUtils.degToRad(Math.max(5, 90 - Math.abs(ang) * 1.05));
+  const az = THREE.MathUtils.degToRad(ang);
+  sun.position.set(Math.sin(az) * Math.cos(elev) * 10000, Math.sin(elev) * 10000, Math.cos(az) * Math.cos(elev) * 2000);
+  const warm = Math.abs(ang) / 90; sun.color.setHSL(0.1, 0.6 * warm, 0.95 - 0.15 * warm);
+  applyMarFilter();
+  const hh = Math.floor(hr), mm = Math.round((hr - hh) * 60);
+  document.getElementById('hourTxt').textContent = `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`;
+}
+setHour(10);
+
+// ---------- camera ----------
+function viewInitial() { const f = Math.max(1, 1.25 / camera.aspect); camera.position.set(300 - 900 * f, 5200 * f, -200 + 5800 * f); controls.target.set(300, 0, -200); controls.update(); }
+function viewTop() { camera.position.set(0, 9500, 1); controls.target.set(0, 0, 0); controls.update(); }
+viewInitial();
+
+// ---------- modos de camera ----------
+// orbit: arrastar gira em volta do ponto central (duplo clique muda o centro)
+// map:   arrastar move o mapa, botao direito / 2 dedos gira
+// fly:   camera livre, olha para qualquer lado e anda por todo o terreno
+const HELP = {
+  orbit: 'Arrastar: girar · Botão direito / 2 dedos: mover · Roda / pinça: zoom · <b>Duplo clique</b>: girar em volta daquele ponto · Setas: mover',
+  map: 'Arrastar: mover o mapa · Botão direito / 2 dedos: girar · Roda / pinça: zoom · Duplo clique: centralizar',
+  fly: 'Arrastar: olhar · <b>W A S D</b> / setas: andar · <b>Q / E</b>: descer / subir · Shift: rápido · Roda: frente/trás · No celular: botões na tela',
+};
+let camMode = 'orbit';
+const fly = { yaw: 0, pitch: 0, keys: new Set(), drag: null, pinch: null };
+const dir3 = new THREE.Vector3();
+function setCamMode(m) {
+  if (m === camMode) return;
+  if (camMode === 'fly') exitFly();
+  camMode = m;
+  document.querySelectorAll('#camMode button').forEach(b => b.classList.toggle('on', b.dataset.m === m));
+  document.getElementById('camHelp').innerHTML = HELP[m];
+  document.body.classList.toggle('fly', m === 'fly');
+  if (m === 'fly') { enterFly(); return; }
+  controls.enabled = true;
+  if (m === 'orbit') {
+    controls.mouseButtons = { LEFT: THREE.MOUSE.ROTATE, MIDDLE: THREE.MOUSE.DOLLY, RIGHT: THREE.MOUSE.PAN };
+    controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN };
+  } else {
+    controls.mouseButtons = { LEFT: THREE.MOUSE.PAN, MIDDLE: THREE.MOUSE.DOLLY, RIGHT: THREE.MOUSE.ROTATE };
+    controls.touches = { ONE: THREE.TOUCH.PAN, TWO: THREE.TOUCH.DOLLY_ROTATE };
+  }
+}
+function enterFly() {
+  controls.enabled = false;
+  camera.getWorldDirection(dir3);
+  fly.yaw = Math.atan2(-dir3.x, -dir3.z); fly.pitch = Math.asin(THREE.MathUtils.clamp(dir3.y, -1, 1));
+}
+function exitFly() {
+  // o novo centro da orbita e o ponto do chao para onde a camera esta olhando
+  camera.getWorldDirection(dir3);
+  const t = dir3.y < -0.05 ? camera.position.y / -dir3.y : Math.max(300, camera.position.y * 2);
+  controls.target.copy(camera.position).addScaledVector(dir3, Math.min(t, 15000)); controls.target.y = 0;
+  controls.enabled = true; controls.update();
+}
+const cvs = renderer.domElement;
+cvs.addEventListener('pointerdown', ev => { if (camMode === 'fly' && ev.isPrimary) { fly.drag = [ev.clientX, ev.clientY]; cvs.setPointerCapture(ev.pointerId); } });
+cvs.addEventListener('pointermove', ev => {
+  if (camMode !== 'fly' || !fly.drag || !ev.isPrimary || fly.pinch) return;
+  fly.yaw -= (ev.clientX - fly.drag[0]) * 0.004; fly.pitch -= (ev.clientY - fly.drag[1]) * 0.004;
+  fly.pitch = THREE.MathUtils.clamp(fly.pitch, -1.55, 1.55); fly.drag = [ev.clientX, ev.clientY];
+});
+addEventListener('pointerup', () => fly.drag = null);
+const flySpeed = () => Math.max(12, camera.position.y * 0.9) * (fly.keys.has('fast') ? 4 : 1);
+cvs.addEventListener('wheel', ev => { if (camMode !== 'fly') return; ev.preventDefault();
+  camera.getWorldDirection(dir3); camera.position.addScaledVector(dir3, -Math.sign(ev.deltaY) * flySpeed() * 0.6); }, { passive: false });
+cvs.addEventListener('touchstart', ev => { if (camMode === 'fly' && ev.touches.length === 2) fly.pinch = Math.hypot(ev.touches[0].clientX - ev.touches[1].clientX, ev.touches[0].clientY - ev.touches[1].clientY); }, { passive: true });
+cvs.addEventListener('touchmove', ev => { if (camMode !== 'fly' || ev.touches.length !== 2 || fly.pinch == null) return;
+  const d = Math.hypot(ev.touches[0].clientX - ev.touches[1].clientX, ev.touches[0].clientY - ev.touches[1].clientY);
+  camera.getWorldDirection(dir3); camera.position.addScaledVector(dir3, (d - fly.pinch) * flySpeed() * 0.02); fly.pinch = d; }, { passive: true });
+cvs.addEventListener('touchend', ev => { if (ev.touches.length < 2) fly.pinch = null; });
+const KEYMAP = { KeyW: 'fwd', ArrowUp: 'fwd', KeyS: 'back', ArrowDown: 'back', KeyA: 'left', ArrowLeft: 'left', KeyD: 'right', ArrowRight: 'right',
+  KeyE: 'up', Space: 'up', KeyQ: 'down', KeyC: 'down', ShiftLeft: 'fast', ShiftRight: 'fast' };
+addEventListener('keydown', ev => { if (camMode !== 'fly' || ev.target.tagName === 'INPUT') return; const k = KEYMAP[ev.code]; if (k) { fly.keys.add(k); ev.preventDefault(); } });
+addEventListener('keyup', ev => { const k = KEYMAP[ev.code]; if (k) fly.keys.delete(k); });
+addEventListener('blur', () => fly.keys.clear());
+document.querySelectorAll('#flyPad button').forEach(b => {
+  b.addEventListener('pointerdown', ev => { ev.preventDefault(); fly.keys.add(b.dataset.k); });
+  for (const t of ['pointerup', 'pointerleave', 'pointercancel']) b.addEventListener(t, () => fly.keys.delete(b.dataset.k));
+});
+const fwd = new THREE.Vector3(), right = new THREE.Vector3(), UP = new THREE.Vector3(0, 1, 0);
+function updateFly(dt) {
+  camera.rotation.set(fly.pitch, fly.yaw, 0, 'YXZ');
+  const k = fly.keys, v = flySpeed() * dt;
+  camera.getWorldDirection(fwd); right.crossVectors(fwd, UP).normalize();
+  if (k.has('fwd')) camera.position.addScaledVector(fwd, v);
+  if (k.has('back')) camera.position.addScaledVector(fwd, -v);
+  if (k.has('right')) camera.position.addScaledVector(right, v);
+  if (k.has('left')) camera.position.addScaledVector(right, -v);
+  if (k.has('up')) camera.position.y += v;
+  if (k.has('down')) camera.position.y -= v;
+  camera.position.y = THREE.MathUtils.clamp(camera.position.y, 1.7, 20000);   // altura minima = olhos de uma pessoa
+}
+// duplo clique: leva o centro da orbita para o ponto clicado (animado)
+let glide = null;
+cvs.addEventListener('dblclick', ev => {
+  if (camMode === 'fly') return;
+  ndc.set(ev.clientX / innerWidth * 2 - 1, -(ev.clientY / innerHeight) * 2 + 1); ray.setFromCamera(ndc, camera);
+  const hit = ray.intersectObjects([ground, outer], false)[0]; if (!hit) return;
+  const delta = hit.point.clone().sub(controls.target); delta.y = 0;
+  glide = { t0: performance.now(), fromT: controls.target.clone(), fromC: camera.position.clone(), delta };
+});
+function updateGlide() {
+  if (!glide) return;
+  const a = Math.min(1, (performance.now() - glide.t0) / 600), s = a * a * (3 - 2 * a);
+  controls.target.copy(glide.fromT).addScaledVector(glide.delta, s);
+  camera.position.copy(glide.fromC).addScaledVector(glide.delta, s);
+  if (a >= 1) glide = null;
+}
+document.querySelectorAll('#camMode button').forEach(b => b.onclick = () => setCamMode(b.dataset.m));
+document.getElementById('camHelp').innerHTML = HELP.orbit;
+
+// ---------- selecao ----------
+const info = document.getElementById('info');
+const ray = new THREE.Raycaster(); const ndc = new THREE.Vector2();
+let downAt = null;
+renderer.domElement.addEventListener('pointerdown', ev => downAt = [ev.clientX, ev.clientY]);
+renderer.domElement.addEventListener('pointerup', ev => {
+  if (!downAt || Math.hypot(ev.clientX - downAt[0], ev.clientY - downAt[1]) > 6) return;
+  ndc.set(ev.clientX / innerWidth * 2 - 1, -(ev.clientY / innerHeight) * 2 + 1);
+  ray.setFromCamera(ndc, camera);
+  if (calib.waitingTap) { calibTap(); return; }
+  const hit = ray.intersectObjects([panels, ecGroup, site3d.getObjectByName('Subestacao')], true)[0];
+  if (!hit) { info.style.display = 'none'; return; }
+  let html = '';
+  if (hit.object === panels) {
+    const r = rows[hit.instanceId]; const len = ((r[2] - r[1]) * K).toFixed(0);
+    html = `<b>Rastreador</b> · MAR0${r[3]}<br>Comprimento ≈ ${len} m · inclinação ${currentTilt.toFixed(0)}°`;
+  } else {
+    let o = hit.object; while (o && !o.userData.kind) o = o.parent;
+    if (o?.userData.kind === 'ec') {
+      const [x, y] = site.eletrocentros[o.userData.idx];
+      html = `<b>Eletrocentro</b> · MAR0${o.userData.mar}<br>Posição: ${toX(x).toFixed(0)} m E, ${(-toZ(y)).toFixed(0)} m N`;
+    } else if (o?.userData.kind === 'se') html = '<b>Subestação</b>';
+  }
+  info.innerHTML = html + '<br><small style="color:#9fb0bf">toque fora para fechar</small>'; info.style.display = 'block';
+});
+
+// =====================================================================
+// GPS + calibracao em campo
+// O PDF nao tem coordenadas. A calibracao liga leituras de GPS (lat/lon) a pontos
+// tocados no mapa e calcula uma transformacao de similaridade 2D (escala + rotacao + translacao)
+// por minimos quadrados:  z = a*w + b  (numeros complexos), com
+//   w = (leste, norte) em metros a partir do 1o ponto calibrado
+//   z = (X, N) da cena  (N = -Z)
+// =====================================================================
+const byId = id => document.getElementById(id);
+const R_EARTH = 6371008.8, DEG = Math.PI / 180;
+const CAL_KEY = 'ufv-paraiso-calib-v1';
+const calib = { points: [], ref: null, a: [1, 0], b: [0, 0], ok: false, waitingTap: false, pending: null, sampling: null };
+const llToEN = (lat, lon, ref) => [(lon - ref.lon) * DEG * R_EARTH * Math.cos(ref.lat * DEG), (lat - ref.lat) * DEG * R_EARTH];
+function applyT(e, n) { const [ar, ai] = calib.a, [br, bi] = calib.b; return [ar * e - ai * n + br, ai * e + ar * n + bi]; } // -> [X, N]
+function fitCalibration() {
+  const P = calib.points; calib.ok = P.length > 0;
+  if (!P.length) { calib.ref = null; return; }
+  calib.ref = { lat: P[0].lat, lon: P[0].lon };
+  const W = P.map(p => llToEN(p.lat, p.lon, calib.ref)), Z = P.map(p => [p.x, -p.z]);
+  if (P.length === 1) { calib.a = [1, 0]; calib.b = [Z[0][0] - W[0][0], Z[0][1] - W[0][1]]; }
+  else {
+    const n = P.length; let wx = 0, wy = 0, zx = 0, zy = 0;
+    for (let i = 0; i < n; i++) { wx += W[i][0]; wy += W[i][1]; zx += Z[i][0]; zy += Z[i][1]; }
+    wx /= n; wy /= n; zx /= n; zy /= n;
+    let nr = 0, ni = 0, den = 0;
+    for (let i = 0; i < n; i++) { const ux = W[i][0] - wx, uy = W[i][1] - wy, vx = Z[i][0] - zx, vy = Z[i][1] - zy;
+      nr += vx * ux + vy * uy; ni += vy * ux - vx * uy; den += ux * ux + uy * uy; }   // sum (z-z̄)·conj(w-w̄)
+    if (den < 1) { calib.a = [1, 0]; } else calib.a = [nr / den, ni / den];
+    const [ar, ai] = calib.a; calib.b = [zx - (ar * wx - ai * wy), zy - (ai * wx + ar * wy)];
+  }
+  P.forEach((p, i) => { const [X, N] = applyT(...W[i]); p.err = Math.hypot(X - Z[i][0], N - Z[i][1]); });
+}
+function gpsToScene(lat, lon) { const [X, N] = applyT(...llToEN(lat, lon, calib.ref)); return [X, -N]; }
+function saveCalib() { try { localStorage.setItem(CAL_KEY, JSON.stringify(calib.points.map(({ lat, lon, acc, x, z, label, t }) => ({ lat, lon, acc, x, z, label, t })))); } catch {} }
+function loadCalib(list) {
+  calib.points = (list || []).filter(p => isFinite(p.lat) && isFinite(p.lon) && isFinite(p.x) && isFinite(p.z));
+  fitCalibration(); renderCalib(); drawCalibPins(); if (gps.last) onPosition(gps.last);
+}
+try { const s = localStorage.getItem(CAL_KEY); if (s) calib.points = JSON.parse(s); } catch {}
+if (!calib.points.length && site.calibration) calib.points = site.calibration;   // calibracao padrao embutida (opcional)
+
+// ---------- marcador "voce esta aqui" ----------
+const me = new THREE.Group(); me.name = 'GPS'; me.visible = false; scene.add(me);
+const meDot = new THREE.Mesh(new THREE.CylinderGeometry(4, 4, 1.2, 32), new THREE.MeshBasicMaterial({ color: '#1e88e5' }));
+const meRim = new THREE.Mesh(new THREE.CylinderGeometry(5.2, 5.2, 1, 32), new THREE.MeshBasicMaterial({ color: '#ffffff' }));
+meDot.position.y = 1.4; meRim.position.y = 1.1;
+const arrowShape = new THREE.Shape(); arrowShape.moveTo(0, -11); arrowShape.lineTo(4.5, -4); arrowShape.lineTo(-4.5, -4); arrowShape.closePath();
+const meArrow = new THREE.Mesh(new THREE.ShapeGeometry(arrowShape), new THREE.MeshBasicMaterial({ color: '#1e88e5', side: THREE.DoubleSide }));
+meArrow.rotation.x = -Math.PI / 2; const meArrowHolder = new THREE.Group(); meArrowHolder.position.y = 1.5; meArrowHolder.add(meArrow); meArrowHolder.visible = false;
+// eixo vertical (ajuda a achar o ponto de longe)
+const mePole = new THREE.Mesh(new THREE.CylinderGeometry(0.6, 0.6, 40, 8), new THREE.MeshBasicMaterial({ color: '#1e88e5', transparent: true, opacity: .55 })); mePole.position.y = 20;
+const meScaled = new THREE.Group(); meScaled.add(meDot, meRim, meArrowHolder, mePole); me.add(meScaled);
+const accRing = new THREE.Mesh(new THREE.CircleGeometry(1, 48), new THREE.MeshBasicMaterial({ color: '#42a5f5', transparent: true, opacity: .22, depthWrite: false }));
+accRing.rotation.x = -Math.PI / 2; accRing.position.y = 0.6; me.add(accRing);
+
+// pinos dos pontos de calibracao
+const calPins = new THREE.Group(); calPins.name = 'Calibracao'; scene.add(calPins);
+function drawCalibPins() {
+  calPins.clear();
+  const mat = new THREE.MeshBasicMaterial({ color: '#ffb300' });
+  calib.points.forEach(p => { const pin = new THREE.Mesh(new THREE.ConeGeometry(3, 12, 12), mat); pin.rotation.x = Math.PI; pin.position.set(p.x, 7, p.z); calPins.add(pin); });
+  calPins.visible = byId('calib').classList.contains('open');
+}
+
+// ---------- referencias para "onde estou" ----------
+const subRefs = site.labels.filter(l => l.type === 'sub').map(l => ({ name: l.text, x: toX(l.x - 12), z: toZ(l.y) }));
+const manRefs = site.labels.filter(l => l.type === 'manobrador').map(l => ({ name: l.text, x: toX(l.x), z: toZ(l.y) }));
+const ecRefs = site.eletrocentros.map(([x, y, , , g]) => ({ x: toX(x), z: toZ(y), g }));
+const rowPts = rows.map(r => [toX(r[0]), toZ(r[2]), toZ(r[1]), r[3]]); // x, zNorte, zSul, MAR
+function nearest(list, x, z) { let best = null, bd = Infinity; for (const it of list) { const d = Math.hypot(it.x - x, it.z - z); if (d < bd) { bd = d; best = it; } } return [best, bd]; }
+function whereAmI(x, z) {
+  // MAR: fileira mais proxima a ate 15 m
+  let mar = 0, bd = 15;
+  for (const [rx, z0, z1, g] of rowPts) { const dx = Math.abs(rx - x); if (dx > bd) continue; const dz = z < z0 ? z0 - z : z > z1 ? z - z1 : 0; const d = Math.hypot(dx, dz); if (d < bd) { bd = d; mar = g; } }
+  const [ec, dec] = nearest(ecRefs, x, z), [sub] = nearest(subRefs, x, z), [man, dman] = nearest(manRefs, x, z);
+  const parts = [];
+  parts.push(mar ? `<b>MAR0${mar}</b>` : '<b>Fora dos blocos</b>');
+  if (sub) parts.push(`perto de ${sub.name}`);
+  if (ec) parts.push(`eletrocentro a ${dec.toFixed(0)} m`);
+  if (man) parts.push(`${man.name.replace('MANOBRADOR', 'Manobrador')} a ${dman.toFixed(0)} m`);
+  return parts.join(' · ');
+}
+
+// ---------- leitura do GPS ----------
+const gps = { watch: null, last: null, prevXZ: null, follow: false };
+function setGpsStatus(t, cls) { const el = byId('gpsStatus'); el.textContent = t; el.style.color = cls === 'err' ? '#ef9a9a' : cls === 'ok' ? '#a5d6a7' : ''; }
+function startGps() {
+  if (gps.watch != null) return true;
+  if (!('geolocation' in navigator)) { setGpsStatus('Este aparelho/navegador não tem GPS disponível.', 'err'); return false; }
+  if (!isSecureContext) { setGpsStatus('O GPS só funciona em HTTPS (ou dentro do app).', 'err'); }
+  setGpsStatus('Procurando sinal de GPS…');
+  gps.watch = navigator.geolocation.watchPosition(onPosition, err => {
+    const msg = { 1: 'Permissão de localização negada. Libere nas configurações do aparelho.', 2: 'Sinal de GPS indisponível.', 3: 'GPS demorou para responder…' }[err.code] || err.message;
+    setGpsStatus(msg, 'err');
+  }, { enableHighAccuracy: true, maximumAge: 1000, timeout: 20000 });
+  return true;
+}
+function stopGps() { if (gps.watch != null) navigator.geolocation.clearWatch(gps.watch); gps.watch = null; me.visible = false; byId('where').style.display = 'none'; setGpsStatus('Desligado'); }
+function onPosition(pos) {
+  gps.last = pos;
+  const { latitude: lat, longitude: lon, accuracy: acc, heading, speed } = pos.coords;
+  if (calib.sampling) calib.sampling.samples.push({ lat, lon, acc });
+  if (!calib.ok) { me.visible = false; setGpsStatus(`GPS ok (±${acc.toFixed(0)} m), mas ainda sem calibração. Toque em "Calibrar GPS…".`, 'warn'); updateCalState(); return; }
+  const [x, z] = gpsToScene(lat, lon);
+  const scale = Math.hypot(...calib.a);
+  me.position.set(x, 0, z); me.visible = true;
+  accRing.scale.setScalar(Math.max(2, acc * scale));
+  // direcao: do GPS quando andando; senao, pelo deslocamento
+  // rumo no referencial do mapa (graus, horario a partir do norte do desenho)
+  let hdg = null;
+  if (heading != null && !isNaN(heading) && (speed || 0) > 0.6) hdg = heading - Math.atan2(calib.a[1], calib.a[0]) / DEG;
+  else if (gps.prevXZ) { const dx = x - gps.prevXZ[0], dz = z - gps.prevXZ[1]; if (Math.hypot(dx, dz) > 4) hdg = Math.atan2(dx, -dz) / DEG; }
+  if (hdg != null) { meArrowHolder.rotation.y = -hdg * DEG; meArrowHolder.visible = true; }
+  if (!gps.prevXZ || Math.hypot(x - gps.prevXZ[0], z - gps.prevXZ[1]) > 4) gps.prevXZ = [x, z];
+  const w = byId('where'); w.style.display = 'block'; w.innerHTML = '📍 ' + whereAmI(x, z) + ` · ±${acc.toFixed(0)} m`;
+  setGpsStatus(`Posição ok · precisão ±${acc.toFixed(0)} m · ${calib.points.length} ponto(s) de calibração`, 'ok');
+  if (gps.follow) followMe(false);
+  updateCalState();
+}
+function followMe(instant) {
+  if (!me.visible) return;
+  const p = me.position;
+  if (camMode === 'fly') { camera.position.x = p.x; camera.position.z = p.z; return; }
+  const delta = new THREE.Vector3(p.x - controls.target.x, 0, p.z - controls.target.z);
+  if (instant && camera.position.distanceTo(controls.target) > 1500) {   // aproxima se estiver muito longe
+    controls.target.set(p.x, 0, p.z); camera.position.set(p.x - 250, 420, p.z + 420); return;
+  }
+  glide = { t0: performance.now(), fromT: controls.target.clone(), fromC: camera.position.clone(), delta };
+}
+
+// ---------- fluxo de calibracao ----------
+function updateCalState() {
+  const el = byId('calState'); if (!el) return;
+  const c = gps.last?.coords; let t = '', cls = '';
+  if (calib.sampling) { const left = Math.max(0, Math.ceil((calib.sampling.until - Date.now()) / 1000)); t = `Lendo GPS… fique parado (${left}s, ${calib.sampling.samples.length} leituras)`; cls = 'warn'; }
+  else if (calib.waitingTap) { t = '👉 Agora toque no mapa exatamente onde você está.'; cls = 'warn'; }
+  else if (!c) t = gps.watch == null ? 'O GPS liga sozinho quando você marcar o primeiro ponto.' : 'Aguardando sinal de GPS…';
+  else { t = `GPS: precisão ±${c.accuracy.toFixed(0)} m`; cls = c.accuracy <= 6 ? 'ok' : 'warn'; if (c.accuracy > 10) t += ' — espere melhorar (céu aberto, longe de estruturas).'; }
+  el.textContent = t; el.className = 'mini ' + cls;
+  byId('calMark').disabled = !!(calib.sampling || calib.waitingTap);
+}
+function renderCalib() {
+  const list = byId('calList'); list.innerHTML = '';
+  calib.points.forEach((p, i) => {
+    const d = document.createElement('div'); d.className = 'pt';
+    const err = calib.points.length >= 3 ? ` · desvio ${p.err.toFixed(1)} m` : '';
+    d.innerHTML = `<span>P${i + 1} · ${p.label || 'ponto'} · ±${(p.acc || 0).toFixed(0)} m${err}</span>`;
+    const del = document.createElement('button'); del.textContent = '✕'; del.title = 'Remover ponto';
+    del.onclick = () => { calib.points.splice(i, 1); fitCalibration(); saveCalib(); renderCalib(); drawCalibPins(); if (gps.last) onPosition(gps.last); };
+    d.appendChild(del); list.appendChild(d);
+  });
+  const n = calib.points.length, info = document.createElement('div'); info.className = 'mini';
+  if (n === 0) info.textContent = 'Nenhum ponto ainda.';
+  else if (n === 1) info.textContent = '1 ponto: a posição já aparece, mas pode desviar longe desse ponto. Marque mais um bem afastado.';
+  else { const sc = Math.hypot(...calib.a), rot = Math.atan2(calib.a[1], calib.a[0]) / DEG;
+    const bad = Math.abs(sc - 1) > 0.05;
+    info.innerHTML = `${n} pontos · escala ${sc.toFixed(3)} · rotação ${rot.toFixed(1)}°` + (bad ? '<br><span style="color:#ffcc80">Escala longe de 1,0: algum ponto pode ter sido tocado no lugar errado.</span>' : ' ✓'); }
+  list.appendChild(info);
+}
+byId('calMark').onclick = () => {
+  if (!startGps()) return;
+  byId('gpsOn').checked = true;
+  calib.sampling = { samples: [], until: Date.now() + 6000 };
+  const tick = setInterval(() => {
+    updateCalState();
+    if (Date.now() < calib.sampling.until) return;
+    clearInterval(tick);
+    const S = calib.sampling.samples; calib.sampling = null;
+    if (!S.length) { byId('calState').textContent = 'Nenhuma leitura de GPS. Verifique a permissão e tente de novo.'; byId('calState').className = 'mini warn'; updateCalState(); return; }
+    // media ponderada pela precisao (1/acc²)
+    let sw = 0, la = 0, lo = 0, ac = Infinity;
+    for (const s of S) { const w = 1 / Math.max(1, s.acc) ** 2; sw += w; la += s.lat * w; lo += s.lon * w; ac = Math.min(ac, s.acc); }
+    calib.pending = { lat: la / sw, lon: lo / sw, acc: ac, t: Date.now() };
+    calib.waitingTap = true; document.body.classList.add('tapping'); updateCalState();
+  }, 250);
+  updateCalState();
+};
+function calibTap() {
+  const hit = ray.intersectObjects([ground, outer], false)[0]; if (!hit) return;
+  let x = hit.point.x, z = hit.point.z, label = 'toque no mapa';
+  const [ec, d] = nearest(ecRefs, x, z);
+  // raio do "ima": 18 m ou ~30 px na tela, o que for maior
+  const mPerPx = hit.distance * 2 * Math.tan(camera.fov * DEG / 2) / innerHeight;
+  if (ec && d < Math.max(18, 30 * mPerPx)) { x = ec.x; z = ec.z; const [sub] = nearest(subRefs, x, z); label = 'eletrocentro ' + (sub ? sub.name : 'MAR0' + ec.g); }
+  calib.points.push({ ...calib.pending, x, z, label });
+  calib.pending = null; calib.waitingTap = false; document.body.classList.remove('tapping');
+  fitCalibration(); saveCalib(); renderCalib(); drawCalibPins(); updateCalState();
+  if (gps.last) onPosition(gps.last);
+}
+byId('btnCalib').onclick = () => { byId('calib').classList.add('open'); legend.style.display = 'none'; byId('ctrl').classList.remove('open'); calPins.visible = true; renderCalib(); updateCalState(); };
+byId('calClose').onclick = () => { byId('calib').classList.remove('open'); legend.style.display = ''; calPins.visible = false; calib.waitingTap = false; document.body.classList.remove('tapping'); };
+byId('calClear').onclick = () => { if (confirm('Apagar todos os pontos de calibração deste aparelho?')) { calib.points = []; fitCalibration(); saveCalib(); renderCalib(); drawCalibPins(); me.visible = false; if (gps.last) onPosition(gps.last); } };
+byId('calCopy').onclick = async () => {
+  const txt = JSON.stringify(calib.points.map(({ lat, lon, acc, x, z, label }) => ({ lat, lon, acc, x: +x.toFixed(2), z: +z.toFixed(2), label })));
+  try { await navigator.clipboard.writeText(txt); alert('Calibração copiada. Cole em outro aparelho com "Colar".'); } catch { prompt('Copie a calibração:', txt); }
+};
+byId('calPaste').onclick = () => { const t = prompt('Cole aqui a calibração (texto JSON):'); if (!t) return; try { loadCalib(JSON.parse(t)); saveCalib(); } catch { alert('Texto de calibração inválido.'); } };
+byId('gpsOn').onchange = e => e.target.checked ? startGps() : stopGps();
+byId('gpsFollow').onchange = e => { gps.follow = e.target.checked; if (gps.follow) { if (!byId('gpsOn').checked) { byId('gpsOn').checked = true; startGps(); } followMe(true); } };
+fitCalibration(); drawCalibPins();
+// escala visual do marcador conforme a distancia da camera
+function updateMe() { if (!me.visible) return; const d = camera.position.distanceTo(me.position); meScaled.scale.setScalar(THREE.MathUtils.clamp(d / 260, 0.15, 12)); }
+
+// ---------- UI ----------
+const $ = id => document.getElementById(id);
+$('cPanels').onchange = e => { panels.visible = posts.visible = e.target.checked; };
+$('cMarColor').onchange = e => colorPanels(e.target.checked);
+$('cEc').onchange = e => ecGroup.visible = e.target.checked;
+$('cFence').onchange = e => fence.visible = e.target.checked;
+$('lMar').onchange = e => vis.mar = e.target.checked;
+$('lSub').onchange = e => vis.sub = e.target.checked;
+$('lMan').onchange = e => vis.manobrador = e.target.checked;
+$('lAce').onchange = e => vis.acesso = e.target.checked;
+$('lArea').onchange = e => vis.area = vis.info = vis.infra = e.target.checked;
+$('hour').oninput = e => setHour(+e.target.value);
+const leaveFly = () => { if (camMode === 'fly') setCamMode('orbit'); glide = null; };
+$('btnTop').onclick = () => { leaveFly(); viewTop(); }; $('btnReset').onclick = () => { leaveFly(); viewInitial(); };
+$('toggleCtrl').onclick = () => { $('ctrl').classList.toggle('open'); legend.classList.toggle('hide', $('ctrl').classList.contains('open')); };
+$('btnGlb').onclick = async () => {
+  $('btnGlb').textContent = 'Gerando…';
+  const glb = await new GLTFExporter().parseAsync(site3d, { binary: true, maxTextureSize: 4096 });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([glb], { type: 'model/gltf-binary' }));
+  a.download = 'ufv_paraiso.glb'; a.click(); $('btnGlb').textContent = 'Exportar modelo .glb';
+};
+addEventListener('resize', () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });
+
+// API simples para o app hospedeiro (WebView): window.ufv.focusMar(3), window.ufv.setHour(14)
+window.ufv = {
+  setHour: h => { $('hour').value = h; setHour(h); },
+  setCameraMode: setCamMode,   // 'orbit' | 'map' | 'fly'
+  // calibracao do GPS: lista de {lat, lon, acc, x, z, label}; o app pode salvar/compartilhar entre aparelhos
+  getCalibration: () => calib.points.map(({ lat, lon, acc, x, z, label }) => ({ lat, lon, acc, x, z, label })),
+  setCalibration: list => { loadCalib(list); saveCalib(); },
+  // posicao vinda do app nativo (se preferir usar o GPS nativo em vez do navegador)
+  pushPosition: (lat, lon, accuracy = 5, heading = null, speed = null) => onPosition({ coords: { latitude: lat, longitude: lon, accuracy, heading, speed } }),
+  focusMar(gi) {
+    leaveFly();
+    const pts = rows.filter(r => r[3] === gi); if (!pts.length) return;
+    let x = 0, z = 0; for (const r of pts) { x += toX(r[0]); z += toZ((r[1] + r[2]) / 2); } x /= pts.length; z /= pts.length;
+    controls.target.set(x, 0, z); camera.position.set(x - 900, 1300, z + 1400); controls.update();
+  },
+  site, scene, camera,
+};
+
+$('loading').remove();
+{ const m = +new URLSearchParams(location.search).get('mar'); if (m >= 1 && m <= 8) window.ufv.focusMar(m); }
+const clock = new THREE.Clock();
+renderer.setAnimationLoop(() => {
+  const dt = Math.min(clock.getDelta(), 0.1);
+  if (camMode === 'fly') updateFly(dt); else { updateGlide(); controls.update(); }
+  updateMe();
+  renderer.render(scene, camera); updateLabels();
+});
+</script>
+</body>
+</html>
