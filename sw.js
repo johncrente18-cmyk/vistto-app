@@ -1,5 +1,8 @@
-const CACHE = 'vistto-v36';
-const CORE = ['./', './index.html', './checklist.html', './supabase.js', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
+const CACHE = 'vistto-v37';
+const CORE = ['./', './index.html', './checklist.html', './supabase.js', './manifest.webmanifest', './icon-192.png', './icon-512.png',
+  // Mapa 3D funcionando sem internet
+  './mapa3d/', './mapa3d/index.html', './mapa3d/site.json', './mapa3d/ground.jpg', './mapa3d/lib/three.module.min.js',
+  './mapa3d/lib/addons/controls/OrbitControls.js', './mapa3d/lib/addons/exporters/GLTFExporter.js', './mapa3d/lib/addons/utils/TextureUtils.js'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => Promise.all(CORE.map(u => fetch(u, { cache: 'no-cache' }).then(r => r.ok && c.put(u, r)).catch(() => {})))).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 const guarda = (req, r) => { if (r && r.ok) { const c = r.clone(); caches.open(CACHE).then(x => x.put(req, c)); } return r; };
