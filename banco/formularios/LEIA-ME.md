@@ -71,6 +71,8 @@ No app, aparece na pesquisa "Nova inspeção". No Painel, aparece em Checklists 
   - anexo de arquivo (só foto);
   - peso de itens e scoring diferentes de 0 a 100;
   - "ocorrência múltipla" (repetir um item).
+- `obriga_resp` (só em avaliação): foto/comentário obrigatórios conforme a resposta,
+  igual ao Axyma (Conforme `c`, Não conforme `nc`, Não se aplica `na`). Sem ele, vale `obriga`.
 
 ## Importar um formulário novo do Axyma
 
@@ -82,3 +84,6 @@ No app, aparece na pesquisa "Nova inspeção". No Painel, aparece em Checklists 
 Lidos até agora:
 - `rci.json`: RCI - Relatório de Condição Insegura (Segurança), Axyma versão 15, 16 campos. Lido em 31/10/2026.
   Ajustes de grafia: "Tipo de Resgistro" virou "Tipo de Registro" e "Paralização" virou "Paralisação".
+- `extintor.json`: Inspeção de Extintor de Incêndio (SMS), 21 campos, grupo Inspeções de Campo. Lido em 09/11/2026.
+  Ajustes de grafia: "Selo do IMETRO" virou "Selo do Inmetro", "HA EXISTÊNCIA DE PLACAS" virou "Há placas indicativas?",
+  "DESOBSTRÍDO" virou "desobstruído", "ESTA E PERFEITO ESTADO" virou "está em perfeito estado".
