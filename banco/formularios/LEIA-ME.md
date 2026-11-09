@@ -87,3 +87,5 @@ Lidos até agora:
 - `extintor.json`: Inspeção de Extintor de Incêndio (SMS), 21 campos, grupo Inspeções de Campo. Lido em 09/11/2026.
   Ajustes de grafia: "Selo do IMETRO" virou "Selo do Inmetro", "HA EXISTÊNCIA DE PLACAS" virou "Há placas indicativas?",
   "DESOBSTRÍDO" virou "desobstruído", "ESTA E PERFEITO ESTADO" virou "está em perfeito estado".
+- `checklist-onibus.json` + `equipamentos-onibus.json`: Ônibus - CSP (checklist de veículos), 16 perguntas em 4 seções e 32 ônibus
+  (campo 1.1 do Axyma "Check List - INSPEÇÃO MENSAL - ÔNIBUS ( LIBERAÇÃO )"). Lido em 09/11/2026. SQL: `banco/migracao-14-onibus.sql`.

@@ -1,0 +1,325 @@
+{
+  "tipo": "vme-onibus-csp",
+  "equipamentos": [
+    {
+      "id": "eq-cbi4e74",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-15",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "CBI4E74",
+      "descricao": "M. BENZ MPOLO IDEALE R / CBI4E74 / ONB-15",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-cdp2e64",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-12",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "CDP2E64",
+      "descricao": "M. BENZ MPOLO IDEALE R / CDP2E64 / ONB-12",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-fua5j02",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-24",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "FUA5J02",
+      "descricao": "M. BENZ MPOLO IDEALE R / FUA5J02 / ONB-24",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-gds1b32",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-09",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "GDS1B32",
+      "descricao": "M. BENZ MPOLO IDEALE R / GDS1B32 / ONB-09",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-geh2h52",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-16",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "GEH2H52",
+      "descricao": "M. BENZ MPOLO IDEALE R / GEH2H52 / ONB-16",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qdo6c58",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-25",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "QDO6C58",
+      "descricao": "M. BENZ MPOLO IDEALE R / QDO6C58 / ONB-25",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qdo6g28",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-10",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "QDO6G28",
+      "descricao": "M. BENZ MPOLO IDEALE R / QDO6G28 / ONB-10",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qdo8e58",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-08",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "QDO8E58",
+      "descricao": "M. BENZ MPOLO IDEALE R / QDO8E58 / ONB-08",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qdo8g08",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-26",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "QDO8G08",
+      "descricao": "M. BENZ MPOLO IDEALE R / QDO8G08 / ONB-26",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qdo8h28",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-21",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "QDO8H28",
+      "descricao": "M. BENZ MPOLO IDEALE R / QDO8H28 / ONB-21 / 0504",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qdo8j58",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-05",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "QDO8J58",
+      "descricao": "M. BENZ MPOLO IDEALE R / QDO8J58 / ONB-05",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qdp8h28",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-06",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "QDP8H28",
+      "descricao": "M. BENZ MPOLO IDEALE R / QDP8H28 / ONB-06",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qep7f36",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-20",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "QEP7F36",
+      "descricao": "M. BENZ MPOLO IDEALE R / QEP7F36 / ONB-20 / 0457",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qeu1i85",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-19",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "QEU1I85",
+      "descricao": "M. BENZ MPOLO IDEALE R / QEU1I85 / ONB-19 / 0456",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qeu1j05",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-07",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "QEU1J05",
+      "descricao": "M. BENZ MPOLO IDEALE R / QEU1J05 / ONB-07",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qew0b65",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-18",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "QEW0B65",
+      "descricao": "M. BENZ MPOLO IDEALE R / QEW0B65 / ONB-18",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qvx7f55",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-17",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "QVX7F55",
+      "descricao": "M. BENZ MPOLO IDEALE R / QVX7F55 / ONB-17",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-rfj9a34",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-22",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "RFJ9A34",
+      "descricao": "M. BENZ MPOLO IDEALE R / RFJ9A34 / ONB-22",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-rfj9a39",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-23",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "RFJ9A39",
+      "descricao": "M. BENZ MPOLO IDEALE R / RFJ9A39 / ONB-23",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-sif8f44",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-35",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "SIF8F44",
+      "descricao": "M. BENZ MPOLO IDEALE R / SIF8F44 / ONB-35",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-six7h66",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-28",
+      "modelo": "M. BENZ MPOLO IDEALE R",
+      "serie": "SIX7H66",
+      "descricao": "M. BENZ MPOLO IDEALE R / SIX7H66 / ONB-28",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-rfk6f07",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-30",
+      "modelo": "M.BENZ MPOLO IDEALE R",
+      "serie": "RFK6F07",
+      "descricao": "M.BENZ MPOLO IDEALE R / RFK6F07 / ONB-30",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-siw7c00",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-29",
+      "modelo": "M.BENZ MPOLO IDEALE R",
+      "serie": "SIW7C00",
+      "descricao": "M.BENZ MPOLO IDEALE R / SIW7C00 / ONB-29",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-shq5e47",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-33",
+      "modelo": "M.BENZ MPOLO VIAGGIO FR",
+      "serie": "SHQ5E47",
+      "descricao": "M.BENZ MPOLO VIAGGIO FR / SHQ5E47 / ONB-33",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-rnu2d69",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-27",
+      "modelo": "MARCOPOLO VOLARE V8L ON",
+      "serie": "RNU2D69",
+      "descricao": "MARCOPOLO VOLARE V8L ON / RNU2D69 / ONB-27",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-fub9d82",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-11",
+      "modelo": "Mercedez Benz MPOLO Ideale R",
+      "serie": "FUB9D82",
+      "descricao": "Mercedez Benz MPOLO Ideale R / FUB9D82 / ONB-11",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-fyl8h63",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-13",
+      "modelo": "Mercedez Benz MPOLO Ideale R",
+      "serie": "FYL8H63",
+      "descricao": "Mercedez Benz MPOLO Ideale R / FYL8H63 / ONB-13",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-qew5j85",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-14",
+      "modelo": "Mercedez Benz MPOLO Ideale R",
+      "serie": "QEW5J85",
+      "descricao": "Mercedez Benz MPOLO Ideale R / QEW5J85 / ONB-14",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-six1c75",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-36",
+      "modelo": "VOLKSWAGEM MPOLO IDEALE R",
+      "serie": "SIX1C75",
+      "descricao": "VOLKSWAGEM MPOLO IDEALE R / SIX1C75 / ONB-36",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-sif8f36",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-34",
+      "modelo": "VOLKSWAGEN MPOLO IDEALE R",
+      "serie": "SIF8F36",
+      "descricao": "VOLKSWAGEN MPOLO IDEALE R / SIF8F36 / ONB-34",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-six1c76",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-32",
+      "modelo": "VOLKSWAGEN MPOLO IDEALE R",
+      "serie": "SIX1C76",
+      "descricao": "VOLKSWAGEN MPOLO IDEALE R / SIX1C76 / ONB-32",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    },
+    {
+      "id": "eq-sys9a87",
+      "tipo": "vme-onibus-csp",
+      "prefixo": "ONB-31",
+      "modelo": "VOLKSWAGEN MPOLO VIAGGIO FR",
+      "serie": "SYS9A87",
+      "descricao": "VOLKSWAGEN MPOLO VIAGGIO FR / SYS9A87 / ONB-31",
+      "ativo": true,
+      "origem": "Axyma Forms · Check List INSPEÇÃO MENSAL - ÔNIBUS (LIBERAÇÃO) · campo 1.1 (lido em 09/11/2026)"
+    }
+  ]
+}

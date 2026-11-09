@@ -1,0 +1,152 @@
+{
+  "tipo": "vme-onibus-csp",
+  "nome": "Ônibus - CSP",
+  "origem": "Axyma Forms · Check List - INSPEÇÃO MENSAL - ÔNIBUS ( LIBERAÇÃO ) (-P408CSEmN_gVtU5VnNw)",
+  "lido_em": "2026-11-09",
+  "itens": [
+    {
+      "id": "onb01",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Visibilidade e Iluminação",
+      "ordem": 1,
+      "pergunta": "Possui para-brisa com vidro laminado e sem trincas?",
+      "ativo": true
+    },
+    {
+      "id": "onb02",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Visibilidade e Iluminação",
+      "ordem": 2,
+      "pergunta": "O limpador e o lavador do para-brisa estão em condições de funcionamento?",
+      "ativo": true
+    },
+    {
+      "id": "onb03",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Visibilidade e Iluminação",
+      "ordem": 3,
+      "pergunta": "Possui retrovisores interno e os externos em ambos os lados íntegros?",
+      "ativo": true
+    },
+    {
+      "id": "onb04",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Visibilidade e Iluminação",
+      "ordem": 4,
+      "pergunta": "Possui quebra-sol em condições de funcionamento?",
+      "ativo": true
+    },
+    {
+      "id": "onb05",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Visibilidade e Iluminação",
+      "ordem": 5,
+      "pergunta": "Possui lanternas, faróis, luz (de ré, freio, placa, de alerta, setas e break-light) conformes?",
+      "ativo": true
+    },
+    {
+      "id": "onb06",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Sistemas de Frenagem e Rodagem",
+      "ordem": 6,
+      "pergunta": "Possui sistema antitravamento de freios (ABS)?",
+      "ativo": true
+    },
+    {
+      "id": "onb07",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Sistemas de Frenagem e Rodagem",
+      "ordem": 7,
+      "pergunta": "Possui freios de estacionamento e de serviço, com comandos independentes? E estão eficazes?",
+      "ativo": true
+    },
+    {
+      "id": "onb08",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Sistemas de Frenagem e Rodagem",
+      "ordem": 8,
+      "pergunta": "Possui pneus que ofereçam condições de segurança, conforme orientação do fabricante, dentro do TWI?",
+      "ativo": true
+    },
+    {
+      "id": "onb09",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Equipamentos de Segurança, Emergência e Sinalização",
+      "ordem": 9,
+      "pergunta": "Todos os assentos possuem cinto de segurança em perfeito estado?",
+      "ativo": true
+    },
+    {
+      "id": "onb10",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Equipamentos de Segurança, Emergência e Sinalização",
+      "ordem": 10,
+      "pergunta": "Possui extintor de incêndio, lacrado e dentro da validade?",
+      "ativo": true
+    },
+    {
+      "id": "onb11",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Equipamentos de Segurança, Emergência e Sinalização",
+      "ordem": 11,
+      "pergunta": "Possui dispositivos para sinalização (triângulos refletivos)?",
+      "ativo": true
+    },
+    {
+      "id": "onb12",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Equipamentos de Segurança, Emergência e Sinalização",
+      "ordem": 12,
+      "pergunta": "Possui faixas refletivas, afixadas na localização correta e íntegras?",
+      "ativo": true
+    },
+    {
+      "id": "onb13",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Equipamentos de Segurança, Emergência e Sinalização",
+      "ordem": 13,
+      "pergunta": "Possui janelas de emergência e saídas de emergências? Estão sinalizadas?",
+      "ativo": true
+    },
+    {
+      "id": "onb14",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Estrutura, Alertas e Ergonomia",
+      "ordem": 14,
+      "pergunta": "O banco do motorista possui regulagem?",
+      "ativo": true
+    },
+    {
+      "id": "onb15",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Estrutura, Alertas e Ergonomia",
+      "ordem": 15,
+      "pergunta": "Possui para-choques dianteiro e traseiro em boas condições?",
+      "ativo": true
+    },
+    {
+      "id": "onb16",
+      "tipo": "vme-onibus-csp",
+      "modulo": "base",
+      "secao": "Estrutura, Alertas e Ergonomia",
+      "ordem": 16,
+      "pergunta": "Possui buzina audível?",
+      "ativo": true
+    }
+  ]
+}
