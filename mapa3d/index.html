@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>UFV Paraíso 3D · Vistto</title>
 <meta name="theme-color" content="#0f1720">
 <style>
@@ -12,11 +12,11 @@
   #app { position:fixed; inset:0; }
   #labels { position:fixed; inset:0; pointer-events:none; }
   .ui { position:fixed; background:var(--panel); border:1px solid var(--line); border-radius:12px; backdrop-filter:blur(6px); }
-  #top { top:12px; left:12px; padding:10px 14px; max-width:calc(100vw - 24px); }
+  #top { top:calc(12px + env(safe-area-inset-top)); left:12px; padding:10px 14px; max-width:calc(100vw - 24px); }
   #top h1 { margin:0; font-size:16px; letter-spacing:.3px; display:flex; align-items:center; gap:10px; }
   #voltar { display:inline-flex; align-items:center; gap:4px; padding:5px 10px; border-radius:8px; background:#9184d9; color:#161826; font-size:13px; font-weight:700; text-decoration:none; flex:0 0 auto; }
   #top small { color:var(--muted); }
-  #ctrl { top:12px; right:12px; padding:10px 12px; width:230px; }
+  #ctrl { top:calc(12px + env(safe-area-inset-top)); right:12px; padding:10px 12px; width:230px; }
   #ctrl h2 { margin:0 0 6px; font-size:12px; text-transform:uppercase; color:var(--muted); letter-spacing:.6px; }
   #ctrl label { display:flex; align-items:center; gap:6px; margin:3px 0; cursor:pointer; }
   #ctrl input[type=range] { width:100%; }
@@ -65,9 +65,9 @@
   .lbl.area, .lbl.infra { font-size:10px; color:#b3e5fc; max-width:180px; white-space:normal; text-align:center; }
   #loading { position:fixed; inset:0; display:grid; place-items:center; background:var(--bg); z-index:9; font-size:15px; }
   @media (max-width:640px) {
-    #ctrl { width:auto; left:12px; top:auto; bottom:12px; right:12px; display:none; }
+    #ctrl { width:auto; left:12px; top:auto; bottom:calc(12px + env(safe-area-inset-bottom)); right:12px; display:none; }
     #ctrl.open { display:block; }
-    #toggleCtrl { display:block; position:fixed; right:12px; top:12px; z-index:3; padding:8px 12px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--fg); font:inherit; }
+    #toggleCtrl { display:block; position:fixed; right:12px; top:calc(12px + env(safe-area-inset-top)); z-index:3; padding:8px 12px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--fg); font:inherit; }
     #legend { grid-template-columns:repeat(4,auto); font-size:11px; bottom:12px; }
     #legend.hide { display:none; }
     #top { right:90px; }
