@@ -283,12 +283,13 @@
 <body>
 <div id="app"></div>
 <script src="supabase.js"></script>
+<script src="pdf-vistto.js"></script>
 <script>
 (() => {
   const MOD_NOMES = { base: 'Itens de todas as inspeções', escavacao: 'Escavação', eletrica: 'Eletricidade', icamento: 'Içamento', carga: 'Movimentação de carga' };
   const TIPOS_PADRAO = [{ id: 'caminhada', nome: 'Caminhada de segurança', descricao: 'Ferramentas, EPI, documentação e os riscos da atividade do dia', usa_atividade: true, ordem: 1, ativo: true },
     { id: 'vivencia', nome: 'Área de vivência (Meta 01)', descricao: 'Documentação e estrutura da área de vivência', usa_atividade: false, ordem: 2, ativo: true }];
-  const RESERVADOS = ['tipos', 'atividades', 'pessoas', 'historico'];
+  const RESERVADOS = ['tipos', 'atividades', 'pessoas', 'historico', 'arquivo'];
   const GRUPOS = [['veiculos', 'Inspeções de Veículos-Máquinas-Equipamentos'], ['gerencia', 'Inspeção Gerência'], ['campo', 'Inspeções de Campo TSTs']];
   const grupoDe = t => t.grupo || (t.id === 'caminhada' || t.id === 'vivencia' ? 'gerencia' : 'campo');
   const tipoDe = id => (S.tipos || []).find(t => t.id === id) || TIPOS_PADRAO.find(t => t.id === id) || { id, nome: id, usa_atividade: false };
@@ -393,6 +394,7 @@
     if (tp.error) { S.tipos = TIPOS_PADRAO.slice(); S.semTabelaTipos = true; } else S.tipos = tp.data.length ? tp.data : TIPOS_PADRAO.slice();
     try { const eq = await S.sb.from('equipamentos').select('*').order('prefixo'); S.equip = eq.error ? [] : eq.data; } catch (e) { S.equip = []; }
     const hm = location.hash.match(/^#insp=([0-9a-f-]{36})$/i);
+    arqIniciar();
     if (hm) { S.tab = 'historico'; render(); abrirRelatorio(hm[1]); return; }
     render();
   }
@@ -409,13 +411,14 @@
     chart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>',
     clip: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></svg>',
     list: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.2"/><circle cx="4.5" cy="12" r="1.2"/><circle cx="4.5" cy="18" r="1.2"/></svg>',
+    folder: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2.5h8.5A1.5 1.5 0 0 1 21 9v9.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></svg>',
     home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>',
     up: '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V5M7 9l5-5 5 5M5 20h14"/></svg>' };
 
   function render() {
     const tps = [...S.tipos].sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
     const navT = t => [t.id, t.nome + (t.ativo === false ? ' (desativado)' : ''), t.id === 'caminhada' ? 'walk' : t.id === 'vivencia' ? 'tent' : 'clip'];
-    const nav = [['', [['inicio', 'Início', 'home']]], ['Relatórios', [['historico', 'Histórico de inspeções', 'chart']]], ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
+    const nav = [['', [['inicio', 'Início', 'home']]], ['Relatórios', [['historico', 'Histórico de inspeções', 'chart'], ['arquivo', 'Arquivo mensal (OneDrive)', 'folder']]], ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
     const grupos = GRUPOS.slice().reverse().map(([g, l]) => ({ g, nome: l.replace('Inspeções de ', '').replace('Inspeção ', ''), its: tps.filter(t => grupoDe(t) === g).map(navT) })).filter(x => x.its.length);
     if (!S.navAberto) { try { S.navAberto = JSON.parse(localStorage.getItem('vistto_painel_menu')) || {}; } catch (e) { S.navAberto = {}; } }
     grupos.forEach(x => { if (x.its.some(([k]) => k === S.tab)) S.navAberto[x.g] = true; });
@@ -426,7 +429,7 @@
           <button class="ghost menu-btn" id="menuBtn" aria-label="Menu">☰ Menu</button>
           <div class="brand" style="display:flex;align-items:center;gap:10px">${logoVistto(34)}<span>Vistto · Painel<small>${esc(S.user.email)}</small></span></div>
           <div class="grow"></div>
-          <span id="st" class="pill ok"></span>
+          <span id="arqPill"></span><span id="st" class="pill ok"></span>
           <button class="ghost" id="sair">Sair</button>
         </div>
       </header>
@@ -441,9 +444,9 @@
     $app.querySelectorAll('.grp-h').forEach(h => h.onclick = () => { const g = h.parentElement, k = g.dataset.grp; g.classList.toggle('open'); S.navAberto[k] = g.classList.contains('open'); try { localStorage.setItem('vistto_painel_menu', JSON.stringify(S.navAberto)); } catch (e) {} });
     $app.querySelectorAll('[data-busca]').forEach(inp => inp.oninput = () => { const q = semAc(inp.value).trim(); inp.parentElement.querySelectorAll('.nav').forEach(b => { b.style.display = !q || q.split(/\s+/).every(w => semAc(b.textContent).includes(w)) ? '' : 'none'; }); });
     const mb = document.getElementById('menuBtn'); if (mb) mb.onclick = () => document.body.classList.toggle('menu-aberto');
-    setStatus();
+    setStatus(); arqPill();
     document.getElementById('main').classList.toggle('wide', ['tipos', 'pessoas', 'atividades'].includes(S.tab));
-    if (S.tab === 'inicio') renderInicio(); else if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (S.tab === 'historico') renderHistorico(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
+    if (S.tab === 'inicio') renderInicio(); else if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (S.tab === 'historico') renderHistorico(); else if (S.tab === 'arquivo') renderArquivo(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
   }
 
 
@@ -885,6 +888,181 @@
     else S.itens.filter(i => i.tipo === I.tipo && resp[i.id] != null).sort((a, b) => a.ordem - b.ordem).forEach(i => { const v = resp[i.id], n = N.find(x => x.item_id === i.id);
       out.push([i.secao || '', i.pergunta, v === 'C' ? 'Conforme' : v === 'NC' ? 'Não conforme' : 'Não se aplica', n && n.descricao || '', v === 'NC' ? 'Sim' : '']); });
     return [['Inspeção', T.nome]].concat(I.equipamento ? [['Máquina', I.equipamento]] : []).concat([['Data', fDT(I.criado_em)], ['Usuário', nomeP(I.autor_id)], ['Subfrente', (H.fr[I.frente_id] || {}).nome || ''], ['Líder', I.lider_nome || ''], ['Score', I.conformidade == null ? '' : I.conformidade + '%'], []]).concat(out);
+  }
+
+
+  // ---------- arquivo mensal no computador (pasta do OneDrive) ----------
+  // Cria/atualiza só os arquivos do Vistto dentro da pasta escolhida. Nunca apaga, move ou renomeia nada.
+  const MESES = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+  const ARQ = { dir: null, perm: null, auto: true, busy: false, prog: '', ult: null, log: [], mes: '' };
+  const ARQ_MIN = 30;
+  const ymDe = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+  const nomeMes = ym => `${ym} ${MESES[+ym.slice(5, 7) - 1]}`;
+  const limpaNome = t => String(t || '').replace(/[\\/:*?"<>|\u0000-\u001f]+/g, '-').replace(/\s+/g, ' ').replace(/^[\s.]+|[\s.]+$/g, '').slice(0, 80) || 'Sem nome';
+  const idb = (modo, fn) => new Promise((ok, err) => { const rq = indexedDB.open('vistto-painel', 1); rq.onupgradeneeded = () => rq.result.createObjectStore('kv');
+    rq.onerror = () => err(rq.error); rq.onsuccess = () => { const tx = rq.result.transaction('kv', modo), st = tx.objectStore('kv'), r = fn(st); tx.oncomplete = () => ok(r && r.result); tx.onerror = () => err(tx.error); }; });
+  const kvGet = k => idb('readonly', st => st.get(k)).catch(() => null);
+  const kvSet = (k, v) => idb('readwrite', st => st.put(v, k)).catch(() => null);
+  const arqSuportado = () => typeof window.showDirectoryPicker === 'function';
+  function arqLog(t, tipo) { ARQ.log.unshift({ t, tipo: tipo || '', em: new Date() }); ARQ.log = ARQ.log.slice(0, 60); drawArquivo(); }
+  async function arqIniciar() {
+    if (!arqSuportado()) return;
+    try { ARQ.dir = await kvGet('pasta'); const cfg = await kvGet('arq_cfg') || {}; ARQ.auto = cfg.auto !== false; ARQ.ult = cfg.ult || null;
+      if (ARQ.dir) ARQ.perm = await ARQ.dir.queryPermission({ mode: 'readwrite' }); } catch (e) { ARQ.dir = null; }
+    arqPill();
+    clearInterval(ARQ.timer); ARQ.timer = setInterval(() => arqAuto(), ARQ_MIN * 60000);
+    setTimeout(() => arqAuto(), 15000);
+  }
+  function arqPill() {
+    const el = document.getElementById('arqPill'); if (!el) return;
+    if (!arqSuportado() || !ARQ.dir || !ARQ.auto) { el.innerHTML = ''; return; }
+    const ok = ARQ.perm === 'granted';
+    el.innerHTML = `<button class="pill ${ARQ.busy ? 'busy' : ok ? 'ok' : 'bad'}" style="cursor:pointer;border:0;font-family:inherit" title="${ok ? 'Arquivo mensal ativo na pasta ' + esc(ARQ.dir.name) : 'Clique para liberar o acesso à pasta de novo'}">${ARQ.busy ? 'Arquivando…' : ok ? 'Arquivo ✓' : 'Arquivo pausado · retomar'}</button>`;
+    el.firstChild.onclick = async () => { if (ARQ.perm !== 'granted') await arqRetomar(); else { S.tab = 'arquivo'; render(); } };
+  }
+  async function arqEscolher() {
+    try { const d = await window.showDirectoryPicker({ id: 'vistto-arquivo', mode: 'readwrite' }); ARQ.dir = d; ARQ.perm = 'granted'; await kvSet('pasta', d);
+      arqLog(`Pasta escolhida: ${d.name}`, 'ok'); arqPill(); arqSalvar([ymDe(new Date()), ymDe(new Date(new Date().getFullYear(), new Date().getMonth() - 1, 1))]); }
+    catch (e) { if (e && e.name !== 'AbortError') arqLog('Não foi possível usar a pasta: ' + (e.message || e), 'bad'); }
+  }
+  async function arqRetomar() {
+    if (!ARQ.dir) return arqEscolher();
+    try { ARQ.perm = await ARQ.dir.requestPermission({ mode: 'readwrite' }); } catch (e) { ARQ.perm = 'denied'; }
+    arqPill(); drawArquivo(); if (ARQ.perm === 'granted') arqAuto(true);
+  }
+  async function arqAuto(forcar) {
+    if (!ARQ.dir || ARQ.busy || (!ARQ.auto && !forcar)) return;
+    try { ARQ.perm = await ARQ.dir.queryPermission({ mode: 'readwrite' }); } catch (e) { ARQ.perm = 'denied'; }
+    arqPill(); if (ARQ.perm !== 'granted') return drawArquivo();
+    const h = new Date();
+    await arqSalvar([ymDe(h), ymDe(new Date(h.getFullYear(), h.getMonth() - 1, 1))]);
+  }
+  async function arqSalvar(meses) {
+    if (ARQ.busy || !ARQ.dir) return; ARQ.busy = true; arqPill();
+    let novos = 0, iguais = 0, erros = 0;
+    try {
+      for (const ym of meses) { const r = await arquivarMes(ym); novos += r.novos; iguais += r.iguais; erros += r.erros; }
+      ARQ.ult = new Date().toISOString(); await kvSet('arq_cfg', { auto: ARQ.auto, ult: ARQ.ult });
+      arqLog(novos ? `${novos} arquivo(s) salvo(s) ou atualizado(s); ${iguais} já estavam em dia${erros ? `; ${erros} com erro` : ''}.` : `Tudo em dia (${iguais} arquivo(s))${erros ? `; ${erros} com erro` : ''}.`, erros ? 'bad' : 'ok');
+    } catch (e) { arqLog('Falhou: ' + (e.message || e), 'bad'); }
+    ARQ.busy = false; ARQ.prog = ''; arqPill(); drawArquivo();
+  }
+  async function pastaDe(raiz, partes) { let d = raiz; for (const p of partes) d = await d.getDirectoryHandle(limpaNome(p), { create: true }); return d; }
+  async function gravar(dir, nome, blob) { const fh = await dir.getFileHandle(nome, { create: true }), w = await fh.createWritable(); await w.write(blob); await w.close(); }
+  async function lerManifesto(dir) { try { const f = await (await dir.getFileHandle('.vistto-arquivo.json')).getFile(); return JSON.parse(await f.text()); } catch (e) { return { insp: {}, nc: {} }; } }
+  async function existe(dir, partes, nome) { try { let d = dir; for (const p of partes) d = await d.getDirectoryHandle(limpaNome(p)); await d.getFileHandle(nome); return true; } catch (e) { return false; } }
+  async function buscarFotos(ids) { const lista = [...new Set(ids)].filter(Boolean), out = {};
+    for (let k = 0; k < lista.length; k += 30) { const fr = await S.sb.from('fotos').select('id,dados').in('id', lista.slice(k, k + 30)); (fr.data || []).forEach(f => { out[f.id] = f.dados; }); } return out; }
+  const nomeTipoPasta = T => String(T.nome || T.id).replace(/^(inspe[cç][aã]o|checklist)\s+(de|da|do|dos|das)\s+/i, '').replace(/\s*-?\s*CSP\s*$/i, '').replace(/^./, c => c.toUpperCase());
+  function onde(I) {
+    const T = tipoDe(I.tipo), eq = (S.equip || []).find(e => e.id === I.equipamento_id), fr = H.fr[I.frente_id];
+    const maq = eq && eq.prefixo ? eq.prefixo : I.equipamento ? String(I.equipamento).split(/\s+[·–—-]\s+/)[0].trim() : (fr ? (fr.nome || fr.codigo) : 'Sem local');
+    return { T, maq: limpaNome(maq), tipo: limpaNome(nomeTipoPasta(T)) };
+  }
+  const hhmm = d => `${String(d.getHours()).padStart(2, '0')}h${String(d.getMinutes()).padStart(2, '0')}`;
+  const diaISO = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  const curto = n => { const p = String(n || '').trim().split(/\s+/); return p.length > 1 ? p[0] + ' ' + p[p.length - 1] : p[0] || 'Sem nome'; };
+  function linhasPDF(I, N, T) {
+    const resp = I.respostas || {}, rows = [];
+    if (T.modo === 'formulario' && T.estrutura) camposForm(T).forEach(sec => { rows.push({ sec: true, nome: sec.nome }); sec.campos.forEach(f => {
+      const r = resp[f.id], tx = respTexto(f, r), kind = f.tipo === 'avaliacao' ? (r ? (r.nc ? 'nc' : r.na ? 'na' : 'c') : 'none') : (tx ? 'txt' : 'none');
+      const n = r && r.nc ? N.find(x => x.item_id === T.id + ':' + f.id) : null, ids = r ? (r.f || []).concat(r.assinatura ? [r.assinatura] : []) : [];
+      if (n && n.foto_correcao_id) ids.push(n.foto_correcao_id);
+      rows.push({ q: true, kind, nome: (f.id ? f.id + ' · ' : '') + f.nome, ans: tx || 'Não respondido', com: r && r.c || '', ncObj: n, ids }); }); });
+    else { const its = S.itens.filter(i => i.tipo === I.tipo && resp[i.id] != null).sort((a, b) => a.ordem - b.ordem); let sec = null;
+      its.forEach(i => { if ((i.secao || 'Itens') !== sec) { sec = i.secao || 'Itens'; rows.push({ sec: true, nome: sec }); } const v = resp[i.id], n = v === 'NC' ? N.find(x => x.item_id === i.id) : null;
+        rows.push({ q: true, kind: v === 'C' ? 'c' : v === 'NC' ? 'nc' : 'na', nome: i.pergunta, ans: '', com: '', ncObj: n, ids: n ? [n.foto_id, n.foto_correcao_id].filter(Boolean) : [] }); }); }
+    return rows;
+  }
+  async function arquivarMes(ym) {
+    const Rf = await refHist(); if (!H.fr) { H.fr = {}; Rf.frentes.forEach(f => { H.fr[f.id] = f; }); }
+    const [y, m] = ym.split('-').map(Number), a = new Date(y, m - 1, 1), b = new Date(y, m, 1);
+    const ins = await S.sb.from('inspecoes').select('*').gte('criado_em', a.toISOString()).lt('criado_em', b.toISOString()).order('criado_em').limit(5000);
+    if (ins.error) throw ins.error;
+    const L = ins.data || [], N = [];
+    for (let k = 0; k < L.length; k += 100) { const r = await S.sb.from('ncs').select('*').in('inspecao_id', L.slice(k, k + 100).map(x => x.id)); if (r.error) throw r.error; N.push(...r.data); }
+    const res = { novos: 0, iguais: 0, erros: 0 };
+    if (!L.length) return res;
+    const raizMes = await ARQ.dir.getDirectoryHandle(nomeMes(ym), { create: true }), man = await lerManifesto(raizMes);
+    man.insp = man.insp || {}; man.nc = man.nc || {};
+    const obra = (Rf.obra && Rf.obra.nome) || 'UFV Paraíso';
+    for (let k = 0; k < L.length; k++) {
+      const I = L[k], Ni = N.filter(n => n.inspecao_id === I.id), o = onde(I), dt = new Date(I.criado_em), tec = nomeP(I.autor_id);
+      ARQ.prog = `${nomeMes(ym)} · ${k + 1} de ${L.length} · ${o.tipo} › ${o.maq}`; drawArquivo();
+      const fr = H.fr[I.frente_id], mar = H.fr[marDe(I.frente_id)], local = (fr && mar && fr.id !== mar.id && !fr.nome.startsWith(mar.nome) ? mar.nome + ' · ' + fr.nome : fr ? fr.nome : mar ? mar.nome : '') || '—';
+      try {
+        const arq = `${o.maq}_${diaISO(dt)}_${hhmm(dt)}_${limpaNome(curto(tec))}.pdf`, partes = [o.tipo, o.maq];
+        const stamp = [I.conformidade, (I.observacoes || '').length, Object.keys(I.respostas || {}).length].concat(Ni.map(n => n.id.slice(0, 6) + n.status + (n.atualizado_em || ''))).join('|');
+        const ant = man.insp[I.id];
+        if (ant && ant.stamp === stamp && ant.file === partes.concat(arq).join('/') && await existe(raizMes, partes, arq)) res.iguais++;
+        else {
+          const T = o.T, rows = linhasPDF(I, Ni, T), fotos = await buscarFotos([T.modo !== 'formulario' ? I.foto_local_id : null].concat(rows.flatMap(r => r.ids || [])));
+          const g = GRUPOS.find(x => x[0] === grupoDe(T));
+          const out = await VisttoPDF.relatorio({ id: I.id, titulo: T.nome, grupo: g ? g[1] : '', tecnico: tec, quando: I.criado_em, local, lider: I.lider_nome, equipamento: I.equipamento,
+            conf: I.conformidade, ncs: Ni, obs: I.observacoes, fotoLocalId: T.modo !== 'formulario' ? I.foto_local_id : null, obra, rows }, fotos);
+          await gravar(await pastaDe(raizMes, partes), arq, out.blob);
+          man.insp[I.id] = { file: partes.concat(arq).join('/'), stamp }; res.novos++;
+        }
+        for (const n of Ni.filter(x => x.status === 'encerrada')) {
+          const dn = new Date(n.criado_em), pe = partes.concat('Evidências de fechamento');
+          const an = `NC_${o.maq}_${diaISO(dn)}_${slug(n.pergunta).slice(0, 40) || 'item'}_${n.id.slice(0, 4)}.pdf`, st = (n.encerrado_em || '') + (n.atualizado_em || '');
+          const ae = man.nc[n.id];
+          if (ae && ae.stamp === st && ae.file === pe.concat(an).join('/') && await existe(raizMes, pe, an)) { res.iguais++; continue; }
+          const fotos = await buscarFotos([n.foto_id, n.foto_correcao_id]);
+          const out = await VisttoPDF.evidencia({ nc: n, inspecao: { titulo: o.T.nome, quando: I.criado_em, tecnico: tec, local, equipamento: I.equipamento || n.equipamento }, validadoPor: n.encerrado_por ? nomeP(n.encerrado_por) : '', obra }, fotos);
+          await gravar(await pastaDe(raizMes, pe), an, out.blob);
+          man.nc[n.id] = { file: pe.concat(an).join('/'), stamp: st }; res.novos++;
+        }
+      } catch (e) { res.erros++; arqLog(`Erro em ${o.maq} (${fDT(I.criado_em)}): ${e.message || e}`, 'bad'); }
+    }
+    man.atualizado = new Date().toISOString();
+    await gravar(raizMes, '.vistto-arquivo.json', new Blob([JSON.stringify(man, null, 1)], { type: 'application/json' }));
+    return res;
+  }
+  function renderArquivo() {
+    const main = document.getElementById('main');
+    if (!ARQ.mes) { const d = new Date(); ARQ.mes = ymDe(d); }
+    main.innerHTML = `<h1 style="font-size:22px;margin:22px 0 4px">Arquivo mensal (OneDrive)</h1>
+      <p class="hint" style="margin:0 0 14px">Todo mês o Painel salva, numa pasta do computador, os PDFs das inspeções e as evidências de fechamento das não conformidades.<br>
+      Use a pasta <b>OneDrive › Dois A › UFV Paraiso - 12. SMS › Vistto_Inspeções</b>: o OneDrive sobe os arquivos sozinho.</p><div id="abox"></div>`;
+    drawArquivo();
+  }
+  function drawArquivo() {
+    const box = document.getElementById('abox'); if (!box || S.tab !== 'arquivo') return;
+    if (!arqSuportado()) { box.innerHTML = `<div class="card" style="padding:16px"><b>Este navegador não consegue salvar em pastas.</b><p class="hint">Abra o Painel no <b>Google Chrome</b> ou no <b>Microsoft Edge</b>, no computador.</p></div>`; return; }
+    const ok = ARQ.dir && ARQ.perm === 'granted', mesAt = ymDe(new Date());
+    const ex = `<div style="font:13px/1.7 ui-monospace,Consolas,monospace;background:#0f1120;color:#c9cbe0;border:1px solid rgba(145,132,217,.25);border-radius:10px;padding:12px 14px;overflow:auto">
+      ${esc(ARQ.dir ? ARQ.dir.name : 'Vistto_Inspeções')}/<br>└ ${esc(nomeMes(mesAt))}/<br>&nbsp;&nbsp;&nbsp;└ Escavadeira Hidráulica/<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ EH-01/<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├ EH-01_${esc(mesAt)}-03_07h42_Jhonatan Garcia.pdf<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ Evidências de fechamento/<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ NC_EH-01_${esc(mesAt)}-03_extintor-vencido_a1b2.pdf</div>`;
+    box.innerHTML = `
+      <div class="card" style="padding:16px;display:grid;gap:12px">
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+          <b style="font-size:15px">Pasta:</b> <span>${ARQ.dir ? esc(ARQ.dir.name) : '<span class="muted">nenhuma escolhida</span>'}</span>
+          <span class="pill ${ok ? 'ok' : ARQ.dir ? 'bad' : 'busy'}">${ok ? 'Acesso liberado' : ARQ.dir ? 'Acesso pausado' : 'Aguardando'}</span>
+          <div class="grow" style="flex:1"></div>
+          ${ARQ.dir && !ok ? '<button class="primary" data-a="retomar">Retomar acesso à pasta</button>' : ''}
+          <button class="${ARQ.dir ? 'ghost' : 'primary'}" data-a="escolher">${ARQ.dir ? 'Trocar pasta' : 'Escolher pasta'}</button>
+        </div>
+        <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" data-a="auto" ${ARQ.auto ? 'checked' : ''}> Salvar sozinho a cada ${ARQ_MIN} minutos enquanto o Painel estiver aberto (mês atual e mês anterior)</label>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <button class="primary" data-a="agora" ${ok && !ARQ.busy ? '' : 'disabled'}>Salvar agora</button>
+          <span class="muted">ou um mês específico:</span><input type="month" value="${esc(ARQ.mes)}" data-a="mes" style="width:auto;color-scheme:dark;background:transparent;color:inherit;border:1px solid rgba(145,132,217,.35);border-radius:8px;padding:6px 8px">
+          <button class="ghost" data-a="mesbtn" ${ok && !ARQ.busy ? '' : 'disabled'}>Salvar este mês</button>
+        </div>
+        <div class="muted" style="font-size:13px">${ARQ.busy ? '⏳ ' + esc(ARQ.prog || 'Preparando…') : ARQ.ult ? 'Última vez: ' + fDT(ARQ.ult) : 'Ainda não salvou nada.'}</div>
+      </div>
+      <h3 style="margin:18px 0 8px">Como fica a pasta</h3>${ex}
+      <p class="hint">Só cria e atualiza os arquivos do Vistto. Nada é apagado, movido ou renomeado. Se uma NC for encerrada depois, o PDF da inspeção é atualizado e a evidência aparece na próxima vez.
+      Se o Chrome for fechado, ao abrir o Painel de novo clique em <b>Retomar acesso à pasta</b> (o navegador pede essa confirmação por segurança).</p>
+      <h3 style="margin:18px 0 8px">Registro</h3>
+      <div class="card" style="padding:8px 14px;max-height:260px;overflow:auto">${ARQ.log.length ? ARQ.log.map(l => `<div style="padding:5px 0;border-bottom:1px solid var(--line,#e6e4f0);color:${l.tipo === 'bad' ? 'var(--bad)' : 'inherit'}"><span class="muted" style="font-size:12px">${fDT(l.em)}</span> · ${esc(l.t)}</div>`).join('') : '<div class="muted" style="padding:6px 0">Nada ainda.</div>'}</div>`;
+    const q = k => box.querySelector(`[data-a="${k}"]`);
+    q('escolher').onclick = arqEscolher; if (q('retomar')) q('retomar').onclick = arqRetomar;
+    q('auto').onchange = e => { ARQ.auto = e.target.checked; kvSet('arq_cfg', { auto: ARQ.auto, ult: ARQ.ult }); arqPill(); };
+    q('agora').onclick = () => { const h = new Date(); arqSalvar([ymDe(h), ymDe(new Date(h.getFullYear(), h.getMonth() - 1, 1))]); };
+    q('mes').onchange = e => { ARQ.mes = e.target.value; };
+    q('mesbtn').onclick = () => { if (/^\d{4}-\d{2}$/.test(ARQ.mes)) arqSalvar([ARQ.mes]); };
   }
 
   // ---------- formulários (somente leitura) ----------
