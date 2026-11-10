@@ -1,5 +1,5 @@
-const CACHE = 'vistto-v45';
-const CORE = ['./', './index.html', './checklist.html', './supabase.js', './manifest.webmanifest', './icon-192.png', './icon-512.png',
+const CACHE = 'vistto-v46';
+const CORE = ['./', './index.html', './checklist.html', './supabase.js', './pdf-vistto.js', './manifest.webmanifest', './icon-192.png', './icon-512.png',
   // Mapa 3D funcionando sem internet
   './mapa3d/', './mapa3d/index.html', './mapa3d/site.json', './mapa3d/ground.jpg', './mapa3d/lib/three.module.min.js',
   './mapa3d/lib/addons/controls/OrbitControls.js', './mapa3d/lib/addons/exporters/GLTFExporter.js', './mapa3d/lib/addons/utils/TextureUtils.js'];
