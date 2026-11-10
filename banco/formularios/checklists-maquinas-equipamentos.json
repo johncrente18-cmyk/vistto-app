@@ -1,0 +1,4823 @@
+{
+ "criterio": "Segurança do Trabalho, só a máquina, sem documentação e sem itens mecânicos (verificável pelo TST). Perguntas parecidas foram unidas e usam a mesma redação em todos os tipos.",
+ "criado_em": "2026-11-10",
+ "total_tipos": 42,
+ "total_itens": 535,
+ "itens": [
+  {
+   "id": "vcl01",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Visibilidade e iluminação",
+   "ordem": 1,
+   "pergunta": "Para-brisa e vidros íntegros, sem trincas, com limpador e lavador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcl02",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Visibilidade e iluminação",
+   "ordem": 2,
+   "pergunta": "Retrovisores interno e externos íntegros e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vcl03",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Visibilidade e iluminação",
+   "ordem": 3,
+   "pergunta": "Faróis, lanternas, setas, luz de freio e luz de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcl04",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Rodagem e freios",
+   "ordem": 4,
+   "pergunta": "Pneus e estepe em bom estado, sem cortes, bolhas ou desgaste abaixo do indicador (TWI)",
+   "ativo": true
+  },
+  {
+   "id": "vcl05",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Rodagem e freios",
+   "ordem": 5,
+   "pergunta": "Freio de serviço e freio de estacionamento funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcl06",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Segurança e emergência",
+   "ordem": 6,
+   "pergunta": "Cintos de segurança em todos os assentos, íntegros e travando",
+   "ativo": true
+  },
+  {
+   "id": "vcl07",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Segurança e emergência",
+   "ordem": 7,
+   "pergunta": "Buzina e alarme de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcl08",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Segurança e emergência",
+   "ordem": 8,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vcl09",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Segurança e emergência",
+   "ordem": 9,
+   "pergunta": "Triângulo, macaco e chave de roda presentes",
+   "ativo": true
+  },
+  {
+   "id": "vcl10",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 10,
+   "pergunta": "Sinalização da obra no veículo (giroflex, bandeirola e faixas refletivas) presente e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcl11",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 11,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível",
+   "ativo": true
+  },
+  {
+   "id": "vcl12",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 12,
+   "pergunta": "Interior limpo, sem objetos soltos que possam atingir os ocupantes",
+   "ativo": true
+  },
+  {
+   "id": "vam01",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Visibilidade e iluminação",
+   "ordem": 1,
+   "pergunta": "Para-brisa e vidros íntegros, sem trincas, com limpador e lavador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vam02",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Visibilidade e iluminação",
+   "ordem": 2,
+   "pergunta": "Retrovisores interno e externos íntegros e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vam03",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Visibilidade e iluminação",
+   "ordem": 3,
+   "pergunta": "Faróis, lanternas, setas, luz de freio e luz de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vam04",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Rodagem e freios",
+   "ordem": 4,
+   "pergunta": "Pneus e estepe em bom estado, sem cortes, bolhas ou desgaste abaixo do indicador (TWI)",
+   "ativo": true
+  },
+  {
+   "id": "vam05",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Rodagem e freios",
+   "ordem": 5,
+   "pergunta": "Freio de serviço e freio de estacionamento funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vam06",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Segurança e emergência",
+   "ordem": 6,
+   "pergunta": "Cintos de segurança em todos os assentos, íntegros e travando",
+   "ativo": true
+  },
+  {
+   "id": "vam07",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Segurança e emergência",
+   "ordem": 7,
+   "pergunta": "Buzina e alarme de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vam08",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Segurança e emergência",
+   "ordem": 8,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vam09",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Segurança e emergência",
+   "ordem": 9,
+   "pergunta": "Triângulo, macaco e chave de roda presentes",
+   "ativo": true
+  },
+  {
+   "id": "vam10",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 10,
+   "pergunta": "Sinalização da obra no veículo (giroflex, bandeirola e faixas refletivas) presente e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vam11",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 11,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível",
+   "ativo": true
+  },
+  {
+   "id": "vam12",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 12,
+   "pergunta": "Interior limpo, sem objetos soltos que possam atingir os ocupantes",
+   "ativo": true
+  },
+  {
+   "id": "vam13",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Atendimento de emergência",
+   "ordem": 13,
+   "pergunta": "Sirene e luzes de emergência funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vam14",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Atendimento de emergência",
+   "ordem": 14,
+   "pergunta": "Maca fixada, com travas e cintos em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vam15",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Atendimento de emergência",
+   "ordem": 15,
+   "pergunta": "Cilindro de oxigênio fixado e com carga",
+   "ativo": true
+  },
+  {
+   "id": "vam16",
+   "tipo": "vme-ambulancia-csp",
+   "modulo": "base",
+   "secao": "Atendimento de emergência",
+   "ordem": 16,
+   "pergunta": "Equipamentos e materiais de atendimento conforme a lista da ambulância e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vcb01",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 1,
+   "pergunta": "Para-brisa e vidros íntegros, sem trincas, com limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcb02",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 2,
+   "pergunta": "Retrovisores íntegros e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vcb03",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vcb04",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 4,
+   "pergunta": "Degraus e pega-mãos de acesso à cabine firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vcb05",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Faróis, lanternas, setas, luz de freio e luz de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcb06",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcb07",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Freio de serviço e de estacionamento funcionando, e calços de roda disponíveis",
+   "ativo": true
+  },
+  {
+   "id": "vcb08",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 8,
+   "pergunta": "Pneus em bom estado, sem cortes, bolhas ou desgaste excessivo, e rodas com todas as porcas",
+   "ativo": true
+  },
+  {
+   "id": "vcb09",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Caçamba basculante",
+   "ordem": 9,
+   "pergunta": "Caçamba sem trincas ou deformações, com a tampa traseira travando",
+   "ativo": true
+  },
+  {
+   "id": "vcb10",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Caçamba basculante",
+   "ordem": 10,
+   "pergunta": "Trava de segurança (escora) da caçamba presente, para serviços com a caçamba erguida",
+   "ativo": true
+  },
+  {
+   "id": "vcb11",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Caçamba basculante",
+   "ordem": 11,
+   "pergunta": "Alerta sonoro ou visual de caçamba erguida funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcb12",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Caçamba basculante",
+   "ordem": 12,
+   "pergunta": "Lona de cobertura da carga presente e em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vcb13",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 13,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vcb14",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 14,
+   "pergunta": "Triângulo e cones de sinalização presentes",
+   "ativo": true
+  },
+  {
+   "id": "vcb15",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 15,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vcb16",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 16,
+   "pergunta": "Giroflex funcionando, faixas refletivas e para-choque traseiro íntegros",
+   "ativo": true
+  },
+  {
+   "id": "vcb17",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 17,
+   "pergunta": "Sem vazamentos aparentes de óleo, combustível ou ar",
+   "ativo": true
+  },
+  {
+   "id": "vbt01",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 1,
+   "pergunta": "Para-brisa e vidros íntegros, sem trincas, com limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vbt02",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 2,
+   "pergunta": "Retrovisores íntegros e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vbt03",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vbt04",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 4,
+   "pergunta": "Degraus e pega-mãos de acesso à cabine firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vbt05",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Faróis, lanternas, setas, luz de freio e luz de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vbt06",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vbt07",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Freio de serviço e de estacionamento funcionando, e calços de roda disponíveis",
+   "ativo": true
+  },
+  {
+   "id": "vbt08",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 8,
+   "pergunta": "Pneus em bom estado, sem cortes, bolhas ou desgaste excessivo, e rodas com todas as porcas",
+   "ativo": true
+  },
+  {
+   "id": "vbt09",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Balão e calha",
+   "ordem": 9,
+   "pergunta": "Balão sem vazamentos, com calha (bica) em bom estado e travada para o deslocamento",
+   "ativo": true
+  },
+  {
+   "id": "vbt10",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Balão e calha",
+   "ordem": 10,
+   "pergunta": "Escada e plataforma de inspeção do balão firmes e com guarda-corpo",
+   "ativo": true
+  },
+  {
+   "id": "vbt11",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Balão e calha",
+   "ordem": 11,
+   "pergunta": "Proteções de partes móveis do balão (roletes, redutor, corrente) instaladas",
+   "ativo": true
+  },
+  {
+   "id": "vbt12",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 12,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vbt13",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 13,
+   "pergunta": "Triângulo e cones de sinalização presentes",
+   "ativo": true
+  },
+  {
+   "id": "vbt14",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 14,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vbt15",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 15,
+   "pergunta": "Giroflex funcionando, faixas refletivas e para-choque traseiro íntegros",
+   "ativo": true
+  },
+  {
+   "id": "vbt16",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 16,
+   "pergunta": "Sem vazamentos aparentes de óleo, combustível ou ar",
+   "ativo": true
+  },
+  {
+   "id": "vcp01",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 1,
+   "pergunta": "Para-brisa e vidros íntegros, sem trincas, com limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcp02",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 2,
+   "pergunta": "Retrovisores íntegros e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vcp03",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vcp04",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 4,
+   "pergunta": "Degraus e pega-mãos de acesso à cabine firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vcp05",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Faróis, lanternas, setas, luz de freio e luz de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcp06",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcp07",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Freio de serviço e de estacionamento funcionando, e calços de roda disponíveis",
+   "ativo": true
+  },
+  {
+   "id": "vcp08",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 8,
+   "pergunta": "Pneus em bom estado, sem cortes, bolhas ou desgaste excessivo, e rodas com todas as porcas",
+   "ativo": true
+  },
+  {
+   "id": "vcp09",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Tanque de água",
+   "ordem": 9,
+   "pergunta": "Tanque bem fixado, sem vazamentos e com a tampa superior fechando",
+   "ativo": true
+  },
+  {
+   "id": "vcp10",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Tanque de água",
+   "ordem": 10,
+   "pergunta": "Escada e passarela do tanque firmes, com guarda-corpo ou ponto de ancoragem",
+   "ativo": true
+  },
+  {
+   "id": "vcp11",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Tanque de água",
+   "ordem": 11,
+   "pergunta": "Barra de aspersão, mangueiras e registros em bom estado, sem vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "vcp12",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Tanque de água",
+   "ordem": 12,
+   "pergunta": "Tanque identificado quanto ao tipo de água (potável ou não potável)",
+   "ativo": true
+  },
+  {
+   "id": "vcp13",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 13,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vcp14",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 14,
+   "pergunta": "Triângulo e cones de sinalização presentes",
+   "ativo": true
+  },
+  {
+   "id": "vcp15",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 15,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vcp16",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 16,
+   "pergunta": "Giroflex funcionando, faixas refletivas e para-choque traseiro íntegros",
+   "ativo": true
+  },
+  {
+   "id": "vcp17",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 17,
+   "pergunta": "Sem vazamentos aparentes de óleo, combustível ou ar",
+   "ativo": true
+  },
+  {
+   "id": "vcc01",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 1,
+   "pergunta": "Para-brisa e vidros íntegros, sem trincas, com limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcc02",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 2,
+   "pergunta": "Retrovisores íntegros e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vcc03",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vcc04",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 4,
+   "pergunta": "Degraus e pega-mãos de acesso à cabine firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vcc05",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Faróis, lanternas, setas, luz de freio e luz de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcc06",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcc07",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Freio de serviço e de estacionamento funcionando, e calços de roda disponíveis",
+   "ativo": true
+  },
+  {
+   "id": "vcc08",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 8,
+   "pergunta": "Pneus em bom estado, sem cortes, bolhas ou desgaste excessivo, e rodas com todas as porcas",
+   "ativo": true
+  },
+  {
+   "id": "vcc09",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Carroceria e carga",
+   "ordem": 9,
+   "pergunta": "Carroceria e assoalho íntegros, com as guardas laterais e a tampa travando",
+   "ativo": true
+  },
+  {
+   "id": "vcc10",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Carroceria e carga",
+   "ordem": 10,
+   "pergunta": "Pontos de amarração, cintas e catracas em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vcc11",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 11,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vcc12",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 12,
+   "pergunta": "Triângulo e cones de sinalização presentes",
+   "ativo": true
+  },
+  {
+   "id": "vcc13",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 13,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vcc14",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 14,
+   "pergunta": "Giroflex funcionando, faixas refletivas e para-choque traseiro íntegros",
+   "ativo": true
+  },
+  {
+   "id": "vcc15",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 15,
+   "pergunta": "Sem vazamentos aparentes de óleo, combustível ou ar",
+   "ativo": true
+  },
+  {
+   "id": "vpr01",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 1,
+   "pergunta": "Para-brisa e vidros íntegros, sem trincas, com limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpr02",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 2,
+   "pergunta": "Retrovisores íntegros e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vpr03",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vpr04",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 4,
+   "pergunta": "Degraus e pega-mãos de acesso à cabine firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vpr05",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Faróis, lanternas, setas, luz de freio e luz de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpr06",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpr07",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Freio de serviço e de estacionamento funcionando, e calços de roda disponíveis",
+   "ativo": true
+  },
+  {
+   "id": "vpr08",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 8,
+   "pergunta": "Pneus em bom estado, sem cortes, bolhas ou desgaste excessivo, e rodas com todas as porcas",
+   "ativo": true
+  },
+  {
+   "id": "vpr09",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Prancha e engate",
+   "ordem": 9,
+   "pergunta": "Engate (quinta roda e pino-rei) travado e com a trava de segurança acionada",
+   "ativo": true
+  },
+  {
+   "id": "vpr10",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Prancha e engate",
+   "ordem": 10,
+   "pergunta": "Assoalho da prancha íntegro e rampas de acesso em bom estado e travadas",
+   "ativo": true
+  },
+  {
+   "id": "vpr11",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Prancha e engate",
+   "ordem": 11,
+   "pergunta": "Pontos de amarração, correntes, cintas e catracas em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vpr12",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Prancha e engate",
+   "ordem": 12,
+   "pergunta": "Sinalização de carga larga ou longa (placas, bandeirolas e luzes) disponível",
+   "ativo": true
+  },
+  {
+   "id": "vpr13",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 13,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vpr14",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 14,
+   "pergunta": "Triângulo e cones de sinalização presentes",
+   "ativo": true
+  },
+  {
+   "id": "vpr15",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 15,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vpr16",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 16,
+   "pergunta": "Giroflex funcionando, faixas refletivas e para-choque traseiro íntegros",
+   "ativo": true
+  },
+  {
+   "id": "vpr17",
+   "tipo": "vme-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 17,
+   "pergunta": "Sem vazamentos aparentes de óleo, combustível ou ar",
+   "ativo": true
+  },
+  {
+   "id": "vcm01",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 1,
+   "pergunta": "Para-brisa e vidros íntegros, sem trincas, com limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcm02",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 2,
+   "pergunta": "Retrovisores íntegros e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vcm03",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vcm04",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 4,
+   "pergunta": "Degraus e pega-mãos de acesso à cabine firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vcm05",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Faróis, lanternas, setas, luz de freio e luz de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcm06",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcm07",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Freio de serviço e de estacionamento funcionando, e calços de roda disponíveis",
+   "ativo": true
+  },
+  {
+   "id": "vcm08",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 8,
+   "pergunta": "Pneus em bom estado, sem cortes, bolhas ou desgaste excessivo, e rodas com todas as porcas",
+   "ativo": true
+  },
+  {
+   "id": "vcm09",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Engate e semirreboque",
+   "ordem": 9,
+   "pergunta": "Engate (quinta roda e pino-rei) travado e com a trava de segurança acionada",
+   "ativo": true
+  },
+  {
+   "id": "vcm10",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Engate e semirreboque",
+   "ordem": 10,
+   "pergunta": "Mangueiras de ar e cabos elétricos do semirreboque conectados e sem danos",
+   "ativo": true
+  },
+  {
+   "id": "vcm11",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Engate e semirreboque",
+   "ordem": 11,
+   "pergunta": "Pés de apoio do semirreboque recolhidos e travados",
+   "ativo": true
+  },
+  {
+   "id": "vcm12",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 12,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vcm13",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 13,
+   "pergunta": "Triângulo e cones de sinalização presentes",
+   "ativo": true
+  },
+  {
+   "id": "vcm14",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 14,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vcm15",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 15,
+   "pergunta": "Giroflex funcionando, faixas refletivas e para-choque traseiro íntegros",
+   "ativo": true
+  },
+  {
+   "id": "vcm16",
+   "tipo": "vme-cavalo-mecanico-caminhao-prancha-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 16,
+   "pergunta": "Sem vazamentos aparentes de óleo, combustível ou ar",
+   "ativo": true
+  },
+  {
+   "id": "vmk01",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 1,
+   "pergunta": "Para-brisa e vidros íntegros, sem trincas, com limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmk02",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 2,
+   "pergunta": "Retrovisores íntegros e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vmk03",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vmk04",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 4,
+   "pergunta": "Degraus e pega-mãos de acesso à cabine firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vmk05",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Faróis, lanternas, setas, luz de freio e luz de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmk06",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmk07",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Freio de serviço e de estacionamento funcionando, e calços de roda disponíveis",
+   "ativo": true
+  },
+  {
+   "id": "vmk08",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 8,
+   "pergunta": "Pneus em bom estado, sem cortes, bolhas ou desgaste excessivo, e rodas com todas as porcas",
+   "ativo": true
+  },
+  {
+   "id": "vmk09",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Guindauto (munck)",
+   "ordem": 9,
+   "pergunta": "Patolas (estabilizadores) funcionando, sem vazamentos e com sapatas ou calços de apoio",
+   "ativo": true
+  },
+  {
+   "id": "vmk10",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Guindauto (munck)",
+   "ordem": 10,
+   "pergunta": "Gancho com trava de segurança funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmk11",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Guindauto (munck)",
+   "ordem": 11,
+   "pergunta": "Lança, cilindros e mangueiras hidráulicas sem vazamentos ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vmk12",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Guindauto (munck)",
+   "ordem": 12,
+   "pergunta": "Tabela de carga legível no posto de operação",
+   "ativo": true
+  },
+  {
+   "id": "vmk13",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Guindauto (munck)",
+   "ordem": 13,
+   "pergunta": "Comandos identificados, com controle remoto (joystick) e parada de emergência funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmk14",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Guindauto (munck)",
+   "ordem": 14,
+   "pergunta": "Acessórios de içamento (cintas, correntes, manilhas) íntegros e com a capacidade identificada",
+   "ativo": true
+  },
+  {
+   "id": "vmk15",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 15,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vmk16",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 16,
+   "pergunta": "Triângulo e cones de sinalização presentes",
+   "ativo": true
+  },
+  {
+   "id": "vmk17",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 17,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vmk18",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 18,
+   "pergunta": "Giroflex funcionando, faixas refletivas e para-choque traseiro íntegros",
+   "ativo": true
+  },
+  {
+   "id": "vmk19",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 19,
+   "pergunta": "Sem vazamentos aparentes de óleo, combustível ou ar",
+   "ativo": true
+  },
+  {
+   "id": "vgd01",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 1,
+   "pergunta": "Para-brisa e vidros íntegros, sem trincas, com limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vgd02",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 2,
+   "pergunta": "Retrovisores íntegros e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vgd03",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vgd04",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 4,
+   "pergunta": "Degraus e pega-mãos de acesso à cabine firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vgd05",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Faróis, lanternas, setas, luz de freio e luz de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vgd06",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vgd07",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Freio de serviço e de estacionamento funcionando, e calços de roda disponíveis",
+   "ativo": true
+  },
+  {
+   "id": "vgd08",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 8,
+   "pergunta": "Pneus em bom estado, sem cortes, bolhas ou desgaste excessivo, e rodas com todas as porcas",
+   "ativo": true
+  },
+  {
+   "id": "vgd09",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Guindaste",
+   "ordem": 9,
+   "pergunta": "Patolas (estabilizadores) funcionando, sem vazamentos e com sapatas ou calços de apoio",
+   "ativo": true
+  },
+  {
+   "id": "vgd10",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Guindaste",
+   "ordem": 10,
+   "pergunta": "Gancho com trava de segurança funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vgd11",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Guindaste",
+   "ordem": 11,
+   "pergunta": "Cabos de aço sem fios rompidos, amassados ou corrosão, bem enrolados no tambor",
+   "ativo": true
+  },
+  {
+   "id": "vgd12",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Guindaste",
+   "ordem": 12,
+   "pergunta": "Limitador de momento de carga e fim de curso do gancho funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vgd13",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Guindaste",
+   "ordem": 13,
+   "pergunta": "Anemômetro funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vgd14",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Guindaste",
+   "ordem": 14,
+   "pergunta": "Tabela de carga em português disponível na cabine do operador",
+   "ativo": true
+  },
+  {
+   "id": "vgd15",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Guindaste",
+   "ordem": 15,
+   "pergunta": "Acessórios de içamento (cintas, correntes, manilhas) íntegros e com a capacidade identificada",
+   "ativo": true
+  },
+  {
+   "id": "vgd16",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 16,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vgd17",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 17,
+   "pergunta": "Triângulo e cones de sinalização presentes",
+   "ativo": true
+  },
+  {
+   "id": "vgd18",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 18,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vgd19",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 19,
+   "pergunta": "Giroflex funcionando, faixas refletivas e para-choque traseiro íntegros",
+   "ativo": true
+  },
+  {
+   "id": "vgd20",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 20,
+   "pergunta": "Sem vazamentos aparentes de óleo, combustível ou ar",
+   "ativo": true
+  },
+  {
+   "id": "vco01",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 1,
+   "pergunta": "Para-brisa e vidros íntegros, sem trincas, com limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vco02",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 2,
+   "pergunta": "Retrovisores íntegros e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vco03",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vco04",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 4,
+   "pergunta": "Degraus e pega-mãos de acesso à cabine firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vco05",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Faróis, lanternas, setas, luz de freio e luz de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vco06",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vco07",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Freio de serviço e de estacionamento funcionando, e calços de roda disponíveis",
+   "ativo": true
+  },
+  {
+   "id": "vco08",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 8,
+   "pergunta": "Pneus em bom estado, sem cortes, bolhas ou desgaste excessivo, e rodas com todas as porcas",
+   "ativo": true
+  },
+  {
+   "id": "vco09",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Tanques e abastecimento",
+   "ordem": 9,
+   "pergunta": "Tanques, bombas e bicos sem vazamentos, com mangueiras e carretéis em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vco10",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Tanques e abastecimento",
+   "ordem": 10,
+   "pergunta": "Cabo e garra de aterramento presentes e em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vco11",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Tanques e abastecimento",
+   "ordem": 11,
+   "pergunta": "Sinalização de produto perigoso (rótulo de risco e painel de segurança) e de \"Proibido fumar\" visível",
+   "ativo": true
+  },
+  {
+   "id": "vco12",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Tanques e abastecimento",
+   "ordem": 12,
+   "pergunta": "Extintores do compartimento de combustível lacrados e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vco13",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 13,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vco14",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 14,
+   "pergunta": "Triângulo e cones de sinalização presentes",
+   "ativo": true
+  },
+  {
+   "id": "vco15",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 15,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vco16",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 16,
+   "pergunta": "Giroflex funcionando, faixas refletivas e para-choque traseiro íntegros",
+   "ativo": true
+  },
+  {
+   "id": "vco17",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 17,
+   "pergunta": "Sem vazamentos aparentes de óleo, combustível ou ar",
+   "ativo": true
+  },
+  {
+   "id": "vpf01",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 1,
+   "pergunta": "Para-brisa e vidros íntegros, sem trincas, com limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpf02",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 2,
+   "pergunta": "Retrovisores íntegros e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vpf03",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vpf04",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Cabine e visibilidade",
+   "ordem": 4,
+   "pergunta": "Degraus e pega-mãos de acesso à cabine firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vpf05",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Faróis, lanternas, setas, luz de freio e luz de ré funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpf06",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpf07",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Freio de serviço e de estacionamento funcionando, e calços de roda disponíveis",
+   "ativo": true
+  },
+  {
+   "id": "vpf08",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 8,
+   "pergunta": "Pneus em bom estado, sem cortes, bolhas ou desgaste excessivo, e rodas com todas as porcas",
+   "ativo": true
+  },
+  {
+   "id": "vpf09",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Perfuratriz",
+   "ordem": 9,
+   "pergunta": "Torre (mastro) travada para o deslocamento, com pinos e travas no lugar",
+   "ativo": true
+  },
+  {
+   "id": "vpf10",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Perfuratriz",
+   "ordem": 10,
+   "pergunta": "Patolas (estabilizadores) funcionando, sem vazamentos e com sapatas ou calços de apoio",
+   "ativo": true
+  },
+  {
+   "id": "vpf11",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Perfuratriz",
+   "ordem": 11,
+   "pergunta": "Proteção das partes rotativas (haste e broca) instalada",
+   "ativo": true
+  },
+  {
+   "id": "vpf12",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Perfuratriz",
+   "ordem": 12,
+   "pergunta": "Botão de parada de emergência presente e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpf13",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Perfuratriz",
+   "ordem": 13,
+   "pergunta": "Mangueiras hidráulicas sem vazamentos, ressecamento ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vpf14",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 14,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vpf15",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 15,
+   "pergunta": "Triângulo e cones de sinalização presentes",
+   "ativo": true
+  },
+  {
+   "id": "vpf16",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 16,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vpf17",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 17,
+   "pergunta": "Giroflex funcionando, faixas refletivas e para-choque traseiro íntegros",
+   "ativo": true
+  },
+  {
+   "id": "vpf18",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Sinalização e condições gerais",
+   "ordem": 18,
+   "pergunta": "Sem vazamentos aparentes de óleo, combustível ou ar",
+   "ativo": true
+  },
+  {
+   "id": "vre01",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 1,
+   "pergunta": "Estrutura de proteção da cabine (ROPS/FOPS) presente e sem danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vre02",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 2,
+   "pergunta": "Vidros íntegros, sem trincas que prejudiquem a visão, e limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vre03",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vre04",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 4,
+   "pergunta": "Trava de segurança dos comandos e freio de estacionamento funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vre05",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vre06",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Giroflex, faróis e iluminação de trabalho funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vre07",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Espelhos retrovisores presentes e íntegros, e câmera funcionando (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "vre08",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Acesso à máquina",
+   "ordem": 8,
+   "pergunta": "Degraus, estribos, corrimãos e pega-mãos presentes, firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vre09",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Implementos",
+   "ordem": 9,
+   "pergunta": "Trava de transporte da lança traseira e trava de giro em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vre10",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Implementos",
+   "ordem": 10,
+   "pergunta": "Patolas (estabilizadores) funcionando, sem vazamentos e com sapatas ou calços de apoio",
+   "ativo": true
+  },
+  {
+   "id": "vre11",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Implementos",
+   "ordem": 11,
+   "pergunta": "Caçambas e dentes bem fixados, com pinos e travas no lugar",
+   "ativo": true
+  },
+  {
+   "id": "vre12",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 12,
+   "pergunta": "Proteções de partes móveis (correias, polias, ventilador) instaladas, e tampas fechadas",
+   "ativo": true
+  },
+  {
+   "id": "vre13",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 13,
+   "pergunta": "Pneus ou esteiras em bom estado, sem cortes ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vre14",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 14,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível na máquina ou no solo",
+   "ativo": true
+  },
+  {
+   "id": "vre15",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 15,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vre16",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 16,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vre17",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Sinalização na máquina",
+   "ordem": 17,
+   "pergunta": "Adesivos de segurança legíveis e faixas refletivas presentes",
+   "ativo": true
+  },
+  {
+   "id": "vmn01",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 1,
+   "pergunta": "Estrutura de proteção da cabine (ROPS/FOPS) presente e sem danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vmn02",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 2,
+   "pergunta": "Vidros íntegros, sem trincas que prejudiquem a visão, e limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmn03",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vmn04",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 4,
+   "pergunta": "Trava de segurança dos comandos e freio de estacionamento funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmn05",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmn06",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Giroflex, faróis e iluminação de trabalho funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmn07",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Espelhos retrovisores presentes e íntegros, e câmera funcionando (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "vmn08",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Acesso à máquina",
+   "ordem": 8,
+   "pergunta": "Degraus, estribos, corrimãos e pega-mãos presentes, firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vmn09",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Implementos",
+   "ordem": 9,
+   "pergunta": "Lâmina e escarificador bem fixados, com pinos e travas no lugar",
+   "ativo": true
+  },
+  {
+   "id": "vmn10",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Implementos",
+   "ordem": 10,
+   "pergunta": "Trava da articulação presente, para transporte e manutenção",
+   "ativo": true
+  },
+  {
+   "id": "vmn11",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 11,
+   "pergunta": "Proteções de partes móveis (correias, polias, ventilador) instaladas, e tampas fechadas",
+   "ativo": true
+  },
+  {
+   "id": "vmn12",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 12,
+   "pergunta": "Pneus ou esteiras em bom estado, sem cortes ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vmn13",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 13,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível na máquina ou no solo",
+   "ativo": true
+  },
+  {
+   "id": "vmn14",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 14,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vmn15",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 15,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vmn16",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Sinalização na máquina",
+   "ordem": 16,
+   "pergunta": "Adesivos de segurança legíveis e faixas refletivas presentes",
+   "ativo": true
+  },
+  {
+   "id": "vrc01",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 1,
+   "pergunta": "Estrutura de proteção da cabine (ROPS/FOPS) presente e sem danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vrc02",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 2,
+   "pergunta": "Vidros íntegros, sem trincas que prejudiquem a visão, e limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vrc03",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vrc04",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 4,
+   "pergunta": "Trava de segurança dos comandos e freio de estacionamento funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vrc05",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vrc06",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Giroflex, faróis e iluminação de trabalho funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vrc07",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Espelhos retrovisores presentes e íntegros, e câmera funcionando (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "vrc08",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Acesso à máquina",
+   "ordem": 8,
+   "pergunta": "Degraus, estribos, corrimãos e pega-mãos presentes, firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vrc09",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Cilindro compactador",
+   "ordem": 9,
+   "pergunta": "Cilindro (rolo) e raspadores em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vrc10",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Cilindro compactador",
+   "ordem": 10,
+   "pergunta": "Botão de parada de emergência presente e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vrc11",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Cilindro compactador",
+   "ordem": 11,
+   "pergunta": "Controle remoto funcionando e com parada de emergência (rolo de vala, quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "vrc12",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 12,
+   "pergunta": "Proteções de partes móveis (correias, polias, ventilador) instaladas, e tampas fechadas",
+   "ativo": true
+  },
+  {
+   "id": "vrc13",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 13,
+   "pergunta": "Pneus em bom estado, sem cortes ou danos aparentes (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "vrc14",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 14,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível na máquina ou no solo",
+   "ativo": true
+  },
+  {
+   "id": "vrc15",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 15,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vrc16",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 16,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vrc17",
+   "tipo": "vme-rolo-compactador-csp",
+   "modulo": "base",
+   "secao": "Sinalização na máquina",
+   "ordem": 17,
+   "pergunta": "Adesivos de segurança legíveis e faixas refletivas presentes",
+   "ativo": true
+  },
+  {
+   "id": "vpc01",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 1,
+   "pergunta": "Estrutura de proteção da cabine (ROPS/FOPS) presente e sem danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vpc02",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 2,
+   "pergunta": "Vidros íntegros, sem trincas que prejudiquem a visão, e limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpc03",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vpc04",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 4,
+   "pergunta": "Trava de segurança dos comandos e freio de estacionamento funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpc05",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpc06",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Giroflex, faróis e iluminação de trabalho funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpc07",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Espelhos retrovisores presentes e íntegros, e câmera funcionando (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "vpc08",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Acesso à máquina",
+   "ordem": 8,
+   "pergunta": "Degraus, estribos, corrimãos e pega-mãos presentes, firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vpc09",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Braço e caçamba",
+   "ordem": 9,
+   "pergunta": "Trava de segurança do braço presente, para serviços com o braço erguido",
+   "ativo": true
+  },
+  {
+   "id": "vpc10",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Braço e caçamba",
+   "ordem": 10,
+   "pergunta": "Caçamba e engate rápido travados, com pinos e travas no lugar",
+   "ativo": true
+  },
+  {
+   "id": "vpc11",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Braço e caçamba",
+   "ordem": 11,
+   "pergunta": "Barra de proteção e sensor de presença do operador funcionando (minicarregadeira)",
+   "ativo": true
+  },
+  {
+   "id": "vpc12",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 12,
+   "pergunta": "Proteções de partes móveis (correias, polias, ventilador) instaladas, e tampas fechadas",
+   "ativo": true
+  },
+  {
+   "id": "vpc13",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 13,
+   "pergunta": "Pneus ou esteiras em bom estado, sem cortes ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vpc14",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 14,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível na máquina ou no solo",
+   "ativo": true
+  },
+  {
+   "id": "vpc15",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 15,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vpc16",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 16,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vpc17",
+   "tipo": "vme-pa-carregadeira-csp",
+   "modulo": "base",
+   "secao": "Sinalização na máquina",
+   "ordem": 17,
+   "pergunta": "Adesivos de segurança legíveis e faixas refletivas presentes",
+   "ativo": true
+  },
+  {
+   "id": "vtp01",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 1,
+   "pergunta": "Estrutura de proteção da cabine (ROPS/FOPS) presente e sem danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vtp02",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 2,
+   "pergunta": "Vidros íntegros, sem trincas que prejudiquem a visão, e limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vtp03",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vtp04",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 4,
+   "pergunta": "Trava de segurança dos comandos e freio de estacionamento funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vtp05",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vtp06",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Giroflex, faróis e iluminação de trabalho funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vtp07",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Espelhos retrovisores presentes e íntegros, e câmera funcionando (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "vtp08",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Acesso à máquina",
+   "ordem": 8,
+   "pergunta": "Degraus, estribos, corrimãos e pega-mãos presentes, firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vtp09",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Engate e implementos",
+   "ordem": 9,
+   "pergunta": "Tomada de força e eixo cardã com as proteções instaladas",
+   "ativo": true
+  },
+  {
+   "id": "vtp10",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Engate e implementos",
+   "ordem": 10,
+   "pergunta": "Barra de tração e engate com pino e trava",
+   "ativo": true
+  },
+  {
+   "id": "vtp11",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Engate e implementos",
+   "ordem": 11,
+   "pergunta": "Implemento acoplado com as proteções instaladas e sem peças soltas",
+   "ativo": true
+  },
+  {
+   "id": "vtp12",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 12,
+   "pergunta": "Proteções de partes móveis (correias, polias, ventilador) instaladas, e tampas fechadas",
+   "ativo": true
+  },
+  {
+   "id": "vtp13",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 13,
+   "pergunta": "Pneus ou esteiras em bom estado, sem cortes ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vtp14",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 14,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível na máquina ou no solo",
+   "ativo": true
+  },
+  {
+   "id": "vtp15",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 15,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vtp16",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 16,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vtp17",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Sinalização na máquina",
+   "ordem": 17,
+   "pergunta": "Adesivos de segurança legíveis e faixas refletivas presentes",
+   "ativo": true
+  },
+  {
+   "id": "vmt01",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 1,
+   "pergunta": "Estrutura de proteção da cabine (ROPS/FOPS) presente e sem danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vmt02",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 2,
+   "pergunta": "Vidros íntegros, sem trincas que prejudiquem a visão, e limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmt03",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vmt04",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 4,
+   "pergunta": "Trava de segurança dos comandos e freio de estacionamento funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmt05",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmt06",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Giroflex, faróis e iluminação de trabalho funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmt07",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Espelhos retrovisores presentes e íntegros, e câmera funcionando (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "vmt08",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Acesso à máquina",
+   "ordem": 8,
+   "pergunta": "Degraus, estribos, corrimãos e pega-mãos presentes, firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vmt09",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Lança e carga",
+   "ordem": 9,
+   "pergunta": "Tabela de carga legível na cabine",
+   "ativo": true
+  },
+  {
+   "id": "vmt10",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Lança e carga",
+   "ordem": 10,
+   "pergunta": "Indicador ou limitador de momento de carga funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vmt11",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Lança e carga",
+   "ordem": 11,
+   "pergunta": "Garfos sem trincas e travados, e acessórios com trava de segurança",
+   "ativo": true
+  },
+  {
+   "id": "vmt12",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Lança e carga",
+   "ordem": 12,
+   "pergunta": "Patolas (estabilizadores) funcionando, sem vazamentos e com sapatas ou calços de apoio",
+   "ativo": true
+  },
+  {
+   "id": "vmt13",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Lança e carga",
+   "ordem": 13,
+   "pergunta": "Lança, cilindros e mangueiras hidráulicas sem vazamentos ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vmt14",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 14,
+   "pergunta": "Proteções de partes móveis (correias, polias, ventilador) instaladas, e tampas fechadas",
+   "ativo": true
+  },
+  {
+   "id": "vmt15",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 15,
+   "pergunta": "Pneus ou esteiras em bom estado, sem cortes ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vmt16",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 16,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível na máquina ou no solo",
+   "ativo": true
+  },
+  {
+   "id": "vmt17",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 17,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vmt18",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 18,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vmt19",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "modulo": "base",
+   "secao": "Sinalização na máquina",
+   "ordem": 19,
+   "pergunta": "Adesivos de segurança legíveis e faixas refletivas presentes",
+   "ativo": true
+  },
+  {
+   "id": "vce01",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Posto de operação",
+   "ordem": 1,
+   "pergunta": "Estrutura de proteção contra capotamento (ROPS) presente e sem danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vce02",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Posto de operação",
+   "ordem": 2,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vce03",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 3,
+   "pergunta": "Trava de segurança dos comandos e freio de estacionamento funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vce04",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 4,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vce05",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Giroflex, faróis e iluminação de trabalho funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vce06",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Espelhos retrovisores presentes e íntegros, e câmera funcionando (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "vce07",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Acesso à máquina",
+   "ordem": 7,
+   "pergunta": "Degraus, estribos, corrimãos e pega-mãos presentes, firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vce08",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Cravação",
+   "ordem": 8,
+   "pergunta": "Mastro e martelo sem trincas, com pinos e travas no lugar",
+   "ativo": true
+  },
+  {
+   "id": "vce09",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Cravação",
+   "ordem": 9,
+   "pergunta": "Parada de emergência funcionando na máquina e no controle remoto",
+   "ativo": true
+  },
+  {
+   "id": "vce10",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Cravação",
+   "ordem": 10,
+   "pergunta": "Controle remoto funcionando e com os comandos identificados",
+   "ativo": true
+  },
+  {
+   "id": "vce11",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Cravação",
+   "ordem": 11,
+   "pergunta": "Mangueiras hidráulicas sem vazamentos, ressecamento ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vce12",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Cravação",
+   "ordem": 12,
+   "pergunta": "Área de cravação isolada e sinalizada, respeitando a distância de segurança",
+   "ativo": true
+  },
+  {
+   "id": "vce13",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 13,
+   "pergunta": "Proteções de partes móveis (correias, polias, ventilador) instaladas, e tampas fechadas",
+   "ativo": true
+  },
+  {
+   "id": "vce14",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 14,
+   "pergunta": "Esteiras em bom estado, sem sapatas soltas ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vce15",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 15,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível na máquina ou no solo",
+   "ativo": true
+  },
+  {
+   "id": "vce16",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 16,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vce17",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 17,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vce18",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "modulo": "base",
+   "secao": "Sinalização na máquina",
+   "ordem": 18,
+   "pergunta": "Adesivos de segurança legíveis e faixas refletivas presentes",
+   "ativo": true
+  },
+  {
+   "id": "vvl01",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 1,
+   "pergunta": "Estrutura de proteção da cabine (ROPS/FOPS) presente e sem danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vvl02",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 2,
+   "pergunta": "Vidros íntegros, sem trincas que prejudiquem a visão, e limpador funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vvl03",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Cabine",
+   "ordem": 3,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vvl04",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 4,
+   "pergunta": "Trava de segurança dos comandos e freio de estacionamento funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vvl05",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vvl06",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Giroflex, faróis e iluminação de trabalho funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vvl07",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Espelhos retrovisores presentes e íntegros, e câmera funcionando (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "vvl08",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Acesso à máquina",
+   "ordem": 8,
+   "pergunta": "Degraus, estribos, corrimãos e pega-mãos presentes, firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vvl09",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Corte",
+   "ordem": 9,
+   "pergunta": "Proteção da corrente ou roda de corte instalada",
+   "ativo": true
+  },
+  {
+   "id": "vvl10",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Corte",
+   "ordem": 10,
+   "pergunta": "Botão de parada de emergência presente e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vvl11",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Corte",
+   "ordem": 11,
+   "pergunta": "Dentes de corte bem fixados e sem peças soltas",
+   "ativo": true
+  },
+  {
+   "id": "vvl12",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Corte",
+   "ordem": 12,
+   "pergunta": "Área de escavação isolada e sinalizada, respeitando a distância de segurança",
+   "ativo": true
+  },
+  {
+   "id": "vvl13",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 13,
+   "pergunta": "Proteções de partes móveis (correias, polias, ventilador) instaladas, e tampas fechadas",
+   "ativo": true
+  },
+  {
+   "id": "vvl14",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 14,
+   "pergunta": "Esteiras em bom estado, sem sapatas soltas ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vvl15",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 15,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível na máquina ou no solo",
+   "ativo": true
+  },
+  {
+   "id": "vvl16",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 16,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vvl17",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 17,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vvl18",
+   "tipo": "vme-valetadeira-sso-csp",
+   "modulo": "base",
+   "secao": "Sinalização na máquina",
+   "ordem": 18,
+   "pergunta": "Adesivos de segurança legíveis e faixas refletivas presentes",
+   "ativo": true
+  },
+  {
+   "id": "vdp01",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Posto de operação",
+   "ordem": 1,
+   "pergunta": "Estrutura de proteção contra capotamento (ROPS) presente e sem danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vdp02",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Posto de operação",
+   "ordem": 2,
+   "pergunta": "Cinto de segurança presente, íntegro e travando",
+   "ativo": true
+  },
+  {
+   "id": "vdp03",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 3,
+   "pergunta": "Trava de segurança dos comandos e freio de estacionamento funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vdp04",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 4,
+   "pergunta": "Alarme de ré e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vdp05",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Giroflex, faróis e iluminação de trabalho funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vdp06",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Espelhos retrovisores presentes e íntegros, e câmera funcionando (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "vdp07",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Acesso à máquina",
+   "ordem": 7,
+   "pergunta": "Degraus, estribos, corrimãos e pega-mãos presentes, firmes e limpos",
+   "ativo": true
+  },
+  {
+   "id": "vdp08",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Caçamba",
+   "ordem": 8,
+   "pergunta": "Caçamba sem trincas, com trava para o deslocamento",
+   "ativo": true
+  },
+  {
+   "id": "vdp09",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Caçamba",
+   "ordem": 9,
+   "pergunta": "Trava de segurança da caçamba presente, para serviços com a caçamba erguida",
+   "ativo": true
+  },
+  {
+   "id": "vdp10",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 10,
+   "pergunta": "Proteções de partes móveis (correias, polias, ventilador) instaladas, e tampas fechadas",
+   "ativo": true
+  },
+  {
+   "id": "vdp11",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 11,
+   "pergunta": "Pneus ou esteiras em bom estado, sem cortes ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vdp12",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Proteções e condições visíveis",
+   "ordem": 12,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível na máquina ou no solo",
+   "ativo": true
+  },
+  {
+   "id": "vdp13",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 13,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vdp14",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 14,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vdp15",
+   "tipo": "vme-dumper-csp",
+   "modulo": "base",
+   "secao": "Sinalização na máquina",
+   "ordem": 15,
+   "pergunta": "Adesivos de segurança legíveis e faixas refletivas presentes",
+   "ativo": true
+  },
+  {
+   "id": "vpt01",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Cesto",
+   "ordem": 1,
+   "pergunta": "Guarda-corpo, porta ou barra de acesso e piso do cesto íntegros",
+   "ativo": true
+  },
+  {
+   "id": "vpt02",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Cesto",
+   "ordem": 2,
+   "pergunta": "Pontos de ancoragem do cinto identificados e íntegros",
+   "ativo": true
+  },
+  {
+   "id": "vpt03",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Cesto",
+   "ordem": 3,
+   "pergunta": "Comandos do cesto identificados e funcionando, com proteção contra acionamento acidental",
+   "ativo": true
+  },
+  {
+   "id": "vpt04",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 4,
+   "pergunta": "Parada de emergência funcionando no cesto e na base",
+   "ativo": true
+  },
+  {
+   "id": "vpt05",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 5,
+   "pergunta": "Descida de emergência funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpt06",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 6,
+   "pergunta": "Alarme de movimento, alarme de inclinação e buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpt07",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 7,
+   "pergunta": "Sensor de inclinação e limitador de carga funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpt08",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Dispositivos de segurança",
+   "ordem": 8,
+   "pergunta": "Giroflex funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vpt09",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Condições visíveis",
+   "ordem": 9,
+   "pergunta": "Pneus e rodas em bom estado, sem cortes ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vpt10",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Condições visíveis",
+   "ordem": 10,
+   "pergunta": "Lança, cilindros e mangueiras hidráulicas sem vazamentos ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vpt11",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Condições visíveis",
+   "ordem": 11,
+   "pergunta": "Tabela de capacidade e adesivos de segurança legíveis",
+   "ativo": true
+  },
+  {
+   "id": "vpt12",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 12,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vge01",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 1,
+   "pergunta": "Aterramento instalado e conectado (haste e cabo)",
+   "ativo": true
+  },
+  {
+   "id": "vge02",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 2,
+   "pergunta": "Quadro elétrico fechado e identificado, com disjuntor e DR, sem partes vivas expostas",
+   "ativo": true
+  },
+  {
+   "id": "vge03",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 3,
+   "pergunta": "Cabos elétricos, plugues e tomadas íntegros, sem emendas ou isolação danificada",
+   "ativo": true
+  },
+  {
+   "id": "vge04",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 4,
+   "pergunta": "Proteções de partes móveis e quentes (correias, ventilador, escapamento) instaladas, e portas da carenagem fechadas",
+   "ativo": true
+  },
+  {
+   "id": "vge05",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 5,
+   "pergunta": "Botão de parada de emergência presente e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vge06",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 6,
+   "pergunta": "Escapamento direcionado para longe das pessoas, em local ventilado",
+   "ativo": true
+  },
+  {
+   "id": "vge07",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente e emergência",
+   "ordem": 7,
+   "pergunta": "Bandeja ou bacia de contenção sob o equipamento, limpa e sem acúmulo de óleo",
+   "ativo": true
+  },
+  {
+   "id": "vge08",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente e emergência",
+   "ordem": 8,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível na máquina ou no solo",
+   "ativo": true
+  },
+  {
+   "id": "vge09",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente e emergência",
+   "ordem": 9,
+   "pergunta": "Extintor próximo ao equipamento, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vge10",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente e emergência",
+   "ordem": 10,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vge11",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Sinalização",
+   "ordem": 11,
+   "pergunta": "Área do gerador isolada e sinalizada (risco elétrico, ruído e proibido fumar)",
+   "ativo": true
+  },
+  {
+   "id": "vcr01",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Vaso de pressão",
+   "ordem": 1,
+   "pergunta": "Válvula de segurança instalada e com lacre",
+   "ativo": true
+  },
+  {
+   "id": "vcr02",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Vaso de pressão",
+   "ordem": 2,
+   "pergunta": "Manômetro funcionando e com o visor legível",
+   "ativo": true
+  },
+  {
+   "id": "vcr03",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Vaso de pressão",
+   "ordem": 3,
+   "pergunta": "Placa de identificação do reservatório legível",
+   "ativo": true
+  },
+  {
+   "id": "vcr04",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Vaso de pressão",
+   "ordem": 4,
+   "pergunta": "Dreno do reservatório funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcr05",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 5,
+   "pergunta": "Proteções de partes móveis (correias, polias, ventilador) instaladas, e tampas fechadas",
+   "ativo": true
+  },
+  {
+   "id": "vcr06",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 6,
+   "pergunta": "Mangueiras de ar sem danos, com abraçadeiras e cabo de segurança (antichicote) nas conexões",
+   "ativo": true
+  },
+  {
+   "id": "vcr07",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 7,
+   "pergunta": "Botão de parada de emergência presente e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcr08",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 8,
+   "pergunta": "Aterramento instalado e conectado (haste e cabo)",
+   "ativo": true
+  },
+  {
+   "id": "vcr09",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 9,
+   "pergunta": "Cabos elétricos, plugues e tomadas íntegros, sem emendas ou isolação danificada",
+   "ativo": true
+  },
+  {
+   "id": "vcr10",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Emergência e sinalização",
+   "ordem": 10,
+   "pergunta": "Extintor próximo ao equipamento, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vcr11",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Emergência e sinalização",
+   "ordem": 11,
+   "pergunta": "Área sinalizada (ruído e uso de EPI)",
+   "ativo": true
+  },
+  {
+   "id": "vmb01",
+   "tipo": "vme-motobomba-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 1,
+   "pergunta": "Proteções de partes móveis e quentes (acoplamento, escapamento) instaladas",
+   "ativo": true
+  },
+  {
+   "id": "vmb02",
+   "tipo": "vme-motobomba-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 2,
+   "pergunta": "Equipamento apoiado em base firme e nivelada",
+   "ativo": true
+  },
+  {
+   "id": "vmb03",
+   "tipo": "vme-motobomba-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 3,
+   "pergunta": "Escapamento direcionado para longe das pessoas, em local ventilado",
+   "ativo": true
+  },
+  {
+   "id": "vmb04",
+   "tipo": "vme-motobomba-csp",
+   "modulo": "base",
+   "secao": "Mangueiras",
+   "ordem": 4,
+   "pergunta": "Mangueiras e conexões sem vazamentos, com abraçadeiras bem apertadas",
+   "ativo": true
+  },
+  {
+   "id": "vmb05",
+   "tipo": "vme-motobomba-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente e emergência",
+   "ordem": 5,
+   "pergunta": "Bandeja ou bacia de contenção sob o equipamento, limpa e sem acúmulo de óleo",
+   "ativo": true
+  },
+  {
+   "id": "vmb06",
+   "tipo": "vme-motobomba-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente e emergência",
+   "ordem": 6,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível",
+   "ativo": true
+  },
+  {
+   "id": "vmb07",
+   "tipo": "vme-motobomba-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente e emergência",
+   "ordem": 7,
+   "pergunta": "Extintor próximo ao equipamento, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vmb08",
+   "tipo": "vme-motobomba-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente e emergência",
+   "ordem": 8,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vti01",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "modulo": "base",
+   "secao": "Mastro e apoio",
+   "ordem": 1,
+   "pergunta": "Mastro sem danos, travado com pinos e travas na posição de trabalho",
+   "ativo": true
+  },
+  {
+   "id": "vti02",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "modulo": "base",
+   "secao": "Mastro e apoio",
+   "ordem": 2,
+   "pergunta": "Patolas (estabilizadores) apoiadas e torre nivelada",
+   "ativo": true
+  },
+  {
+   "id": "vti03",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "modulo": "base",
+   "secao": "Mastro e apoio",
+   "ordem": 3,
+   "pergunta": "Refletores bem fixados e com as lentes íntegras",
+   "ativo": true
+  },
+  {
+   "id": "vti04",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "modulo": "base",
+   "secao": "Mastro e apoio",
+   "ordem": 4,
+   "pergunta": "Torre posicionada longe de redes elétricas aéreas",
+   "ativo": true
+  },
+  {
+   "id": "vti05",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 5,
+   "pergunta": "Aterramento instalado e conectado (haste e cabo)",
+   "ativo": true
+  },
+  {
+   "id": "vti06",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 6,
+   "pergunta": "Cabos elétricos, plugues e tomadas íntegros, sem emendas ou isolação danificada",
+   "ativo": true
+  },
+  {
+   "id": "vti07",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 7,
+   "pergunta": "Quadro elétrico fechado, sem partes vivas expostas",
+   "ativo": true
+  },
+  {
+   "id": "vti08",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "modulo": "base",
+   "secao": "Gerador da torre",
+   "ordem": 8,
+   "pergunta": "Proteções de partes móveis e quentes instaladas, e portas da carenagem fechadas",
+   "ativo": true
+  },
+  {
+   "id": "vti09",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "modulo": "base",
+   "secao": "Gerador da torre",
+   "ordem": 9,
+   "pergunta": "Bandeja ou bacia de contenção sob o equipamento, limpa e sem acúmulo de óleo",
+   "ativo": true
+  },
+  {
+   "id": "vti10",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "modulo": "base",
+   "secao": "Gerador da torre",
+   "ordem": 10,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível",
+   "ativo": true
+  },
+  {
+   "id": "vti11",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "modulo": "base",
+   "secao": "Emergência e sinalização",
+   "ordem": 11,
+   "pergunta": "Extintor próximo ao equipamento, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vti12",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "modulo": "base",
+   "secao": "Emergência e sinalização",
+   "ordem": 12,
+   "pergunta": "Adesivos de segurança legíveis e faixas refletivas presentes",
+   "ativo": true
+  },
+  {
+   "id": "vms01",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 1,
+   "pergunta": "Carcaça íntegra, sem partes vivas expostas, com a chave liga/desliga funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vms02",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 2,
+   "pergunta": "Cabos de solda, porta-eletrodo e garra de retorno (terra) íntegros, sem emendas ou isolação danificada",
+   "ativo": true
+  },
+  {
+   "id": "vms03",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 3,
+   "pergunta": "Aterramento instalado e conectado (haste e cabo)",
+   "ativo": true
+  },
+  {
+   "id": "vms04",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 4,
+   "pergunta": "Cabos elétricos, plugues e tomadas íntegros, sem emendas ou isolação danificada",
+   "ativo": true
+  },
+  {
+   "id": "vms05",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Área de trabalho",
+   "ordem": 5,
+   "pergunta": "Biombo ou anteparo de proteção contra a radiação e os respingos disponível",
+   "ativo": true
+  },
+  {
+   "id": "vms06",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Área de trabalho",
+   "ordem": 6,
+   "pergunta": "Área livre de materiais inflamáveis ou combustíveis",
+   "ativo": true
+  },
+  {
+   "id": "vms07",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Área de trabalho",
+   "ordem": 7,
+   "pergunta": "Extintor próximo ao equipamento, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vsc01",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Disco e proteções",
+   "ordem": 1,
+   "pergunta": "Coifa protetora do disco e cutelo divisor instalados e regulados",
+   "ativo": true
+  },
+  {
+   "id": "vsc02",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Disco e proteções",
+   "ordem": 2,
+   "pergunta": "Disco afiado, sem trincas ou dentes quebrados, e bem fixado",
+   "ativo": true
+  },
+  {
+   "id": "vsc03",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Disco e proteções",
+   "ordem": 3,
+   "pergunta": "Proteção das correias e polias instalada",
+   "ativo": true
+  },
+  {
+   "id": "vsc04",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Disco e proteções",
+   "ordem": 4,
+   "pergunta": "Empurrador e guia de alinhamento disponíveis",
+   "ativo": true
+  },
+  {
+   "id": "vsc05",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Disco e proteções",
+   "ordem": 5,
+   "pergunta": "Coletor de serragem instalado",
+   "ativo": true
+  },
+  {
+   "id": "vsc06",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 6,
+   "pergunta": "Chave de partida com botão de parada de emergência funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vsc07",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 7,
+   "pergunta": "Aterramento instalado e conectado (haste e cabo)",
+   "ativo": true
+  },
+  {
+   "id": "vsc08",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 8,
+   "pergunta": "Cabos elétricos, plugues e tomadas íntegros, sem emendas ou isolação danificada",
+   "ativo": true
+  },
+  {
+   "id": "vsc09",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Área de trabalho",
+   "ordem": 9,
+   "pergunta": "Mesa estável, nivelada e com o piso ao redor limpo e desobstruído",
+   "ativo": true
+  },
+  {
+   "id": "vsc10",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Área de trabalho",
+   "ordem": 10,
+   "pergunta": "Sinalização de uso obrigatório de EPI visível",
+   "ativo": true
+  },
+  {
+   "id": "vsc11",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Área de trabalho",
+   "ordem": 11,
+   "pergunta": "Extintor próximo ao equipamento, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vbe01",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 1,
+   "pergunta": "Proteção da cremalheira, do pinhão e das correias instalada",
+   "ativo": true
+  },
+  {
+   "id": "vbe02",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 2,
+   "pergunta": "Trava do tambor e volante de basculamento funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vbe03",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 3,
+   "pergunta": "Betoneira apoiada em base firme e nivelada",
+   "ativo": true
+  },
+  {
+   "id": "vbe04",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 4,
+   "pergunta": "Chave liga/desliga com botão de parada de emergência funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vbe05",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 5,
+   "pergunta": "Aterramento instalado e conectado (haste e cabo)",
+   "ativo": true
+  },
+  {
+   "id": "vbe06",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 6,
+   "pergunta": "Cabos elétricos, plugues e tomadas íntegros, sem emendas ou isolação danificada",
+   "ativo": true
+  },
+  {
+   "id": "vbe07",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Área de trabalho",
+   "ordem": 7,
+   "pergunta": "Área ao redor limpa, organizada e sinalizada",
+   "ativo": true
+  },
+  {
+   "id": "vex01",
+   "tipo": "vme-extrusora-csp",
+   "modulo": "base",
+   "secao": "Proteções e comandos",
+   "ordem": 1,
+   "pergunta": "Proteções de partes móveis (rosca, correias, correntes) instaladas",
+   "ativo": true
+  },
+  {
+   "id": "vex02",
+   "tipo": "vme-extrusora-csp",
+   "modulo": "base",
+   "secao": "Proteções e comandos",
+   "ordem": 2,
+   "pergunta": "Botão de parada de emergência presente e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vex03",
+   "tipo": "vme-extrusora-csp",
+   "modulo": "base",
+   "secao": "Proteções e comandos",
+   "ordem": 3,
+   "pergunta": "Comandos identificados e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vex04",
+   "tipo": "vme-extrusora-csp",
+   "modulo": "base",
+   "secao": "Proteções e comandos",
+   "ordem": 4,
+   "pergunta": "Alarme de ré, buzina e giroflex funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vex05",
+   "tipo": "vme-extrusora-csp",
+   "modulo": "base",
+   "secao": "Condições visíveis",
+   "ordem": 5,
+   "pergunta": "Rodas ou esteiras em bom estado, sem danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vex06",
+   "tipo": "vme-extrusora-csp",
+   "modulo": "base",
+   "secao": "Condições visíveis",
+   "ordem": 6,
+   "pergunta": "Mangueiras hidráulicas sem vazamentos, ressecamento ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vex07",
+   "tipo": "vme-extrusora-csp",
+   "modulo": "base",
+   "secao": "Condições visíveis",
+   "ordem": 7,
+   "pergunta": "Sem vazamentos aparentes de óleo ou combustível na máquina ou no solo",
+   "ativo": true
+  },
+  {
+   "id": "vex08",
+   "tipo": "vme-extrusora-csp",
+   "modulo": "base",
+   "secao": "Emergência e sinalização",
+   "ordem": 8,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vex09",
+   "tipo": "vme-extrusora-csp",
+   "modulo": "base",
+   "secao": "Emergência e sinalização",
+   "ordem": 9,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vex10",
+   "tipo": "vme-extrusora-csp",
+   "modulo": "base",
+   "secao": "Emergência e sinalização",
+   "ordem": 10,
+   "pergunta": "Adesivos de segurança legíveis e faixas refletivas presentes",
+   "ativo": true
+  },
+  {
+   "id": "vro01",
+   "tipo": "vme-rocadeira-costal-csp",
+   "modulo": "base",
+   "secao": "Corte",
+   "ordem": 1,
+   "pergunta": "Proteção (saia) da lâmina ou do fio instalada e sem danos",
+   "ativo": true
+  },
+  {
+   "id": "vro02",
+   "tipo": "vme-rocadeira-costal-csp",
+   "modulo": "base",
+   "secao": "Corte",
+   "ordem": 2,
+   "pergunta": "Lâmina ou fio de corte em bom estado e bem fixado",
+   "ativo": true
+  },
+  {
+   "id": "vro03",
+   "tipo": "vme-rocadeira-costal-csp",
+   "modulo": "base",
+   "secao": "Operação",
+   "ordem": 3,
+   "pergunta": "Cinto ou arnês duplo íntegro, com engate rápido funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vro04",
+   "tipo": "vme-rocadeira-costal-csp",
+   "modulo": "base",
+   "secao": "Operação",
+   "ordem": 4,
+   "pergunta": "Punho, acelerador e interruptor de parada funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vro05",
+   "tipo": "vme-rocadeira-costal-csp",
+   "modulo": "base",
+   "secao": "Operação",
+   "ordem": 5,
+   "pergunta": "Sistema antivibração e punhos em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vro06",
+   "tipo": "vme-rocadeira-costal-csp",
+   "modulo": "base",
+   "secao": "Motor",
+   "ordem": 6,
+   "pergunta": "Escapamento com a proteção instalada",
+   "ativo": true
+  },
+  {
+   "id": "vro07",
+   "tipo": "vme-rocadeira-costal-csp",
+   "modulo": "base",
+   "secao": "Motor",
+   "ordem": 7,
+   "pergunta": "Sem vazamentos de combustível, com a tampa do tanque vedando",
+   "ativo": true
+  },
+  {
+   "id": "vvc01",
+   "tipo": "vme-vibrador-de-concreto-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 1,
+   "pergunta": "Mangote e agulha (vibrador) sem danos, cortes ou amassados",
+   "ativo": true
+  },
+  {
+   "id": "vvc02",
+   "tipo": "vme-vibrador-de-concreto-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 2,
+   "pergunta": "Proteções do motor e do acoplamento instaladas",
+   "ativo": true
+  },
+  {
+   "id": "vvc03",
+   "tipo": "vme-vibrador-de-concreto-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 3,
+   "pergunta": "Interruptor liga/desliga funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vvc04",
+   "tipo": "vme-vibrador-de-concreto-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 4,
+   "pergunta": "Cabos elétricos e plugues íntegros, sem emendas (modelo elétrico)",
+   "ativo": true
+  },
+  {
+   "id": "vvc05",
+   "tipo": "vme-vibrador-de-concreto-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 5,
+   "pergunta": "Sem vazamentos de combustível e com o escapamento protegido (modelo a combustão)",
+   "ativo": true
+  },
+  {
+   "id": "vrt01",
+   "tipo": "vme-retificadora-de-corpo-de-prova-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 1,
+   "pergunta": "Proteção do rebolo ou disco instalada",
+   "ativo": true
+  },
+  {
+   "id": "vrt02",
+   "tipo": "vme-retificadora-de-corpo-de-prova-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 2,
+   "pergunta": "Dispositivo de fixação do corpo de prova funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vrt03",
+   "tipo": "vme-retificadora-de-corpo-de-prova-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 3,
+   "pergunta": "Botão de parada de emergência presente e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vrt04",
+   "tipo": "vme-retificadora-de-corpo-de-prova-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 4,
+   "pergunta": "Aterramento instalado e conectado (haste e cabo)",
+   "ativo": true
+  },
+  {
+   "id": "vrt05",
+   "tipo": "vme-retificadora-de-corpo-de-prova-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 5,
+   "pergunta": "Cabos elétricos, plugues e tomadas íntegros, sem emendas ou isolação danificada",
+   "ativo": true
+  },
+  {
+   "id": "vrt06",
+   "tipo": "vme-retificadora-de-corpo-de-prova-csp",
+   "modulo": "base",
+   "secao": "Área de trabalho",
+   "ordem": 6,
+   "pergunta": "Bancada estável e área ao redor limpa e organizada",
+   "ativo": true
+  },
+  {
+   "id": "vrt07",
+   "tipo": "vme-retificadora-de-corpo-de-prova-csp",
+   "modulo": "base",
+   "secao": "Área de trabalho",
+   "ordem": 7,
+   "pergunta": "Sinalização de uso obrigatório de EPI visível",
+   "ativo": true
+  },
+  {
+   "id": "veq01",
+   "tipo": "vme-equipamentos-csp",
+   "modulo": "base",
+   "secao": "Estrutura",
+   "ordem": 1,
+   "pergunta": "Estrutura (tripé, base e sapatas) íntegra, sem trincas, empenos ou corrosão",
+   "ativo": true
+  },
+  {
+   "id": "veq02",
+   "tipo": "vme-equipamentos-csp",
+   "modulo": "base",
+   "secao": "Estrutura",
+   "ordem": 2,
+   "pergunta": "Pinos, travas e parafusos no lugar e bem apertados",
+   "ativo": true
+  },
+  {
+   "id": "veq03",
+   "tipo": "vme-equipamentos-csp",
+   "modulo": "base",
+   "secao": "Estrutura",
+   "ordem": 3,
+   "pergunta": "Equipamento apoiado em base firme e nivelada",
+   "ativo": true
+  },
+  {
+   "id": "veq04",
+   "tipo": "vme-equipamentos-csp",
+   "modulo": "base",
+   "secao": "Içamento e partes móveis",
+   "ordem": 4,
+   "pergunta": "Roldana, cabo de aço ou corda sem desgaste, fios rompidos ou nós",
+   "ativo": true
+  },
+  {
+   "id": "veq05",
+   "tipo": "vme-equipamentos-csp",
+   "modulo": "base",
+   "secao": "Içamento e partes móveis",
+   "ordem": 5,
+   "pergunta": "Guincho com trava de segurança funcionando",
+   "ativo": true
+  },
+  {
+   "id": "veq06",
+   "tipo": "vme-equipamentos-csp",
+   "modulo": "base",
+   "secao": "Içamento e partes móveis",
+   "ordem": 6,
+   "pergunta": "Proteções de partes móveis instaladas",
+   "ativo": true
+  },
+  {
+   "id": "veq07",
+   "tipo": "vme-equipamentos-csp",
+   "modulo": "base",
+   "secao": "Área de trabalho",
+   "ordem": 7,
+   "pergunta": "Área de operação isolada e sinalizada",
+   "ativo": true
+  },
+  {
+   "id": "vpa01",
+   "tipo": "vme-posto-de-abastecimento-csp",
+   "modulo": "base",
+   "secao": "Tanque e contenção",
+   "ordem": 1,
+   "pergunta": "Tanque sem vazamentos, corrosão ou amassados, e identificado com o produto",
+   "ativo": true
+  },
+  {
+   "id": "vpa02",
+   "tipo": "vme-posto-de-abastecimento-csp",
+   "modulo": "base",
+   "secao": "Tanque e contenção",
+   "ordem": 2,
+   "pergunta": "Bacia de contenção íntegra, limpa e com o dreno fechado",
+   "ativo": true
+  },
+  {
+   "id": "vpa03",
+   "tipo": "vme-posto-de-abastecimento-csp",
+   "modulo": "base",
+   "secao": "Tanque e contenção",
+   "ordem": 3,
+   "pergunta": "Bomba, mangueira e bico de abastecimento sem vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "vpa04",
+   "tipo": "vme-posto-de-abastecimento-csp",
+   "modulo": "base",
+   "secao": "Tanque e contenção",
+   "ordem": 4,
+   "pergunta": "Proteção contra colisão de veículos (barreiras ou defensas) instalada",
+   "ativo": true
+  },
+  {
+   "id": "vpa05",
+   "tipo": "vme-posto-de-abastecimento-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 5,
+   "pergunta": "Tanque e bomba aterrados, com cabo de aterramento disponível para o abastecimento",
+   "ativo": true
+  },
+  {
+   "id": "vpa06",
+   "tipo": "vme-posto-de-abastecimento-csp",
+   "modulo": "base",
+   "secao": "Instalação elétrica",
+   "ordem": 6,
+   "pergunta": "Instalação elétrica em bom estado, sem cabos expostos ou improvisados",
+   "ativo": true
+  },
+  {
+   "id": "vpa07",
+   "tipo": "vme-posto-de-abastecimento-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 7,
+   "pergunta": "Extintores no local, lacrados, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vpa08",
+   "tipo": "vme-posto-de-abastecimento-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 8,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vpa09",
+   "tipo": "vme-posto-de-abastecimento-csp",
+   "modulo": "base",
+   "secao": "Emergência",
+   "ordem": 9,
+   "pergunta": "Ficha de segurança do produto (FDS) disponível no local",
+   "ativo": true
+  },
+  {
+   "id": "vpa10",
+   "tipo": "vme-posto-de-abastecimento-csp",
+   "modulo": "base",
+   "secao": "Sinalização",
+   "ordem": 10,
+   "pergunta": "Sinalização de inflamável, de \"Proibido fumar\" e de desligar o motor e o celular visível",
+   "ativo": true
+  },
+  {
+   "id": "vpa11",
+   "tipo": "vme-posto-de-abastecimento-csp",
+   "modulo": "base",
+   "secao": "Sinalização",
+   "ordem": 11,
+   "pergunta": "Área limpa, sem materiais combustíveis ou vegetação seca ao redor",
+   "ativo": true
+  },
+  {
+   "id": "vcq01",
+   "tipo": "vme-combustivel-reboque-csp",
+   "modulo": "base",
+   "secao": "Tanque",
+   "ordem": 1,
+   "pergunta": "Tanque sem vazamentos, corrosão ou amassados, e identificado com o produto",
+   "ativo": true
+  },
+  {
+   "id": "vcq02",
+   "tipo": "vme-combustivel-reboque-csp",
+   "modulo": "base",
+   "secao": "Tanque",
+   "ordem": 2,
+   "pergunta": "Bomba, mangueira e bico de abastecimento sem vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "vcq03",
+   "tipo": "vme-combustivel-reboque-csp",
+   "modulo": "base",
+   "secao": "Tanque",
+   "ordem": 3,
+   "pergunta": "Cabo e garra de aterramento presentes e em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vcq04",
+   "tipo": "vme-combustivel-reboque-csp",
+   "modulo": "base",
+   "secao": "Reboque",
+   "ordem": 4,
+   "pergunta": "Engate travado, com pino, trava e corrente de segurança",
+   "ativo": true
+  },
+  {
+   "id": "vcq05",
+   "tipo": "vme-combustivel-reboque-csp",
+   "modulo": "base",
+   "secao": "Reboque",
+   "ordem": 5,
+   "pergunta": "Lanternas, setas e luz de freio funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcq06",
+   "tipo": "vme-combustivel-reboque-csp",
+   "modulo": "base",
+   "secao": "Reboque",
+   "ordem": 6,
+   "pergunta": "Pneus em bom estado, sem cortes, bolhas ou desgaste excessivo",
+   "ativo": true
+  },
+  {
+   "id": "vcq07",
+   "tipo": "vme-combustivel-reboque-csp",
+   "modulo": "base",
+   "secao": "Reboque",
+   "ordem": 7,
+   "pergunta": "Pé de apoio e calços de roda em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vcq08",
+   "tipo": "vme-combustivel-reboque-csp",
+   "modulo": "base",
+   "secao": "Emergência e sinalização",
+   "ordem": 8,
+   "pergunta": "Extintor fixado, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vcq09",
+   "tipo": "vme-combustivel-reboque-csp",
+   "modulo": "base",
+   "secao": "Emergência e sinalização",
+   "ordem": 9,
+   "pergunta": "Kit de mitigação ambiental presente",
+   "ativo": true
+  },
+  {
+   "id": "vcq10",
+   "tipo": "vme-combustivel-reboque-csp",
+   "modulo": "base",
+   "secao": "Emergência e sinalização",
+   "ordem": 10,
+   "pergunta": "Sinalização de produto perigoso (rótulo de risco e painel de segurança) e de \"Proibido fumar\" visível",
+   "ativo": true
+  },
+  {
+   "id": "vcq201",
+   "tipo": "vme-carretinha-reboque-csp",
+   "modulo": "base",
+   "secao": "Engate e rodagem",
+   "ordem": 1,
+   "pergunta": "Engate travado, com pino, trava e corrente de segurança",
+   "ativo": true
+  },
+  {
+   "id": "vcq202",
+   "tipo": "vme-carretinha-reboque-csp",
+   "modulo": "base",
+   "secao": "Engate e rodagem",
+   "ordem": 2,
+   "pergunta": "Pneus em bom estado, sem cortes, bolhas ou desgaste excessivo",
+   "ativo": true
+  },
+  {
+   "id": "vcq203",
+   "tipo": "vme-carretinha-reboque-csp",
+   "modulo": "base",
+   "secao": "Engate e rodagem",
+   "ordem": 3,
+   "pergunta": "Pé de apoio e calços de roda em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vcq204",
+   "tipo": "vme-carretinha-reboque-csp",
+   "modulo": "base",
+   "secao": "Carroceria e sinalização",
+   "ordem": 4,
+   "pergunta": "Assoalho e guardas laterais íntegros, com a tampa travando",
+   "ativo": true
+  },
+  {
+   "id": "vcq205",
+   "tipo": "vme-carretinha-reboque-csp",
+   "modulo": "base",
+   "secao": "Carroceria e sinalização",
+   "ordem": 5,
+   "pergunta": "Pontos de amarração, cintas e catracas em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vcq206",
+   "tipo": "vme-carretinha-reboque-csp",
+   "modulo": "base",
+   "secao": "Carroceria e sinalização",
+   "ordem": 6,
+   "pergunta": "Lanternas, setas e luz de freio funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcq207",
+   "tipo": "vme-carretinha-reboque-csp",
+   "modulo": "base",
+   "secao": "Carroceria e sinalização",
+   "ordem": 7,
+   "pergunta": "Faixas refletivas presentes e íntegras",
+   "ativo": true
+  },
+  {
+   "id": "vtr01",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 1,
+   "pergunta": "Proteções contra arremesso de material (correntes, saias ou chapas) instaladas e íntegras",
+   "ativo": true
+  },
+  {
+   "id": "vtr02",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 2,
+   "pergunta": "Eixo cardã com a proteção instalada",
+   "ativo": true
+  },
+  {
+   "id": "vtr03",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "modulo": "base",
+   "secao": "Proteções",
+   "ordem": 3,
+   "pergunta": "Facas ou martelos bem fixados, sem trincas ou peças faltando",
+   "ativo": true
+  },
+  {
+   "id": "vtr04",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "modulo": "base",
+   "secao": "Engate",
+   "ordem": 4,
+   "pergunta": "Engate ao trator com pino e trava",
+   "ativo": true
+  },
+  {
+   "id": "vtr05",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "modulo": "base",
+   "secao": "Engate",
+   "ordem": 5,
+   "pergunta": "Mangueiras hidráulicas sem vazamentos, ressecamento ou danos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "vtr06",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "modulo": "base",
+   "secao": "Engate",
+   "ordem": 6,
+   "pergunta": "Rodas e pneus em bom estado (quando houver)",
+   "ativo": true
+  },
+  {
+   "id": "vtr07",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "modulo": "base",
+   "secao": "Sinalização",
+   "ordem": 7,
+   "pergunta": "Adesivos de segurança legíveis, com a distância mínima de segurança indicada",
+   "ativo": true
+  },
+  {
+   "id": "van01",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Base e estrutura",
+   "ordem": 1,
+   "pergunta": "Andaime apoiado em piso firme e nivelado, com sapatas ou rodízios travados",
+   "ativo": true
+  },
+  {
+   "id": "van02",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Base e estrutura",
+   "ordem": 2,
+   "pergunta": "Montantes, travessas e diagonais sem trincas, empenos ou corrosão, com todos os pinos e travas",
+   "ativo": true
+  },
+  {
+   "id": "van03",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Base e estrutura",
+   "ordem": 3,
+   "pergunta": "Andaime travado ou ancorado contra tombamento",
+   "ativo": true
+  },
+  {
+   "id": "van04",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Plataforma de trabalho",
+   "ordem": 4,
+   "pergunta": "Piso de trabalho completo, nivelado e fixado, sem vãos",
+   "ativo": true
+  },
+  {
+   "id": "van05",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Plataforma de trabalho",
+   "ordem": 5,
+   "pergunta": "Guarda-corpo e rodapé instalados em todo o perímetro",
+   "ativo": true
+  },
+  {
+   "id": "van06",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Plataforma de trabalho",
+   "ordem": 6,
+   "pergunta": "Acesso por escada segura, com o alçapão fechando",
+   "ativo": true
+  },
+  {
+   "id": "van07",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Sinalização e entorno",
+   "ordem": 7,
+   "pergunta": "Placa de liberação do andaime visível e atualizada",
+   "ativo": true
+  },
+  {
+   "id": "van08",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Sinalização e entorno",
+   "ordem": 8,
+   "pergunta": "Área ao redor isolada e sinalizada",
+   "ativo": true
+  },
+  {
+   "id": "van09",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Sinalização e entorno",
+   "ordem": 9,
+   "pergunta": "Andaime afastado de redes elétricas energizadas",
+   "ativo": true
+  },
+  {
+   "id": "vox01",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Cilindros",
+   "ordem": 1,
+   "pergunta": "Cilindros na posição vertical, presos com corrente em carrinho próprio",
+   "ativo": true
+  },
+  {
+   "id": "vox02",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Cilindros",
+   "ordem": 2,
+   "pergunta": "Capacetes de proteção das válvulas disponíveis para o transporte",
+   "ativo": true
+  },
+  {
+   "id": "vox03",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Reguladores e mangueiras",
+   "ordem": 3,
+   "pergunta": "Reguladores de pressão e manômetros íntegros e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vox04",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Reguladores e mangueiras",
+   "ordem": 4,
+   "pergunta": "Válvulas corta-chama instaladas nos reguladores e válvulas de retenção no maçarico",
+   "ativo": true
+  },
+  {
+   "id": "vox05",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Reguladores e mangueiras",
+   "ordem": 5,
+   "pergunta": "Mangueiras sem cortes, ressecamento ou emendas, presas com abraçadeiras",
+   "ativo": true
+  },
+  {
+   "id": "vox06",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Reguladores e mangueiras",
+   "ordem": 6,
+   "pergunta": "Maçarico em bom estado, com os bicos limpos",
+   "ativo": true
+  },
+  {
+   "id": "vox07",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Área de trabalho",
+   "ordem": 7,
+   "pergunta": "Área livre de materiais inflamáveis ou combustíveis, de óleo e de graxa",
+   "ativo": true
+  },
+  {
+   "id": "vox08",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Área de trabalho",
+   "ordem": 8,
+   "pergunta": "Extintor próximo ao equipamento, lacrado, com carga e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "vcs01",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 1,
+   "pergunta": "Proteções de partes móveis e quentes (correia, escapamento) instaladas",
+   "ativo": true
+  },
+  {
+   "id": "vcs02",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 2,
+   "pergunta": "Punho com sistema antivibração e empunhadura em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "vcs03",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 3,
+   "pergunta": "Acelerador e interruptor de parada funcionando",
+   "ativo": true
+  },
+  {
+   "id": "vcs04",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 4,
+   "pergunta": "Sapata ou placa de compactação bem fixada e sem trincas",
+   "ativo": true
+  },
+  {
+   "id": "vcs05",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 5,
+   "pergunta": "Sem vazamentos de combustível, com a tampa do tanque vedando",
+   "ativo": true
+  },
+  {
+   "id": "ves01",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Rebolos e proteções",
+   "ordem": 1,
+   "pergunta": "Coifas de proteção dos rebolos instaladas",
+   "ativo": true
+  },
+  {
+   "id": "ves02",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Rebolos e proteções",
+   "ordem": 2,
+   "pergunta": "Protetor visual (anteparo transparente) instalado e limpo",
+   "ativo": true
+  },
+  {
+   "id": "ves03",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Rebolos e proteções",
+   "ordem": 3,
+   "pergunta": "Apoio de peça regulado, a no máximo 3 mm do rebolo",
+   "ativo": true
+  },
+  {
+   "id": "ves04",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Rebolos e proteções",
+   "ordem": 4,
+   "pergunta": "Rebolos sem trincas e sem desgaste irregular",
+   "ativo": true
+  },
+  {
+   "id": "ves05",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Instalação",
+   "ordem": 5,
+   "pergunta": "Esmeril bem fixado na bancada",
+   "ativo": true
+  },
+  {
+   "id": "ves06",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Instalação",
+   "ordem": 6,
+   "pergunta": "Chave liga/desliga funcionando",
+   "ativo": true
+  },
+  {
+   "id": "ves07",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Instalação",
+   "ordem": 7,
+   "pergunta": "Aterramento instalado e conectado (haste e cabo)",
+   "ativo": true
+  },
+  {
+   "id": "ves08",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Instalação",
+   "ordem": 8,
+   "pergunta": "Cabos elétricos, plugues e tomadas íntegros, sem emendas ou isolação danificada",
+   "ativo": true
+  },
+  {
+   "id": "ves09",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Instalação",
+   "ordem": 9,
+   "pergunta": "Sinalização de uso obrigatório de EPI visível",
+   "ativo": true
+  }
+ ]
+}
