@@ -1,0 +1,3567 @@
+{
+ "origem": "ObraSoft · Controle de Vencimentos · Máquinas e Equipamentos (SPGA - Consórcio Solar Paraíso)",
+ "lido_em": "2026-11-10",
+ "total": 356,
+ "equipamentos": [
+  {
+   "id": "eq-tzv5b42",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZV5B42",
+   "modelo": "CHEVROLET MONTANA LT",
+   "serie": "TZV5B42",
+   "descricao": "CHEVROLET MONTANA LT / TZV5B42 / 237",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzo5h94",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZO5H94",
+   "modelo": "CHEVROLET ONIX 10MIT HB",
+   "serie": "TZO5H94",
+   "descricao": "CHEVROLET ONIX 10MIT HB / TZO5H94 / 190",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyk3h23",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYK3H23",
+   "modelo": "CHEVROLET ONIX 10MT",
+   "serie": "TYK3H23",
+   "descricao": "CHEVROLET ONIX 10MT / TYK3H23 / 185",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyo4d54",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYO4D54",
+   "modelo": "CHEVROLET ONIX 10MT",
+   "serie": "TYO4D54",
+   "descricao": "CHEVROLET ONIX 10MT / TYO4D54 / 241",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-txe3b40",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TXE3B40",
+   "modelo": "CHEVROLET ONIX 10MT HB",
+   "serie": "TXE3B40",
+   "descricao": "CHEVROLET ONIX 10MT HB / TXE3B40 / 598",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzg6d75",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZG6D75",
+   "modelo": "CHEVROLET ONIX 10MT HB",
+   "serie": "TZG6D75",
+   "descricao": "CHEVROLET ONIX 10MT HB / TZG6D75 / 167",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyt8e44",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYT8E44",
+   "modelo": "CHEVROLET ONIX PLUS 10MT",
+   "serie": "TYT8E44",
+   "descricao": "CHEVROLET ONIX PLUS 10MT / TYT8E44 / 194",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzo9j57",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZO9J57",
+   "modelo": "CHEVROLET SPIN 18L PREMIER",
+   "serie": "TZO9J57",
+   "descricao": "CHEVROLET SPIN 18L PREMIER / TZO9J57 / 181",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyv0h92",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYV0H92",
+   "modelo": "FIAT ARGO DRIVE",
+   "serie": "TYV0H92",
+   "descricao": "FIAT ARGO DRIVE / TYV0H92 / 211",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uaf7g19",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UAF7G19",
+   "modelo": "FIAT ARGO DRIVE 1.0",
+   "serie": "UAF7G19",
+   "descricao": "FIAT ARGO DRIVE 1.0 / UAF7G19 / ARGO",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyy5c79",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYY5C79",
+   "modelo": "FIAT ESTRADA FREEDOM CD13",
+   "serie": "TYY5C79",
+   "descricao": "FIAT ESTRADA FREEDOM CD13 / TYY5C79 / 0238",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzj9f94",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZJ9F94",
+   "modelo": "FIAT FASTBACK AUDADE",
+   "serie": "TZJ9F94",
+   "descricao": "FIAT FASTBACK AUDADE / TZJ9F94 / 199",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvy1c05",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UVY1C05",
+   "modelo": "FIAT FIAT FREEDOM CD13",
+   "serie": "UVY1C05",
+   "descricao": "FIAT FIAT FREEDOM CD13 / UVY1C05 / 252",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rie3f03",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "RIE3F03",
+   "modelo": "FIAT FIORINO ENDURANCE",
+   "serie": "RIE3F03",
+   "descricao": "FIAT FIORINO ENDURANCE / RIE3F03 / 503",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-thz0g56",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "THZ0G56",
+   "modelo": "FIAT FIORINO ENDURANCE",
+   "serie": "THZ0G56",
+   "descricao": "FIAT FIORINO ENDURANCE / THZ0G56 / FIORINO",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzh0g56",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZH0G56",
+   "modelo": "FIAT FIORINO ENDURANCE",
+   "serie": "TZH0G56",
+   "descricao": "FIAT FIORINO ENDURANCE / TZH0G56 / 580",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyi5g32",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYI5G32",
+   "modelo": "FIAT MOBI LIKE",
+   "serie": "TYI5G32",
+   "descricao": "FIAT MOBI LIKE / TYI5G32 / 198",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyk7a68",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYK7A68",
+   "modelo": "FIAT MOBI LIKE",
+   "serie": "TYK7A68",
+   "descricao": "FIAT MOBI LIKE / TYK7A68 / 233",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-typ0g29",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYP0G29",
+   "modelo": "FIAT MOBI LIKE",
+   "serie": "TYP0G29",
+   "descricao": "FIAT MOBI LIKE / TYP0G29 / 578",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyv8f55",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYV8F55",
+   "modelo": "FIAT MOBI TEKKING",
+   "serie": "TYV8F55",
+   "descricao": "FIAT MOBI TEKKING / TYV8F55 / 227",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tze7e72",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZE7E72",
+   "modelo": "FIAT MOBI TREKKING",
+   "serie": "TZE7E72",
+   "descricao": "FIAT MOBI TREKKING / TZE7E72 / 248",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-typ0g93",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYP0G93",
+   "modelo": "FIAT MOBI TREKKING 1.0",
+   "serie": "TYP0G93",
+   "descricao": "FIAT MOBI TREKKING 1.0 / TYP0G93 / 235",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tys3h82",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYS3H82",
+   "modelo": "FIAT MOBI TREKKING 1.0",
+   "serie": "TYS3H82",
+   "descricao": "FIAT MOBI TREKKING 1.0 / TYS3H82 / 197",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyy4g41",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYY4G41",
+   "modelo": "FIAT MOBI TREKKING 1.0",
+   "serie": "TYY4G41",
+   "descricao": "FIAT MOBI TREKKING 1.0 / TYY4G41 / 567",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzm7c23",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZM7C23",
+   "modelo": "FIAT MOBI TREKKING 1.0",
+   "serie": "TZM7C23",
+   "descricao": "FIAT MOBI TREKKING 1.0 / TZM7C23 / 180",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvg1f65",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UVG1F65",
+   "modelo": "FIAT MOBI TREKKING 1.0",
+   "serie": "UVG1F65",
+   "descricao": "FIAT MOBI TREKKING 1.0 / UVG1F65 / 244",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvu8j48",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UVU8J48",
+   "modelo": "FIAT MOBI TREKKING 1.0",
+   "serie": "UVU8J48",
+   "descricao": "FIAT MOBI TREKKING 1.0 / UVU8J48 / 247",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyv1c68",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYV1C68",
+   "modelo": "FIAT MOBI TREKKING 1.0MT",
+   "serie": "TYV1C68",
+   "descricao": "FIAT MOBI TREKKING 1.0MT / TYV1C68 / 208",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzn4e64",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZN4E64",
+   "modelo": "FIAT STRADA ENDURAN CS13",
+   "serie": "TZN4E64",
+   "descricao": "FIAT STRADA ENDURAN CS13 / TZN4E64 / 187",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rvp8i67",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "RVP8I67",
+   "modelo": "FIAT STRADA ENDURANCE CS",
+   "serie": "RVP8I67",
+   "descricao": "FIAT STRADA ENDURANCE CS / RVP8I67 / 296",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tcf4i21",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TCF4I21",
+   "modelo": "FIAT STRADA ENDURANCE CS13",
+   "serie": "TCF4I21",
+   "descricao": "FIAT STRADA ENDURANCE CS13 / TCF4I21 / 600",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tct6e72",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TCT6E72",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "TCT6E72",
+   "descricao": "FIAT STRADA FREEDOM CD13 / TCT6E72",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-txi4b20",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TXI4B20",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "TXI4B20",
+   "descricao": "FIAT STRADA FREEDOM CD13 / TXI4B20 / 116",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-txi8e54",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TXI8E54",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "TXI8E54",
+   "descricao": "FIAT STRADA FREEDOM CD13 / TXI8E54 / 175",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyv1g24",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYV1G24",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "TYV1G24",
+   "descricao": "FIAT STRADA FREEDOM CD13 / TYV1G24 / 196",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyv4a45",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYV4A45",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "TYV4A45",
+   "descricao": "FIAT STRADA FREEDOM CD13 / TYV4A45 / 217",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyw1e13",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYW1E13",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "TYW1E13",
+   "descricao": "FIAT STRADA FREEDOM CD13 / TYW1E13 / 132",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzn7b26",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZN7B26",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "TZN7B26",
+   "descricao": "FIAT STRADA FREEDOM CD13 / TZN7B26 / 298",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzq3g00",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZQ3G00",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "TZQ3G00",
+   "descricao": "FIAT STRADA FREEDOM CD13 / TZQ3G00 / 184",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzs3i87",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZS3I87",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "TZS3I87",
+   "descricao": "FIAT STRADA FREEDOM CD13 / TZS3I87 / 178",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzs4c27",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZS4C27",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "TZS4C27",
+   "descricao": "FIAT STRADA FREEDOM CD13 / TZS4C27 / 177",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzu3g87",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZU3G87",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "TZU3G87",
+   "descricao": "FIAT STRADA FREEDOM CD13 / TZU3G87 / 580",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvn6c85",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UVN6C85",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "UVN6C85",
+   "descricao": "FIAT STRADA FREEDOM CD13 / UVN6C85 / 193",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvu2f15",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UVU2F15",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "UVU2F15",
+   "descricao": "FIAT STRADA FREEDOM CD13 / UVU2F15 / 228",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvu2f97",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UVU2F97",
+   "modelo": "FIAT STRADA FREEDOM CD13",
+   "serie": "UVU2F97",
+   "descricao": "FIAT STRADA FREEDOM CD13 / UVU2F97 / 242",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rja6c21",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "RJA6C21",
+   "modelo": "FIAT TORO ENDUR AT9 4X4",
+   "serie": "RJA6C21",
+   "descricao": "FIAT TORO ENDUR AT9 4X4 / RJA6C21 / 602",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzp1g74",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZP1G74",
+   "modelo": "HONDA HR-V EX",
+   "serie": "TZP1G74",
+   "descricao": "HONDA HR-V EX / TZP1G74 / 249",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-txh5e13",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TXH5E13",
+   "modelo": "HONDA HR-V EXL",
+   "serie": "TXH5E13",
+   "descricao": "HONDA HR-V EXL / TXH5E13 / 236",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-txj3c98",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TXJ3C98",
+   "modelo": "HYUNDAI CRETA1TF COMFORT",
+   "serie": "TXJ3C98",
+   "descricao": "HYUNDAI CRETA1TF COMFORT / TXJ3C98 / 221",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-txj0j16",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TXJ0J16",
+   "modelo": "HYUNDAI CRETA1TF LIMITED",
+   "serie": "TXJ0J16",
+   "descricao": "HYUNDAI CRETA1TF LIMITED / TXJ0J16 / 192",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyf8i61",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYF8I61",
+   "modelo": "HYUNDAI HB20 10M COMFORT",
+   "serie": "TYF8I61",
+   "descricao": "HYUNDAI HB20 10M COMFORT / TYF8I61 / 191",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvt3a62",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UVT3A62",
+   "modelo": "HYUNDAI HB20 10M COMFORT",
+   "serie": "UVT3A62",
+   "descricao": "HYUNDAI HB20 10M COMFORT / UVT3A62 / 243",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-txe0c42",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TXE0C42",
+   "modelo": "HYUNDAI HB20s 10M",
+   "serie": "TXE0C42",
+   "descricao": "HYUNDAI HB20s 10M / TXE0C42 / 547",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-bdm3e06",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BDM3E06",
+   "modelo": "HYUNDAI HR HDB",
+   "serie": "BDM3E06",
+   "descricao": "HYUNDAI HR HDB / BDM3E06 / 297",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rmh5c74",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "RMH5C74",
+   "modelo": "MMC L200 TRITON",
+   "serie": "RMH5C74",
+   "descricao": "MMC L200 TRITON / RMH5C74 / 0458",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzq3b45",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZQ3B45",
+   "modelo": "NISSAN KICKS PLATINUM",
+   "serie": "TZQ3B45",
+   "descricao": "NISSAN KICKS PLATINUM / TZQ3B45 / 240",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tzh5e29",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TZH5E29",
+   "modelo": "NISSAN KICKS SENSE",
+   "serie": "TZH5E29",
+   "descricao": "NISSAN KICKS SENSE / TZH5E29 / 250",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyy5b82",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYY5B82",
+   "modelo": "RENAULT KWID INTENS 2",
+   "serie": "TYY5B82",
+   "descricao": "RENAULT KWID INTENS 2 / TYY5B82 / 182",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvv7f81",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UVV7F81",
+   "modelo": "RENAULT KWID TECHNO",
+   "serie": "UVV7F81",
+   "descricao": "RENAULT KWID TECHNO / UVV7F81 / 39",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-txs7g12",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TXS7G12",
+   "modelo": "RENAULT KWID ZEN 2",
+   "serie": "TXS7G12",
+   "descricao": "RENAULT KWID ZEN 2 / TXS7G12 / 220",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-ssl3i50",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "SSL3I50",
+   "modelo": "RENAULT MASTER MINIBUSL3",
+   "serie": "SSL3I50",
+   "descricao": "RENAULT MASTER MINIBUSL3 / SSL3I50 / 154",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-sso7j99",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "SSO7J99",
+   "modelo": "RENAULT MASTER MINIBUSL3",
+   "serie": "SSO7J99",
+   "descricao": "RENAULT MASTER MINIBUSL3 / SSO7J99 / 207",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-hvw1d05",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-14",
+   "modelo": "TOYOTA BAND BJ55LP",
+   "serie": "HVW1D05",
+   "descricao": "TOYOTA BAND BJ55LP / HVW1D05 / BA-14 / BA-14",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jmt1343",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-06",
+   "modelo": "Toyota BAND MAX",
+   "serie": "JMT1343",
+   "descricao": "Toyota BAND MAX / JMT1343 / BA-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-ket0994",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-09",
+   "modelo": "Toyota BAND MAX",
+   "serie": "KET0994",
+   "descricao": "Toyota BAND MAX / KET0994 / BA-09",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-kfp5736",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-01",
+   "modelo": "Toyota BAND MAX",
+   "serie": "KFP5736",
+   "descricao": "Toyota BAND MAX / KFP5736 / BA-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-kgc1j86",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-02",
+   "modelo": "Toyota BAND MAX",
+   "serie": "KGC1J86",
+   "descricao": "Toyota BAND MAX / KGC1J86 / BA-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-khb5712",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-04",
+   "modelo": "Toyota BAND MAX",
+   "serie": "KHB5712",
+   "descricao": "Toyota BAND MAX / KHB5712 / BA-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-kjl6898",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-03",
+   "modelo": "Toyota BAND MAX",
+   "serie": "KJL6898",
+   "descricao": "Toyota BAND MAX / KJL6898 / BA-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-hpd9b78",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-10",
+   "modelo": "TOYOTA BAND.BJ55LP 2BL",
+   "serie": "HPD9B78",
+   "descricao": "TOYOTA BAND.BJ55LP 2BL / HPD9B78 / BA-10 / 0459",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-mnl0300",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-11",
+   "modelo": "TOYOTA BAND.BJ55LP 2BL",
+   "serie": "MNL0300",
+   "descricao": "TOYOTA BAND.BJ55LP 2BL / MNL0300 / BA-11 / 0462",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-nbs6b90",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-12",
+   "modelo": "TOYOTA BAND.BJ55LP 2BL",
+   "serie": "NBS6B90",
+   "descricao": "TOYOTA BAND.BJ55LP 2BL / NBS6B90 / BA-12 / 0463",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-mug4742",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-13",
+   "modelo": "TOYOTA BANDEIRANTE",
+   "serie": "MUG4742",
+   "descricao": "TOYOTA BANDEIRANTE / MUG4742 / BA-13 / 0534",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-mvn3f46",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-08",
+   "modelo": "TOYOTA BANDEIRANTE",
+   "serie": "MVN3F46",
+   "descricao": "TOYOTA BANDEIRANTE / MVN3F46 / BA-08 / 0426",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gmg0h39",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-07",
+   "modelo": "Toyota BJ55LP",
+   "serie": "GMG0H39",
+   "descricao": "Toyota BJ55LP / GMG0H39 / BA-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-nah5911",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "BA-05",
+   "modelo": "Toyota BJ55LP",
+   "serie": "NAH5911",
+   "descricao": "Toyota BJ55LP / NAH5911 / BA-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tda9d03",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TDA9D03",
+   "modelo": "TOYOTA HILLUX",
+   "serie": "TDA9D03",
+   "descricao": "TOYOTA HILLUX / TDA9D03 / TDA9D03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rtq7i61",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "HL-01",
+   "modelo": "TOYOTA HILUX",
+   "serie": "RTQ7I61",
+   "descricao": "TOYOTA HILUX / RTQ7I61 / HL-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rtq7j36",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "HL-02",
+   "modelo": "TOYOTA HILUX",
+   "serie": "RTQ7J36",
+   "descricao": "TOYOTA HILUX / RTQ7J36 / HL-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvz5g53",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UVZ5G53",
+   "modelo": "TOYOTA YCROSS XR FLEX",
+   "serie": "UVZ5G53",
+   "descricao": "TOYOTA YCROSS XR FLEX / UVZ5G53 / 239",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tlr5f78",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TLR5F78",
+   "modelo": "VOLKSWAGEM POLO TRACK MA",
+   "serie": "TLR5F78",
+   "descricao": "VOLKSWAGEM POLO TRACK MA / TLR5F78 / 595",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyy6e85",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYY6E85",
+   "modelo": "VOLKSWAGEM POLO TRACK MA",
+   "serie": "TYY6E85",
+   "descricao": "VOLKSWAGEM POLO TRACK MA / TYY6E85 / 234",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvm3b89",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UVM3B89",
+   "modelo": "VOLKSWAGEM POLO TRACK MA",
+   "serie": "UVM3B89",
+   "descricao": "VOLKSWAGEM POLO TRACK MA / UVM3B89 / 195",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-teo9j72",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TEO9J72",
+   "modelo": "VOLKSWAGEM SAVEIRO CS RB MF",
+   "serie": "TEO9J72",
+   "descricao": "VOLKSWAGEM SAVEIRO CS RB MF / TEO9J72 / 290",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyu3b00",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYU3B00",
+   "modelo": "VW POLO TRACK MA",
+   "serie": "TYU3B00",
+   "descricao": "VW POLO TRACK MA / TYU3B00 / 564",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyv1j40",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYV1J40",
+   "modelo": "VW POLO TRACK MA",
+   "serie": "TYV1J40",
+   "descricao": "VW POLO TRACK MA / TYV1J40 / 218",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvm2i75",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UVM2I75",
+   "modelo": "VW POLO TRACK MA",
+   "serie": "UVM2I75",
+   "descricao": "VW POLO TRACK MA / UVM2I75 / 245",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvn0a71",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "UVN0A71",
+   "modelo": "VW POLO TRACK MA",
+   "serie": "UVN0A71",
+   "descricao": "VW POLO TRACK MA / UVN0A71 / 188",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyq5b40",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYQ5B40",
+   "modelo": "VW SAVEIRO CS RB NF",
+   "serie": "TYQ5B40",
+   "descricao": "VW SAVEIRO CS RB NF / TYQ5B40 / 251",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyl6f35",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "prefixo": "TYL6F35",
+   "modelo": "VW T CROSS TSI",
+   "serie": "TYL6F35",
+   "descricao": "VW T CROSS TSI / TYL6F35 / 01484982620",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carros Leve e 4x4 - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tcb0i80",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "prefixo": "BT-01",
+   "modelo": "VOLKSWAGEM 27 260 CRM 6X4",
+   "serie": "TCB0I80",
+   "descricao": "VOLKSWAGEM 27 260 CRM 6X4 / TCB0I80 / BT-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uif1i99",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "prefixo": "BT-10",
+   "modelo": "VOLKSWAGEM 31.320 CRM 6X4",
+   "serie": "UIF1I99",
+   "descricao": "VOLKSWAGEM 31.320 CRM 6X4 / UIF1I99 / BT-10",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uif6e26",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "prefixo": "BT-12",
+   "modelo": "VOLKSWAGEM 31.320 CRM 6X4",
+   "serie": "UIF6E26",
+   "descricao": "VOLKSWAGEM 31.320 CRM 6X4 / UIF6E26 / BT-12",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uif6e46",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "prefixo": "BT-11",
+   "modelo": "VOLKSWAGEM 31.320 CRM 6X4",
+   "serie": "UIF6E46",
+   "descricao": "VOLKSWAGEM 31.320 CRM 6X4 / UIF6E46 / BT-11",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uhu0d21",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "prefixo": "BT-06",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "UHU0D21",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / UHU0D21 / BT-06 / 0490",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uhv2i65",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "prefixo": "BT-03",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "UHV2I65",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / UHV2I65 / BT-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uhv2i95",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "prefixo": "BT-09",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "UHV2I95",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / UHV2I95 / BT-09",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uhv2j65",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "prefixo": "BT-05",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "UHV2J65",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / UHV2J65 / BT-05 / 0489",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uhv3a85",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "prefixo": "BT-04",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "UHV3A85",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / UHV3A85 / BT-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uid8b69",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "prefixo": "BT-07",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "UID8B69",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / UID8B69 / BT-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uid8c19",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "prefixo": "BT-08",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "UID8C19",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / UID8C19 / BT-08 / BT-08",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tcb0i70",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "prefixo": "BT-02",
+   "modelo": "VOLVO VM 290 6X4",
+   "serie": "TCB0I70",
+   "descricao": "VOLVO VM 290 6X4 / TCB0I70 / BT-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-equipamentos-tripe-01",
+   "tipo": "vme-equipamentos-csp",
+   "prefixo": "Tripé 01",
+   "modelo": "TRIPÉ MANUAL Tripé Sondagem",
+   "serie": "",
+   "descricao": "TRIPÉ MANUAL Tripé Sondagem / Tripé - 01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Equipamentos - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-motobomba-188f-3-dc1240918a",
+   "tipo": "vme-motobomba-csp",
+   "prefixo": "Motobomba 09",
+   "modelo": "BRANCO BD 700E",
+   "serie": "188F-3 DC1240918A",
+   "descricao": "BRANCO BD 700E / 188F-3 DC1240918A / MOTOR BOMBA 09",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motobomba CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-dc1240918a",
+   "tipo": "vme-motobomba-csp",
+   "prefixo": "Motobomba 06",
+   "modelo": "BRANCO BD 700E",
+   "serie": "DC1240918A",
+   "descricao": "BRANCO BD 700E / MOTOBOMBA 06 / DC1240918A",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motobomba CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-dc1240916a",
+   "tipo": "vme-motobomba-csp",
+   "prefixo": "Motobomba 07",
+   "modelo": "BRANCO BD 700E",
+   "serie": "DC1240916A",
+   "descricao": "BRANCO BD 700E / MOTOBOMBA 07 / DC1240916A",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motobomba CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-dc1250411a",
+   "tipo": "vme-motobomba-csp",
+   "prefixo": "Motobomba 08",
+   "modelo": "BRANCO BD 700E",
+   "serie": "DC1250411A",
+   "descricao": "BRANCO BD 700E / MOTOBOMBA 08 / DC1250411A",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motobomba CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-186fadc1240810a",
+   "tipo": "vme-motobomba-csp",
+   "prefixo": "MB-05",
+   "modelo": "BRANCO BD 700E XS",
+   "serie": "186FADC1240810A",
+   "descricao": "BRANCO BD 700E XS / 186FADC1240810A / MB - 05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motobomba CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-p26100253",
+   "tipo": "vme-motobomba-csp",
+   "prefixo": "MB-04",
+   "modelo": "BUFFALO BFDE 6",
+   "serie": "P26100253",
+   "descricao": "BUFFALO BFDE 6 / P26100253 / MB - 04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motobomba CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-p26100257",
+   "tipo": "vme-motobomba-csp",
+   "prefixo": "MB-03",
+   "modelo": "BUFFALO BFDE 6",
+   "serie": "P26100257",
+   "descricao": "BUFFALO BFDE 6 / P26100257 / MB- 03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motobomba CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-p26100259",
+   "tipo": "vme-motobomba-csp",
+   "prefixo": "MB-02",
+   "modelo": "BUFFALO BFDE 6",
+   "serie": "P26100259",
+   "descricao": "BUFFALO BFDE 6 / P26100259 / MB - 02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motobomba CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-p26100384",
+   "tipo": "vme-motobomba-csp",
+   "prefixo": "MB-01",
+   "modelo": "BUFFALO BFDE 6",
+   "serie": "P26100384",
+   "descricao": "BUFFALO BFDE 6 / P26100384 / MB - 01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motobomba CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-22240188",
+   "tipo": "vme-motobomba-csp",
+   "prefixo": "22240188",
+   "modelo": "Toyama - Moto Bomba TWP50SX",
+   "serie": "22240188",
+   "descricao": "Toyama - Moto Bomba TWP50SX / 22240188",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motobomba CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-fcs5a31",
+   "tipo": "vme-onibus-csp",
+   "prefixo": "ONB-40",
+   "modelo": "M. BENZ MPOLO IDEALE R",
+   "serie": "FCS5A31",
+   "descricao": "M. BENZ MPOLO IDEALE R / FCS5A31 / ONB-40",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Ônibus - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rni9a41",
+   "tipo": "vme-onibus-csp",
+   "prefixo": "ONB-37",
+   "modelo": "MBENZ MPOLO VIAGGIO R",
+   "serie": "RNI9A41",
+   "descricao": "MBENZ MPOLO VIAGGIO R / RNI9A41 / ONB-37",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Ônibus - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rfc1b38",
+   "tipo": "vme-onibus-csp",
+   "prefixo": "ONB-38",
+   "modelo": "VW COMIL CAMPIONE R",
+   "serie": "RFC1B38",
+   "descricao": "VW COMIL CAMPIONE R / RFC1B38 / ONB-38",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Ônibus - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-pdt3827",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "prefixo": "CC-03",
+   "modelo": "FORD F 4000 4X4 P",
+   "serie": "PDT3827",
+   "descricao": "FORD F 4000 4X4 P / PDT3827 / CC-03 / 0542",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Cabinado - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-mzj9b73",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "prefixo": "CC-01",
+   "modelo": "M. BENZ CAMINHÃO  CARROCERIA",
+   "serie": "MZJ9B73",
+   "descricao": "M. BENZ CAMINHÃO  CARROCERIA / MZJ9B73 / CC-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Cabinado - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-anw5c76",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "prefixo": "CC-02",
+   "modelo": "MERCEDEZ BENZ 710",
+   "serie": "ANW5C76",
+   "descricao": "MERCEDEZ BENZ 710 / ANW5C76 / CC-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Cabinado - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-pdy8a71",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "prefixo": "CC-05",
+   "modelo": "VOLKSVAGEN 9.160 DRC 4X2",
+   "serie": "PDY8A71",
+   "descricao": "VOLKSVAGEN 9.160 DRC 4X2 / PDY8A71 / 0550 / CC-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Cabinado - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-qnf1g12",
+   "tipo": "vme-caminhao-cabinado-csp",
+   "prefixo": "CC-04",
+   "modelo": "VOLKSWAGEN 5.150 DRC 4X2",
+   "serie": "QNF1G12",
+   "descricao": "VOLKSWAGEN 5.150 DRC 4X2 / QNF1G12 / CC-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Cabinado - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jam6h70",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-11",
+   "modelo": "M. BENZ Axor 3131 6x4",
+   "serie": "JAM6H70",
+   "descricao": "M. BENZ Axor 3131 6x4 / JAM6H70 / CB-11",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jaw0d06",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-08",
+   "modelo": "M. BENZ Axor 3131 6x4",
+   "serie": "JAW0D06",
+   "descricao": "M. BENZ Axor 3131 6x4 / JAW0D06 / CB-08",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jaw0d15",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-07",
+   "modelo": "M. BENZ Axor 3131 6x4",
+   "serie": "JAW0D15",
+   "descricao": "M. BENZ Axor 3131 6x4 / JAW0D15 / CB-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jaw0d16",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-09",
+   "modelo": "M. BENZ Axor 3131 6x4",
+   "serie": "JAW0D16",
+   "descricao": "M. BENZ Axor 3131 6x4 / JAW0D16 / CB-09",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jcg2j42",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-06",
+   "modelo": "MERCEDES BENZ AROCS 3351",
+   "serie": "JCG2J42",
+   "descricao": "MERCEDES BENZ AROCS 3351 / JCG2J42 / CB-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jcg2j46",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-10",
+   "modelo": "MERCEDES BENZ AROCS 3351",
+   "serie": "JCG2J46",
+   "descricao": "MERCEDES BENZ AROCS 3351 / JCG2J46 / CB-10",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jcg2j40",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-02",
+   "modelo": "MERCEDEZ BENZ AROCS 3351",
+   "serie": "JCG2J40",
+   "descricao": "MERCEDEZ BENZ AROCS 3351 / (JCG2J40) / CB-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jcg2j41",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-05",
+   "modelo": "MERCEDEZ BENZ AROCS 3351",
+   "serie": "JCG2J41",
+   "descricao": "MERCEDEZ BENZ AROCS 3351 / JCG2J41 / CB-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jcg2j45",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-04",
+   "modelo": "MERCEDEZ BENZ AROCS 3351",
+   "serie": "JCG2J45",
+   "descricao": "MERCEDEZ BENZ AROCS 3351 / JCG2J45 / CB-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jai5g87",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-22",
+   "modelo": "MERCEDEZ BENZ AXOR 3131 6X4",
+   "serie": "JAI5G87",
+   "descricao": "MERCEDEZ BENZ AXOR 3131 6X4 / JAI5G87 / CB-22 / 0489",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jam1h61",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-23",
+   "modelo": "MERCEDEZ BENZ AXOR 3131 6X4",
+   "serie": "JAM1H61",
+   "descricao": "MERCEDEZ BENZ AXOR 3131 6X4 / JAM1H61 / CB-23 / 0543",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gdy9a38",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-03",
+   "modelo": "SCANIA G540",
+   "serie": "GDY9A38",
+   "descricao": "SCANIA G540 / GDY9A38 / CB-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-snm1f86",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-20",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "SNM1F86",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / SNM1F86 / CB-20 / 0514",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-snm9d19",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-19",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "SNM9D19",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / SNM9D19 / CB-19",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-snm9d59",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-15",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "SNM9D59",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / SNM9D59 / CB-15",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzq9j76",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-24",
+   "modelo": "VOLKSWAGEN 31.330",
+   "serie": "RZQ9J76",
+   "descricao": "VOLKSWAGEN 31.330 / RZQ9J76 / CB-24",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzt2c99",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-29",
+   "modelo": "VOLKSWAGEN 31.330",
+   "serie": "RZT2C99",
+   "descricao": "VOLKSWAGEN 31.330 / RZT2C99 / CB-29",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzt4h48",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-28",
+   "modelo": "VOLKSWAGEN 31.330",
+   "serie": "RZT4H48",
+   "descricao": "VOLKSWAGEN 31.330 / RZT4H48 / CB-28",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzw0f56",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-25",
+   "modelo": "VOLKSWAGEN 31.330",
+   "serie": "RZW0F56",
+   "descricao": "VOLKSWAGEN 31.330 / RZW0F56 / CB-25",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzy8h62",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-30",
+   "modelo": "VOLKSWAGEN 31.330",
+   "serie": "RZY8H62",
+   "descricao": "VOLKSWAGEN 31.330 / RZY8H62 / CB-30",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzr1157",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-13",
+   "modelo": "VOLKSWAGEN 31.330 CRC",
+   "serie": "RZR1157",
+   "descricao": "VOLKSWAGEN 31.330 CRC / RZR1157 / CB-13",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzt2a59",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-14",
+   "modelo": "VOLKSWAGEN 31.330 CRC",
+   "serie": "RZT2A59",
+   "descricao": "VOLKSWAGEN 31.330 CRC / RZT2A59 / CB-14",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzt2d39",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-12",
+   "modelo": "VOLKSWAGEN 31.330 CRC",
+   "serie": "RZT2D39",
+   "descricao": "VOLKSWAGEN 31.330 CRC / RZT2D39 / CB-12",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzq0d57",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-18",
+   "modelo": "VOLKSWAGEN 31.330 CRC 6X4",
+   "serie": "RZQ0D57",
+   "descricao": "VOLKSWAGEN 31.330 CRC 6X4 / RZQ0D57 / CB-18",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzr0c30",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-17",
+   "modelo": "VOLKSWAGEN 31.330 CRC 6X4",
+   "serie": "RZR0C30",
+   "descricao": "VOLKSWAGEN 31.330 CRC 6X4 / RZR0C30 / CB-17",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzt2c99-cb-31",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-31",
+   "modelo": "Volkswagen 31.330 CRC 6X4",
+   "serie": "RZT2C99",
+   "descricao": "Volkswagen 31.330 CRC 6X4 / RZT2C99 / CB-31",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzx0a43",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-16",
+   "modelo": "VOLKSWAGEN 31.330 CRC 6X4",
+   "serie": "RZX0A43",
+   "descricao": "VOLKSWAGEN 31.330 CRC 6X4 / RZX0A43 / CB-16",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rzt4g38",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-21",
+   "modelo": "VOLKSWAGEN 31.330 CRM 6X4",
+   "serie": "RZT4G38",
+   "descricao": "VOLKSWAGEN 31.330 CRM 6X4 / RZT4G38 / CB-21 / 0515",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvk9i53",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-26",
+   "modelo": "VOLVO VM 360 6X4 R",
+   "serie": "UVK9I53",
+   "descricao": "VOLVO VM 360 6X4 R / UVK9I53 / CB-26",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvm7i84",
+   "tipo": "vme-caminhao-basculante-csp",
+   "prefixo": "CB-27",
+   "modelo": "VOLVO VM 360 6X4 R",
+   "serie": "UVM7I84",
+   "descricao": "VOLVO VM 360 6X4 R / UVM7I84 / CB-27",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Basculante CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rmu5g26",
+   "tipo": "vme-caminhao-prancha-csp",
+   "prefixo": "CRP-06",
+   "modelo": "SCANIA G540 A6X4 XT CS",
+   "serie": "RMU5G26",
+   "descricao": "SCANIA G540 A6X4 XT CS / RMU5G26 / CRP-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Prancha CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jcu8h56",
+   "tipo": "vme-caminhao-prancha-csp",
+   "prefixo": "CRP-04",
+   "modelo": "SCANIA G560 A6X4 XT",
+   "serie": "JCU8H56",
+   "descricao": "SCANIA G560 A6X4 XT / JCU8H56 / CRP-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Prancha CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jcu5f97",
+   "tipo": "vme-caminhao-prancha-csp",
+   "prefixo": "JCU5F97",
+   "modelo": "SR FACCHINI SRF 4CT",
+   "serie": "JCU5F97",
+   "descricao": "SR FACCHINI SRF 4CT / JCU5F97 / 94BC1754RRV003936 / PRANCHA",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Prancha CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-qhq6a92",
+   "tipo": "vme-caminhao-prancha-csp",
+   "prefixo": "CRP-06",
+   "modelo": "SR GUERRA AG GR",
+   "serie": "QHQ6A92",
+   "descricao": "SR GUERRA AG GR / QHQ6A92 / CRP-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Prancha CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-qhq6b82",
+   "tipo": "vme-caminhao-prancha-csp",
+   "prefixo": "CRP-06",
+   "modelo": "SR GUERRA AG GR",
+   "serie": "QHQ6B82",
+   "descricao": "SR GUERRA AG GR / QHQ6B82 / CRP-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Prancha CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gjs3b76",
+   "tipo": "vme-caminhao-prancha-csp",
+   "prefixo": "CRP-03",
+   "modelo": "SR SAO PEDRO SRFB 3E",
+   "serie": "GJS3B76",
+   "descricao": "SR SAO PEDRO SRFB 3E / GJS3B76 / CRP-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Prancha CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gfn2a81",
+   "tipo": "vme-caminhao-prancha-csp",
+   "prefixo": "CRP-03",
+   "modelo": "VOLKSWAGEN 25.420 CTC 6X2",
+   "serie": "GFN2A81",
+   "descricao": "VOLKSWAGEN 25.420 CTC 6X2 / GFN2A81 / CRP-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Prancha CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-pmv7c48",
+   "tipo": "vme-caminhao-prancha-csp",
+   "prefixo": "CRP-05",
+   "modelo": "VOLVO VM 330 8X4R",
+   "serie": "PMV7C48",
+   "descricao": "VOLVO VM 330 8X4R / PMV7C48 / CRP-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Prancha CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-2403x13941",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-02",
+   "modelo": "Branco B4T 3500",
+   "serie": "2403X13941",
+   "descricao": "Branco B4T 3500 / 2403X13941 / GE-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-2403x13959",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-01",
+   "modelo": "Branco B4T 3500",
+   "serie": "2403X13959",
+   "descricao": "Branco B4T 3500 / 2403X13959 / GE-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-121480024",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-19",
+   "modelo": "BRANCO B4T-13000 E",
+   "serie": "121480024",
+   "descricao": "BRANCO B4T-13000 E / 121480024 / GE-19",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-2403x12868",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-05",
+   "modelo": "BRANCO B4T-13000 E",
+   "serie": "2403X12868",
+   "descricao": "BRANCO B4T-13000 E / 2403X12868 / GE-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-2403x12940",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-04",
+   "modelo": "BRANCO B4T-13000 E",
+   "serie": "2403X12940",
+   "descricao": "BRANCO B4T-13000 E / 2403X12940 / GE-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-2411x05670",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-06",
+   "modelo": "BRANCO B4T-13000 E",
+   "serie": "2411X05670",
+   "descricao": "BRANCO B4T-13000 E / 2411X05670 / GE-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-2411x12828",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-07",
+   "modelo": "BRANCO B4T-13000 E",
+   "serie": "2411X12828",
+   "descricao": "BRANCO B4T-13000 E / 2411X12828 / GE-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-2410x12909",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-29",
+   "modelo": "BRANCO B4T3500",
+   "serie": "2410X12909",
+   "descricao": "BRANCO B4T3500 / 2410X12909 / GE-29",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-2410x12910",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-27",
+   "modelo": "BRANCO B4T3500",
+   "serie": "2410X12910",
+   "descricao": "BRANCO B4T3500 / 2410X12910 / GE-27",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-2410x13000",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-28",
+   "modelo": "BRANCO B4T3500",
+   "serie": "2410X13000",
+   "descricao": "BRANCO B4T3500 / 2410X13000 / GE-28",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-2510x03881",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-26",
+   "modelo": "BRANCO B4T3500",
+   "serie": "2510X03881",
+   "descricao": "BRANCO B4T3500 / 2510X03881 / GE-26",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-31",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-31",
+   "modelo": "CSM GM GT 8000E",
+   "serie": "",
+   "descricao": "CSM GM GT 8000E / 190FD 24001855 / GE-31",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-32",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-32",
+   "modelo": "CSM GRM 10000E",
+   "serie": "",
+   "descricao": "CSM GRM 10000E / 190FD 2600390 / GE-32",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-dswf00184",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-30",
+   "modelo": "CUMMINS C400D6RF",
+   "serie": "DSWF00184",
+   "descricao": "CUMMINS C400D6RF / DSWF00184 / GE-30 / 0492",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-08",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-08",
+   "modelo": "Cummins CUM051",
+   "serie": "",
+   "descricao": "Cummins CUM051 / GE-08",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-09",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-09",
+   "modelo": "Cummins Diesel 165/170 kva",
+   "serie": "",
+   "descricao": "Cummins Diesel 165/170 kva / GE-09",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-15",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-15",
+   "modelo": "GENERAC 150 KVA",
+   "serie": "",
+   "descricao": "GENERAC 150 KVA / GE-15",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-16",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-16",
+   "modelo": "GENERAC 150 KVA",
+   "serie": "",
+   "descricao": "GENERAC 150 KVA / GE-16",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-17",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-17",
+   "modelo": "GENERAC Diesel 240 kVA",
+   "serie": "",
+   "descricao": "GENERAC Diesel 240 kVA / GE-17",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-18",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-18",
+   "modelo": "GENERAC Diesel 240 kVA",
+   "serie": "",
+   "descricao": "GENERAC Diesel 240 kVA / GE-18",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-peb0022727",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-03",
+   "modelo": "GENERAC Perkins 55kva",
+   "serie": "PEB0022727",
+   "descricao": "GENERAC Perkins 55kva / PEB0022727 / GE-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-13",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-13",
+   "modelo": "PERKINS 60/65 KVA",
+   "serie": "",
+   "descricao": "PERKINS 60/65 KVA / GE-13",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-14",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-14",
+   "modelo": "PERKINS 60/65 KVA",
+   "serie": "",
+   "descricao": "PERKINS 60/65 KVA / GE-14",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-10",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-10",
+   "modelo": "VONDER GGV 7100",
+   "serie": "",
+   "descricao": "VONDER GGV 7100 / GE-10",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-11",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-11",
+   "modelo": "VONDER GGV 7100",
+   "serie": "",
+   "descricao": "VONDER GGV 7100 / GE-11",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-12",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-12",
+   "modelo": "VONDER GGV 7100",
+   "serie": "",
+   "descricao": "VONDER GGV 7100 / GE-12",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-20",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-20",
+   "modelo": "VONDER GGV 7100",
+   "serie": "",
+   "descricao": "VONDER GGV 7100 / GE-20",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-21",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-21",
+   "modelo": "VONDER GGV 7100",
+   "serie": "",
+   "descricao": "VONDER GGV 7100 / GE-21",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-gerador-ge-22",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-22",
+   "modelo": "VONDER GGV 7100",
+   "serie": "",
+   "descricao": "VONDER GGV 7100 / GE-22",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-ggv7100506010033",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-24",
+   "modelo": "VONDER GGV-7100",
+   "serie": "GGV7100506010033",
+   "descricao": "VONDER GGV-7100 / GGV7100506010033 / GE-24",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-ggv7100506010061",
+   "tipo": "vme-gerador-csp",
+   "prefixo": "GE-23",
+   "modelo": "VONDER GGV-7100",
+   "serie": "GGV7100506010061",
+   "descricao": "VONDER GGV-7100 / GGV7100506010061 / GE-23",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Gerador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-hbzn580napah31554",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-10",
+   "modelo": "CASE 580N",
+   "serie": "HBZN580NAPAH31554",
+   "descricao": "CASE 580N / HBZN580NAPAH31554 / RE-10",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r3cxttat3634977",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-06",
+   "modelo": "JCB 3CX",
+   "serie": "S0R3CXTTAT3634977",
+   "descricao": "JCB 3CX / S0R3CXTTAT3634977 / RE-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r3cxttct3635110",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-13",
+   "modelo": "JCB 3CX",
+   "serie": "S0R3CXTTCT3635110",
+   "descricao": "JCB 3CX / S0R3CXTTCT3635110 / RE-13 / 0476",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r3cxttht3634965",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-05",
+   "modelo": "JCB 3CX",
+   "serie": "S0R3CXTTHT3634965",
+   "descricao": "JCB 3CX / S0R3CXTTHT3634965 / RE-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r3cxttjt3634974",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-07",
+   "modelo": "JCB 3CX",
+   "serie": "S0R3CXTTJT3634974",
+   "descricao": "JCB 3CX / S0R3CXTTJT3634974 / RE-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r3cxttkt3634973",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-04",
+   "modelo": "JCB 3CX",
+   "serie": "S0R3CXTTKT3634973",
+   "descricao": "JCB 3CX / S0R3CXTTKT3634973 / RE-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r3cxttkt3635122",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-12",
+   "modelo": "JCB 3CX",
+   "serie": "S0R3CXTTKT3635122",
+   "descricao": "JCB 3CX / S0R3CXTTKT3635122 / RE-12 / 0477",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r3cxttpt3581173",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-15",
+   "modelo": "JCB 3CX",
+   "serie": "S0R3CXTTPT3581173",
+   "descricao": "JCB 3CX / S0R3CXTTPT3581173 / RE-15",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r3cxtttt3634971",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-02",
+   "modelo": "JCB 3CX",
+   "serie": "S0R3CXTTTT3634971",
+   "descricao": "JCB 3CX / S0R3CXTTTT3634971 / RE-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r3cxtttt3635103",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-11",
+   "modelo": "JCB 3CX",
+   "serie": "S0R3CXTTTT3635103",
+   "descricao": "JCB 3CX / S0R3CXTTTT3635103 / RE-11",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r3cxtttt3635117",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-14",
+   "modelo": "JCB 3CX",
+   "serie": "S0R3CXTTTT3635117",
+   "descricao": "JCB 3CX / S0R3CXTTTT3635117 / RE-14 / 0513",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r3cxttvt3634959",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-08",
+   "modelo": "JCB 3CX",
+   "serie": "S0R3CXTTVT3634959",
+   "descricao": "JCB 3CX / S0R3CXTTVT3634959 / RE-08",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1bz310lacnd007083",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-03",
+   "modelo": "Johnn Deere 310L",
+   "serie": "1BZ310LACND007083",
+   "descricao": "Johnn Deere 310L / 1BZ310LACND007083 / RE-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-hbznb95cesah38838",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-20",
+   "modelo": "NEW HOLLAND 3CX",
+   "serie": "HBZNB95CESAH38838",
+   "descricao": "NEW HOLLAND 3CX / HBZNB95CESAH38838 / RE-20",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-hbznb95bcnah29514",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-01",
+   "modelo": "New Holland B95B",
+   "serie": "HBZNB95BCNAH29514",
+   "descricao": "New Holland B95B / HBZNB95BCNAH29514 / RE-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-hbznb95bcpah30763",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-09",
+   "modelo": "NEW HOLLAND B95B 4X4",
+   "serie": "HBZNB95BCPAH30763",
+   "descricao": "NEW HOLLAND B95B 4X4 / HBZNB95BCPAH30763 / RE-09",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-hbznb95ccsah38766",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-17",
+   "modelo": "NEW HOLLAND B95C",
+   "serie": "HBZNB95CCSAH38766",
+   "descricao": "NEW HOLLAND B95C / HBZNB95CCSAH38766 / RE-17",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-hbznb95chsah38750",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-16",
+   "modelo": "NEW HOLLAND B95C",
+   "serie": "HBZNB95CHSAH38750",
+   "descricao": "NEW HOLLAND B95C / HBZNB95CHSAH38750 / RE-16",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-hbznb95cvsah38694",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-19",
+   "modelo": "NEW HOLLAND B95C",
+   "serie": "HBZNB95CVSAH38694",
+   "descricao": "NEW HOLLAND B95C / HBZNB95CVSAH38694 / RE-19",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-hbznb95cvsah38730",
+   "tipo": "vme-retroescavadeira-csp",
+   "prefixo": "RE-18",
+   "modelo": "NEW HOLLAND B95C",
+   "serie": "HBZNB95CVSAH38730",
+   "descricao": "NEW HOLLAND B95C / HBZNB95CVSAH38730 / RE-18",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retroescavadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-skg7j30",
+   "tipo": "vme-ambulancia-csp",
+   "prefixo": "AMB-01",
+   "modelo": "CHEVROLET S10",
+   "serie": "SKG7J30",
+   "descricao": "CHEVROLET S10 / (SKG7J30) / AMB-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Ambulância - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgct2217853",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-13",
+   "modelo": "JCB 540 170",
+   "serie": "S0R5AFKGCT2217853",
+   "descricao": "JCB 540 170 / S0R5AFKGCT2217853 / MT-13 / 0492",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkget2217852",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-12",
+   "modelo": "JCB 540 170",
+   "serie": "S0R5AFKGET2217852",
+   "descricao": "JCB 540 170 / S0R5AFKGET2217852 / MT-12 / 0490",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkght2217851",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-14",
+   "modelo": "JCB 540 170",
+   "serie": "S0R5AFKGHT2217851",
+   "descricao": "JCB 540 170 / S0R5AFKGHT2217851 / MT-14 / 0491",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgtt2217837",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-15",
+   "modelo": "JCB 540 170",
+   "serie": "S0R5AFKGTT2217837",
+   "descricao": "JCB 540 170 / S0R5AFKGTT2217837 / MT-15 / 0512",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgtt2217854",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-11",
+   "modelo": "JCB 540 170",
+   "serie": "S0R5AFKGTT2217854",
+   "descricao": "JCB 540 170 / S0R5AFKGTT2217854 / MT-11 / 0489",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-man00000c01149077",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-10",
+   "modelo": "JCB 540/170",
+   "serie": "MAN00000C01149077",
+   "descricao": "JCB 540/170 / MAN00000C01149077 / MT-10",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkghs2217718",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-04",
+   "modelo": "JCB 540/170",
+   "serie": "S0R5AFKGHS2217718",
+   "descricao": "JCB 540/170 / S0R5AFKGHS2217718 / MT-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkghs2217721",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-05",
+   "modelo": "JCB 540/170",
+   "serie": "S0R5AFKGHS2217721",
+   "descricao": "JCB 540/170 / S0R5AFKGHS2217721 / MT-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgls2217491",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-17",
+   "modelo": "JCB 540/170",
+   "serie": "S0R5AFKGLS2217491",
+   "descricao": "JCB 540/170 / S0R5AFKGLS2217491 / MT-17",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgls2217703",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-08",
+   "modelo": "JCB 540/170",
+   "serie": "S0R5AFKGLS2217703",
+   "descricao": "JCB 540/170 / S0R5AFKGLS2217703 / MT-08",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgls2217703-mt-09",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-09",
+   "modelo": "JCB 540/170",
+   "serie": "S0R5AFKGLS2217703",
+   "descricao": "JCB 540/170 / S0R5AFKGLS2217703 / MT-09",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgls2217717",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-03",
+   "modelo": "JCB 540/170",
+   "serie": "S0R5AFKGLS2217717",
+   "descricao": "JCB 540/170 / S0R5AFKGLS2217717 / MT-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgps2217711",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-01",
+   "modelo": "JCB 540/170",
+   "serie": "S0R5AFKGPS2217711",
+   "descricao": "JCB 540/170 / S0R5AFKGPS2217711 / MT - 01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgts2217724",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-06",
+   "modelo": "JCB 540/170",
+   "serie": "S0R5AFKGTS2217724",
+   "descricao": "JCB 540/170 / S0R5AFKGTS2217724 / MT-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgvs2217486",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-18",
+   "modelo": "JCB 540/170",
+   "serie": "S0R5AFKGVS2217486",
+   "descricao": "JCB 540/170 / S0R5AFKGVS2217486 / MT-18",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgvs2217505",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-16",
+   "modelo": "JCB 540/170",
+   "serie": "S0R5AFKGVS2217505",
+   "descricao": "JCB 540/170 / S0R5AFKGVS2217505 / MT-16",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgvs2217732",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-07",
+   "modelo": "JCB 540/170",
+   "serie": "S0R5AFKGVS2217732",
+   "descricao": "JCB 540/170 / S0R5AFKGVS2217732 / MT-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s0r5afkgas2217716",
+   "tipo": "vme-manipulador-telescopico-csp",
+   "prefixo": "MT-02",
+   "modelo": "JCB 540-170",
+   "serie": "S0R5AFKGAS2217716",
+   "descricao": "JCB 540-170 / S0R5AFKGAS2217716 / MT-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Manipulador Telescópico - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-hbzn865bltaf40562",
+   "tipo": "vme-motoniveladora-csp",
+   "prefixo": "MN-03",
+   "modelo": "CASE 865B",
+   "serie": "HBZN865BLTAF40562",
+   "descricao": "CASE 865B / HBZN865BLTAF40562 / MN-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motoniveladora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-cat0140kcjpa06068",
+   "tipo": "vme-motoniveladora-csp",
+   "prefixo": "MN-07",
+   "modelo": "CATERPILLAR 140K",
+   "serie": "CAT0140KCJPA06068",
+   "descricao": "CATERPILLAR 140K / CAT0140KCJPA06068 / MN-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motoniveladora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1bz620galnd000577",
+   "tipo": "vme-motoniveladora-csp",
+   "prefixo": "MN-06",
+   "modelo": "JOHN DEERE 620-G",
+   "serie": "1BZ620GALND000577",
+   "descricao": "JOHN DEERE 620-G / 1BZ620GALND000577 / MN-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motoniveladora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1bz620pacrdm00116",
+   "tipo": "vme-motoniveladora-csp",
+   "prefixo": "MN-04",
+   "modelo": "John Deere 620P",
+   "serie": "1BZ620PACRDM00116",
+   "descricao": "John Deere 620P / 1BZ620PACRDM00116 / MN-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motoniveladora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1bz620pahrdm00145",
+   "tipo": "vme-motoniveladora-csp",
+   "prefixo": "MN-05",
+   "modelo": "John Deere 620P",
+   "serie": "1BZ620PAHRDM00145",
+   "descricao": "John Deere 620P / 1BZ620PAHRDM00145 / MN-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motoniveladora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-xug01803hmpb02932",
+   "tipo": "vme-motoniveladora-csp",
+   "prefixo": "MN-08",
+   "modelo": "XCMG GR1803BR",
+   "serie": "XUG01803HMPB02932",
+   "descricao": "XCMG GR1803BR / XUG01803HMPB02932 / MN-08",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Motoniveladora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-serra-circular-serra-circular",
+   "tipo": "vme-serra-circular-csp",
+   "prefixo": "Serra Circular",
+   "modelo": "MAKSIWA SC.1500.I",
+   "serie": "",
+   "descricao": "MAKSIWA SC.1500.I / Serra Circular / 1500 / 0533",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Serra Circular - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-230482023061586",
+   "tipo": "vme-maquina-de-solda-csp",
+   "prefixo": "Solda 04",
+   "modelo": "INTEC SMI250",
+   "serie": "230482023061586",
+   "descricao": "INTEC SMI250 / 230482023061586 / M. DE SOLDA - 04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Máquina de Solda CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-s250c101535210005",
+   "tipo": "vme-maquina-de-solda-csp",
+   "prefixo": "Solda 03",
+   "modelo": "SCHULZ MTS 250 COMPACT",
+   "serie": "S250C101535210005",
+   "descricao": "SCHULZ MTS 250 COMPACT / S250C101535210005 / M. DE SOLDA - 03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Máquina de Solda CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1008042200005330",
+   "tipo": "vme-maquina-de-solda-csp",
+   "prefixo": "Solda 01",
+   "modelo": "Super Tork ITE 10200",
+   "serie": "1008042200005330",
+   "descricao": "Super Tork ITE 10200 / 1008042200005330 / M. DE SOLDA - 01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Máquina de Solda CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rs430e806717200016",
+   "tipo": "vme-maquina-de-solda-csp",
+   "prefixo": "Solda 02",
+   "modelo": "VONDER RS430 TRI",
+   "serie": "RS430E806717200016",
+   "descricao": "VONDER RS430 TRI / RS430E806717200016 / M. DE SOLDA - 02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Máquina de Solda CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-retificadora-d-retifica-vertical-modelo-trifasico-220-380v-60hz",
+   "tipo": "vme-retificadora-de-corpo-de-prova-csp",
+   "prefixo": "Retífica 30395",
+   "modelo": "RETIFICA VERTICAL MODELO TRIFASICO 220/380V 60Hz",
+   "serie": "30395",
+   "descricao": "RETIFICA VERTICAL MODELO TRIFASICO 220/380V 60Hz / 30395",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Retificadora de Corpo de Prova - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-extrusora-ext-02",
+   "tipo": "vme-extrusora-csp",
+   "prefixo": "EXT-02",
+   "modelo": "EXTRUSORA DE  MEIO FIO IMB 900 G",
+   "serie": "",
+   "descricao": "EXTRUSORA DE  MEIO FIO IMB 900 G / EXT-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Extrusora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-extrusora-ext-01",
+   "tipo": "vme-extrusora-csp",
+   "prefixo": "EXT-01",
+   "modelo": "EXTRUSORA IMB 900 G",
+   "serie": "",
+   "descricao": "EXTRUSORA IMB 900 G / EXT - 01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Extrusora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-extrusora-ext-03",
+   "tipo": "vme-extrusora-csp",
+   "prefixo": "EXT-03",
+   "modelo": "EXTRUSORA IMB 900 G",
+   "serie": "",
+   "descricao": "EXTRUSORA IMB 900 G / EXT - 03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Extrusora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-ehd2509001",
+   "tipo": "vme-extrusora-csp",
+   "prefixo": "EXT-04",
+   "modelo": "IMB 5500 HD Cronus",
+   "serie": "EHD2509001",
+   "descricao": "IMB 5500 HD Cronus / EHD2509001 / EXT-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Extrusora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-p5c2608002",
+   "tipo": "vme-extrusora-csp",
+   "prefixo": "EXT-05",
+   "modelo": "IMB 5500 HD Cronus",
+   "serie": "P5C2608002",
+   "descricao": "IMB 5500 HD Cronus / P5C2608002 / EXT-05 / EXT-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Extrusora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-emst1907002",
+   "tipo": "vme-extrusora-csp",
+   "prefixo": "EXT-06",
+   "modelo": "IMB 900 G STC",
+   "serie": "EMST1907002",
+   "descricao": "IMB 900 G STC / EXT-06 / EMST1907002 / EXT-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Extrusora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-emst2301003",
+   "tipo": "vme-extrusora-csp",
+   "prefixo": "EXT-07",
+   "modelo": "IMB 900 G STC",
+   "serie": "EMST2301003",
+   "descricao": "IMB 900 G STC / EXT-07 / EMST2301003 / EXT-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Extrusora - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-10000179cnb007327",
+   "tipo": "vme-rolo-compactador-csp",
+   "prefixo": "RC-02",
+   "modelo": "DYNAPAC CA25",
+   "serie": "10000179CNB007327",
+   "descricao": "DYNAPAC CA25 / 10000179CNB007327 / RC-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Rolo Compactador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-10000179cpb008021",
+   "tipo": "vme-rolo-compactador-csp",
+   "prefixo": "RC-03",
+   "modelo": "DYNAPAC CA25",
+   "serie": "10000179CPB008021",
+   "descricao": "DYNAPAC CA25 / 10000179CPB008021 / RC-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Rolo Compactador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-10000179enb007598",
+   "tipo": "vme-rolo-compactador-csp",
+   "prefixo": "RC-04",
+   "modelo": "DYNAPAC CA25",
+   "serie": "10000179ENB007598",
+   "descricao": "DYNAPAC CA25 / 10000179ENB007598 / RC-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Rolo Compactador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-10000179trb008758",
+   "tipo": "vme-rolo-compactador-csp",
+   "prefixo": "RC-05",
+   "modelo": "Dynapac CA25 D",
+   "serie": "10000179TRB008758",
+   "descricao": "Dynapac CA25 D / 10000179TRB008758 / RC-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Rolo Compactador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-punjc116tr3457199",
+   "tipo": "vme-rolo-compactador-csp",
+   "prefixo": "RC-06",
+   "modelo": "JCB 116D",
+   "serie": "PUNJC116TR3457199",
+   "descricao": "JCB 116D / PUNJC116TR3457199 / RC-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Rolo Compactador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-00000yz1112cg0260",
+   "tipo": "vme-rolo-compactador-csp",
+   "prefixo": "RC-07",
+   "modelo": "SANY SSR120C-10S",
+   "serie": "00000YZ1112CG0260",
+   "descricao": "SANY SSR120C-10S / 00000YZ1112CG0260 / RC-07 / 0478",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Rolo Compactador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rolo-compactad-mr-01",
+   "tipo": "vme-rolo-compactador-csp",
+   "prefixo": "MR-01",
+   "modelo": "WACKER NEUSON RTD-SC4",
+   "serie": "",
+   "descricao": "WACKER NEUSON RTD-SC4 / MR-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Rolo Compactador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rolo-compactad-mr-02",
+   "tipo": "vme-rolo-compactador-csp",
+   "prefixo": "MR-02",
+   "modelo": "WACKER NEUSON RTD-SC4",
+   "serie": "",
+   "descricao": "WACKER NEUSON RTD-SC4 / MR-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Rolo Compactador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rolo-compactad-mr-03",
+   "tipo": "vme-rolo-compactador-csp",
+   "prefixo": "MR-03",
+   "modelo": "WACKER NEUSON RTD-SC4",
+   "serie": "",
+   "descricao": "WACKER NEUSON RTD-SC4 / MR-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Rolo Compactador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rolo-compactad-mr-04",
+   "tipo": "vme-rolo-compactador-csp",
+   "prefixo": "MR-04",
+   "modelo": "WACKER NEUSON RTD-SC4",
+   "serie": "",
+   "descricao": "WACKER NEUSON RTD-SC4 / MR-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Rolo Compactador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-xug01231appe11079",
+   "tipo": "vme-rolo-compactador-csp",
+   "prefixo": "RC-01",
+   "modelo": "XCMG XS123",
+   "serie": "XUG01231APPE11079",
+   "descricao": "XCMG XS123 / XUG01231APPE11079 / RC-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Rolo Compactador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-xug01231cppe11072",
+   "tipo": "vme-rolo-compactador-csp",
+   "prefixo": "RC-08",
+   "modelo": "XCMG XS123PDI",
+   "serie": "XUG01231CPPE11072",
+   "descricao": "XCMG XS123PDI / XUG01231CPPE11072 / RC-08 / RC-04 TAG LOCADOR",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Rolo Compactador - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-141536",
+   "tipo": "vme-betoneira-csp",
+   "prefixo": "BTE-03",
+   "modelo": "MENEGOTTI 400 L PRIME",
+   "serie": "141536",
+   "descricao": "MENEGOTTI 400 L PRIME / BTE-03 / 141536",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-40011643",
+   "tipo": "vme-betoneira-csp",
+   "prefixo": "40011643",
+   "modelo": "MENEGOTTI BET 120L",
+   "serie": "40011643",
+   "descricao": "MENEGOTTI BET 120L / 6909 / 40011643",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Betoneira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-dumper-dp-01",
+   "tipo": "vme-dumper-csp",
+   "prefixo": "DP-01",
+   "modelo": "DUMPER GAMMA COBRA",
+   "serie": "",
+   "descricao": "DUMPER GAMMA COBRA / MOVICARGA LEAN DUMPER 850L / DP-01 / 0538",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Dumper - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rth5d15",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-01",
+   "modelo": "M. BENZ Atego 2730 6x4 CE",
+   "serie": "RTH5D15",
+   "descricao": "M. BENZ Atego 2730 6x4 CE / RTH5D15 / CP - 01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-qpe9e59",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-10",
+   "modelo": "M.BENZ AXOR 3131 6X4",
+   "serie": "QPE9E59",
+   "descricao": "M.BENZ AXOR 3131 6X4 / QPE9E59 / CP-10",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-btz8h11",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-04",
+   "modelo": "VOLKSWAGEN 24.280 CRM 6x2",
+   "serie": "BTZ8H11",
+   "descricao": "VOLKSWAGEN 24.280 CRM 6x2 / BTZ8H11 / CP - 04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tck0j83",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-16",
+   "modelo": "VOLKSWAGEN 27.260 CRM 6X4",
+   "serie": "TCK0J83",
+   "descricao": "VOLKSWAGEN 27.260 CRM 6X4 / TCK0J83 / CP-16",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tel8c37",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-06",
+   "modelo": "VOLKSWAGEN 27.260 CRM 6X4",
+   "serie": "TEL8C37",
+   "descricao": "VOLKSWAGEN 27.260 CRM 6X4 / TEL8C37 / CP - 06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tel8c37-cp-09",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-09",
+   "modelo": "VOLKSWAGEN 27.260 CRM 6X4",
+   "serie": "TEL8C37",
+   "descricao": "VOLKSWAGEN 27.260 CRM 6X4 / TEL8C37 / CP-09",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tcv2c08",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-08",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "TCV2C08",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / TCV2C08 / CP-08",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uug3i24",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-11",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "UUG3I24",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / UUG3I24 / CP-11 / 0489",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uuq6j64",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-13",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "UUQ6J64",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / UUQ6J64 / CP-13 / 0492",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvc1a65",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-12",
+   "modelo": "VOLKSWAGEN 31.320 CRM 6X4",
+   "serie": "UVC1A65",
+   "descricao": "VOLKSWAGEN 31.320 CRM 6X4 / UVC1A65 / CP-12 / 0490",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rpc6e89",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-17",
+   "modelo": "VOLVO VM 270 6X4R",
+   "serie": "RPC6E89",
+   "descricao": "VOLVO VM 270 6X4R / RPC6E89 / CP-17",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rvc3j03",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-14",
+   "modelo": "VOLVO VM 270 6X4R",
+   "serie": "RVC3J03",
+   "descricao": "VOLVO VM 270 6X4R / RVC3J03 / CP-14",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-sig1e30",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-07",
+   "modelo": "VOLVO VM 290 6X4 R",
+   "serie": "SIG1E30",
+   "descricao": "VOLVO VM 290 6X4 R / SIG1E30 / CP-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tci2e61",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-05",
+   "modelo": "VOLVO VM 290 6x4 R",
+   "serie": "TCI2E61",
+   "descricao": "VOLVO VM 290 6x4 R / TCI2E61 / CP - 05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-sjb7j29",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-15",
+   "modelo": "VOLVO VM 290 6X4R",
+   "serie": "SJB7J29",
+   "descricao": "VOLVO VM 290 6X4R / SJB7J29 / CP-15",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jcw9j76",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-03",
+   "modelo": "VOLVO VM 360 6x4 R",
+   "serie": "JCW9J76",
+   "descricao": "VOLVO VM 360 6x4 R / JCW9J76 / CP - 03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jdi3e28",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-02",
+   "modelo": "VOLVO VM 360 6x4 R",
+   "serie": "JDI3E28",
+   "descricao": "VOLVO VM 360 6x4 R / JDI3E28 / CP - 02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-skc4b74",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-20",
+   "modelo": "VOLVO VM 360 6X4 R",
+   "serie": "SKC4B74",
+   "descricao": "VOLVO VM 360 6X4 R / SKC4B74 / CP-20",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tnf5a31",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-18",
+   "modelo": "VOLVO VM 360 6X4 R",
+   "serie": "TNF5A31",
+   "descricao": "VOLVO VM 360 6X4 R / TNF5A31 / CP-18",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tnf5g57",
+   "tipo": "vme-caminhao-pipa-csp",
+   "prefixo": "CP-19",
+   "modelo": "VOLVO VM 360 6X4 R",
+   "serie": "TNF5G57",
+   "descricao": "VOLVO VM 360 6X4 R / TNF5G57 / CP-19",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Pipa - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-posto-de-abast-tc-01",
+   "tipo": "vme-posto-de-abastecimento-csp",
+   "prefixo": "TC-01",
+   "modelo": "N/A N/A",
+   "serie": "",
+   "descricao": "N/A N/A / TANQUE AÉREO DE COMBUSTÍVEL / TC-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Posto de Abastecimento - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1bm6190jhpd660422",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "prefixo": "TP-04",
+   "modelo": "Johnn Deere 6190J",
+   "serie": "1BM6190JHPD660422",
+   "descricao": "Johnn Deere 6190J / 1BM6190JHPD660422 / TP-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Trator (Pneu/Esteira) CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1bm6190jtkd001933",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "prefixo": "TP-06",
+   "modelo": "Johnn Deere 6190J",
+   "serie": "1BM6190JTKD001933",
+   "descricao": "Johnn Deere 6190J / 1BM6190JTKD001933 / TP-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Trator (Pneu/Esteira) CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-9agt0010ttc009207",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "prefixo": "TP-07",
+   "modelo": "Massey Ferguson Ferguson",
+   "serie": "9AGT0010TTC009207",
+   "descricao": "Massey Ferguson Ferguson / 9AGT0010TTC009207 / TP-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Trator (Pneu/Esteira) CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-9agt0010etc009205",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "prefixo": "TP-08",
+   "modelo": "MASSEY FERGUSON MF 6713",
+   "serie": "9AGT0010ETC009205",
+   "descricao": "MASSEY FERGUSON MF 6713 / 9AGT0010ETC009205 / TP-08",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Trator (Pneu/Esteira) CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-9agt0010ktc009209",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "prefixo": "TP-09",
+   "modelo": "MASSEY FERGUSON MF 6713",
+   "serie": "9AGT0010KTC009209",
+   "descricao": "MASSEY FERGUSON MF 6713 / 9AGT0010KTC009209 / TP-09",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Trator (Pneu/Esteira) CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-9agt0010ptc009208",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "prefixo": "TP-10",
+   "modelo": "MASSEY FERGUSON MF 6713",
+   "serie": "9AGT0010PTC009208",
+   "descricao": "MASSEY FERGUSON MF 6713 / 9AGT0010PTC009208 / TP-10",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Trator (Pneu/Esteira) CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-9agt2006hpc018328",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "prefixo": "TP-05",
+   "modelo": "Massey Fergusson 4410",
+   "serie": "9AGT2006HPC018328",
+   "descricao": "Massey Fergusson 4410 / 9AGT2006HPC018328 / TP-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Trator (Pneu/Esteira) CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-ruo5d27",
+   "tipo": "vme-munck-csp",
+   "prefixo": "CM-02",
+   "modelo": "Volvo VM 270 6x4 R",
+   "serie": "RUO5D27",
+   "descricao": "Volvo VM 270 6x4 R / RUO5D27 / CM-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Munck - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tid2g78",
+   "tipo": "vme-munck-csp",
+   "prefixo": "CM-04",
+   "modelo": "VW 26.260 CRM 6X2",
+   "serie": "TID2G78",
+   "descricao": "VW 26.260 CRM 6X2 / TID2G78 / CM-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Munck - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-teg4f54",
+   "tipo": "vme-munck-csp",
+   "prefixo": "CM-03",
+   "modelo": "VW 27.260 CRM 6X4",
+   "serie": "TEG4F54",
+   "descricao": "VW 27.260 CRM 6X4 / TEG4F54 / CM-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Munck - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyl6c26",
+   "tipo": "vme-munck-csp",
+   "prefixo": "CM-01",
+   "modelo": "VW 27.260 CRM 6X4",
+   "serie": "TYL6C26",
+   "descricao": "VW 27.260 CRM 6X4 / TYL6C26 / CM-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Munck - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tyl6c30",
+   "tipo": "vme-munck-csp",
+   "prefixo": "CM-07",
+   "modelo": "VW 27.260 CRM 6X4",
+   "serie": "TYL6C30",
+   "descricao": "VW 27.260 CRM 6X4 / TYL6C30 / CM-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Munck - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uug7c15",
+   "tipo": "vme-munck-csp",
+   "prefixo": "CM-05",
+   "modelo": "VW 31.320 CRM 6X4",
+   "serie": "UUG7C15",
+   "descricao": "VW 31.320 CRM 6X4 / UUG7C15 / CM-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Munck - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-uvf6e85",
+   "tipo": "vme-munck-csp",
+   "prefixo": "CM-06",
+   "modelo": "VW 31.320 CRM 6X4",
+   "serie": "UVF6E85",
+   "descricao": "VW 31.320 CRM 6X4 / UVF6E85 / CM-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Munck - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-0773400000r000006",
+   "tipo": "vme-pemt-csp",
+   "prefixo": "PTA-01",
+   "modelo": "ZOOMLION ZA14J",
+   "serie": "0773400000R000006",
+   "descricao": "ZOOMLION ZA14J / 0773400000R000006 / PTA-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · PEMT - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-0773401000s001974",
+   "tipo": "vme-pemt-csp",
+   "prefixo": "PTA-03",
+   "modelo": "ZOOMLION ZA14J",
+   "serie": "0773401000S001974",
+   "descricao": "ZOOMLION ZA14J / 0773401000S001974 / PTA-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · PEMT - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-0775300101n010274",
+   "tipo": "vme-pemt-csp",
+   "prefixo": "PTA-02",
+   "modelo": "ZOOMLION ZA14J",
+   "serie": "0775300101N010274",
+   "descricao": "ZOOMLION ZA14J / 0775300101N010274 / PTA-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · PEMT - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-241213",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "prefixo": "CE-09",
+   "modelo": "Hanfa 1M+",
+   "serie": "241213",
+   "descricao": "Hanfa 1M+ / 241213 / CE-09",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Bate Estaca/Cravadora CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-241214",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "prefixo": "CE-08",
+   "modelo": "Hanfa 1M+",
+   "serie": "241214",
+   "descricao": "Hanfa 1M+ / 241214 / CE-08",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Bate Estaca/Cravadora CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-bate-estaca-cr-ce-07",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "prefixo": "CE-07",
+   "modelo": "ORTECO HD1000",
+   "serie": "",
+   "descricao": "ORTECO HD1000 / 2022041 B / 2022041 C / CE-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Bate Estaca/Cravadora CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1vr6120rap1000220",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "prefixo": "CE-06",
+   "modelo": "VERMEER PD5R",
+   "serie": "1VR6120RAP1000220",
+   "descricao": "VERMEER PD5R / 1VR6120RAP1000220 / CE-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Bate Estaca/Cravadora CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1vr6120rep1000237",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "prefixo": "CE-01",
+   "modelo": "VERMEER PD5R",
+   "serie": "1VR6120REP1000237",
+   "descricao": "VERMEER PD5R / 1VR6120REP1000237 / CE-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Bate Estaca/Cravadora CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1vr6120rer1000256",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "prefixo": "CE-05",
+   "modelo": "VERMEER PD5R",
+   "serie": "1VR6120RER1000256",
+   "descricao": "VERMEER PD5R / 1VR6120RER1000256 / CE-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Bate Estaca/Cravadora CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1vr6120rhr1000255",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "prefixo": "CE-04",
+   "modelo": "VERMEER PD5R",
+   "serie": "1VR6120RHR1000255",
+   "descricao": "VERMEER PD5R / 1VR6120RHR1000255 / CE-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Bate Estaca/Cravadora CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1vr6120rlr1000254",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "prefixo": "CE-03",
+   "modelo": "VERMEER PD5R",
+   "serie": "1VR6120RLR1000254",
+   "descricao": "VERMEER PD5R / 1VR6120RLR1000254 / CE-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Bate Estaca/Cravadora CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1vr6120rpp1000243",
+   "tipo": "vme-bate-estaca-cravadora-csp",
+   "prefixo": "CE-02",
+   "modelo": "VERMEER PD5R",
+   "serie": "1VR6120RPP1000243",
+   "descricao": "VERMEER PD5R / 1VR6120RPP1000243 / CE-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Bate Estaca/Cravadora CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-b5nb11751",
+   "tipo": "vme-pa-carregadeira-csp",
+   "prefixo": "MC-03",
+   "modelo": "BOBCAT S450",
+   "serie": "B5NB11751",
+   "descricao": "BOBCAT S450 / MC-03 / B5NB11751 / 0587",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Pá Carregadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-b4sz13086",
+   "tipo": "vme-pa-carregadeira-csp",
+   "prefixo": "MC-04",
+   "modelo": "BOBCAT S650",
+   "serie": "B4SZ13086",
+   "descricao": "BOBCAT S650 / MC-04 / B4SZ13086 / 0588",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Pá Carregadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-b4sz11876",
+   "tipo": "vme-pa-carregadeira-csp",
+   "prefixo": "MC-05",
+   "modelo": "BOBCAT S650",
+   "serie": "B4SZ11876",
+   "descricao": "BOBCAT S650 / MC-05 / B4SZ11876 / MC-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Pá Carregadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1bz524kalrd004788",
+   "tipo": "vme-pa-carregadeira-csp",
+   "prefixo": "PC-01",
+   "modelo": "JOHN DEERE 524K-II",
+   "serie": "1BZ524KALRD004788",
+   "descricao": "JOHN DEERE 524K-II / 1BZ524KALRD004788 / PC-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Pá Carregadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1bz524kavrd004917",
+   "tipo": "vme-pa-carregadeira-csp",
+   "prefixo": "PC-02",
+   "modelo": "JOHN DEERE 524K-II",
+   "serie": "1BZ524KAVRD004917",
+   "descricao": "JOHN DEERE 524K-II / 1BZ524KAVRD004917 / PC-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Pá Carregadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-jaf0l318jpm433737",
+   "tipo": "vme-pa-carregadeira-csp",
+   "prefixo": "MC-02",
+   "modelo": "NEW HOLLAND L318",
+   "serie": "JAF0L318JPM433737",
+   "descricao": "NEW HOLLAND L318 / JAF0L318JPM433737 / MC-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Pá Carregadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-xug0sr07lscb08979",
+   "tipo": "vme-pa-carregadeira-csp",
+   "prefixo": "MC-01",
+   "modelo": "XCMG XC7-SR07",
+   "serie": "XUG0SR07LSCB08979",
+   "descricao": "XCMG XC7-SR07 / XUG0SR07LSCB08979 / MC-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Pá Carregadeira - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-373964520",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 03",
+   "modelo": "STIHL FS 291",
+   "serie": "373964520",
+   "descricao": "STIHL FS 291 / 373964520 / ROÇADEIRA COSTAL 03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-373964556",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 02",
+   "modelo": "STIHL FS 291",
+   "serie": "373964556",
+   "descricao": "STIHL FS 291 / 373964556 / ROÇADEIRA COSTAL 02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-373964583",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 04",
+   "modelo": "STIHL FS 291",
+   "serie": "373964583",
+   "descricao": "STIHL FS 291 / 373964583 / ROÇADEIRA COSTAL 04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-374005858",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 01",
+   "modelo": "STIHL FS 291",
+   "serie": "374005858",
+   "descricao": "STIHL FS 291 / 374005858 / ROÇADEIRA COSTAL 01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-374843925",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 05",
+   "modelo": "STIHL FS 291",
+   "serie": "374843925",
+   "descricao": "STIHL FS 291 / 374843925 / ROÇADEIRA COSTAL 05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-374843934",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 08",
+   "modelo": "STIHL FS 291",
+   "serie": "374843934",
+   "descricao": "STIHL FS 291 / 374843934 / ROÇADEIRA COSTAL 08",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-374843948",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 12",
+   "modelo": "STIHL FS 291",
+   "serie": "374843948",
+   "descricao": "STIHL FS 291 / 374843948 / ROÇADEIRA COSTAL 12",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-374843974",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 10",
+   "modelo": "STIHL FS 291",
+   "serie": "374843974",
+   "descricao": "STIHL FS 291 / 374843974 / ROÇADEIRA COSTAL 10",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-374843978",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 13",
+   "modelo": "STIHL FS 291",
+   "serie": "374843978",
+   "descricao": "STIHL FS 291 / 374843978 / ROÇADEIRA COSTAL 13",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-374843980",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 09",
+   "modelo": "STIHL FS 291",
+   "serie": "374843980",
+   "descricao": "STIHL FS 291 / 374843980 / ROÇADEIRA COSTAL 09",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-374843981",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 06",
+   "modelo": "STIHL FS 291",
+   "serie": "374843981",
+   "descricao": "STIHL FS 291 / 374843981 / ROÇADEIRA COSTAL 06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-374843991",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 11",
+   "modelo": "STIHL FS 291",
+   "serie": "374843991",
+   "descricao": "STIHL FS 291 / 374843991 / ROÇADEIRA COSTAL 11",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-374878615",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 14",
+   "modelo": "STIHL FS 291",
+   "serie": "374878615",
+   "descricao": "STIHL FS 291 / 374878615 / ROÇADEIRA COSTAL 14",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-374878633",
+   "tipo": "vme-rocadeira-costal-csp",
+   "prefixo": "Roçadeira 07",
+   "modelo": "STIHL FS 291",
+   "serie": "374878633",
+   "descricao": "STIHL FS 291 / 374878633 / ROÇADEIRA COSTAL 07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Roçadeira Costal - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-rnn8j88",
+   "tipo": "vme-caminhao-comboio-csp",
+   "prefixo": "ML-02",
+   "modelo": "VOLKSWAGEN 24.260 CRM 6X2",
+   "serie": "RNN8J88",
+   "descricao": "VOLKSWAGEN 24.260 CRM 6X2 / RNN8J88 / ML-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Comboio - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-tee5h02",
+   "tipo": "vme-combustivel-reboque-csp",
+   "prefixo": "TEE5H02",
+   "modelo": "R VALE DO ACO TQPP 2E",
+   "serie": "TEE5H02",
+   "descricao": "R VALE DO ACO TQPP 2E / TEE5H02 / CARGA REBOQUE - 04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Combustível (Reboque) - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-carretinha-reb-reboque-02",
+   "tipo": "vme-carretinha-reboque-csp",
+   "prefixo": "Reboque 02",
+   "modelo": "NA REBOQUE CARROCINHA",
+   "serie": "",
+   "descricao": "NA REBOQUE CARROCINHA / REBOQUE 02 / REBOQUE 02 / 0545",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carretinha (Reboque) - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-carretinha-reb-reboque-03",
+   "tipo": "vme-carretinha-reboque-csp",
+   "prefixo": "Reboque 03",
+   "modelo": "NA REBOQUE CARROCINHA",
+   "serie": "",
+   "descricao": "NA REBOQUE CARROCINHA / REBOQUE 03 / REBOQUE 03 / 0546",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carretinha (Reboque) - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-scy3a97",
+   "tipo": "vme-carretinha-reboque-csp",
+   "prefixo": "SCY3A97",
+   "modelo": "R MILTONBSB BRASILIA CA",
+   "serie": "SCY3A97",
+   "descricao": "R MILTONBSB BRASILIA CA / SCY3A97 / REBOQUE - 01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carretinha (Reboque) - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-dhy8792",
+   "tipo": "vme-carretinha-reboque-csp",
+   "prefixo": "DHY8792",
+   "modelo": "REB ADD ACC-320",
+   "serie": "DHY8792",
+   "descricao": "REB ADD ACC-320 / DHY8792 / REBOQUE - 05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Carretinha (Reboque) - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-torre-de-ilumi-tdi-02",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "prefixo": "TDI-02",
+   "modelo": "MTOWER TIS-3P450-M-1623-6",
+   "serie": "",
+   "descricao": "MTOWER TIS-3P450-M-1623-6 / 2496 / TDI-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Torre de Iluminação - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-torre-de-ilumi-tdi-01",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "prefixo": "TDI-01",
+   "modelo": "MTOWER TIS-3P450-M-1623-6",
+   "serie": "",
+   "descricao": "MTOWER TIS-3P450-M-1623-6 / 2497 / TDI-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Torre de Iluminação - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-torre-de-ilumi-tdi-04",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "prefixo": "TDI-04",
+   "modelo": "MTOWER TIS-3P450-M-1623-6",
+   "serie": "",
+   "descricao": "MTOWER TIS-3P450-M-1623-6 / TDI-04",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Torre de Iluminação - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-torre-de-ilumi-tdi-05",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "prefixo": "TDI-05",
+   "modelo": "MTOWER TIS-3P450-M-1623-6",
+   "serie": "",
+   "descricao": "MTOWER TIS-3P450-M-1623-6 / TDI-05",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Torre de Iluminação - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-torre-de-ilumi-tdi-06",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "prefixo": "TDI-06",
+   "modelo": "MTOWER TIS-3P450-M-1623-6",
+   "serie": "",
+   "descricao": "MTOWER TIS-3P450-M-1623-6 / TDI-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Torre de Iluminação - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-torre-de-ilumi-tdi-07",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "prefixo": "TDI-07",
+   "modelo": "MTOWER TIS-3P450-M-1623-6",
+   "serie": "",
+   "descricao": "MTOWER TIS-3P450-M-1623-6 / TDI-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Torre de Iluminação - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-toi-021",
+   "tipo": "vme-torre-de-iluminacao-csp",
+   "prefixo": "TDI-03",
+   "modelo": "MTOWER TIS-3P450-M-1623-6",
+   "serie": "TOI.021",
+   "descricao": "MTOWER TIS-3P450-M-1623-6 / TOI.021 / TDI-03",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Torre de Iluminação - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-88910009",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "prefixo": "RÇO-03",
+   "modelo": "AGRITECH Deslocável 1000 R.P.M",
+   "serie": "88910009",
+   "descricao": "AGRITECH Deslocável 1000 R.P.M / RÇO-03 / 88910009",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Triturador de Arraste/ Palhada - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-n3551527",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "prefixo": "RÇO-02",
+   "modelo": "INRODA SP 5300 TF",
+   "serie": "N3551527",
+   "descricao": "INRODA SP 5300 TF / RÇO-02 / N3551527",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Triturador de Arraste/ Palhada - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-n3716013",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "prefixo": "RÇO-07",
+   "modelo": "INRODA SP2",
+   "serie": "N3716013",
+   "descricao": "INRODA SP2 / N3716013 / RÇO-07",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Triturador de Arraste/ Palhada - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-n3717094",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "prefixo": "RÇO-06",
+   "modelo": "INRODA SP2",
+   "serie": "N3717094",
+   "descricao": "INRODA SP2 / N3717094 / RÇO-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Triturador de Arraste/ Palhada - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-n3656761",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "prefixo": "RÇO-05",
+   "modelo": "INRODA SP2",
+   "serie": "N3656761",
+   "descricao": "INRODA SP2 / RÇO-05 / N3656761",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Triturador de Arraste/ Palhada - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-10008677781002",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "prefixo": "RÇO-01",
+   "modelo": "WOODS Batwing 240HD",
+   "serie": "10008677781002",
+   "descricao": "WOODS Batwing 240HD / RÇO-01 / 10008677781002",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Triturador de Arraste/ Palhada - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-10008312065002",
+   "tipo": "vme-triturador-de-arraste-palhada-csp",
+   "prefixo": "RÇO-04",
+   "modelo": "WOODS Batwing 240HD",
+   "serie": "10008312065002",
+   "descricao": "WOODS Batwing 240HD / RÇO-04 / 10008312065002",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Triturador de Arraste/ Palhada - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-537828",
+   "tipo": "vme-compressor-csp",
+   "prefixo": "Compressor oficina",
+   "modelo": "STORM 600 HP PRESSURE PRPD200AP-021",
+   "serie": "537828",
+   "descricao": "STORM 600 HP PRESSURE PRPD200AP-021 / 537828 / COMPRESSOR OFICINA",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Compressor - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-ocz1768",
+   "tipo": "vme-guindaste-csp",
+   "prefixo": "GUI-02",
+   "modelo": "I MO LIEBHERR LTM1220 52",
+   "serie": "OCZ1768",
+   "descricao": "I MO LIEBHERR LTM1220 52 / OCZ1768 / GUI-02 / 0490",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Guindaste - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-1vr2160r4d1000543",
+   "tipo": "vme-valetadeira-sso-csp",
+   "prefixo": "VAL-01",
+   "modelo": "VERMEER T755",
+   "serie": "1VR2160R4D1000543",
+   "descricao": "VERMEER T755 / 1VR2160R4D1000543 / VAL-01",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Valetadeira - SSO - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-awm7j41",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "prefixo": "PF-02",
+   "modelo": "VOLKSWAGEN 17.280 CRM 4X2",
+   "serie": "AWM7J41",
+   "descricao": "VOLKSWAGEN 17.280 CRM 4X2 / AWM7J41 / PF-02",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Caminhão Perfuratriz - CSP (lido em 10/11/2026)"
+  },
+  {
+   "id": "eq-vibrador-de-co-vibrador-de-concreto-06",
+   "tipo": "vme-vibrador-de-concreto-csp",
+   "prefixo": "Vibrador 06",
+   "modelo": "BUFFALO BFG 4T-6.5",
+   "serie": "",
+   "descricao": "BUFFALO BFG 4T-6.5 / VIBRADOR DE CONCRETO-06",
+   "ativo": true,
+   "origem": "ObraSoft · Controle de Vencimentos · Vibrador de Concreto - CSP (lido em 10/11/2026)"
+  }
+ ]
+}
