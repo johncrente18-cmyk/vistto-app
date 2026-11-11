@@ -290,7 +290,7 @@
   const TIPOS_PADRAO = [{ id: 'caminhada', nome: 'Caminhada de segurança', descricao: 'Ferramentas, EPI, documentação e os riscos da atividade do dia', usa_atividade: true, ordem: 1, ativo: true },
     { id: 'vivencia', nome: 'Área de vivência (Meta 01)', descricao: 'Documentação e estrutura da área de vivência', usa_atividade: false, ordem: 2, ativo: true }];
   const RESERVADOS = ['tipos', 'atividades', 'pessoas', 'historico', 'arquivo'];
-  const GRUPOS = [['veiculos', 'Inspeções de Veículos-Máquinas-Equipamentos'], ['gerencia', 'Inspeção Gerência'], ['campo', 'Inspeções de Campo TSTs']];
+  const GRUPOS = [['veiculos', 'Inspeções de Veículos-Máquinas-Equipamentos'], ['gerencia', 'Inspeção Gerência'], ['campo', 'Inspeções de Campo TSTs'], ['auditoria', 'Auditorias · Listas de Verificação']];
   const grupoDe = t => t.grupo || (t.id === 'caminhada' || t.id === 'vivencia' ? 'gerencia' : 'campo');
   const tipoDe = id => (S.tipos || []).find(t => t.id === id) || TIPOS_PADRAO.find(t => t.id === id) || { id, nome: id, usa_atividade: false };
   const ehForm = id => { const t = tipoDe(id); return t.modo === 'formulario' && t.estrutura && Array.isArray(t.estrutura.itens); };

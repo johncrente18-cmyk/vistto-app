@@ -1,0 +1,946 @@
+{
+ "origem": "LVI 12, 17 e 18 enviadas pelo usuário em 11/11/2026",
+ "tipos": [
+  {
+   "id": "aud-ambulatorio",
+   "nome": "Ambulatório",
+   "descricao": "LVI 12 · condições do ambulatório (NR-32, Anvisa)",
+   "grupo": "auditoria",
+   "ordem": 400
+  },
+  {
+   "id": "aud-escavacoes",
+   "nome": "Escavações",
+   "descricao": "LVI 17 · escavações e valas (NR-18, NBR 9061)",
+   "grupo": "auditoria",
+   "ordem": 401
+  },
+  {
+   "id": "aud-guindaste-de-rodas",
+   "nome": "Guindaste de Rodas · Operação de Içamento",
+   "descricao": "LVI 18 · içamento com guindaste (NR-11, N-1965)",
+   "grupo": "auditoria",
+   "ordem": 402
+  }
+ ],
+ "itens": [
+  {
+   "id": "lvi12-01",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 1,
+   "pergunta": "O ambulatório possui registro no CRM? (Resolução CFM 1716-2004)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-02",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 2,
+   "pergunta": "O ambulatório possui alvará de funcionamento expedido pela Vigilância Sanitária local? (Lei 6437-1997)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-03",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 3,
+   "pergunta": "O ambiente possui sistema de climatização? (Resolução ANVISA RDC 50-2002)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-04",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 4,
+   "pergunta": "Existe rotina de manutenção preventiva para o sistema de climatização? (diretriz contratual)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-05",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 5,
+   "pergunta": "A empresa promove a verificação periódica anual dos esfigmomanômetro e sempre que houver reparo ou manutenção do mesmo? (Portaria INMETRO 153-2005)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-06",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 6,
+   "pergunta": "Existe certificado do fabricante do esfigmomanômetro e de calibração válido? (diretriz contratual de qualidade)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-07",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 7,
+   "pergunta": "O ambulatório encontra-se em condições de limpeza e conservação? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-08",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 8,
+   "pergunta": "As condições de higiene e limpeza do ambulatório estão mantidas por pessoal treinado para este fim? (diretriz contratual de SMS)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-09",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 9,
+   "pergunta": "A comprovação da capacitação é mantida no local de trabalho? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-10",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 10,
+   "pergunta": "É vedada a varrição seca no ambulatório (área interna)? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-11",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 11,
+   "pergunta": "Os profissionais de saúde estão utilizando uniforme adequados e limpos? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-12",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 12,
+   "pergunta": "O ambulatório possui banheiro com papel toalha, sabão líquido e papel higiênico? (NR-18; NR-24)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-13",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 13,
+   "pergunta": "O ambulatório possui pias contendo papel toalha, sabão líquido e lixeira contendo sistema de abertura sem contato manual? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-14",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 14,
+   "pergunta": "Foi elaborado o PGRSS (Plano de gerenciamento de resíduos de serviços de saúde) e está disponível no ambulatório? (Resolução ANVISARDC 306-2004)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-15",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 15,
+   "pergunta": "Há recipiente com saco plástico branco leitoso para descarte dos resíduos de serviços de saúde? (Resolução ANVISA RDC 306-2004)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-16",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 16,
+   "pergunta": "A segregação dos resíduos de saúde é realizada no ambulatório? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-17",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 17,
+   "pergunta": "Existe registro de que os profissionais de saúde são treinados quanto a manipulação dos resíduos? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-18",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 18,
+   "pergunta": "Há recipientes no ambulatório para descarte dos resíduos, com tampa provido de sistema de abertura sem contato manual, constituído de material lavável, resistente à ruptura e vazamento, com cantos arredondados e resistentes ao tombamento? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-19",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 19,
+   "pergunta": "Os sacos plásticos para acondicionamento dos resíduos de saúde são fechados de tal forma que não permita o seu derramamento, retirados do local de geração após preenchimento e fechamento e são mantidos íntegros até a disposição final? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-20",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 20,
+   "pergunta": "O recipiente para acondicionamento dos perfurocortantes tem as características especificas para descarte desse tipo de resíduo? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-21",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 21,
+   "pergunta": "O recipiente para acondicionamento dos perfurocortantes é mantido em suporte exclusivo e em altura que permita a visualização da abertura para descarte? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-22",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 22,
+   "pergunta": "Nos locais onde há o risco de exposição biológica há instruções escritas das rotinas e prevenção de acidentes e doenças do trabalho? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-23",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 23,
+   "pergunta": "Há registro da entrega das instruções das rotinas para os funcionários? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-24",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 24,
+   "pergunta": "Os colchões, colchonetes e almofadas são revestidos de material impermeável e lavável? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-25",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 25,
+   "pergunta": "Os colchões, colchonetes e almofadados encontram-se em condições adequadas para uso (sem furos, rasgos, sulcos ou reentrâncias)? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-26",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 26,
+   "pergunta": "Foi fornecido, gratuitamente, a todo profissional de saúde programa de imunização ativa contra tétano, hepatite B e os estabelecidos no PCMSO? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-27",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 27,
+   "pergunta": "A vacinação é registrada no prontuário clínico individual do trabalhador, previsto na NR-7 ? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-28",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 28,
+   "pergunta": "Foi fornecido ao trabalhador comprovante das vacinas recebidas? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-29",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 29,
+   "pergunta": "Consta a rotulagem do fabricante na embalagem dos produtos químicos? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-30",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 30,
+   "pergunta": "É vedado o reuso de embalagens dos produtos químicos? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-31",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 31,
+   "pergunta": "Há registro de que os funcionários que utilizam produtos químicos receberam treinamentos sobre as fichas (FISPQs), os procedimentos de segurança de manipulação e os procedimentos a serem adotados em caso de acidentes, incidentes e emergência? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-32",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 32,
+   "pergunta": "Há registro de que os chuveiros e lava-olhos são acionados e higienizados semanalmente? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-33",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 33,
+   "pergunta": "Há EPI (luvas, óculos de segurança e avental) em quantidade suficiente a disposição da equipe de saúde? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-34",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 34,
+   "pergunta": "O ambulatório possui iluminação adequada? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi12-35",
+   "tipo": "aud-ambulatorio",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 35,
+   "pergunta": "O cilindro de oxigênio esta fixado e possui identificação do gás e válvula de segurança? (NR-32)",
+   "ativo": true
+  },
+  {
+   "id": "lvi17-01",
+   "tipo": "aud-escavacoes",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 1,
+   "pergunta": "A partir da profundidade de 1,25m, existe o escoramento dos taludes instáveis e escadas ou rampas para permitir a saída dos trabalhadores em caso de emergência? (itens 18.6.5, 18.6.7 da NR-18 e 9.3.1.2 da NBR-9061)",
+   "ativo": true
+  },
+  {
+   "id": "lvi17-02",
+   "tipo": "aud-escavacoes",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 2,
+   "pergunta": "Os materiais retirados da escavação são depositados a uma distância (a partir da borda do talude) superior a metade da profundidade? (itens 18.6.8 da NR-18 e 7.32 da NBR-9061)",
+   "ativo": true
+  },
+  {
+   "id": "lvi17-03",
+   "tipo": "aud-escavacoes",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 3,
+   "pergunta": "Nas escavações em vias públicas ou canteiros de obras, existe sinalização de advertência, inclusive noturna, barreira de isolamento em todo o seu perímetro? (itens 18.6.11 da NR-18 e 9.2.1 da NBR-9061)",
+   "ativo": true
+  },
+  {
+   "id": "lvi17-04",
+   "tipo": "aud-escavacoes",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 4,
+   "pergunta": "Os equipamentos mecânicos de escavação estão sendo operados por pessoa qualificada? (item 5.3.20 da NBR 7678/83) (ABNT NBR-7678)",
+   "ativo": true
+  },
+  {
+   "id": "lvi17-05",
+   "tipo": "aud-escavacoes",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 5,
+   "pergunta": "Os trabalhadores que escavam com ferramentas portáteis (picaretas, enxadas, etc) têm mantido distância segura dos outros companheiros? (item 5.3.15 da NBR-7678) (ABNT NBR-7678)",
+   "ativo": true
+  },
+  {
+   "id": "lvi17-06",
+   "tipo": "aud-escavacoes",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 6,
+   "pergunta": "Quando a escavadeira não está em operação à caçamba está em posição de repouso sobre o solo? (item 5.3.24 da NBR-7678)",
+   "ativo": true
+  },
+  {
+   "id": "lvi17-07",
+   "tipo": "aud-escavacoes",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 7,
+   "pergunta": "As escavadeiras são inspecionadas regularmente por pessoa capacitada? (item 5.3.26 da NBR-7678) (ABNT NBR-7678)",
+   "ativo": true
+  },
+  {
+   "id": "lvi17-08",
+   "tipo": "aud-escavacoes",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 8,
+   "pergunta": "A área de escavação foi previamente limpa? (NR 18 - item18.6.1) (NR-18)",
+   "ativo": true
+  },
+  {
+   "id": "lvi17-09",
+   "tipo": "aud-escavacoes",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 9,
+   "pergunta": "Houve escoramento de tudo o que possa ter risco de comprometimento da estabilidade? (NR-18 item18.6.1) (NR-18)",
+   "ativo": true
+  },
+  {
+   "id": "lvi17-10",
+   "tipo": "aud-escavacoes",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 10,
+   "pergunta": "Há responsável técnico legalmente habilitado para os serviços de escavação e fundação? (NR-18 item 18.6.3) (NR-18)",
+   "ativo": true
+  },
+  {
+   "id": "lvi17-11",
+   "tipo": "aud-escavacoes",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 11,
+   "pergunta": "A Contratada possui evidências dos laudos de vala das escavações na frente de trabalho, conforme seu procedimento específico de escavação? (anexo contratual)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-01",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 1,
+   "pergunta": "A documentação do veículo foi apresentada e está em conformidade com a legislação? (CTB)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-02",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 2,
+   "pergunta": "O operador é qualificado e apresentou evidência (crachá de operador) da qualificação? (NR-11)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-03",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 3,
+   "pergunta": "O sistema elétrico de partida está funcionando adequadamente?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-04",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 4,
+   "pergunta": "Existem os retrovisores e estão em conformidade?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-05",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 5,
+   "pergunta": "As lanternas dianteiras e traseiras estão adequadas (lentes, seta e alerta funcionam)?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-06",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 6,
+   "pergunta": "As luzes traseiras de segurança estão adequadas (lentes, estropo de freio, luz de ré)?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-07",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 7,
+   "pergunta": "O sistema de sonorização de movimentação está audível para o ambiente de trabalho? (NR-11)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-08",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 8,
+   "pergunta": "O freio de estacionamento (freio de mão) está adequado e em condições de uso?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-09",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 9,
+   "pergunta": "O sistema de freio está funcionando adequadamente (informado pelo condutor)?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-10",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 10,
+   "pergunta": "O freio do giro da lança está funcionando adequadamente?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-11",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 11,
+   "pergunta": "Existe extintor de incêndio em conformidade com a legislação?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-12",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 12,
+   "pergunta": "As luzes internas do veículo estão funcionando (cabine e painel, etc.)?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-13",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 13,
+   "pergunta": "Existe cabo de aterramento no equipamento e está em condições de uso?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-14",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 14,
+   "pergunta": "O PPRA e PCMSO contempla o operador, particularmente identificando fenômeno de ausências? (NR-11)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-15",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 15,
+   "pergunta": "Existe evidência de treinamento da equipe de atividade de carga e descarga? (N-1965)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-16",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 16,
+   "pergunta": "Todas as pessoas envolvidas na operação e movimentação de cargas estão treinadas no procedimento? (N-1965)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-17",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 17,
+   "pergunta": "A contratada possui procedimento aprovado pelo cliente para operações envolvendo movimentações de cargas suspensas e aspectos de segurança? (N-1965)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-18",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 18,
+   "pergunta": "Foi apresentada memória de cálculo aprovada pelo cliente dos acessórios de içamento e verificação estrutural da peça a ser içada?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-19",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 19,
+   "pergunta": "A resistência do solo está adequada para as características da operação?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-20",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 20,
+   "pergunta": "O plano de \"rigging\" está atendendo o conteúdo e requisitos definido na N-1965? (N-1965)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-21",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 21,
+   "pergunta": "Está definido o uso de cabos guias?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-22",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 22,
+   "pergunta": "A ponta da lança e o cabo de aço de levantamento da carga ficam, no mínimo, a 3 m (três metros) de qualquer obstáculo e possuem afastamento da rede elétrica que atenda à orientação específica durante todo ciclo de içamento giro e assentamento da carga? (NR-18)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-23",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 23,
+   "pergunta": "Estão definidos limites de vento, chuva e visibilidade para a execução dos serviços? (N-1965)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-24",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 24,
+   "pergunta": "O peso das cargas é previamente avaliado, medido e definido antes do içamento das mesmas? (N-1965)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-25",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 25,
+   "pergunta": "A área de recebimento está limpa, desimpedida e pronta para receber a carga?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-26",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 26,
+   "pergunta": "Existem calços suficientes para o patolamento do equipamento?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-27",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 27,
+   "pergunta": "Os pinos de segurança das patolas dianteira e traseira estão funcionando?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-28",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 28,
+   "pergunta": "Existe e está visível o identificador do ângulo/raio de abertura da lança?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-29",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 29,
+   "pergunta": "Existe no veículo cópia do fluxograma de comunicação de acidentes?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-30",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 30,
+   "pergunta": "Todas as partes móveis do equipamento estão protegidas?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-31",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 31,
+   "pergunta": "Os cabos foram inspecionados e existe registro de inspeção dos cabos da lança e blocos, swivel e gancho com assinatura de responsável? (N-1965; N-2161; NR-11)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-32",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 32,
+   "pergunta": "Os cabos de aço, correntes, ganchos e demais acessórios utilizados na movimentação são inspecionados de forma sistemática, com registro das inspeções e substituição dos componentes danificados ou reprovados? (NR-11)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-33",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 33,
+   "pergunta": "O sistema hidráulico dos guinchos da lança, blocos, giro e deslocamento está sem vazamentos e as mangueiras estão em bom estado?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-34",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 34,
+   "pergunta": "O sistema de refrigeração dos motores a combustão interna está em bom estado, com mangueiras sem danos ou reparos improvisados e sem vazamentos.",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-35",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 35,
+   "pergunta": "É executada uma verificação diária da máquina para liberação para operação, contendo os itens de segurança e operacionalidade definidos pelo fabricante, com assinatura do responsável e/ou operador? (N-1965)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-36",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 36,
+   "pergunta": "Os cabos de aço do levantamento de lança e do levantamento de carga estão lubrificados?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-37",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 37,
+   "pergunta": "O sistema de monitoramento de carga e ângulo da lança está operacional e possui plano de calibração atualizado?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-38",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 38,
+   "pergunta": "As folgas na lança telescópica estão dentro da tolerância?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-39",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 39,
+   "pergunta": "A lubrificação da lança telescópica está conforme a orientação do fabricante?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-40",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 40,
+   "pergunta": "O sistema hidráulico de inclinação da lança está isento de vazamentos e íntegro?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-41",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 41,
+   "pergunta": "O sistema hidráulico da lança telescópica está isento de vazamentos e íntegro?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-42",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 42,
+   "pergunta": "A água do balão de ar foi drenada?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-43",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 43,
+   "pergunta": "Os filtros foram verificados?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-44",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 44,
+   "pergunta": "O combustível está sendo mantido no nível de segurança operacional? (se aplicável)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-45",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 45,
+   "pergunta": "O nível de óleo do motor está sendo mantido de acordo com a segurança operacional?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-46",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 46,
+   "pergunta": "O nível de óleo hidráulico está sendo mantido de acordo com a segurança operacional?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-47",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 47,
+   "pergunta": "Foi elaborada APR (Análise Preliminar de Risco) para as atividades? (diretriz contratual de SMS)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-48",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 48,
+   "pergunta": "O operador e demais componentes da equipe estão com os EPIs mínimos exigidos para a execução da atividade?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-49",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 49,
+   "pergunta": "A área sob a lança e carga, assim como do contrapeso da máquina e ao longo da rota de deslocamento do guindaste e carga está sinalizada e isolada para evitar a entrada de pessoas não autorizadas?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-50",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 50,
+   "pergunta": "Foi verificado o correto posicionamento da máquina antes do início da operação?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-51",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 51,
+   "pergunta": "Foi verificado se área de influência da movimentação é área classificada e foram obtidas as permissões de trabalho necessárias?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-52",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 52,
+   "pergunta": "Estão sendo utilizados os sinais padronizados durante as operações quando não estão sendo utilizados rádios comunicadores?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-53",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 53,
+   "pergunta": "O operador da máquina permanece no posto durante toda operação, deixando o posto somente quando carga estiver em repouso e cabos sem tração?",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-54",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 54,
+   "pergunta": "Estão sendo mantidos os espaçamentos adequados entre lança e carga, lança e obstáculos e carga e obstáculos conforme definido nos procedimentos/plano de rigging? (N-1965)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-55",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 55,
+   "pergunta": "Há monitoramento de incidência de raios durante as atividades? (altamente recomendável em trabalhos em áreas com incidência de raios)",
+   "ativo": true
+  },
+  {
+   "id": "lvi18-56",
+   "tipo": "aud-guindaste-de-rodas",
+   "modulo": "base",
+   "secao": "Requisitos",
+   "ordem": 56,
+   "pergunta": "Estão sendo utilizados somente cabos de fibra sintética na amarração auxiliar, sendo proibida a utilização de fibra natural?",
+   "ativo": true
+  }
+ ]
+}
