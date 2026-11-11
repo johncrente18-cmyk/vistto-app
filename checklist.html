@@ -374,11 +374,14 @@
     };
   }
 
+  // o servidor devolve no máximo 1000 linhas por consulta: busca em páginas
+  async function tudo(mk) { let out = []; for (let k = 0; k < 100000; k += 1000) { const x = await mk().range(k, k + 999); if (x.error) return x; out = out.concat(x.data || []); if (!x.data || x.data.length < 1000) break; } return { data: out, error: null }; }
+
   async function entrar() {
     $app.innerHTML = '<div class="login"><div class="hint">Carregando…</div></div>';
     const [p, it, at] = await Promise.all([
       S.sb.from('profiles').select('papel,nome,foto,email').eq('id', S.user.id).maybeSingle(),
-      S.sb.from('checklist_itens').select('*').order('ordem'),
+      tudo(() => S.sb.from('checklist_itens').select('*').order('ordem').order('id')),
       S.sb.from('atividades').select('*').order('ordem'),
     ]);
     if (p.error || it.error || at.error) return fatal('Erro ao ler o banco: ' + esc((p.error || it.error || at.error).message));
@@ -392,7 +395,7 @@
     S.itens = it.data; S.ativ = at.data;
     const tp = await S.sb.from('tipos_inspecao').select('*').order('ordem');
     if (tp.error) { S.tipos = TIPOS_PADRAO.slice(); S.semTabelaTipos = true; } else S.tipos = tp.data.length ? tp.data : TIPOS_PADRAO.slice();
-    try { const eq = await S.sb.from('equipamentos').select('*').order('prefixo'); S.equip = eq.error ? [] : eq.data; } catch (e) { S.equip = []; }
+    try { const eq = await tudo(() => S.sb.from('equipamentos').select('*').order('prefixo').order('id')); S.equip = eq.error ? [] : eq.data; } catch (e) { S.equip = []; }
     const hm = location.hash.match(/^#insp=([0-9a-f-]{36})$/i);
     arqIniciar();
     if (hm) { S.tab = 'historico'; render(); abrirRelatorio(hm[1]); return; }
@@ -668,8 +671,8 @@
       const R = await refHist();
       const a = new Date(H.de + 'T00:00').toISOString(), b = new Date(H.ate + 'T23:59:59.999').toISOString();
       const [ins, nc] = await Promise.all([
-        S.sb.from('inspecoes').select('*').gte('criado_em', a).lte('criado_em', b).order('criado_em', { ascending: false }).limit(5000),
-        S.sb.from('ncs').select('id,inspecao_id,frente_id,status,prazo,pergunta,responsavel_nome,criado_em').gte('criado_em', a).lte('criado_em', b).limit(10000)]);
+        tudo(() => S.sb.from('inspecoes').select('*').gte('criado_em', a).lte('criado_em', b).order('criado_em', { ascending: false }).order('id')),
+        tudo(() => S.sb.from('ncs').select('id,inspecao_id,frente_id,status,prazo,pergunta,responsavel_nome,criado_em').gte('criado_em', a).lte('criado_em', b).order('id'))]);
       if (ins.error || nc.error) throw (ins.error || nc.error);
       H.rows = ins.data; H.ncs = nc.data; H.page = 0;
       const fr = {}; R.frentes.forEach(f => { fr[f.id] = f; }); H.fr = fr;
@@ -977,7 +980,7 @@
   async function arquivarMes(ym) {
     const Rf = await refHist(); if (!H.fr) { H.fr = {}; Rf.frentes.forEach(f => { H.fr[f.id] = f; }); }
     const [y, m] = ym.split('-').map(Number), a = new Date(y, m - 1, 1), b = new Date(y, m, 1);
-    const ins = await S.sb.from('inspecoes').select('*').gte('criado_em', a.toISOString()).lt('criado_em', b.toISOString()).order('criado_em').limit(5000);
+    const ins = await tudo(() => S.sb.from('inspecoes').select('*').gte('criado_em', a.toISOString()).lt('criado_em', b.toISOString()).order('criado_em').order('id'));
     if (ins.error) throw ins.error;
     const L = ins.data || [], N = [];
     for (let k = 0; k < L.length; k += 100) { const r = await S.sb.from('ncs').select('*').in('inspecao_id', L.slice(k, k + 100).map(x => x.id)); if (r.error) throw r.error; N.push(...r.data); }
