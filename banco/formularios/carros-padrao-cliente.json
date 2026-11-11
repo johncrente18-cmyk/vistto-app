@@ -1,0 +1,176 @@
+{
+ "origem": "ObraSoft · Carros - SSO · Inspeção mensal (padrão do cliente), PDF enviado em 11/11/2026",
+ "itens": [
+  {
+   "id": "cli-car-101",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "1. Identificação e Controle",
+   "ordem": 101,
+   "pergunta": "1.1 Existe identificação da empresa e do equipamento em local visível?",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-102",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "1. Identificação e Controle",
+   "ordem": 102,
+   "pergunta": "1.2 Sistema de Telemetria Veicular",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-201",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "2. Segurança e Emergência",
+   "ordem": 201,
+   "pergunta": "2.1 Cinto de Segurança",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-202",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "2. Segurança e Emergência",
+   "ordem": 202,
+   "pergunta": "2.2 Kit Primeiros Socorros",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-301",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "3. Iluminação e Sinalização Sonora",
+   "ordem": 301,
+   "pergunta": "3.1 Faróis",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-302",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "3. Iluminação e Sinalização Sonora",
+   "ordem": 302,
+   "pergunta": "3.2 Luzes indicadoras - Direita/Esquerda",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-303",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "3. Iluminação e Sinalização Sonora",
+   "ordem": 303,
+   "pergunta": "3.3 Luzes de Ré",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-304",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "3. Iluminação e Sinalização Sonora",
+   "ordem": 304,
+   "pergunta": "3.4 Buzina",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-401",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "4. Cabine, Visibilidade e Conforto",
+   "ordem": 401,
+   "pergunta": "4.1 Portas / Vidros Elétricos / Fechaduras",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-402",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "4. Cabine, Visibilidade e Conforto",
+   "ordem": 402,
+   "pergunta": "4.2 Ar Condicionado",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-403",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "4. Cabine, Visibilidade e Conforto",
+   "ordem": 403,
+   "pergunta": "4.3 Limpador de para-brisas",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-404",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "4. Cabine, Visibilidade e Conforto",
+   "ordem": 404,
+   "pergunta": "4.4 Quebra-sol do motorista",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-405",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "4. Cabine, Visibilidade e Conforto",
+   "ordem": 405,
+   "pergunta": "4.5 Retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-406",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "4. Cabine, Visibilidade e Conforto",
+   "ordem": 406,
+   "pergunta": "4.6 Luzes do painel",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-407",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "4. Cabine, Visibilidade e Conforto",
+   "ordem": 407,
+   "pergunta": "4.7 Instrumentos do painel",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-501",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "5. Mecânica, Condução e Rodagem",
+   "ordem": 501,
+   "pergunta": "5.1 Freio de pedal",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-502",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "5. Mecânica, Condução e Rodagem",
+   "ordem": 502,
+   "pergunta": "5.2 Freio de mão",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-503",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "5. Mecânica, Condução e Rodagem",
+   "ordem": 503,
+   "pergunta": "5.3 Embreagem",
+   "ativo": true
+  },
+  {
+   "id": "cli-car-504",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "5. Mecânica, Condução e Rodagem",
+   "ordem": 504,
+   "pergunta": "5.4 Pneus",
+   "ativo": true
+  }
+ ]
+}
