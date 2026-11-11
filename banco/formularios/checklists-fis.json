@@ -1,0 +1,5378 @@
+{
+ "origem": "Fichas de Inspeção de Segurança (FIS · MF PTA 001–039) enviadas pelo usuário em 11/11/2026",
+ "itens": [
+  {
+   "id": "f001-01",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 1,
+   "pergunta": "Para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f001-02",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 2,
+   "pergunta": "Retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f001-03",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 3,
+   "pergunta": "Pneus (inclusive o estepe)",
+   "ativo": true
+  },
+  {
+   "id": "f001-04",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente",
+   "ordem": 4,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f001-05",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente",
+   "ordem": 5,
+   "pergunta": "Vazamentos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "f001-06",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente",
+   "ordem": 6,
+   "pergunta": "Higiene da cabine",
+   "ativo": true
+  },
+  {
+   "id": "f001-07",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente",
+   "ordem": 7,
+   "pergunta": "Estado de conservação e limpeza",
+   "ativo": true
+  },
+  {
+   "id": "f001-08",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente",
+   "ordem": 8,
+   "pergunta": "Kit de mitigação ambiental",
+   "ativo": true
+  },
+  {
+   "id": "f001-09",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 9,
+   "pergunta": "Faróis (baixa e alta)",
+   "ativo": true
+  },
+  {
+   "id": "f001-10",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 10,
+   "pergunta": "Lanterna dianteira",
+   "ativo": true
+  },
+  {
+   "id": "f001-11",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 11,
+   "pergunta": "Seta direcional dianteira",
+   "ativo": true
+  },
+  {
+   "id": "f001-12",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 12,
+   "pergunta": "Freio estacionário",
+   "ativo": true
+  },
+  {
+   "id": "f001-13",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 13,
+   "pergunta": "Limpador de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f001-14",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 14,
+   "pergunta": "Buzina",
+   "ativo": true
+  },
+  {
+   "id": "f001-15",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 15,
+   "pergunta": "Lanterna traseira",
+   "ativo": true
+  },
+  {
+   "id": "f001-16",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 16,
+   "pergunta": "Seta direcional traseira",
+   "ativo": true
+  },
+  {
+   "id": "f001-17",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 17,
+   "pergunta": "Sirene (alarme) de ré",
+   "ativo": true
+  },
+  {
+   "id": "f001-18",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 18,
+   "pergunta": "Luz de ré",
+   "ativo": true
+  },
+  {
+   "id": "f001-19",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 19,
+   "pergunta": "Aterramento (alicate, cabo ou outro dispositivo parafusado)",
+   "ativo": true
+  },
+  {
+   "id": "f001-20",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 20,
+   "pergunta": "Crachá do operador / carteira conforme NR-11",
+   "ativo": true
+  },
+  {
+   "id": "f001-21",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 21,
+   "pergunta": "Diagrama de cargas",
+   "ativo": true
+  },
+  {
+   "id": "f001-22",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 22,
+   "pergunta": "Indicação de capacidade de carga na lança (tara máxima)",
+   "ativo": true
+  },
+  {
+   "id": "f001-23",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 23,
+   "pergunta": "Manual do equipamento em português",
+   "ativo": true
+  },
+  {
+   "id": "f001-24",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 24,
+   "pergunta": "Plano de manutenção do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f001-25",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 25,
+   "pergunta": "Documento do caminhão",
+   "ativo": true
+  },
+  {
+   "id": "f001-26",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 26,
+   "pergunta": "Laudo técnico",
+   "ativo": true
+  },
+  {
+   "id": "f001-27",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 27,
+   "pergunta": "Cópia da última manutenção",
+   "ativo": true
+  },
+  {
+   "id": "f001-28",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 28,
+   "pergunta": "Certificado dos cabos de aço (nº do certificado no acessório)",
+   "ativo": true
+  },
+  {
+   "id": "f001-29",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 29,
+   "pergunta": "Certificado das cintas (nº do certificado no acessório)",
+   "ativo": true
+  },
+  {
+   "id": "f001-30",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 30,
+   "pergunta": "Certificado das manilhas (nº do certificado no acessório)",
+   "ativo": true
+  },
+  {
+   "id": "f001-31",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 31,
+   "pergunta": "ART dos acessórios e do equipamento conforme NR-12 (recolhida a cada 3 meses)",
+   "ativo": true
+  },
+  {
+   "id": "f001-32",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Segurança",
+   "ordem": 32,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f001-33",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Segurança",
+   "ordem": 33,
+   "pergunta": "Faixa refletiva nas laterais, na traseira e no para-choque",
+   "ativo": true
+  },
+  {
+   "id": "f001-34",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Segurança",
+   "ordem": 34,
+   "pergunta": "Triângulo, chave de roda e macaco",
+   "ativo": true
+  },
+  {
+   "id": "f001-35",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Segurança",
+   "ordem": 35,
+   "pergunta": "Linha de vida de cabo de aço ou guarda-corpo",
+   "ativo": true
+  },
+  {
+   "id": "f001-36",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Segurança",
+   "ordem": 36,
+   "pergunta": "Escada de acesso à carroceria",
+   "ativo": true
+  },
+  {
+   "id": "f001-37",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 37,
+   "pergunta": "Patolas, base para as patolas e pinos de travamento das patolas",
+   "ativo": true
+  },
+  {
+   "id": "f001-38",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 38,
+   "pergunta": "Lança (funcionamento e vazamentos)",
+   "ativo": true
+  },
+  {
+   "id": "f001-39",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 39,
+   "pergunta": "Cintas (2 pares)",
+   "ativo": true
+  },
+  {
+   "id": "f001-40",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 40,
+   "pergunta": "Cabos de aço (2 pares)",
+   "ativo": true
+  },
+  {
+   "id": "f001-41",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 41,
+   "pergunta": "Manilhas (4 pares)",
+   "ativo": true
+  },
+  {
+   "id": "f001-42",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 42,
+   "pergunta": "Trava de segurança nos ganchos",
+   "ativo": true
+  },
+  {
+   "id": "f001-43",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 43,
+   "pergunta": "Comandos (alavancas e pedais)",
+   "ativo": true
+  },
+  {
+   "id": "f001-44",
+   "tipo": "vme-munck-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 44,
+   "pergunta": "Giro da lança (testar)",
+   "ativo": true
+  },
+  {
+   "id": "f002-01",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Motor",
+   "ativo": true
+  },
+  {
+   "id": "f002-02",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Sistema hidráulico",
+   "ativo": true
+  },
+  {
+   "id": "f002-03",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Acesso à cabine",
+   "ativo": true
+  },
+  {
+   "id": "f002-04",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Vidros (inclusive o para-brisa)",
+   "ativo": true
+  },
+  {
+   "id": "f002-05",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Espelhos retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f002-06",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Limpadores de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f002-07",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Faróis (luz alta e baixa)",
+   "ativo": true
+  },
+  {
+   "id": "f002-08",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Lanternas dianteiras e traseiras",
+   "ativo": true
+  },
+  {
+   "id": "f002-09",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Buzina",
+   "ativo": true
+  },
+  {
+   "id": "f002-10",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "Emergência (pisca-alerta)",
+   "ativo": true
+  },
+  {
+   "id": "f002-11",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 11,
+   "pergunta": "Luzes indicadoras de direção",
+   "ativo": true
+  },
+  {
+   "id": "f002-12",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 12,
+   "pergunta": "Luzes de freio",
+   "ativo": true
+  },
+  {
+   "id": "f002-13",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 13,
+   "pergunta": "Habilitação do motorista",
+   "ativo": true
+  },
+  {
+   "id": "f002-14",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 14,
+   "pergunta": "EPI e uniforme do condutor",
+   "ativo": true
+  },
+  {
+   "id": "f002-15",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 15,
+   "pergunta": "Cinto de segurança",
+   "ativo": true
+  },
+  {
+   "id": "f002-16",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 16,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f002-17",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 17,
+   "pergunta": "Luz de ré",
+   "ativo": true
+  },
+  {
+   "id": "f002-18",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 18,
+   "pergunta": "Sistema de freios",
+   "ativo": true
+  },
+  {
+   "id": "f002-19",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 19,
+   "pergunta": "Alarme sonoro de ré",
+   "ativo": true
+  },
+  {
+   "id": "f002-20",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 20,
+   "pergunta": "Pneus (inclusive o reserva)",
+   "ativo": true
+  },
+  {
+   "id": "f002-21",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 21,
+   "pergunta": "Condições da caçamba",
+   "ativo": true
+  },
+  {
+   "id": "f002-22",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 22,
+   "pergunta": "Travas da tampa da caçamba (testar)",
+   "ativo": true
+  },
+  {
+   "id": "f002-23",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 23,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f002-24",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 24,
+   "pergunta": "Lona para cobertura da carga",
+   "ativo": true
+  },
+  {
+   "id": "f002-25",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 25,
+   "pergunta": "Estado geral do veículo",
+   "ativo": true
+  },
+  {
+   "id": "f002-26",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 26,
+   "pergunta": "Tacógrafo",
+   "ativo": true
+  },
+  {
+   "id": "f002-27",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 27,
+   "pergunta": "Fitas refletivas nas laterais",
+   "ativo": true
+  },
+  {
+   "id": "f002-28",
+   "tipo": "vme-caminhao-basculante-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 28,
+   "pergunta": "Velocímetro e marcador de combustível",
+   "ativo": true
+  },
+  {
+   "id": "f003-01",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 1,
+   "pergunta": "Para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f003-02",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 2,
+   "pergunta": "Retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f003-03",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 3,
+   "pergunta": "Pneus (inclusive o estepe)",
+   "ativo": true
+  },
+  {
+   "id": "f003-04",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente",
+   "ordem": 4,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f003-05",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente",
+   "ordem": 5,
+   "pergunta": "Vazamentos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "f003-06",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente",
+   "ordem": 6,
+   "pergunta": "Higiene da cabine",
+   "ativo": true
+  },
+  {
+   "id": "f003-07",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente",
+   "ordem": 7,
+   "pergunta": "Estado de conservação e limpeza",
+   "ativo": true
+  },
+  {
+   "id": "f003-08",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Meio ambiente",
+   "ordem": 8,
+   "pergunta": "Kit de mitigação ambiental",
+   "ativo": true
+  },
+  {
+   "id": "f003-09",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 9,
+   "pergunta": "Faróis (baixa e alta)",
+   "ativo": true
+  },
+  {
+   "id": "f003-10",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 10,
+   "pergunta": "Lanterna dianteira",
+   "ativo": true
+  },
+  {
+   "id": "f003-11",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 11,
+   "pergunta": "Seta direcional dianteira",
+   "ativo": true
+  },
+  {
+   "id": "f003-12",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 12,
+   "pergunta": "Luz de freio (stop)",
+   "ativo": true
+  },
+  {
+   "id": "f003-13",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 13,
+   "pergunta": "Limpador de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f003-14",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 14,
+   "pergunta": "Buzina",
+   "ativo": true
+  },
+  {
+   "id": "f003-15",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 15,
+   "pergunta": "Lanterna traseira",
+   "ativo": true
+  },
+  {
+   "id": "f003-16",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 16,
+   "pergunta": "Seta direcional traseira",
+   "ativo": true
+  },
+  {
+   "id": "f003-17",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 17,
+   "pergunta": "Sirene (alarme) de ré",
+   "ativo": true
+  },
+  {
+   "id": "f003-18",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 18,
+   "pergunta": "Luz de ré",
+   "ativo": true
+  },
+  {
+   "id": "f003-19",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 19,
+   "pergunta": "Aterramento",
+   "ativo": true
+  },
+  {
+   "id": "f003-20",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 20,
+   "pergunta": "Crachá do operador",
+   "ativo": true
+  },
+  {
+   "id": "f003-21",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 21,
+   "pergunta": "Tabela de carga",
+   "ativo": true
+  },
+  {
+   "id": "f003-22",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 22,
+   "pergunta": "Diagrama de cargas",
+   "ativo": true
+  },
+  {
+   "id": "f003-23",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 23,
+   "pergunta": "Indicação de capacidade de carga na lança",
+   "ativo": true
+  },
+  {
+   "id": "f003-24",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 24,
+   "pergunta": "Manual do equipamento em português",
+   "ativo": true
+  },
+  {
+   "id": "f003-25",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 25,
+   "pergunta": "Liberação para trânsito em via pública",
+   "ativo": true
+  },
+  {
+   "id": "f003-26",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 26,
+   "pergunta": "Documento do caminhão (se montado sobre caminhão)",
+   "ativo": true
+  },
+  {
+   "id": "f003-27",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 27,
+   "pergunta": "Teste de carga",
+   "ativo": true
+  },
+  {
+   "id": "f003-28",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 28,
+   "pergunta": "Laudo técnico",
+   "ativo": true
+  },
+  {
+   "id": "f003-29",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 29,
+   "pergunta": "Cópia da última manutenção",
+   "ativo": true
+  },
+  {
+   "id": "f003-30",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 30,
+   "pergunta": "Certificado dos cabos de aço (nº do certificado no acessório)",
+   "ativo": true
+  },
+  {
+   "id": "f003-31",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 31,
+   "pergunta": "Certificado das cintas (nº do certificado no acessório)",
+   "ativo": true
+  },
+  {
+   "id": "f003-32",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 32,
+   "pergunta": "Certificado das manilhas (nº do certificado no acessório)",
+   "ativo": true
+  },
+  {
+   "id": "f003-33",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Segurança",
+   "ordem": 33,
+   "pergunta": "Proteção do operador contra intempéries",
+   "ativo": true
+  },
+  {
+   "id": "f003-34",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Segurança",
+   "ordem": 34,
+   "pergunta": "Acesso à cabine de trabalho",
+   "ativo": true
+  },
+  {
+   "id": "f003-35",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Segurança",
+   "ordem": 35,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f003-36",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Segurança",
+   "ordem": 36,
+   "pergunta": "Faixa refletiva nas laterais, na traseira e no para-choque",
+   "ativo": true
+  },
+  {
+   "id": "f003-37",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 37,
+   "pergunta": "Patolas e base para as patolas",
+   "ativo": true
+  },
+  {
+   "id": "f003-38",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 38,
+   "pergunta": "Lança (funcionamento e vazamentos)",
+   "ativo": true
+  },
+  {
+   "id": "f003-39",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 39,
+   "pergunta": "Roldanas da lança (desgaste e trincas)",
+   "ativo": true
+  },
+  {
+   "id": "f003-40",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 40,
+   "pergunta": "Cabos de aço (principal e JIB)",
+   "ativo": true
+  },
+  {
+   "id": "f003-41",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 41,
+   "pergunta": "Enrolamento do cabo no tambor",
+   "ativo": true
+  },
+  {
+   "id": "f003-42",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 42,
+   "pergunta": "Estado geral do moitão",
+   "ativo": true
+  },
+  {
+   "id": "f003-43",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 43,
+   "pergunta": "Roldanas do moitão",
+   "ativo": true
+  },
+  {
+   "id": "f003-44",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 44,
+   "pergunta": "Gancho do moitão principal",
+   "ativo": true
+  },
+  {
+   "id": "f003-45",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 45,
+   "pergunta": "Gancho do JIB",
+   "ativo": true
+  },
+  {
+   "id": "f003-46",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 46,
+   "pergunta": "Trava de segurança nos ganchos",
+   "ativo": true
+  },
+  {
+   "id": "f003-47",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 47,
+   "pergunta": "Comandos (alavancas e pedais)",
+   "ativo": true
+  },
+  {
+   "id": "f003-48",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 48,
+   "pergunta": "Painel de instrumentos",
+   "ativo": true
+  },
+  {
+   "id": "f003-49",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 49,
+   "pergunta": "Giro da lança (testar)",
+   "ativo": true
+  },
+  {
+   "id": "f003-50",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 50,
+   "pergunta": "Fim de curso de içamento",
+   "ativo": true
+  },
+  {
+   "id": "f003-51",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 51,
+   "pergunta": "Parada de emergência (testar)",
+   "ativo": true
+  },
+  {
+   "id": "f003-52",
+   "tipo": "vme-guindaste-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 52,
+   "pergunta": "Clipes dos cabos posicionados corretamente",
+   "ativo": true
+  },
+  {
+   "id": "f004-01",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Cilindros",
+   "ordem": 1,
+   "pergunta": "Cilindros presos com correntes ao carrinho",
+   "ativo": true
+  },
+  {
+   "id": "f004-02",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Cilindros",
+   "ordem": 2,
+   "pergunta": "Cilindros fora do alcance de fagulhas, óleos e graxas",
+   "ativo": true
+  },
+  {
+   "id": "f004-03",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Cilindros",
+   "ordem": 3,
+   "pergunta": "Cilindros com capacete de proteção",
+   "ativo": true
+  },
+  {
+   "id": "f004-04",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Cilindros",
+   "ordem": 4,
+   "pergunta": "Cilindros em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f004-05",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Caneta (maçarico) e mangueiras",
+   "ordem": 5,
+   "pergunta": "Caneta em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f004-06",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Caneta (maçarico) e mangueiras",
+   "ordem": 6,
+   "pergunta": "Caneta sem vazamento",
+   "ativo": true
+  },
+  {
+   "id": "f004-07",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Caneta (maçarico) e mangueiras",
+   "ordem": 7,
+   "pergunta": "Bico da caneta desobstruído",
+   "ativo": true
+  },
+  {
+   "id": "f004-08",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Caneta (maçarico) e mangueiras",
+   "ordem": 8,
+   "pergunta": "Mangueiras na cor verde ou preta para oxigênio e vermelha para acetileno",
+   "ativo": true
+  },
+  {
+   "id": "f004-09",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Caneta (maçarico) e mangueiras",
+   "ordem": 9,
+   "pergunta": "Mangueiras sem cortes, rasgos, ressecamentos, dilatações ou vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "f004-10",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Caneta (maçarico) e mangueiras",
+   "ordem": 10,
+   "pergunta": "Conexões das mangueiras feitas com abraçadeiras",
+   "ativo": true
+  },
+  {
+   "id": "f004-11",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Caneta (maçarico) e mangueiras",
+   "ordem": 11,
+   "pergunta": "Mangueiras protegidas contra impactos, fontes de calor, óleos e graxas",
+   "ativo": true
+  },
+  {
+   "id": "f004-12",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Caneta (maçarico) e mangueiras",
+   "ordem": 12,
+   "pergunta": "Manômetros em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f004-13",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Caneta (maçarico) e mangueiras",
+   "ordem": 13,
+   "pergunta": "Válvulas corta-chama nas saídas dos cilindros",
+   "ativo": true
+  },
+  {
+   "id": "f004-14",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Caneta (maçarico) e mangueiras",
+   "ordem": 14,
+   "pergunta": "Válvulas antirretrocesso / corta-chama na saída da caneta",
+   "ativo": true
+  },
+  {
+   "id": "f004-15",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 15,
+   "pergunta": "Local bem ventilado",
+   "ativo": true
+  },
+  {
+   "id": "f004-16",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 16,
+   "pergunta": "Extintor de incêndio nas proximidades",
+   "ativo": true
+  },
+  {
+   "id": "f004-17",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 17,
+   "pergunta": "Biombo para proteção",
+   "ativo": true
+  },
+  {
+   "id": "f004-18",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 18,
+   "pergunta": "Local de depósito limpo e sem materiais combustíveis nas proximidades",
+   "ativo": true
+  },
+  {
+   "id": "f004-19",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 19,
+   "pergunta": "Placas de segurança advertindo para a operação e/ou isolamento da área",
+   "ativo": true
+  },
+  {
+   "id": "f004-20",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 20,
+   "pergunta": "Operador treinado e qualificado",
+   "ativo": true
+  },
+  {
+   "id": "f004-21",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 21,
+   "pergunta": "EPIs em bom estado e utilizados pelo operador e auxiliares",
+   "ativo": true
+  },
+  {
+   "id": "f004-22",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 22,
+   "pergunta": "Uso de uniforme e crachá pelo operador",
+   "ativo": true
+  },
+  {
+   "id": "f004-23",
+   "tipo": "vme-conjunto-oxicort-csp",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 23,
+   "pergunta": "Acendimento com centelhador (isqueiro por fricção com pedra)",
+   "ativo": true
+  },
+  {
+   "id": "f005-01",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Sem vazamento no motor",
+   "ativo": true
+  },
+  {
+   "id": "f005-02",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Chave liga/desliga em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f005-03",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Carcaça em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f005-04",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Isolamento acústico adequado ou equipamento isolado",
+   "ativo": true
+  },
+  {
+   "id": "f005-05",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Tanque de combustível identificado e isolado",
+   "ativo": true
+  },
+  {
+   "id": "f005-06",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Manômetro em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f005-07",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Sistema de partida funcionando corretamente",
+   "ativo": true
+  },
+  {
+   "id": "f005-08",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Extintor de incêndio adequado no local",
+   "ativo": true
+  },
+  {
+   "id": "f005-09",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Carcaça do motor e demais partes metálicas aterradas",
+   "ativo": true
+  },
+  {
+   "id": "f005-10",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "Descarga de fumaça em local ventilado, afastado de pessoas e regulada",
+   "ativo": true
+  },
+  {
+   "id": "f005-11",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 11,
+   "pergunta": "Mangueiras adaptadas aos engates com abraçadeiras adequadas (bipartida ou rosca sem fim)",
+   "ativo": true
+  },
+  {
+   "id": "f005-12",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 12,
+   "pergunta": "Engates das mangueiras travando de forma adequada",
+   "ativo": true
+  },
+  {
+   "id": "f005-13",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 13,
+   "pergunta": "Acesso limpo e nivelado",
+   "ativo": true
+  },
+  {
+   "id": "f005-14",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 14,
+   "pergunta": "Partes móveis protegidas",
+   "ativo": true
+  },
+  {
+   "id": "f005-15",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 15,
+   "pergunta": "Pneus em bom estado de uso",
+   "ativo": true
+  },
+  {
+   "id": "f005-16",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 16,
+   "pergunta": "Teste hidrostático do reservatório",
+   "ativo": true
+  },
+  {
+   "id": "f005-17",
+   "tipo": "vme-compressor-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 17,
+   "pergunta": "Sistema de reboque em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f006-01",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Alavanca do acelerador",
+   "ativo": true
+  },
+  {
+   "id": "f006-02",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Botão liga/desliga de segurança",
+   "ativo": true
+  },
+  {
+   "id": "f006-03",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Reservatório de combustível em boas condições (vazamentos, fixação, tampa de vedação)",
+   "ativo": true
+  },
+  {
+   "id": "f006-04",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "EPIs em bom estado e utilizados pelo operador e auxiliares",
+   "ativo": true
+  },
+  {
+   "id": "f006-05",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Estado geral do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f006-06",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Extintor de incêndio nas proximidades",
+   "ativo": true
+  },
+  {
+   "id": "f006-07",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Operador treinado e qualificado",
+   "ativo": true
+  },
+  {
+   "id": "f006-08",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Proteção de partes móveis",
+   "ativo": true
+  },
+  {
+   "id": "f006-09",
+   "tipo": "vme-compactador-de-solo-manual-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Sistema de partida com cordão retrátil",
+   "ativo": true
+  },
+  {
+   "id": "f010-01",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 1,
+   "pergunta": "Boa ventilação (natural ou com exaustores)",
+   "ativo": true
+  },
+  {
+   "id": "f010-02",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 2,
+   "pergunta": "Local limpo, adequado e sem materiais combustíveis nas proximidades",
+   "ativo": true
+  },
+  {
+   "id": "f010-03",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 3,
+   "pergunta": "Placa advertindo o uso obrigatório de óculos de segurança e protetor facial",
+   "ativo": true
+  },
+  {
+   "id": "f010-04",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 4,
+   "pergunta": "Equipamento fora da exposição ao sol",
+   "ativo": true
+  },
+  {
+   "id": "f010-05",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 5,
+   "pergunta": "Recipiente adequado para resfriar as peças",
+   "ativo": true
+  },
+  {
+   "id": "f010-06",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 6,
+   "pergunta": "Iluminação adequada",
+   "ativo": true
+  },
+  {
+   "id": "f010-07",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 7,
+   "pergunta": "Extintor de incêndio próximo (CO2 ou PQS)",
+   "ativo": true
+  },
+  {
+   "id": "f010-08",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 8,
+   "pergunta": "Área de circulação e espaço em torno do esmeril livres",
+   "ativo": true
+  },
+  {
+   "id": "f010-09",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 9,
+   "pergunta": "Bancada estável e em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f010-10",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 10,
+   "pergunta": "Lâmpadas protegidas contra impactos",
+   "ativo": true
+  },
+  {
+   "id": "f010-11",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 11,
+   "pergunta": "Piso nivelado e antiderrapante",
+   "ativo": true
+  },
+  {
+   "id": "f010-12",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 12,
+   "pergunta": "Cobertura contra intempéries",
+   "ativo": true
+  },
+  {
+   "id": "f010-13",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Rebolos",
+   "ordem": 13,
+   "pergunta": "Rebolos estocados em local seco e fora da luz solar direta",
+   "ativo": true
+  },
+  {
+   "id": "f010-14",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Rebolos",
+   "ordem": 14,
+   "pergunta": "Placa alertando para a compatibilidade entre a velocidade do motor e a do rebolo",
+   "ativo": true
+  },
+  {
+   "id": "f010-15",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Rebolos",
+   "ordem": 15,
+   "pergunta": "Rebolo sem sinais de trincas",
+   "ativo": true
+  },
+  {
+   "id": "f010-16",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Rebolos",
+   "ordem": 16,
+   "pergunta": "Rebolo fixado com porca e arruela firmes e ajustado ao eixo",
+   "ativo": true
+  },
+  {
+   "id": "f010-17",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Rebolos",
+   "ordem": 17,
+   "pergunta": "Eixo sem empeno e sem agarramentos",
+   "ativo": true
+  },
+  {
+   "id": "f010-18",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Rebolos",
+   "ordem": 18,
+   "pergunta": "Proteção (coifa) do rebolo instalada",
+   "ativo": true
+  },
+  {
+   "id": "f010-19",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Rebolos",
+   "ordem": 19,
+   "pergunta": "Apoio (espera) fixado a no máximo 3 mm do rebolo",
+   "ativo": true
+  },
+  {
+   "id": "f010-20",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Motor",
+   "ordem": 20,
+   "pergunta": "Motor aterrado adequadamente",
+   "ativo": true
+  },
+  {
+   "id": "f010-21",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Motor",
+   "ordem": 21,
+   "pergunta": "Motor bem fixado ao suporte, e o suporte ao chão",
+   "ativo": true
+  },
+  {
+   "id": "f010-22",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Motor",
+   "ordem": 22,
+   "pergunta": "Alimentação elétrica do motor sem irregularidades",
+   "ativo": true
+  },
+  {
+   "id": "f010-23",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Motor",
+   "ordem": 23,
+   "pergunta": "Botão liga/desliga sem avarias e ao alcance do operador",
+   "ativo": true
+  },
+  {
+   "id": "f010-24",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Motor",
+   "ordem": 24,
+   "pergunta": "Chave faca blindada ou disjuntor com identificação de tensão e sistema de cadeado",
+   "ativo": true
+  },
+  {
+   "id": "f010-25",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "EPIs",
+   "ordem": 25,
+   "pergunta": "Uso correto do protetor facial e dos óculos de segurança",
+   "ativo": true
+  },
+  {
+   "id": "f010-26",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "EPIs",
+   "ordem": 26,
+   "pergunta": "EPIs em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f010-27",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "EPIs",
+   "ordem": 27,
+   "pergunta": "Uso de todos os EPIs necessários",
+   "ativo": true
+  },
+  {
+   "id": "f010-28",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Outros",
+   "ordem": 28,
+   "pergunta": "Operador treinado e qualificado",
+   "ativo": true
+  },
+  {
+   "id": "f010-29",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Outros",
+   "ordem": 29,
+   "pergunta": "Equipamento sem vibrações anormais",
+   "ativo": true
+  },
+  {
+   "id": "f010-30",
+   "tipo": "vme-esmeril-de-bancada-csp",
+   "modulo": "base",
+   "secao": "Outros",
+   "ordem": 30,
+   "pergunta": "No esmeril regado, líquido usado recomendado pelo fabricante do rebolo",
+   "ativo": true
+  },
+  {
+   "id": "f011-01",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Motor",
+   "ativo": true
+  },
+  {
+   "id": "f011-02",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f011-03",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Vazamentos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "f011-04",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Pneus",
+   "ativo": true
+  },
+  {
+   "id": "f011-05",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f011-06",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Estado de conservação e limpeza",
+   "ativo": true
+  },
+  {
+   "id": "f011-07",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Chave liga/desliga",
+   "ativo": true
+  },
+  {
+   "id": "f011-08",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Aterramento",
+   "ativo": true
+  },
+  {
+   "id": "f011-09",
+   "tipo": "vme-gerador-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Proteção das partes móveis",
+   "ativo": true
+  },
+  {
+   "id": "f013-01",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Estrutura e base",
+   "ordem": 1,
+   "pergunta": "Elementos estruturais em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f013-02",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Estrutura e base",
+   "ordem": 2,
+   "pergunta": "Bases apoiadas sobre sapatas",
+   "ativo": true
+  },
+  {
+   "id": "f013-03",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Estrutura e base",
+   "ordem": 3,
+   "pergunta": "Base nivelada",
+   "ativo": true
+  },
+  {
+   "id": "f013-04",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Estrutura e base",
+   "ordem": 4,
+   "pergunta": "Piso onde estão apoiadas as bases resistente aos esforços",
+   "ativo": true
+  },
+  {
+   "id": "f013-05",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Estrutura e base",
+   "ordem": 5,
+   "pergunta": "Estrutura no prumo",
+   "ativo": true
+  },
+  {
+   "id": "f013-06",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Estrutura e base",
+   "ordem": 6,
+   "pergunta": "Altura e carga do andaime compatíveis com a resistência dos elementos estruturais",
+   "ativo": true
+  },
+  {
+   "id": "f013-07",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Estrutura e base",
+   "ordem": 7,
+   "pergunta": "Encaixes travados (pinos, cunhas, parafusos ou abraçadeiras)",
+   "ativo": true
+  },
+  {
+   "id": "f013-08",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Plataforma de trabalho",
+   "ordem": 8,
+   "pergunta": "Plataforma de trabalho forrada",
+   "ativo": true
+  },
+  {
+   "id": "f013-09",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Plataforma de trabalho",
+   "ordem": 9,
+   "pergunta": "Material do piso da plataforma resistente",
+   "ativo": true
+  },
+  {
+   "id": "f013-10",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Plataforma de trabalho",
+   "ordem": 10,
+   "pergunta": "Piso da plataforma fixado",
+   "ativo": true
+  },
+  {
+   "id": "f013-11",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Plataforma de trabalho",
+   "ordem": 11,
+   "pergunta": "Guarda-corpo em todas as laterais da plataforma",
+   "ativo": true
+  },
+  {
+   "id": "f013-12",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Plataforma de trabalho",
+   "ordem": 12,
+   "pergunta": "Rodapé de 0,20 m em todas as laterais",
+   "ativo": true
+  },
+  {
+   "id": "f013-13",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Acesso",
+   "ordem": 13,
+   "pergunta": "Escada de acesso de pessoal à plataforma",
+   "ativo": true
+  },
+  {
+   "id": "f013-14",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Acesso",
+   "ordem": 14,
+   "pergunta": "Escada rigidamente fixada a cada 3 metros",
+   "ativo": true
+  },
+  {
+   "id": "f013-15",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Acesso",
+   "ordem": 15,
+   "pergunta": "Andaime com mais de 4 m de altura com corda-guia independente e cinto",
+   "ativo": true
+  },
+  {
+   "id": "f013-16",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Acesso",
+   "ordem": 16,
+   "pergunta": "Escada com mais de 9 m com plataforma de descanso intermediária",
+   "ativo": true
+  },
+  {
+   "id": "f013-17",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Acesso",
+   "ordem": 17,
+   "pergunta": "Estrutura da escada fixada à construção a cada 6 m, no máximo",
+   "ativo": true
+  },
+  {
+   "id": "f013-18",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Estabilidade",
+   "ordem": 18,
+   "pergunta": "Estaiamento em todas as laterais",
+   "ativo": true
+  },
+  {
+   "id": "f013-19",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Estabilidade",
+   "ordem": 19,
+   "pergunta": "Estaiamento vertical a cada 4 vezes a menor dimensão da base",
+   "ativo": true
+  },
+  {
+   "id": "f013-20",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Estabilidade",
+   "ordem": 20,
+   "pergunta": "Contraventamento diagonal adequado, evitando torções",
+   "ativo": true
+  },
+  {
+   "id": "f013-21",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Estabilidade",
+   "ordem": 21,
+   "pergunta": "Altura do andaime não excede 4 vezes a menor dimensão da base (ou está estaiado)",
+   "ativo": true
+  },
+  {
+   "id": "f013-22",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Andaime móvel",
+   "ordem": 22,
+   "pergunta": "Rodízios devidamente fixados ou encaixados",
+   "ativo": true
+  },
+  {
+   "id": "f013-23",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Andaime móvel",
+   "ordem": 23,
+   "pergunta": "Rodízios travados durante o uso",
+   "ativo": true
+  },
+  {
+   "id": "f013-24",
+   "tipo": "vme-andaimes-csp",
+   "modulo": "base",
+   "secao": "Andaime móvel",
+   "ordem": 24,
+   "pergunta": "Superfície de deslocamento plana e nivelada",
+   "ativo": true
+  },
+  {
+   "id": "f017-01",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Carcaça em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f017-02",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Cabo elétrico com isolamento adequado (inclusive nas emendas)",
+   "ativo": true
+  },
+  {
+   "id": "f017-03",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Cabo elétrico em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f017-04",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Chave liga/desliga em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f017-05",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Plugue ou tomada tipo Steck para ligação",
+   "ativo": true
+  },
+  {
+   "id": "f017-06",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Máquina aterrada",
+   "ativo": true
+  },
+  {
+   "id": "f017-07",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Garra de aterramento apropriada e em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f017-08",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Alicate de solda apropriado e em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f017-09",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Porta-eletrodo com capa de proteção íntegra",
+   "ativo": true
+  },
+  {
+   "id": "f017-10",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "Alavanca de regulagem de amperagem em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f017-11",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 11,
+   "pergunta": "Biombo de proteção",
+   "ativo": true
+  },
+  {
+   "id": "f017-12",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 12,
+   "pergunta": "Placas de segurança advertindo a operação e/ou isolamento da área",
+   "ativo": true
+  },
+  {
+   "id": "f017-13",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 13,
+   "pergunta": "Operador treinado e qualificado",
+   "ativo": true
+  },
+  {
+   "id": "f017-14",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 14,
+   "pergunta": "EPIs em bom estado e utilizados pelo operador e auxiliares",
+   "ativo": true
+  },
+  {
+   "id": "f017-15",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 15,
+   "pergunta": "Uso de uniforme e crachá pelo operador",
+   "ativo": true
+  },
+  {
+   "id": "f017-16",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 16,
+   "pergunta": "Pneus em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f017-17",
+   "tipo": "vme-maquina-de-solda-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 17,
+   "pergunta": "Sistema de reboque em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f018-01",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 1,
+   "pergunta": "Motor",
+   "ativo": true
+  },
+  {
+   "id": "f018-02",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 2,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f018-03",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 3,
+   "pergunta": "Vazamentos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "f018-04",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 4,
+   "pergunta": "Sistema hidráulico",
+   "ativo": true
+  },
+  {
+   "id": "f018-05",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 5,
+   "pergunta": "Buzina",
+   "ativo": true
+  },
+  {
+   "id": "f018-06",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 6,
+   "pergunta": "Alarme de ré",
+   "ativo": true
+  },
+  {
+   "id": "f018-07",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 7,
+   "pergunta": "Faróis (luz alta e baixa)",
+   "ativo": true
+  },
+  {
+   "id": "f018-08",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 8,
+   "pergunta": "Freios",
+   "ativo": true
+  },
+  {
+   "id": "f018-09",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 9,
+   "pergunta": "Manômetro",
+   "ativo": true
+  },
+  {
+   "id": "f018-10",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 10,
+   "pergunta": "Cabos elétricos",
+   "ativo": true
+  },
+  {
+   "id": "f018-11",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 11,
+   "pergunta": "Limpador de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f018-12",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 12,
+   "pergunta": "Vidros",
+   "ativo": true
+  },
+  {
+   "id": "f018-13",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 13,
+   "pergunta": "Retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f018-14",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 14,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f018-15",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 15,
+   "pergunta": "Estado de conservação e limpeza",
+   "ativo": true
+  },
+  {
+   "id": "f018-16",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 16,
+   "pergunta": "Proteção do operador contra intempéries",
+   "ativo": true
+  },
+  {
+   "id": "f018-17",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 17,
+   "pergunta": "Condições da cabine",
+   "ativo": true
+  },
+  {
+   "id": "f018-18",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 18,
+   "pergunta": "Documentação do operador",
+   "ativo": true
+  },
+  {
+   "id": "f018-19",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 19,
+   "pergunta": "Crachá do operador",
+   "ativo": true
+  },
+  {
+   "id": "f018-20",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 20,
+   "pergunta": "EPIs do operador",
+   "ativo": true
+  },
+  {
+   "id": "f018-21",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 21,
+   "pergunta": "Pistões hidráulicos",
+   "ativo": true
+  },
+  {
+   "id": "f018-22",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 22,
+   "pergunta": "Mangueiras",
+   "ativo": true
+  },
+  {
+   "id": "f018-23",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 23,
+   "pergunta": "Pinos, contrapinos e gaxetas",
+   "ativo": true
+  },
+  {
+   "id": "f018-24",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 24,
+   "pergunta": "Esteiras / pneus",
+   "ativo": true
+  },
+  {
+   "id": "f018-25",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 25,
+   "pergunta": "Condições da lança",
+   "ativo": true
+  },
+  {
+   "id": "f018-26",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 26,
+   "pergunta": "Roldanas da lança (desgaste e trincas)",
+   "ativo": true
+  },
+  {
+   "id": "f018-27",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 27,
+   "pergunta": "Cabos de aço",
+   "ativo": true
+  },
+  {
+   "id": "f018-28",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 28,
+   "pergunta": "Enrolamento do cabo no tambor",
+   "ativo": true
+  },
+  {
+   "id": "f018-29",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 29,
+   "pergunta": "Trava de segurança nos ganchos",
+   "ativo": true
+  },
+  {
+   "id": "f018-30",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 30,
+   "pergunta": "Comandos (alavancas e pedais)",
+   "ativo": true
+  },
+  {
+   "id": "f018-31",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 31,
+   "pergunta": "Fim de curso de içamento",
+   "ativo": true
+  },
+  {
+   "id": "f018-32",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 32,
+   "pergunta": "Parada de emergência (testar)",
+   "ativo": true
+  },
+  {
+   "id": "f018-33",
+   "tipo": "vme-caminhao-perfuratriz-csp",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 33,
+   "pergunta": "Acessórios de içamento",
+   "ativo": true
+  },
+  {
+   "id": "f019-01",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 1,
+   "pergunta": "Operador habilitado/qualificado e com crachá conforme NR-11",
+   "ativo": true
+  },
+  {
+   "id": "f019-02",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 2,
+   "pergunta": "Operador com os EPIs mínimos: capacete, calçado com biqueira e protetor auricular",
+   "ativo": true
+  },
+  {
+   "id": "f019-03",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 3,
+   "pergunta": "Operador com vestimenta correta (uniforme)",
+   "ativo": true
+  },
+  {
+   "id": "f019-04",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 4,
+   "pergunta": "Sistema de freios funcionando",
+   "ativo": true
+  },
+  {
+   "id": "f019-05",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 5,
+   "pergunta": "Alarme de ré",
+   "ativo": true
+  },
+  {
+   "id": "f019-06",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 6,
+   "pergunta": "Luz de freio, faróis e setas",
+   "ativo": true
+  },
+  {
+   "id": "f019-07",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 7,
+   "pergunta": "Sistema hidráulico em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f019-08",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 8,
+   "pergunta": "Vidros e para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f019-09",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 9,
+   "pergunta": "Limpador de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f019-10",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 10,
+   "pergunta": "Estado geral do equipamento (cabine, bancos etc.)",
+   "ativo": true
+  },
+  {
+   "id": "f019-11",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 11,
+   "pergunta": "Condições do painel do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f019-12",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 12,
+   "pergunta": "Buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "f019-13",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 13,
+   "pergunta": "Espelhos retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f019-14",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 14,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f019-15",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 15,
+   "pergunta": "Lança de articulação sem trincas ou rachaduras, com sistema de travamento",
+   "ativo": true
+  },
+  {
+   "id": "f019-16",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 16,
+   "pergunta": "Concha sem trincas ou dentes quebrados, com gancho com trava",
+   "ativo": true
+  },
+  {
+   "id": "f019-17",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 17,
+   "pergunta": "Pá sem trincas ou dentes quebrados",
+   "ativo": true
+  },
+  {
+   "id": "f019-18",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 18,
+   "pergunta": "Pneus / esteira em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f019-19",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 19,
+   "pergunta": "Pinos e travas da lança e do braço de articulação em boas condições",
+   "ativo": true
+  },
+  {
+   "id": "f019-20",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 20,
+   "pergunta": "Patola funcionando e fixada",
+   "ativo": true
+  },
+  {
+   "id": "f019-21",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 21,
+   "pergunta": "Faixas refletivas",
+   "ativo": true
+  },
+  {
+   "id": "f019-22",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 22,
+   "pergunta": "Setas indicadoras de direção",
+   "ativo": true
+  },
+  {
+   "id": "f019-23",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 23,
+   "pergunta": "Estado geral do martelete",
+   "ativo": true
+  },
+  {
+   "id": "f019-24",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 24,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f019-25",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 25,
+   "pergunta": "Alavanca de bloqueio e de controle",
+   "ativo": true
+  },
+  {
+   "id": "f019-26",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Máquina",
+   "ordem": 26,
+   "pergunta": "Sem vazamento nos retentores dos cilindros hidráulicos e mangueiras",
+   "ativo": true
+  },
+  {
+   "id": "f019-27",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 27,
+   "pergunta": "Plano de manutenção do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f019-28",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 28,
+   "pergunta": "Cópia da última manutenção do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f019-29",
+   "tipo": "vme-retroescavadeira-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 29,
+   "pergunta": "Laudo técnico do equipamento com recolhimento da ART",
+   "ativo": true
+  },
+  {
+   "id": "f021-01",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 1,
+   "pergunta": "Botoeira liga/desliga sem avarias e ao alcance do operador",
+   "ativo": true
+  },
+  {
+   "id": "f021-02",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 2,
+   "pergunta": "Aterramento elétrico da carcaça do motor e demais partes metálicas",
+   "ativo": true
+  },
+  {
+   "id": "f021-03",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 3,
+   "pergunta": "Chave blindada ou disjuntor com identificação de tensão e sistema de cadeado",
+   "ativo": true
+  },
+  {
+   "id": "f021-04",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 4,
+   "pergunta": "Cabos elétricos protegidos contra impactos e umidade, fora da área de circulação",
+   "ativo": true
+  },
+  {
+   "id": "f021-05",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Disco e transmissão",
+   "ordem": 5,
+   "pergunta": "Disco de corte sem avarias (trincas e dentes quebrados), afiado e travado",
+   "ativo": true
+  },
+  {
+   "id": "f021-06",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Disco e transmissão",
+   "ordem": 6,
+   "pergunta": "Disco protegido por coifa em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f021-07",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Disco e transmissão",
+   "ordem": 7,
+   "pergunta": "Cutelo divisor devidamente ajustado",
+   "ativo": true
+  },
+  {
+   "id": "f021-08",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Disco e transmissão",
+   "ordem": 8,
+   "pergunta": "Correia ajustada, sem desgaste ou fissuras",
+   "ativo": true
+  },
+  {
+   "id": "f021-09",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Disco e transmissão",
+   "ordem": 9,
+   "pergunta": "Eixo sem empeno e sem agarramentos, montado sobre mandril",
+   "ativo": true
+  },
+  {
+   "id": "f021-10",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 10,
+   "pergunta": "Lâmpadas protegidas contra impactos",
+   "ativo": true
+  },
+  {
+   "id": "f021-11",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 11,
+   "pergunta": "Piso nivelado e antiderrapante",
+   "ativo": true
+  },
+  {
+   "id": "f021-12",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 12,
+   "pergunta": "Cobertura contra intempéries",
+   "ativo": true
+  },
+  {
+   "id": "f021-13",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 13,
+   "pergunta": "Mesa estável e em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f021-14",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 14,
+   "pergunta": "Extintor de incêndio adequado no local",
+   "ativo": true
+  },
+  {
+   "id": "f021-15",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 15,
+   "pergunta": "Coletor de serragem",
+   "ativo": true
+  },
+  {
+   "id": "f021-16",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 16,
+   "pergunta": "Área de circulação e espaço em torno da serra livres",
+   "ativo": true
+  },
+  {
+   "id": "f021-17",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 17,
+   "pergunta": "Placas de segurança sobre uso de EPI e identificação do operador",
+   "ativo": true
+  },
+  {
+   "id": "f021-18",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Operação",
+   "ordem": 18,
+   "pergunta": "Operador treinado e qualificado",
+   "ativo": true
+  },
+  {
+   "id": "f021-19",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Operação",
+   "ordem": 19,
+   "pergunta": "EPIs em bom estado e utilizados pelo operador e auxiliares",
+   "ativo": true
+  },
+  {
+   "id": "f021-20",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Operação",
+   "ordem": 20,
+   "pergunta": "Uso de uniforme e crachá pelo operador",
+   "ativo": true
+  },
+  {
+   "id": "f021-21",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Operação",
+   "ordem": 21,
+   "pergunta": "Empurradores disponíveis e utilizados",
+   "ativo": true
+  },
+  {
+   "id": "f021-22",
+   "tipo": "vme-serra-circular-csp",
+   "modulo": "base",
+   "secao": "Operação",
+   "ordem": 22,
+   "pergunta": "Guia lateral utilizada",
+   "ativo": true
+  },
+  {
+   "id": "f024-01",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 1,
+   "pergunta": "Motor",
+   "ativo": true
+  },
+  {
+   "id": "f024-02",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 2,
+   "pergunta": "Sistema hidráulico",
+   "ativo": true
+  },
+  {
+   "id": "f024-03",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 3,
+   "pergunta": "Mangueiras sem vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "f024-04",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 4,
+   "pergunta": "Bicos",
+   "ativo": true
+  },
+  {
+   "id": "f024-05",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 5,
+   "pergunta": "Pneus (inclusive o reserva)",
+   "ativo": true
+  },
+  {
+   "id": "f024-06",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 6,
+   "pergunta": "Acesso à cabine e assento do operador",
+   "ativo": true
+  },
+  {
+   "id": "f024-07",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 7,
+   "pergunta": "Vidros (para-brisa)",
+   "ativo": true
+  },
+  {
+   "id": "f024-08",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 8,
+   "pergunta": "Limpadores de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f024-09",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 9,
+   "pergunta": "Sistema de freios",
+   "ativo": true
+  },
+  {
+   "id": "f024-10",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 10,
+   "pergunta": "Faróis (luz alta e baixa)",
+   "ativo": true
+  },
+  {
+   "id": "f024-11",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 11,
+   "pergunta": "Lanternas",
+   "ativo": true
+  },
+  {
+   "id": "f024-12",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 12,
+   "pergunta": "Luz de ré",
+   "ativo": true
+  },
+  {
+   "id": "f024-13",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 13,
+   "pergunta": "Emergência (pisca-alerta)",
+   "ativo": true
+  },
+  {
+   "id": "f024-14",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 14,
+   "pergunta": "Alarme sonoro de ré",
+   "ativo": true
+  },
+  {
+   "id": "f024-15",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 15,
+   "pergunta": "Luzes de freio",
+   "ativo": true
+  },
+  {
+   "id": "f024-16",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 16,
+   "pergunta": "Luzes indicadoras de direção",
+   "ativo": true
+  },
+  {
+   "id": "f024-17",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 17,
+   "pergunta": "Habilitação do motorista",
+   "ativo": true
+  },
+  {
+   "id": "f024-18",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 18,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f024-19",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 19,
+   "pergunta": "Espelhos retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f024-20",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 20,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f024-21",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 21,
+   "pergunta": "Limpeza do veículo",
+   "ativo": true
+  },
+  {
+   "id": "f024-22",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 22,
+   "pergunta": "Sem vazamento no tanque",
+   "ativo": true
+  },
+  {
+   "id": "f024-23",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Caminhão",
+   "ordem": 23,
+   "pergunta": "Contenção do reservatório de óleo lubrificante",
+   "ativo": true
+  },
+  {
+   "id": "f024-24",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Compressor e sinalização",
+   "ordem": 24,
+   "pergunta": "Compressor de ar",
+   "ativo": true
+  },
+  {
+   "id": "f024-25",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Compressor e sinalização",
+   "ordem": 25,
+   "pergunta": "Cilindro do compressor de ar",
+   "ativo": true
+  },
+  {
+   "id": "f024-26",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Compressor e sinalização",
+   "ordem": 26,
+   "pergunta": "Válvula de descompressão",
+   "ativo": true
+  },
+  {
+   "id": "f024-27",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Compressor e sinalização",
+   "ordem": 27,
+   "pergunta": "Manômetro",
+   "ativo": true
+  },
+  {
+   "id": "f024-28",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Compressor e sinalização",
+   "ordem": 28,
+   "pergunta": "Sem vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "f024-29",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Compressor e sinalização",
+   "ordem": 29,
+   "pergunta": "Sinalização",
+   "ativo": true
+  },
+  {
+   "id": "f024-30",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Compressor e sinalização",
+   "ordem": 30,
+   "pergunta": "Painéis de segurança",
+   "ativo": true
+  },
+  {
+   "id": "f024-31",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Compressor e sinalização",
+   "ordem": 31,
+   "pergunta": "Código do produto (ONU)",
+   "ativo": true
+  },
+  {
+   "id": "f024-32",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 32,
+   "pergunta": "Documentação",
+   "ativo": true
+  },
+  {
+   "id": "f024-33",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 33,
+   "pergunta": "Crachá do operador e carteira de operador conforme NR-11",
+   "ativo": true
+  },
+  {
+   "id": "f024-34",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 34,
+   "pergunta": "Certificado do Inmetro",
+   "ativo": true
+  },
+  {
+   "id": "f024-35",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 35,
+   "pergunta": "Documento do caminhão",
+   "ativo": true
+  },
+  {
+   "id": "f024-36",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 36,
+   "pergunta": "Tacógrafo",
+   "ativo": true
+  },
+  {
+   "id": "f024-37",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 37,
+   "pergunta": "Curso MOPP do motorista",
+   "ativo": true
+  },
+  {
+   "id": "f024-38",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 38,
+   "pergunta": "Plano de manutenção",
+   "ativo": true
+  },
+  {
+   "id": "f024-39",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 39,
+   "pergunta": "Cópia da última manutenção",
+   "ativo": true
+  },
+  {
+   "id": "f024-40",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Kit de emergência",
+   "ordem": 40,
+   "pergunta": "4 calços para rodas (150×200×150 mm)",
+   "ativo": true
+  },
+  {
+   "id": "f024-41",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Kit de emergência",
+   "ordem": 41,
+   "pergunta": "100 metros de fita zebrada para isolar a área",
+   "ativo": true
+  },
+  {
+   "id": "f024-42",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Kit de emergência",
+   "ordem": 42,
+   "pergunta": "5 dispositivos para sustentação da fita",
+   "ativo": true
+  },
+  {
+   "id": "f024-43",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Kit de emergência",
+   "ordem": 43,
+   "pergunta": "4 placas \"Perigo – Afastem-se\"",
+   "ativo": true
+  },
+  {
+   "id": "f024-44",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Kit de emergência",
+   "ordem": 44,
+   "pergunta": "5 cones refletivos laranja e branco",
+   "ativo": true
+  },
+  {
+   "id": "f024-45",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Kit de emergência",
+   "ordem": 45,
+   "pergunta": "1 pá de fibra antifaísca para pequenos vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "f024-46",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Kit de emergência",
+   "ordem": 46,
+   "pergunta": "1 enxada de fibra antifaísca para pequenos vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "f024-47",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Kit de emergência",
+   "ordem": 47,
+   "pergunta": "1 lanterna à prova de explosão, com pilhas",
+   "ativo": true
+  },
+  {
+   "id": "f024-48",
+   "tipo": "vme-caminhao-comboio-csp",
+   "modulo": "base",
+   "secao": "Kit de emergência",
+   "ordem": 48,
+   "pergunta": "1 martelo não metálico",
+   "ativo": true
+  },
+  {
+   "id": "f026-01",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 1,
+   "pergunta": "Bancos",
+   "ativo": true
+  },
+  {
+   "id": "f026-02",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 2,
+   "pergunta": "Buzina",
+   "ativo": true
+  },
+  {
+   "id": "f026-03",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 3,
+   "pergunta": "Capacidade de passageiros (sentados) respeitada",
+   "ativo": true
+  },
+  {
+   "id": "f026-04",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 4,
+   "pergunta": "Cinto de segurança",
+   "ativo": true
+  },
+  {
+   "id": "f026-05",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 5,
+   "pergunta": "Conservação dos pedais",
+   "ativo": true
+  },
+  {
+   "id": "f026-06",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 6,
+   "pergunta": "Encosto de cabeça",
+   "ativo": true
+  },
+  {
+   "id": "f026-07",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 7,
+   "pergunta": "Espelhos retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f026-08",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 8,
+   "pergunta": "Pneus, estepe e aros em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f026-09",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 9,
+   "pergunta": "Estado geral do veículo",
+   "ativo": true
+  },
+  {
+   "id": "f026-10",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 10,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f026-11",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 11,
+   "pergunta": "Faróis (alto e baixo)",
+   "ativo": true
+  },
+  {
+   "id": "f026-12",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 12,
+   "pergunta": "Freios (estacionário e de movimentação)",
+   "ativo": true
+  },
+  {
+   "id": "f026-13",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 13,
+   "pergunta": "Limpador de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f026-14",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 14,
+   "pergunta": "Luz de freio",
+   "ativo": true
+  },
+  {
+   "id": "f026-15",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 15,
+   "pergunta": "Luz de ré",
+   "ativo": true
+  },
+  {
+   "id": "f026-16",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 16,
+   "pergunta": "Partida do motor",
+   "ativo": true
+  },
+  {
+   "id": "f026-17",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 17,
+   "pergunta": "Placas",
+   "ativo": true
+  },
+  {
+   "id": "f026-18",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 18,
+   "pergunta": "Quebra-sol",
+   "ativo": true
+  },
+  {
+   "id": "f026-19",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 19,
+   "pergunta": "Setas (direita e esquerda)",
+   "ativo": true
+  },
+  {
+   "id": "f026-20",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 20,
+   "pergunta": "Sistema hidráulico sem vazamento",
+   "ativo": true
+  },
+  {
+   "id": "f026-21",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 21,
+   "pergunta": "Trava das portas",
+   "ativo": true
+  },
+  {
+   "id": "f026-22",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 22,
+   "pergunta": "Triângulo, chave de roda e macaco",
+   "ativo": true
+  },
+  {
+   "id": "f026-23",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 23,
+   "pergunta": "Velocímetro e marcador de combustível",
+   "ativo": true
+  },
+  {
+   "id": "f026-24",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 24,
+   "pergunta": "Alarme sonoro de ré",
+   "ativo": true
+  },
+  {
+   "id": "f026-25",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 25,
+   "pergunta": "Tacógrafo",
+   "ativo": true
+  },
+  {
+   "id": "f026-26",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Veículo",
+   "ordem": 26,
+   "pergunta": "Saída de emergência sinalizada (cortina vermelha), quando houver",
+   "ativo": true
+  },
+  {
+   "id": "f026-27",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Condutor",
+   "ordem": 27,
+   "pergunta": "Crachá do condutor",
+   "ativo": true
+  },
+  {
+   "id": "f026-28",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Condutor",
+   "ordem": 28,
+   "pergunta": "EPI do condutor (mínimo capacete e calçado de segurança)",
+   "ativo": true
+  },
+  {
+   "id": "f026-29",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Condutor",
+   "ordem": 29,
+   "pergunta": "Habilitação do condutor",
+   "ativo": true
+  },
+  {
+   "id": "f026-30",
+   "tipo": "vme-carros-leve-e-4x4-csp",
+   "modulo": "base",
+   "secao": "Condutor",
+   "ordem": 30,
+   "pergunta": "Vestimenta do condutor (calça comprida e camisa com manga)",
+   "ativo": true
+  },
+  {
+   "id": "f027-01",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Motor",
+   "ativo": true
+  },
+  {
+   "id": "f027-02",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Sistema hidráulico",
+   "ativo": true
+  },
+  {
+   "id": "f027-03",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Mangueiras sem vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "f027-04",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Bicos",
+   "ativo": true
+  },
+  {
+   "id": "f027-05",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Pneus (inclusive o reserva)",
+   "ativo": true
+  },
+  {
+   "id": "f027-06",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Acesso à cabine e assento do motorista",
+   "ativo": true
+  },
+  {
+   "id": "f027-07",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Vidros (para-brisa)",
+   "ativo": true
+  },
+  {
+   "id": "f027-08",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Limpadores de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f027-09",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Sistema de freios",
+   "ativo": true
+  },
+  {
+   "id": "f027-10",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "Faróis (luz alta e baixa)",
+   "ativo": true
+  },
+  {
+   "id": "f027-11",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 11,
+   "pergunta": "Lanternas",
+   "ativo": true
+  },
+  {
+   "id": "f027-12",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 12,
+   "pergunta": "Luz de ré",
+   "ativo": true
+  },
+  {
+   "id": "f027-13",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 13,
+   "pergunta": "Emergência (pisca-alerta)",
+   "ativo": true
+  },
+  {
+   "id": "f027-14",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 14,
+   "pergunta": "Alarme sonoro de ré",
+   "ativo": true
+  },
+  {
+   "id": "f027-15",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 15,
+   "pergunta": "Luzes de freio",
+   "ativo": true
+  },
+  {
+   "id": "f027-16",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 16,
+   "pergunta": "Luzes indicadoras de direção",
+   "ativo": true
+  },
+  {
+   "id": "f027-17",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 17,
+   "pergunta": "Habilitação do motorista",
+   "ativo": true
+  },
+  {
+   "id": "f027-18",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 18,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f027-19",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 19,
+   "pergunta": "Espelhos retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f027-20",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 20,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f027-21",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 21,
+   "pergunta": "Limpeza do veículo",
+   "ativo": true
+  },
+  {
+   "id": "f027-22",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 22,
+   "pergunta": "Sem vazamento no tanque",
+   "ativo": true
+  },
+  {
+   "id": "f027-23",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 23,
+   "pergunta": "Contenção do reservatório de óleo lubrificante",
+   "ativo": true
+  },
+  {
+   "id": "f027-24",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Sistemas e tanques",
+   "ordem": 24,
+   "pergunta": "Sem vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "f027-25",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Sistemas e tanques",
+   "ordem": 25,
+   "pergunta": "Sistema pneumático",
+   "ativo": true
+  },
+  {
+   "id": "f027-26",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Sistemas e tanques",
+   "ordem": 26,
+   "pergunta": "Sistema elétrico",
+   "ativo": true
+  },
+  {
+   "id": "f027-27",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Sistemas e tanques",
+   "ordem": 27,
+   "pergunta": "Tanque de armazenamento de água",
+   "ativo": true
+  },
+  {
+   "id": "f027-28",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Sistemas e tanques",
+   "ordem": 28,
+   "pergunta": "Tanque de armazenamento de dejetos",
+   "ativo": true
+  },
+  {
+   "id": "f027-29",
+   "tipo": "vme-caminhao-pipa-csp",
+   "modulo": "base",
+   "secao": "Sistemas e tanques",
+   "ordem": 29,
+   "pergunta": "Bomba de sucção",
+   "ativo": true
+  },
+  {
+   "id": "f028-01",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 1,
+   "pergunta": "Pneus (fixação e porcas)",
+   "ativo": true
+  },
+  {
+   "id": "f028-02",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 2,
+   "pergunta": "Estado de conservação e limpeza",
+   "ativo": true
+  },
+  {
+   "id": "f028-03",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 3,
+   "pergunta": "Indicação de capacidade de carga (adesivo)",
+   "ativo": true
+  },
+  {
+   "id": "f028-04",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 4,
+   "pergunta": "Sem vazamentos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "f028-05",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 5,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f028-06",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Inspeção mecânica",
+   "ordem": 6,
+   "pergunta": "Bomba auxiliar de emergência (testar)",
+   "ativo": true
+  },
+  {
+   "id": "f028-07",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Inspeção mecânica",
+   "ordem": 7,
+   "pergunta": "Nível de combustível",
+   "ativo": true
+  },
+  {
+   "id": "f028-08",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Inspeção mecânica",
+   "ordem": 8,
+   "pergunta": "Nível do óleo hidráulico (com o equipamento totalmente recolhido)",
+   "ativo": true
+  },
+  {
+   "id": "f028-09",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Inspeção mecânica",
+   "ordem": 9,
+   "pergunta": "Conexão da bateria sem folga e sem oxidação",
+   "ativo": true
+  },
+  {
+   "id": "f028-10",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Inspeção mecânica",
+   "ordem": 10,
+   "pergunta": "Nível de água (se aplicável)",
+   "ativo": true
+  },
+  {
+   "id": "f028-11",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Inspeção mecânica",
+   "ordem": 11,
+   "pergunta": "Nível do óleo lubrificante do motor",
+   "ativo": true
+  },
+  {
+   "id": "f028-12",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Inspeção mecânica",
+   "ordem": 12,
+   "pergunta": "Tensão das correias (ventilador e alternador)",
+   "ativo": true
+  },
+  {
+   "id": "f028-13",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle de solo",
+   "ordem": 13,
+   "pergunta": "Botão de rotação do cesto",
+   "ativo": true
+  },
+  {
+   "id": "f028-14",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle de solo",
+   "ordem": 14,
+   "pergunta": "Botão de rotação da mesa giratória",
+   "ativo": true
+  },
+  {
+   "id": "f028-15",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle de solo",
+   "ordem": 15,
+   "pergunta": "Botão de elevação e descida da lança primária",
+   "ativo": true
+  },
+  {
+   "id": "f028-16",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle de solo",
+   "ordem": 16,
+   "pergunta": "Botão de extensão e retração da lança primária",
+   "ativo": true
+  },
+  {
+   "id": "f028-17",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle de solo",
+   "ordem": 17,
+   "pergunta": "Chave seletora plataforma/desligado/solo (deve permanecer na ignição durante a operação)",
+   "ativo": true
+  },
+  {
+   "id": "f028-18",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle de solo",
+   "ordem": 18,
+   "pergunta": "Botão vermelho de parada de emergência",
+   "ativo": true
+  },
+  {
+   "id": "f028-19",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle de solo",
+   "ordem": 19,
+   "pergunta": "Botão de partida do motor",
+   "ativo": true
+  },
+  {
+   "id": "f028-20",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle de solo",
+   "ordem": 20,
+   "pergunta": "Botão de elevação e descida da lança secundária",
+   "ativo": true
+  },
+  {
+   "id": "f028-21",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle de solo",
+   "ordem": 21,
+   "pergunta": "Botão de nível do cesto",
+   "ativo": true
+  },
+  {
+   "id": "f028-22",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 22,
+   "pergunta": "Botão de buzina",
+   "ativo": true
+  },
+  {
+   "id": "f028-23",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 23,
+   "pergunta": "Botão de alimentação auxiliar",
+   "ativo": true
+  },
+  {
+   "id": "f028-24",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 24,
+   "pergunta": "Painel indicador",
+   "ativo": true
+  },
+  {
+   "id": "f028-25",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 25,
+   "pergunta": "Botão de rotação da plataforma",
+   "ativo": true
+  },
+  {
+   "id": "f028-26",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 26,
+   "pergunta": "Botão de nível da plataforma",
+   "ativo": true
+  },
+  {
+   "id": "f028-27",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 27,
+   "pergunta": "Botão de partida do motor",
+   "ativo": true
+  },
+  {
+   "id": "f028-28",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 28,
+   "pergunta": "Botão vermelho de parada de emergência",
+   "ativo": true
+  },
+  {
+   "id": "f028-29",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 29,
+   "pergunta": "Alavanca de controle (joystick)",
+   "ativo": true
+  },
+  {
+   "id": "f028-30",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 30,
+   "pergunta": "Controlador de velocidade das funções da lança",
+   "ativo": true
+  },
+  {
+   "id": "f028-31",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 31,
+   "pergunta": "Botão de extensão e retração da lança primária",
+   "ativo": true
+  },
+  {
+   "id": "f028-32",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 32,
+   "pergunta": "Botão de elevação e descida da lança primária",
+   "ativo": true
+  },
+  {
+   "id": "f028-33",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 33,
+   "pergunta": "Botão de elevação e descida da lança secundária",
+   "ativo": true
+  },
+  {
+   "id": "f028-34",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 34,
+   "pergunta": "Botão de rotação da base giratória",
+   "ativo": true
+  },
+  {
+   "id": "f028-35",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Painel de controle da plataforma",
+   "ordem": 35,
+   "pergunta": "Indicador de carga da bateria (PTA elétrica)",
+   "ativo": true
+  },
+  {
+   "id": "f028-36",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Inspeção elétrica",
+   "ordem": 36,
+   "pergunta": "Luzes de sinalização (pisca-alerta)",
+   "ativo": true
+  },
+  {
+   "id": "f028-37",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Inspeção elétrica",
+   "ordem": 37,
+   "pergunta": "Alarme sonoro de elevação e movimentação",
+   "ativo": true
+  },
+  {
+   "id": "f028-38",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 38,
+   "pergunta": "Laudo técnico descritivo e fotográfico",
+   "ativo": true
+  },
+  {
+   "id": "f028-39",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 39,
+   "pergunta": "Cópia da última manutenção preventiva (assinada e carimbada pelo técnico responsável)",
+   "ativo": true
+  },
+  {
+   "id": "f028-40",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 40,
+   "pergunta": "Plano de manutenção do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f028-41",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 41,
+   "pergunta": "ART do equipamento conforme NR-12 (recolhida a cada 3 meses)",
+   "ativo": true
+  },
+  {
+   "id": "f028-42",
+   "tipo": "vme-pemt-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 42,
+   "pergunta": "Manual do equipamento em português",
+   "ativo": true
+  },
+  {
+   "id": "f029-01",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Motor",
+   "ativo": true
+  },
+  {
+   "id": "f029-02",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f029-03",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Vazamentos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "f029-04",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Pneus / rodas de ferro",
+   "ativo": true
+  },
+  {
+   "id": "f029-05",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f029-06",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Estado de conservação e limpeza",
+   "ativo": true
+  },
+  {
+   "id": "f029-07",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Condições do tanque de combustível",
+   "ativo": true
+  },
+  {
+   "id": "f029-08",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Condições do tambor de mistura",
+   "ativo": true
+  },
+  {
+   "id": "f029-09",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Caçamba de abastecimento",
+   "ativo": true
+  },
+  {
+   "id": "f029-10",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "Cabo de aço da caçamba",
+   "ativo": true
+  },
+  {
+   "id": "f029-11",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 11,
+   "pergunta": "Motor elétrico aterrado",
+   "ativo": true
+  },
+  {
+   "id": "f029-12",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 12,
+   "pergunta": "Partes móveis protegidas",
+   "ativo": true
+  },
+  {
+   "id": "f029-13",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 13,
+   "pergunta": "Betoneira bem localizada, calçada e travada no local",
+   "ativo": true
+  },
+  {
+   "id": "f029-14",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 14,
+   "pergunta": "Travamento do tambor e da caçamba funcionando",
+   "ativo": true
+  },
+  {
+   "id": "f029-15",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 15,
+   "pergunta": "Engrenagens em perfeito estado",
+   "ativo": true
+  },
+  {
+   "id": "f029-16",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 16,
+   "pergunta": "Botão liga/desliga",
+   "ativo": true
+  },
+  {
+   "id": "f029-17",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 17,
+   "pergunta": "Plugue de ligação e cabo",
+   "ativo": true
+  },
+  {
+   "id": "f029-18",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 18,
+   "pergunta": "Crachá do operador",
+   "ativo": true
+  },
+  {
+   "id": "f029-19",
+   "tipo": "vme-betoneira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 19,
+   "pergunta": "EPIs do operador",
+   "ativo": true
+  },
+  {
+   "id": "f030-01",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Operador habilitado/qualificado e com crachá",
+   "ativo": true
+  },
+  {
+   "id": "f030-02",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Faróis funcionando",
+   "ativo": true
+  },
+  {
+   "id": "f030-03",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Alarme de ré e de movimentação",
+   "ativo": true
+  },
+  {
+   "id": "f030-04",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Cinto de segurança",
+   "ativo": true
+  },
+  {
+   "id": "f030-05",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Sistema hidráulico em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f030-06",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Vidros e para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f030-07",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Limpador de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f030-08",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Estado geral do equipamento (cabine, bancos etc.)",
+   "ativo": true
+  },
+  {
+   "id": "f030-09",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Condições do painel do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f030-10",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "Buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "f030-11",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 11,
+   "pergunta": "Espelhos retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f030-12",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 12,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f030-13",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 13,
+   "pergunta": "Lança de articulação sem trincas ou rachaduras",
+   "ativo": true
+  },
+  {
+   "id": "f030-14",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 14,
+   "pergunta": "Concha sem trincas ou dentes quebrados, com gancho com trava",
+   "ativo": true
+  },
+  {
+   "id": "f030-15",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 15,
+   "pergunta": "Esteiras em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f030-16",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 16,
+   "pergunta": "Pinos e travas da lança e do braço de articulação em boas condições",
+   "ativo": true
+  },
+  {
+   "id": "f030-17",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 17,
+   "pergunta": "Faixas refletivas",
+   "ativo": true
+  },
+  {
+   "id": "f030-18",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 18,
+   "pergunta": "Operador com os EPIs",
+   "ativo": true
+  },
+  {
+   "id": "f030-19",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 19,
+   "pergunta": "Estado geral do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f030-20",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 20,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f030-21",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 21,
+   "pergunta": "Alavanca de bloqueio",
+   "ativo": true
+  },
+  {
+   "id": "f030-22",
+   "tipo": "vme-escavadeira-hidraulica-20t-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 22,
+   "pergunta": "Sem vazamento nos retentores dos cilindros hidráulicos e mangueiras",
+   "ativo": true
+  },
+  {
+   "id": "f031-01",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Operador habilitado/qualificado e com crachá",
+   "ativo": true
+  },
+  {
+   "id": "f031-02",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Faróis funcionando",
+   "ativo": true
+  },
+  {
+   "id": "f031-03",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Alarme de ré e de movimentação",
+   "ativo": true
+  },
+  {
+   "id": "f031-04",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Cinto de segurança",
+   "ativo": true
+  },
+  {
+   "id": "f031-05",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Sistema hidráulico em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f031-06",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Estado geral do equipamento (cabine, bancos etc.)",
+   "ativo": true
+  },
+  {
+   "id": "f031-07",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Condições do painel do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f031-08",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f031-09",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Esteiras em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f031-10",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "Faixas refletivas",
+   "ativo": true
+  },
+  {
+   "id": "f031-11",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 11,
+   "pergunta": "Operador com os EPIs mínimos: capacete, calçado com biqueira e protetor auricular",
+   "ativo": true
+  },
+  {
+   "id": "f031-12",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 12,
+   "pergunta": "Estado geral do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f031-13",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 13,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f031-14",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 14,
+   "pergunta": "Alavanca de bloqueio",
+   "ativo": true
+  },
+  {
+   "id": "f031-15",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 15,
+   "pergunta": "Sem vazamento nos retentores dos cilindros hidráulicos e mangueiras",
+   "ativo": true
+  },
+  {
+   "id": "f031-16",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 16,
+   "pergunta": "Condições da lâmina de trabalho",
+   "ativo": true
+  },
+  {
+   "id": "f031-17",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 17,
+   "pergunta": "Crachá do operador / carteira conforme NR-11",
+   "ativo": true
+  },
+  {
+   "id": "f031-18",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 18,
+   "pergunta": "Manual do equipamento em português",
+   "ativo": true
+  },
+  {
+   "id": "f031-19",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 19,
+   "pergunta": "Plano de manutenção do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f031-20",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 20,
+   "pergunta": "Laudo técnico",
+   "ativo": true
+  },
+  {
+   "id": "f031-21",
+   "tipo": "vme-trator-pneu-esteira-csp",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 21,
+   "pergunta": "Cópia da última manutenção",
+   "ativo": true
+  },
+  {
+   "id": "f035-01",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 1,
+   "pergunta": "Motor",
+   "ativo": true
+  },
+  {
+   "id": "f035-02",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 2,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f035-03",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 3,
+   "pergunta": "Vazamentos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "f035-04",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 4,
+   "pergunta": "Pneus (inclusive o estepe)",
+   "ativo": true
+  },
+  {
+   "id": "f035-05",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 5,
+   "pergunta": "Sistema de freios",
+   "ativo": true
+  },
+  {
+   "id": "f035-06",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 6,
+   "pergunta": "Buzina",
+   "ativo": true
+  },
+  {
+   "id": "f035-07",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 7,
+   "pergunta": "Alarme de ré",
+   "ativo": true
+  },
+  {
+   "id": "f035-08",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 8,
+   "pergunta": "Faróis (luz alta e baixa)",
+   "ativo": true
+  },
+  {
+   "id": "f035-09",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 9,
+   "pergunta": "Luz de ré",
+   "ativo": true
+  },
+  {
+   "id": "f035-10",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 10,
+   "pergunta": "Lanternas",
+   "ativo": true
+  },
+  {
+   "id": "f035-11",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 11,
+   "pergunta": "Emergência (pisca-alerta)",
+   "ativo": true
+  },
+  {
+   "id": "f035-12",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 12,
+   "pergunta": "Luzes indicadoras de direção",
+   "ativo": true
+  },
+  {
+   "id": "f035-13",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 13,
+   "pergunta": "Para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f035-14",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 14,
+   "pergunta": "Limpador de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f035-15",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 15,
+   "pergunta": "Retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f035-16",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 16,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f035-17",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 17,
+   "pergunta": "Estado de conservação e limpeza",
+   "ativo": true
+  },
+  {
+   "id": "f035-18",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 18,
+   "pergunta": "Documentação do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f035-19",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 19,
+   "pergunta": "Documentação do operador",
+   "ativo": true
+  },
+  {
+   "id": "f035-20",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 20,
+   "pergunta": "Crachá do operador",
+   "ativo": true
+  },
+  {
+   "id": "f035-21",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 21,
+   "pergunta": "EPIs do operador",
+   "ativo": true
+  },
+  {
+   "id": "f035-22",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 22,
+   "pergunta": "Sistema hidráulico",
+   "ativo": true
+  },
+  {
+   "id": "f035-23",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Betoneira",
+   "ordem": 23,
+   "pergunta": "Mangueiras",
+   "ativo": true
+  },
+  {
+   "id": "f035-24",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Betoneira",
+   "ordem": 24,
+   "pergunta": "Acesso à cabine de trabalho",
+   "ativo": true
+  },
+  {
+   "id": "f035-25",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Betoneira",
+   "ordem": 25,
+   "pergunta": "Depósito de água",
+   "ativo": true
+  },
+  {
+   "id": "f035-26",
+   "tipo": "vme-caminhao-betoneira-csp",
+   "modulo": "base",
+   "secao": "Betoneira",
+   "ordem": 26,
+   "pergunta": "Reservatório (balão) de concreto",
+   "ativo": true
+  },
+  {
+   "id": "f038-01",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Operador habilitado/qualificado e com crachá",
+   "ativo": true
+  },
+  {
+   "id": "f038-02",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Faróis funcionando",
+   "ativo": true
+  },
+  {
+   "id": "f038-03",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Alarme de ré",
+   "ativo": true
+  },
+  {
+   "id": "f038-04",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Cinto de segurança",
+   "ativo": true
+  },
+  {
+   "id": "f038-05",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Sistema hidráulico em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f038-06",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Vidros e para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f038-07",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Limpador de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f038-08",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Estado geral do equipamento (cabine, bancos etc.)",
+   "ativo": true
+  },
+  {
+   "id": "f038-09",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Condições do painel do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f038-10",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "Buzina funcionando",
+   "ativo": true
+  },
+  {
+   "id": "f038-11",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 11,
+   "pergunta": "Espelhos retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f038-12",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 12,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f038-13",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 13,
+   "pergunta": "Braços, hastes, cilindros e pinos em condições de uso",
+   "ativo": true
+  },
+  {
+   "id": "f038-14",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 14,
+   "pergunta": "Sistema de controle (escarificador, lâmina, deslocamento lateral, inclinação das rodas e reversão) em condições de uso",
+   "ativo": true
+  },
+  {
+   "id": "f038-15",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 15,
+   "pergunta": "Sistema de travas da articulação em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f038-16",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 16,
+   "pergunta": "Proteção de partes móveis (hélice e correias)",
+   "ativo": true
+  },
+  {
+   "id": "f038-17",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 17,
+   "pergunta": "Faixas refletivas",
+   "ativo": true
+  },
+  {
+   "id": "f038-18",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 18,
+   "pergunta": "Operador com os EPIs mínimos: capacete, calçado de segurança e protetor auricular",
+   "ativo": true
+  },
+  {
+   "id": "f038-19",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 19,
+   "pergunta": "Estado geral do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f038-20",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 20,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f038-21",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 21,
+   "pergunta": "Alavanca de bloqueio",
+   "ativo": true
+  },
+  {
+   "id": "f038-22",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 22,
+   "pergunta": "Sem vazamento nos retentores dos cilindros hidráulicos e mangueiras",
+   "ativo": true
+  },
+  {
+   "id": "f038-23",
+   "tipo": "vme-motoniveladora-csp",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 23,
+   "pergunta": "Operador com vestimenta correta (uniforme) e crachá",
+   "ativo": true
+  }
+ ]
+}
