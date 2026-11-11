@@ -1,0 +1,2496 @@
+{
+ "origem": "Fichas FIS sem tipo no Vistto (11/11/2026)",
+ "tipos": [
+  {
+   "id": "vme-cinto-de-seguranca",
+   "nome": "Cinto de Segurança",
+   "descricao": "Ficha de Inspeção de Segurança FIS 007",
+   "usa_atividade": false,
+   "ordem": 300,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-armazenamento-de-inflamaveis",
+   "nome": "Armazenamento de Inflamáveis",
+   "descricao": "Ficha de Inspeção de Segurança FIS 008",
+   "usa_atividade": false,
+   "ordem": 301,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "campo"
+  },
+  {
+   "id": "vme-acessorios-de-icamento",
+   "nome": "Acessórios para Elevação",
+   "descricao": "Ficha de Inspeção de Segurança FIS 009",
+   "usa_atividade": false,
+   "ordem": 302,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-lixadeira-esmerilhadeira",
+   "nome": "Lixadeira / Esmerilhadeira",
+   "descricao": "Ficha de Inspeção de Segurança FIS 012",
+   "usa_atividade": false,
+   "ordem": 303,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-martelete-pneumatico",
+   "nome": "Martelete Pneumático",
+   "descricao": "Ficha de Inspeção de Segurança FIS 014",
+   "usa_atividade": false,
+   "ordem": 304,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-martelete-rompedor-eletrico",
+   "nome": "Martelete / Rompedor Elétrico",
+   "descricao": "Ficha de Inspeção de Segurança FIS 015",
+   "usa_atividade": false,
+   "ordem": 305,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-furadeira-manual",
+   "nome": "Furadeira Manual",
+   "descricao": "Ficha de Inspeção de Segurança FIS 016",
+   "usa_atividade": false,
+   "ordem": 306,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-serra-policorte",
+   "nome": "Serra Policorte / Dobra",
+   "descricao": "Ficha de Inspeção de Segurança FIS 020",
+   "usa_atividade": false,
+   "ordem": 307,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-serra-circular-manual",
+   "nome": "Serra Circular Manual",
+   "descricao": "Ficha de Inspeção de Segurança FIS 022",
+   "usa_atividade": false,
+   "ordem": 308,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-motor-a-gas",
+   "nome": "Motor a Gás para Acionamento Hidráulico",
+   "descricao": "Ficha de Inspeção de Segurança FIS 032",
+   "usa_atividade": false,
+   "ordem": 309,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-perfuratriz-sonda",
+   "nome": "Perfuratriz de Esteira / Pneus (Sonda)",
+   "descricao": "Ficha de Inspeção de Segurança FIS 033",
+   "usa_atividade": false,
+   "ordem": 310,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-bomba-de-concreto",
+   "nome": "Bomba de Concreto",
+   "descricao": "Ficha de Inspeção de Segurança FIS 034",
+   "usa_atividade": false,
+   "ordem": 311,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-maquina-de-rosca-em-tubo",
+   "nome": "Máquina de Fazer Rosca em Tubo",
+   "descricao": "Ficha de Inspeção de Segurança FIS 037",
+   "usa_atividade": false,
+   "ordem": 312,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  },
+  {
+   "id": "vme-empilhadeira",
+   "nome": "Empilhadeira",
+   "descricao": "Ficha de Inspeção de Segurança FIS 039",
+   "usa_atividade": false,
+   "ordem": 313,
+   "ativo": true,
+   "modo": "checklist",
+   "grupo": "veiculos"
+  }
+ ],
+ "itens": [
+  {
+   "id": "f007-01",
+   "tipo": "vme-cinto-de-seguranca",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Argolas e aros de ancoragem",
+   "ativo": true
+  },
+  {
+   "id": "f007-02",
+   "tipo": "vme-cinto-de-seguranca",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Cinto em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f007-03",
+   "tipo": "vme-cinto-de-seguranca",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Costuras em boas condições",
+   "ativo": true
+  },
+  {
+   "id": "f007-04",
+   "tipo": "vme-cinto-de-seguranca",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Fivelas em boas condições",
+   "ativo": true
+  },
+  {
+   "id": "f007-05",
+   "tipo": "vme-cinto-de-seguranca",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Talabarte",
+   "ativo": true
+  },
+  {
+   "id": "f007-06",
+   "tipo": "vme-cinto-de-seguranca",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Correia / corda em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f007-07",
+   "tipo": "vme-cinto-de-seguranca",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Mosquetões",
+   "ativo": true
+  },
+  {
+   "id": "f007-08",
+   "tipo": "vme-cinto-de-seguranca",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Estocagem em local seco",
+   "ativo": true
+  },
+  {
+   "id": "f007-09",
+   "tipo": "vme-cinto-de-seguranca",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Identificação (TAG / patrimônio)",
+   "ativo": true
+  },
+  {
+   "id": "f008-01",
+   "tipo": "vme-armazenamento-de-inflamaveis",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Área devidamente sinalizada",
+   "ativo": true
+  },
+  {
+   "id": "f008-02",
+   "tipo": "vme-armazenamento-de-inflamaveis",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Aterramentos",
+   "ativo": true
+  },
+  {
+   "id": "f008-03",
+   "tipo": "vme-armazenamento-de-inflamaveis",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Armários e prateleiras em boas condições",
+   "ativo": true
+  },
+  {
+   "id": "f008-04",
+   "tipo": "vme-armazenamento-de-inflamaveis",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Estocagem dentro dos limites estabelecidos",
+   "ativo": true
+  },
+  {
+   "id": "f008-05",
+   "tipo": "vme-armazenamento-de-inflamaveis",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Extintor de incêndio no local",
+   "ativo": true
+  },
+  {
+   "id": "f008-06",
+   "tipo": "vme-armazenamento-de-inflamaveis",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Sem vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "f008-07",
+   "tipo": "vme-armazenamento-de-inflamaveis",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Instalações elétricas adequadas",
+   "ativo": true
+  },
+  {
+   "id": "f008-08",
+   "tipo": "vme-armazenamento-de-inflamaveis",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Área de armazenamento limpa",
+   "ativo": true
+  },
+  {
+   "id": "f008-09",
+   "tipo": "vme-armazenamento-de-inflamaveis",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Pintura dentro do padrão",
+   "ativo": true
+  },
+  {
+   "id": "f008-10",
+   "tipo": "vme-armazenamento-de-inflamaveis",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "Recipientes vazios descartados corretamente",
+   "ativo": true
+  },
+  {
+   "id": "f008-11",
+   "tipo": "vme-armazenamento-de-inflamaveis",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 11,
+   "pergunta": "Ventilação adequada",
+   "ativo": true
+  },
+  {
+   "id": "f009-01",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Manilhas",
+   "ordem": 1,
+   "pergunta": "Manilha com nº de identificação",
+   "ativo": true
+  },
+  {
+   "id": "f009-02",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Manilhas",
+   "ordem": 2,
+   "pergunta": "Dimensão adequada",
+   "ativo": true
+  },
+  {
+   "id": "f009-03",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Manilhas",
+   "ordem": 3,
+   "pergunta": "Certificação",
+   "ativo": true
+  },
+  {
+   "id": "f009-04",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Manilhas",
+   "ordem": 4,
+   "pergunta": "Sem trincas ou deformações",
+   "ativo": true
+  },
+  {
+   "id": "f009-05",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Manilhas",
+   "ordem": 5,
+   "pergunta": "Pino sem desgaste anormal",
+   "ativo": true
+  },
+  {
+   "id": "f009-06",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Manilhas",
+   "ordem": 6,
+   "pergunta": "Corpo sem desgaste anormal",
+   "ativo": true
+  },
+  {
+   "id": "f009-07",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Manilhas",
+   "ordem": 7,
+   "pergunta": "Pino travado na manilha",
+   "ativo": true
+  },
+  {
+   "id": "f009-08",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Manilhas",
+   "ordem": 8,
+   "pergunta": "Estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f009-09",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 9,
+   "pergunta": "Cabo com nº de identificação",
+   "ativo": true
+  },
+  {
+   "id": "f009-10",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 10,
+   "pergunta": "Dimensão adequada",
+   "ativo": true
+  },
+  {
+   "id": "f009-11",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 11,
+   "pergunta": "Certificação",
+   "ativo": true
+  },
+  {
+   "id": "f009-12",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 12,
+   "pergunta": "Tara (capacidade) identificada",
+   "ativo": true
+  },
+  {
+   "id": "f009-13",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 13,
+   "pergunta": "Sem fios rompidos",
+   "ativo": true
+  },
+  {
+   "id": "f009-14",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 14,
+   "pergunta": "Sem deformações no cabo",
+   "ativo": true
+  },
+  {
+   "id": "f009-15",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 15,
+   "pergunta": "Extremidades bem fixadas",
+   "ativo": true
+  },
+  {
+   "id": "f009-16",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 16,
+   "pergunta": "Sapatilha sem deformações",
+   "ativo": true
+  },
+  {
+   "id": "f009-17",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 17,
+   "pergunta": "Sapatilha sem desgaste anormal",
+   "ativo": true
+  },
+  {
+   "id": "f009-18",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 18,
+   "pergunta": "Sem emendas",
+   "ativo": true
+  },
+  {
+   "id": "f009-19",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 19,
+   "pergunta": "Estocado corretamente",
+   "ativo": true
+  },
+  {
+   "id": "f009-20",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 20,
+   "pergunta": "Sem esmagamentos e dobras",
+   "ativo": true
+  },
+  {
+   "id": "f009-21",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cabo de aço",
+   "ordem": 21,
+   "pergunta": "Cabo lubrificado",
+   "ativo": true
+  },
+  {
+   "id": "f009-22",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cintas",
+   "ordem": 22,
+   "pergunta": "Cinta com nº de identificação",
+   "ativo": true
+  },
+  {
+   "id": "f009-23",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cintas",
+   "ordem": 23,
+   "pergunta": "Dimensão adequada",
+   "ativo": true
+  },
+  {
+   "id": "f009-24",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cintas",
+   "ordem": 24,
+   "pergunta": "Certificação",
+   "ativo": true
+  },
+  {
+   "id": "f009-25",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cintas",
+   "ordem": 25,
+   "pergunta": "Tara (capacidade) identificada",
+   "ativo": true
+  },
+  {
+   "id": "f009-26",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cintas",
+   "ordem": 26,
+   "pergunta": "Sem rupturas",
+   "ativo": true
+  },
+  {
+   "id": "f009-27",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cintas",
+   "ordem": 27,
+   "pergunta": "Sem desfiamentos",
+   "ativo": true
+  },
+  {
+   "id": "f009-28",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cintas",
+   "ordem": 28,
+   "pergunta": "Sem desgaste aparente",
+   "ativo": true
+  },
+  {
+   "id": "f009-29",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cordas",
+   "ordem": 29,
+   "pergunta": "Sem abrasão, rupturas, queimaduras ou desfiamentos",
+   "ativo": true
+  },
+  {
+   "id": "f009-30",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cordas",
+   "ordem": 30,
+   "pergunta": "Sem nós ao longo do comprimento",
+   "ativo": true
+  },
+  {
+   "id": "f009-31",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Cordas",
+   "ordem": 31,
+   "pergunta": "Sem sinais de deterioração",
+   "ativo": true
+  },
+  {
+   "id": "f009-32",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Correntes",
+   "ordem": 32,
+   "pergunta": "Material sem desgaste",
+   "ativo": true
+  },
+  {
+   "id": "f009-33",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Correntes",
+   "ordem": 33,
+   "pergunta": "Elos sem alongamento",
+   "ativo": true
+  },
+  {
+   "id": "f009-34",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Correntes",
+   "ordem": 34,
+   "pergunta": "Elos sem amassamentos ou dobras",
+   "ativo": true
+  },
+  {
+   "id": "f009-35",
+   "tipo": "vme-acessorios-de-icamento",
+   "modulo": "base",
+   "secao": "Correntes",
+   "ordem": 35,
+   "pergunta": "Elos sem fissuras, entalhes ou rupturas",
+   "ativo": true
+  },
+  {
+   "id": "f012-01",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 1,
+   "pergunta": "Carcaça sem rachaduras ou fissuras",
+   "ativo": true
+  },
+  {
+   "id": "f012-02",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 2,
+   "pergunta": "Proteção das partes móveis cobrindo pelo menos metade do disco",
+   "ativo": true
+  },
+  {
+   "id": "f012-03",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 3,
+   "pergunta": "Sem vibrações anormais em funcionamento",
+   "ativo": true
+  },
+  {
+   "id": "f012-04",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 4,
+   "pergunta": "Botão liga/desliga em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f012-05",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 5,
+   "pergunta": "Dupla isolação ou carcaça aterrada",
+   "ativo": true
+  },
+  {
+   "id": "f012-06",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 6,
+   "pergunta": "Plugue ou tomada tipo Steck para ligação",
+   "ativo": true
+  },
+  {
+   "id": "f012-07",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 7,
+   "pergunta": "Cabo elétrico com isolamento adequado (tipo PP ou PB)",
+   "ativo": true
+  },
+  {
+   "id": "f012-08",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 8,
+   "pergunta": "Cabo elétrico sem emendas",
+   "ativo": true
+  },
+  {
+   "id": "f012-09",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Disco",
+   "ordem": 9,
+   "pergunta": "Disco seco, sem pó, trincas, fissuras ou partes quebradas",
+   "ativo": true
+  },
+  {
+   "id": "f012-10",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Disco",
+   "ordem": 10,
+   "pergunta": "Disco ajustado ao eixo e apropriado ao serviço",
+   "ativo": true
+  },
+  {
+   "id": "f012-11",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Disco",
+   "ordem": 11,
+   "pergunta": "Rotação indicada no disco maior que a do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f012-12",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Disco",
+   "ordem": 12,
+   "pergunta": "Disco passou no teste de som antes da instalação",
+   "ativo": true
+  },
+  {
+   "id": "f012-13",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Disco",
+   "ordem": 13,
+   "pergunta": "Chave de troca de disco disponível",
+   "ativo": true
+  },
+  {
+   "id": "f012-14",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Disco",
+   "ordem": 14,
+   "pergunta": "Trava removida",
+   "ativo": true
+  },
+  {
+   "id": "f012-15",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 15,
+   "pergunta": "Operador treinado e qualificado",
+   "ativo": true
+  },
+  {
+   "id": "f012-16",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 16,
+   "pergunta": "EPIs em bom estado e utilizados pelo operador e auxiliares",
+   "ativo": true
+  },
+  {
+   "id": "f012-17",
+   "tipo": "vme-lixadeira-esmerilhadeira",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 17,
+   "pergunta": "Uso de uniforme e crachá pelo operador",
+   "ativo": true
+  },
+  {
+   "id": "f014-01",
+   "tipo": "vme-martelete-pneumatico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Carcaça em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f014-02",
+   "tipo": "vme-martelete-pneumatico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Mangueiras sem rasgos ou vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "f014-03",
+   "tipo": "vme-martelete-pneumatico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Engates das mangueiras travando de forma adequada",
+   "ativo": true
+  },
+  {
+   "id": "f014-04",
+   "tipo": "vme-martelete-pneumatico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Gatilho em bom estado e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "f014-05",
+   "tipo": "vme-martelete-pneumatico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Ponteira afiada",
+   "ativo": true
+  },
+  {
+   "id": "f014-06",
+   "tipo": "vme-martelete-pneumatico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Ponteira sem trincas, ferrugem ou partes quebradas",
+   "ativo": true
+  },
+  {
+   "id": "f014-07",
+   "tipo": "vme-martelete-pneumatico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Área de trabalho isolada",
+   "ativo": true
+  },
+  {
+   "id": "f014-08",
+   "tipo": "vme-martelete-pneumatico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Operador treinado e qualificado",
+   "ativo": true
+  },
+  {
+   "id": "f014-09",
+   "tipo": "vme-martelete-pneumatico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "EPIs em bom estado e utilizados pelo operador e auxiliares",
+   "ativo": true
+  },
+  {
+   "id": "f014-10",
+   "tipo": "vme-martelete-pneumatico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "Uso de uniforme e crachá pelo operador",
+   "ativo": true
+  },
+  {
+   "id": "f015-01",
+   "tipo": "vme-martelete-rompedor-eletrico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Carcaça em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f015-02",
+   "tipo": "vme-martelete-rompedor-eletrico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Gatilho em bom estado e funcionando",
+   "ativo": true
+  },
+  {
+   "id": "f015-03",
+   "tipo": "vme-martelete-rompedor-eletrico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Ponteira afiada",
+   "ativo": true
+  },
+  {
+   "id": "f015-04",
+   "tipo": "vme-martelete-rompedor-eletrico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Ponteira sem trincas, ferrugem ou partes quebradas",
+   "ativo": true
+  },
+  {
+   "id": "f015-05",
+   "tipo": "vme-martelete-rompedor-eletrico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Área de trabalho isolada",
+   "ativo": true
+  },
+  {
+   "id": "f015-06",
+   "tipo": "vme-martelete-rompedor-eletrico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Plugue ou tomada tipo Steck para ligação",
+   "ativo": true
+  },
+  {
+   "id": "f015-07",
+   "tipo": "vme-martelete-rompedor-eletrico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Cabo elétrico com isolamento adequado (tipo PP ou PB)",
+   "ativo": true
+  },
+  {
+   "id": "f015-08",
+   "tipo": "vme-martelete-rompedor-eletrico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Cabo elétrico sem emendas",
+   "ativo": true
+  },
+  {
+   "id": "f015-09",
+   "tipo": "vme-martelete-rompedor-eletrico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Dupla isolação ou carcaça aterrada",
+   "ativo": true
+  },
+  {
+   "id": "f015-10",
+   "tipo": "vme-martelete-rompedor-eletrico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "Operador treinado e qualificado",
+   "ativo": true
+  },
+  {
+   "id": "f015-11",
+   "tipo": "vme-martelete-rompedor-eletrico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 11,
+   "pergunta": "EPIs em bom estado e utilizados pelo operador e auxiliares",
+   "ativo": true
+  },
+  {
+   "id": "f015-12",
+   "tipo": "vme-martelete-rompedor-eletrico",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 12,
+   "pergunta": "Uso de uniforme e crachá pelo operador",
+   "ativo": true
+  },
+  {
+   "id": "f016-01",
+   "tipo": "vme-furadeira-manual",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Carcaça sem rachaduras ou fissuras",
+   "ativo": true
+  },
+  {
+   "id": "f016-02",
+   "tipo": "vme-furadeira-manual",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Sem vibrações anormais em funcionamento",
+   "ativo": true
+  },
+  {
+   "id": "f016-03",
+   "tipo": "vme-furadeira-manual",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Cabo elétrico com isolamento adequado (tipo PP ou PB)",
+   "ativo": true
+  },
+  {
+   "id": "f016-04",
+   "tipo": "vme-furadeira-manual",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Cabo elétrico sem emendas",
+   "ativo": true
+  },
+  {
+   "id": "f016-05",
+   "tipo": "vme-furadeira-manual",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Botão liga/desliga em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f016-06",
+   "tipo": "vme-furadeira-manual",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Plugue ou tomada tipo Steck para ligação",
+   "ativo": true
+  },
+  {
+   "id": "f016-07",
+   "tipo": "vme-furadeira-manual",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Mandril perfeito, sem dentes quebrados",
+   "ativo": true
+  },
+  {
+   "id": "f016-08",
+   "tipo": "vme-furadeira-manual",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Chave apropriada para troca da broca",
+   "ativo": true
+  },
+  {
+   "id": "f016-09",
+   "tipo": "vme-furadeira-manual",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Operador treinado e qualificado",
+   "ativo": true
+  },
+  {
+   "id": "f016-10",
+   "tipo": "vme-furadeira-manual",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "EPIs em bom estado e utilizados pelo operador e auxiliares",
+   "ativo": true
+  },
+  {
+   "id": "f016-11",
+   "tipo": "vme-furadeira-manual",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 11,
+   "pergunta": "Uso de uniforme e crachá pelo operador",
+   "ativo": true
+  },
+  {
+   "id": "f020-01",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 1,
+   "pergunta": "Botão liga/desliga em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f020-02",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 2,
+   "pergunta": "Aterramento da carcaça do motor e demais partes metálicas",
+   "ativo": true
+  },
+  {
+   "id": "f020-03",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 3,
+   "pergunta": "Chave blindada ou disjuntor com identificação de tensão e sistema de cadeado",
+   "ativo": true
+  },
+  {
+   "id": "f020-04",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Elétrica",
+   "ordem": 4,
+   "pergunta": "Cabos elétricos protegidos contra impactos e umidade, fora da área de circulação",
+   "ativo": true
+  },
+  {
+   "id": "f020-05",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Disco e transmissão",
+   "ordem": 5,
+   "pergunta": "Disco de corte sem avarias",
+   "ativo": true
+  },
+  {
+   "id": "f020-06",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Disco e transmissão",
+   "ordem": 6,
+   "pergunta": "Disco protegido por coifa em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f020-07",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Disco e transmissão",
+   "ordem": 7,
+   "pergunta": "Rotação indicada no disco maior que a do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f020-08",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Disco e transmissão",
+   "ordem": 8,
+   "pergunta": "Partes móveis (correia etc.) protegidas",
+   "ativo": true
+  },
+  {
+   "id": "f020-09",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Disco e transmissão",
+   "ordem": 9,
+   "pergunta": "Correia ajustada, sem desgaste ou fissuras",
+   "ativo": true
+  },
+  {
+   "id": "f020-10",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Disco e transmissão",
+   "ordem": 10,
+   "pergunta": "Morsa para fixação do material a ser cortado",
+   "ativo": true
+  },
+  {
+   "id": "f020-11",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Disco e transmissão",
+   "ordem": 11,
+   "pergunta": "Dispositivo que impede o contato do disco com a bancada",
+   "ativo": true
+  },
+  {
+   "id": "f020-12",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 12,
+   "pergunta": "Lâmpadas protegidas contra impactos",
+   "ativo": true
+  },
+  {
+   "id": "f020-13",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 13,
+   "pergunta": "Piso nivelado e antiderrapante",
+   "ativo": true
+  },
+  {
+   "id": "f020-14",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 14,
+   "pergunta": "Cobertura contra intempéries",
+   "ativo": true
+  },
+  {
+   "id": "f020-15",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 15,
+   "pergunta": "Mesa estável e em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f020-16",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 16,
+   "pergunta": "Extintor de incêndio adequado no local",
+   "ativo": true
+  },
+  {
+   "id": "f020-17",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 17,
+   "pergunta": "Área de circulação e espaço em torno da máquina livres",
+   "ativo": true
+  },
+  {
+   "id": "f020-18",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Local",
+   "ordem": 18,
+   "pergunta": "Placas de segurança sobre uso de EPI e identificação do operador",
+   "ativo": true
+  },
+  {
+   "id": "f020-19",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 19,
+   "pergunta": "Operador treinado e qualificado",
+   "ativo": true
+  },
+  {
+   "id": "f020-20",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 20,
+   "pergunta": "EPIs em bom estado e utilizados pelo operador e auxiliares",
+   "ativo": true
+  },
+  {
+   "id": "f020-21",
+   "tipo": "vme-serra-policorte",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 21,
+   "pergunta": "Uso de uniforme e crachá pelo operador",
+   "ativo": true
+  },
+  {
+   "id": "f022-01",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 1,
+   "pergunta": "Carcaça sem rachaduras ou fissuras",
+   "ativo": true
+  },
+  {
+   "id": "f022-02",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 2,
+   "pergunta": "Proteção da parte móvel cobrindo pelo menos metade do disco",
+   "ativo": true
+  },
+  {
+   "id": "f022-03",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 3,
+   "pergunta": "Sem vibrações anormais em funcionamento",
+   "ativo": true
+  },
+  {
+   "id": "f022-04",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 4,
+   "pergunta": "Botão liga/desliga em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f022-05",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 5,
+   "pergunta": "Plugue para ligação em tomada",
+   "ativo": true
+  },
+  {
+   "id": "f022-06",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 6,
+   "pergunta": "Cabo com isolamento adequado (tipo PP ou PB)",
+   "ativo": true
+  },
+  {
+   "id": "f022-07",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 7,
+   "pergunta": "Cabo sem emendas, ou emendas isoladas e conservadas",
+   "ativo": true
+  },
+  {
+   "id": "f022-08",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Equipamento",
+   "ordem": 8,
+   "pergunta": "Trava do equipamento retirada conforme recomendado",
+   "ativo": true
+  },
+  {
+   "id": "f022-09",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Disco",
+   "ordem": 9,
+   "pergunta": "Disco ajustado ao eixo",
+   "ativo": true
+  },
+  {
+   "id": "f022-10",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Disco",
+   "ordem": 10,
+   "pergunta": "Disco apropriado ao serviço",
+   "ativo": true
+  },
+  {
+   "id": "f022-11",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Disco",
+   "ordem": 11,
+   "pergunta": "Disco sem avarias (trincas e dentes quebrados), afiado e travado",
+   "ativo": true
+  },
+  {
+   "id": "f022-12",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 12,
+   "pergunta": "Operador treinado e qualificado",
+   "ativo": true
+  },
+  {
+   "id": "f022-13",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 13,
+   "pergunta": "EPIs em bom estado e utilizados pelo operador e auxiliares",
+   "ativo": true
+  },
+  {
+   "id": "f022-14",
+   "tipo": "vme-serra-circular-manual",
+   "modulo": "base",
+   "secao": "Operador",
+   "ordem": 14,
+   "pergunta": "Uso de uniforme e crachá pelo operador",
+   "ativo": true
+  },
+  {
+   "id": "f032-01",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Sem vazamento no motor",
+   "ativo": true
+  },
+  {
+   "id": "f032-02",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Chave liga/desliga em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f032-03",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Carcaça em bom estado de conservação",
+   "ativo": true
+  },
+  {
+   "id": "f032-04",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Isolamento acústico adequado ou equipamento isolado",
+   "ativo": true
+  },
+  {
+   "id": "f032-05",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Cilindro de gás em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f032-06",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Acoplamento do cilindro de gás e mangueira em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f032-07",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Sistema de partida funcionando corretamente",
+   "ativo": true
+  },
+  {
+   "id": "f032-08",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "Sistema elétrico em bom estado",
+   "ativo": true
+  },
+  {
+   "id": "f032-09",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 9,
+   "pergunta": "Descarga de fumaça em local ventilado, afastado de pessoas e regulada",
+   "ativo": true
+  },
+  {
+   "id": "f032-10",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 10,
+   "pergunta": "Mangueiras adaptadas aos engates de forma adequada",
+   "ativo": true
+  },
+  {
+   "id": "f032-11",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 11,
+   "pergunta": "Engates das mangueiras travando de forma adequada",
+   "ativo": true
+  },
+  {
+   "id": "f032-12",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 12,
+   "pergunta": "Partes móveis protegidas",
+   "ativo": true
+  },
+  {
+   "id": "f032-13",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 13,
+   "pergunta": "Sistema rodogás sem vazamentos",
+   "ativo": true
+  },
+  {
+   "id": "f032-14",
+   "tipo": "vme-motor-a-gas",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 14,
+   "pergunta": "Extintor de incêndio adequado no local",
+   "ativo": true
+  },
+  {
+   "id": "f033-01",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 1,
+   "pergunta": "Motor",
+   "ativo": true
+  },
+  {
+   "id": "f033-02",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 2,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f033-03",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 3,
+   "pergunta": "Vazamentos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "f033-04",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 4,
+   "pergunta": "Sistema hidráulico",
+   "ativo": true
+  },
+  {
+   "id": "f033-05",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 5,
+   "pergunta": "Pistões hidráulicos",
+   "ativo": true
+  },
+  {
+   "id": "f033-06",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 6,
+   "pergunta": "Conexões",
+   "ativo": true
+  },
+  {
+   "id": "f033-07",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 7,
+   "pergunta": "Patolas",
+   "ativo": true
+  },
+  {
+   "id": "f033-08",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 8,
+   "pergunta": "Mangotes",
+   "ativo": true
+  },
+  {
+   "id": "f033-09",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 9,
+   "pergunta": "Correias",
+   "ativo": true
+  },
+  {
+   "id": "f033-10",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 10,
+   "pergunta": "Correntes",
+   "ativo": true
+  },
+  {
+   "id": "f033-11",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 11,
+   "pergunta": "Freio estacionário",
+   "ativo": true
+  },
+  {
+   "id": "f033-12",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 12,
+   "pergunta": "Base do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f033-13",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 13,
+   "pergunta": "Estado geral do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f033-14",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 14,
+   "pergunta": "Haste de perfuração",
+   "ativo": true
+  },
+  {
+   "id": "f033-15",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 15,
+   "pergunta": "Moitão",
+   "ativo": true
+  },
+  {
+   "id": "f033-16",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 16,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f033-17",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 17,
+   "pergunta": "Tanque de combustível",
+   "ativo": true
+  },
+  {
+   "id": "f033-18",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 18,
+   "pergunta": "Documentação do operador",
+   "ativo": true
+  },
+  {
+   "id": "f033-19",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 19,
+   "pergunta": "Crachá do operador",
+   "ativo": true
+  },
+  {
+   "id": "f033-20",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 20,
+   "pergunta": "EPIs do operador",
+   "ativo": true
+  },
+  {
+   "id": "f033-21",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 21,
+   "pergunta": "Pneus",
+   "ativo": true
+  },
+  {
+   "id": "f033-22",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 22,
+   "pergunta": "Mangueiras",
+   "ativo": true
+  },
+  {
+   "id": "f033-23",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 23,
+   "pergunta": "Pinos, contrapinos e gaxetas",
+   "ativo": true
+  },
+  {
+   "id": "f033-24",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 24,
+   "pergunta": "Cabos de aço",
+   "ativo": true
+  },
+  {
+   "id": "f033-25",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 25,
+   "pergunta": "Enrolamento do cabo no tambor",
+   "ativo": true
+  },
+  {
+   "id": "f033-26",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 26,
+   "pergunta": "Trava de segurança nos ganchos",
+   "ativo": true
+  },
+  {
+   "id": "f033-27",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 27,
+   "pergunta": "Comandos (alavancas e pedais)",
+   "ativo": true
+  },
+  {
+   "id": "f033-28",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 28,
+   "pergunta": "Acessórios de içamento",
+   "ativo": true
+  },
+  {
+   "id": "f033-29",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Bomba",
+   "ordem": 29,
+   "pergunta": "Motor da bomba",
+   "ativo": true
+  },
+  {
+   "id": "f033-30",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Bomba",
+   "ordem": 30,
+   "pergunta": "Material rodante",
+   "ativo": true
+  },
+  {
+   "id": "f033-31",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Bomba",
+   "ordem": 31,
+   "pergunta": "Conexões da bomba",
+   "ativo": true
+  },
+  {
+   "id": "f033-32",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Bomba",
+   "ordem": 32,
+   "pergunta": "Válvulas",
+   "ativo": true
+  },
+  {
+   "id": "f033-33",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Bomba",
+   "ordem": 33,
+   "pergunta": "Sem vazamentos na bomba",
+   "ativo": true
+  },
+  {
+   "id": "f033-34",
+   "tipo": "vme-perfuratriz-sonda",
+   "modulo": "base",
+   "secao": "Bomba",
+   "ordem": 34,
+   "pergunta": "Mangueiras da bomba",
+   "ativo": true
+  },
+  {
+   "id": "f034-01",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 1,
+   "pergunta": "Motor",
+   "ativo": true
+  },
+  {
+   "id": "f034-02",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 2,
+   "pergunta": "Emissão de fumaça preta",
+   "ativo": true
+  },
+  {
+   "id": "f034-03",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 3,
+   "pergunta": "Vazamentos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "f034-04",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 4,
+   "pergunta": "Pneus (inclusive o estepe)",
+   "ativo": true
+  },
+  {
+   "id": "f034-05",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 5,
+   "pergunta": "Sistema de freios",
+   "ativo": true
+  },
+  {
+   "id": "f034-06",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 6,
+   "pergunta": "Buzina",
+   "ativo": true
+  },
+  {
+   "id": "f034-07",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 7,
+   "pergunta": "Alarme de ré",
+   "ativo": true
+  },
+  {
+   "id": "f034-08",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 8,
+   "pergunta": "Faróis (luz alta e baixa)",
+   "ativo": true
+  },
+  {
+   "id": "f034-09",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 9,
+   "pergunta": "Luz de ré",
+   "ativo": true
+  },
+  {
+   "id": "f034-10",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 10,
+   "pergunta": "Lanternas",
+   "ativo": true
+  },
+  {
+   "id": "f034-11",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 11,
+   "pergunta": "Emergência (pisca-alerta)",
+   "ativo": true
+  },
+  {
+   "id": "f034-12",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 12,
+   "pergunta": "Luzes indicadoras de direção",
+   "ativo": true
+  },
+  {
+   "id": "f034-13",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 13,
+   "pergunta": "Para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f034-14",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 14,
+   "pergunta": "Limpador de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f034-15",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 15,
+   "pergunta": "Retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f034-16",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 16,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f034-17",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 17,
+   "pergunta": "Estado de conservação e limpeza",
+   "ativo": true
+  },
+  {
+   "id": "f034-18",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 18,
+   "pergunta": "Documentação do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f034-19",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 19,
+   "pergunta": "Documentação do operador",
+   "ativo": true
+  },
+  {
+   "id": "f034-20",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 20,
+   "pergunta": "Crachá do operador",
+   "ativo": true
+  },
+  {
+   "id": "f034-21",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 21,
+   "pergunta": "EPIs do operador",
+   "ativo": true
+  },
+  {
+   "id": "f034-22",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 22,
+   "pergunta": "Patolas e base para as patolas",
+   "ativo": true
+  },
+  {
+   "id": "f034-23",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Lança e bomba",
+   "ordem": 23,
+   "pergunta": "Base para apoio das sapatas",
+   "ativo": true
+  },
+  {
+   "id": "f034-24",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Lança e bomba",
+   "ordem": 24,
+   "pergunta": "Lança (funcionamento e vazamentos)",
+   "ativo": true
+  },
+  {
+   "id": "f034-25",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Lança e bomba",
+   "ordem": 25,
+   "pergunta": "Sistema hidráulico",
+   "ativo": true
+  },
+  {
+   "id": "f034-26",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Lança e bomba",
+   "ordem": 26,
+   "pergunta": "Comandos hidráulicos",
+   "ativo": true
+  },
+  {
+   "id": "f034-27",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Lança e bomba",
+   "ordem": 27,
+   "pergunta": "Mangueiras",
+   "ativo": true
+  },
+  {
+   "id": "f034-28",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Lança e bomba",
+   "ordem": 28,
+   "pergunta": "Giro da lança (testar)",
+   "ativo": true
+  },
+  {
+   "id": "f034-29",
+   "tipo": "vme-bomba-de-concreto",
+   "modulo": "base",
+   "secao": "Lança e bomba",
+   "ordem": 29,
+   "pergunta": "Acesso à cabine de trabalho",
+   "ativo": true
+  },
+  {
+   "id": "f037-01",
+   "tipo": "vme-maquina-de-rosca-em-tubo",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 1,
+   "pergunta": "Motor",
+   "ativo": true
+  },
+  {
+   "id": "f037-02",
+   "tipo": "vme-maquina-de-rosca-em-tubo",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 2,
+   "pergunta": "Chave liga/desliga",
+   "ativo": true
+  },
+  {
+   "id": "f037-03",
+   "tipo": "vme-maquina-de-rosca-em-tubo",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 3,
+   "pergunta": "Coletor de resíduos",
+   "ativo": true
+  },
+  {
+   "id": "f037-04",
+   "tipo": "vme-maquina-de-rosca-em-tubo",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 4,
+   "pergunta": "Partes móveis protegidas",
+   "ativo": true
+  },
+  {
+   "id": "f037-05",
+   "tipo": "vme-maquina-de-rosca-em-tubo",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 5,
+   "pergunta": "Condições do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f037-06",
+   "tipo": "vme-maquina-de-rosca-em-tubo",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 6,
+   "pergunta": "Cabos elétricos",
+   "ativo": true
+  },
+  {
+   "id": "f037-07",
+   "tipo": "vme-maquina-de-rosca-em-tubo",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 7,
+   "pergunta": "Bancada de trabalho",
+   "ativo": true
+  },
+  {
+   "id": "f037-08",
+   "tipo": "vme-maquina-de-rosca-em-tubo",
+   "modulo": "base",
+   "secao": "Geral",
+   "ordem": 8,
+   "pergunta": "EPI do operador",
+   "ativo": true
+  },
+  {
+   "id": "f039-01",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 1,
+   "pergunta": "Motor (manutenção preventiva)",
+   "ativo": true
+  },
+  {
+   "id": "f039-02",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 2,
+   "pergunta": "Vazamentos aparentes",
+   "ativo": true
+  },
+  {
+   "id": "f039-03",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 3,
+   "pergunta": "Pneus",
+   "ativo": true
+  },
+  {
+   "id": "f039-04",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 4,
+   "pergunta": "Sistema de freios",
+   "ativo": true
+  },
+  {
+   "id": "f039-05",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 5,
+   "pergunta": "Buzina",
+   "ativo": true
+  },
+  {
+   "id": "f039-06",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 6,
+   "pergunta": "Alarme de ré",
+   "ativo": true
+  },
+  {
+   "id": "f039-07",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 7,
+   "pergunta": "Luz de ré",
+   "ativo": true
+  },
+  {
+   "id": "f039-08",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 8,
+   "pergunta": "Faróis (luz alta e baixa)",
+   "ativo": true
+  },
+  {
+   "id": "f039-09",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 9,
+   "pergunta": "Luz de freio",
+   "ativo": true
+  },
+  {
+   "id": "f039-10",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 10,
+   "pergunta": "Emergência (pisca-alerta)",
+   "ativo": true
+  },
+  {
+   "id": "f039-11",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 11,
+   "pergunta": "Luzes indicadoras de direção",
+   "ativo": true
+  },
+  {
+   "id": "f039-12",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 12,
+   "pergunta": "Indicador de combustível / bateria",
+   "ativo": true
+  },
+  {
+   "id": "f039-13",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 13,
+   "pergunta": "Para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f039-14",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 14,
+   "pergunta": "Limpador de para-brisa",
+   "ativo": true
+  },
+  {
+   "id": "f039-15",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 15,
+   "pergunta": "Retrovisores",
+   "ativo": true
+  },
+  {
+   "id": "f039-16",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 16,
+   "pergunta": "Extintor de incêndio fixado, lacrado e dentro da validade",
+   "ativo": true
+  },
+  {
+   "id": "f039-17",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 17,
+   "pergunta": "Estado de conservação e limpeza",
+   "ativo": true
+  },
+  {
+   "id": "f039-18",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 18,
+   "pergunta": "Indicação de capacidade de carga",
+   "ativo": true
+  },
+  {
+   "id": "f039-19",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 19,
+   "pergunta": "Proteção do operador contra intempéries",
+   "ativo": true
+  },
+  {
+   "id": "f039-20",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Condições gerais",
+   "ordem": 20,
+   "pergunta": "EPIs do operador",
+   "ativo": true
+  },
+  {
+   "id": "f039-21",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 21,
+   "pergunta": "Nível de óleo hidráulico",
+   "ativo": true
+  },
+  {
+   "id": "f039-22",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 22,
+   "pergunta": "Cinto de segurança",
+   "ativo": true
+  },
+  {
+   "id": "f039-23",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 23,
+   "pergunta": "Diagrama de cargas",
+   "ativo": true
+  },
+  {
+   "id": "f039-24",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 24,
+   "pergunta": "Indicador de carga (balança)",
+   "ativo": true
+  },
+  {
+   "id": "f039-25",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 25,
+   "pergunta": "Comandos (alavancas e joystick)",
+   "ativo": true
+  },
+  {
+   "id": "f039-26",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 26,
+   "pergunta": "Painel de instrumentos",
+   "ativo": true
+  },
+  {
+   "id": "f039-27",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 27,
+   "pergunta": "Parada de emergência (testar)",
+   "ativo": true
+  },
+  {
+   "id": "f039-28",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 28,
+   "pergunta": "Acesso à cabine de trabalho",
+   "ativo": true
+  },
+  {
+   "id": "f039-29",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Conjunto de elevação",
+   "ordem": 29,
+   "pergunta": "Sistema hidráulico",
+   "ativo": true
+  },
+  {
+   "id": "f039-30",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 30,
+   "pergunta": "Laudo técnico descritivo e fotográfico",
+   "ativo": true
+  },
+  {
+   "id": "f039-31",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 31,
+   "pergunta": "Cópia da última manutenção preventiva (assinada e carimbada pelo técnico responsável)",
+   "ativo": true
+  },
+  {
+   "id": "f039-32",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 32,
+   "pergunta": "Plano de manutenção do equipamento",
+   "ativo": true
+  },
+  {
+   "id": "f039-33",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 33,
+   "pergunta": "ART do equipamento conforme NR-12 (recolhida a cada 3 meses)",
+   "ativo": true
+  },
+  {
+   "id": "f039-34",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 34,
+   "pergunta": "Manual do equipamento em português",
+   "ativo": true
+  },
+  {
+   "id": "f039-35",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 35,
+   "pergunta": "Plano de movimentação da carga",
+   "ativo": true
+  },
+  {
+   "id": "f039-36",
+   "tipo": "vme-empilhadeira",
+   "modulo": "base",
+   "secao": "Documentação",
+   "ordem": 36,
+   "pergunta": "Crachá do operador (dentro da validade)",
+   "ativo": true
+  }
+ ]
+}
