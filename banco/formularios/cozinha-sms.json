@@ -1,0 +1,1281 @@
+{
+ "id": "aud-cozinha",
+ "nome": "Cozinha e Refeitório",
+ "descricao": "Check List de Cozinha (SMS) · RDC 216/2004, NR-18, NR-24 e NR-6: estrutura, higiene, água, pragas, manipuladores e refeitório",
+ "usa_atividade": false,
+ "ordem": 404,
+ "ativo": true,
+ "modo": "formulario",
+ "grupo": "auditoria",
+ "estrutura": {
+  "versao": 1,
+  "origem": {
+   "sistema": "Axyma Forms",
+   "modelo": "CHECK LIST DE COZINHA ( SMS )",
+   "versao": 2,
+   "id": "-Op-Y603dEWqCbJOZH_N",
+   "lido_em": "2026-11-17"
+  },
+  "itens": [
+   {
+    "id": "1",
+    "nome": "ITENS A SEREM VERIFICADOS",
+    "subitens": [
+     {
+      "id": "1.1",
+      "nome": "A cozinha possui registro do órgão sanitário competente? (Ref.: Decreto Federal 986/1969)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.2",
+      "nome": "A instalação é projetada de forma a possibilitar um fluxo ordenado e sem cruzamentos em todas as etapas de preparação de alimento e a facilitar as operações de manutenção, limpeza e desinfecção? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.3",
+      "nome": "As portas da área de preparação e armazenamento de alimentos são de fechamento automático? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.4",
+      "nome": "As aberturas externas das áreas de preparação e armazenamento de alimentos são providas de telas removíveis para impedir o acesso de vetores e pragas? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.5",
+      "nome": "Os ralos são sifonados e as grelhas possuem dispositivo que permite seu fechamento? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.6",
+      "nome": "A área de preparação conta com iluminação que proporcione visualização de forma que as atividades sejam realizadas sem comprometer a higiene e as características sensoriais dos alimentos? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.7",
+      "nome": "As luminárias localizadas sobre a área de preparação dos alimentos contam com proteção contra explosão e quedas acidentais? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.8",
+      "nome": "A ventilação garante a renovação do ar e a manutenção do ambiente livre de fungos, gases, fumaça, pós, partículas em suspensão, condensação de vapores dentre outros que podem comprometer a qualidade higiênico-sanitária do alimento? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.9",
+      "nome": "O acesso à instalação é controlado e independente, não comum a outros usos? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.10",
+      "nome": "As instalações sanitárias e os vestiários não se comunicam com a área de preparação e armazenamento de alimentos ou refeitórios? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.11",
+      "nome": "As instalações sanitárias e os vestiários são de uso exclusivo dos manipuladores de alimentos, refeições e utensílios? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.12",
+      "nome": "As instalações sanitárias possuem lavatórios, papel higiênico, sabonete líquido inodoro antisséptico e toalhas de papel para secagem das mãos? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.13",
+      "nome": "Os coletores de papel das instalações sanitárias são dotados de tampa e acionados sem contato manual? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.14",
+      "nome": "A cozinha possui revestimento em piso, parede e teto laváveis, impermeáveis e lisos? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.15",
+      "nome": "O piso, parede e teto são íntegros, conservados, livres de rachaduras, trincas, goteiras, vazamentos, infiltrações, bolores, descascamentos, dentre outros? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.16",
+      "nome": "A cozinha possui pia para lavar os alimentos e utensílios? (Ref.: NR-18)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.17",
+      "nome": "A cozinha possui lavatório exclusivo para lavagem das mãos, com sabonete líquido inodoro antisséptico, papel toalha e coletor de papel sem contato manual? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.18",
+      "nome": "A cozinha possui equipamento de refrigeração para preservação dos alimentos? (Ref.: NR-18)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.19",
+      "nome": "A cozinha possui instalações elétricas adequadamente protegidas ou embutidas em eletrodutos? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.20",
+      "nome": "A cozinha fica adjacente ao local para refeições?",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.21",
+      "nome": "É realizada a calibração dos instrumentos ou equipamentos de medição? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.22",
+      "nome": "A empresa que realiza o controle de vetores e pragas urbanas fornece comprovante de execução do serviço contendo, no mínimo: a) data de execução do serviço; b) endereço do imóvel; c) grupo químico do produto utilizado; d) identificação da empresa prestadora (razão social, nome fantasia, endereço, telefone e número do registro no conselho correspondente); e) nome e concentração do produto utilizado; f) telefone do Centro de Informação Toxicológica; g) praga alvo; h) prazo de assistência técnica, por extenso, por praga alvo? (Ref.: Resolução ANVISA RDC 52/2009)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.23",
+      "nome": "É utilizada água potável para manipulação dos alimentos? (Ref.: Portaria MS 2914/2011; Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.24",
+      "nome": "O reservatório de água é higienizado em um intervalo máximo de seis meses, sendo mantidos registros dessa operação? (Ref.: Portaria MS 2914/2011; Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.25",
+      "nome": "É realizada análise laboratorial da água para consumo humano através de amostras provenientes dos pontos de distribuição? (Ref.: Portaria MS 2914/2011; Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.26",
+      "nome": "São mantidos registros atualizados sobre a característica da água distribuída e disponibilizados para ponto de acesso e consulta pública? (Ref.: Portaria MS 2914/2011; Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.27",
+      "nome": "Os coletores utilizados para depósito dos resíduos das áreas de preparação e armazenamento de alimentos são dotados de tampas acionadas sem contato manual? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.28",
+      "nome": "Os manipuladores utilizam uniformes limpos e usados exclusivamente nas dependências internas do estabelecimento? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.29",
+      "nome": "São afixados cartazes de orientação aos manipuladores sobre a correta lavagem e antissepsia das mãos e demais hábitos de higiene em local de fácil visualização, inclusive nas instalações sanitárias e lavatórios? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.30",
+      "nome": "Os manipuladores usam cabelos presos e protegidos por rede, unhas curtas e sem esmalte ou base, sem uso de barba e/ou bigode? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.31",
+      "nome": "As matérias-primas, ingredientes e embalagens são armazenados sobre paletes, estrados e/ou prateleiras? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.32",
+      "nome": "O serviço de alimentação possui Manual de Boas Práticas e Procedimentos Operacionais Padronizados? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.33",
+      "nome": "É realizada a guarda de amostra do alimento servido? (Ref.: Resolução ANVISA RDC 12/2001)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.34",
+      "nome": "Os resíduos são coletados e estocados em local fechado e isolado da área de preparação e armazenamento dos alimentos, de forma a evitar focos de contaminação e atração de vetores e pragas urbanas? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.35",
+      "nome": "É fornecido Equipamento de Proteção Individual (EPI) apropriado às atividades realizadas na cozinha? (Ref.: NR-6)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.36",
+      "nome": "Os utensílios utilizados no consumo do alimento, tais como pratos, copos e talheres não descartáveis, são devidamente higienizados e armazenados em local protegido? (Ref.: Resolução ANVISA RDC 216/2004)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.37",
+      "nome": "O refeitório está instalado em local adequado, sem comunicação com locais de trabalho, instalações sanitárias e locais insalubres e perigosos? (Ref.: NR-24)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "1.38",
+      "nome": "O refeitório possui piso impermeável, revestido de cerâmica, plástico ou outro material lavável? (Ref.: NR-24)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "comentario": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     }
+    ]
+   }
+  ]
+ }
+}
