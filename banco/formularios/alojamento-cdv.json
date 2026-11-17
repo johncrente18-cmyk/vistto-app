@@ -1,0 +1,422 @@
+{
+ "id": "aud-alojamento",
+ "nome": "Alojamento",
+ "descricao": "Forms CDV (SMS) · higienização, dedetização, elétrica, quartos, cozinha, banheiro, código de conduta e extintor",
+ "usa_atividade": false,
+ "ordem": 403,
+ "ativo": true,
+ "modo": "formulario",
+ "grupo": "auditoria",
+ "estrutura": {
+  "versao": 1,
+  "origem": {
+   "sistema": "Axyma Forms",
+   "modelo": "ALOJAMENTO - FORMS CDV ( SMS )",
+   "versao": 4,
+   "id": "-Op-Y44JZksUcUQruRsj",
+   "lido_em": "2026-11-17"
+  },
+  "itens": [
+   {
+    "id": "1",
+    "nome": "IDENTIFICAÇÃO",
+    "subitens": [
+     {
+      "id": "1.1",
+      "nome": "Endereço e Foto da Fachada",
+      "tipo": "texto",
+      "longo": true,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "arquivo": true,
+       "galeria": true
+      },
+      "obriga": {
+       "foto": true
+      }
+     },
+     {
+      "id": "1.2",
+      "nome": "Tag ou Código",
+      "tipo": "texto",
+      "longo": false,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "arquivo": false,
+       "galeria": true
+      }
+     },
+     {
+      "id": "1.3",
+      "nome": "Condição do alojamento",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "permite": {
+       "foto": true,
+       "arquivo": true,
+       "galeria": true,
+       "comentario": true
+      },
+      "obriga_resp": {
+       "c": {},
+       "nc": {
+        "comentario": true
+       },
+       "na": {}
+      }
+     }
+    ]
+   },
+   {
+    "id": "2",
+    "nome": "Itens a serem verificados",
+    "subitens": [
+     {
+      "id": "2.1",
+      "nome": "Plano de Higienização de limpeza / Coleta de lixo",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "arquivo": true,
+       "galeria": true,
+       "comentario": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "2.2",
+      "nome": "Plano de dedetização da residência",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "arquivo": true,
+       "galeria": true,
+       "comentario": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "2.3",
+      "nome": "Elétrica ( tomadas, Afiações, Quadro elétrico, Chuveiro, Lâmpadas, etc...)",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "arquivo": true,
+       "galeria": true,
+       "comentario": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "2.4",
+      "nome": "Quartos ( quantidade de pessoas por quarto/FOTO )",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "arquivo": true,
+       "galeria": true,
+       "comentario": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "2.5",
+      "nome": "Cozinha ( Foto do ambiente, Foto do Botijão de gás )",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "arquivo": true,
+       "galeria": true,
+       "comentario": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "2.6",
+      "nome": "Sala ( Foto de ambiente )",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "arquivo": true,
+       "galeria": true,
+       "comentario": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "2.7",
+      "nome": "Banheiro ( Foto do Ambiente, Chuveiro, Pia, Suporte do sanitário, Suporte para papel Higiênico )",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "arquivo": true,
+       "galeria": true,
+       "comentario": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "2.8",
+      "nome": "Garagem ( FOTO )",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "na": "Não se Aplica",
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "arquivo": true,
+       "galeria": true,
+       "comentario": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "2.9",
+      "nome": "Código de Conduta fixado ( FOTO )",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "arquivo": true,
+       "galeria": true,
+       "comentario": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     },
+     {
+      "id": "2.10",
+      "nome": "Foto do Extintor de Incêndio ( NÃO SE APLICA A EDIFICAÇÕES RESIDENCIAIS )",
+      "tipo": "avaliacao",
+      "opcoes": [
+       {
+        "rotulo": "CONFORME",
+        "valor": 100
+       },
+       {
+        "rotulo": "NÃO CONFORME",
+        "valor": 0
+       }
+      ],
+      "na": "Não se Aplica",
+      "peso": 1,
+      "obrigatorio": true,
+      "permite": {
+       "foto": true,
+       "arquivo": true,
+       "galeria": true,
+       "comentario": true
+      },
+      "obriga_resp": {
+       "c": {
+        "foto": true
+       },
+       "nc": {
+        "foto": true,
+        "comentario": true
+       },
+       "na": {}
+      }
+     }
+    ]
+   }
+  ]
+ }
+}
