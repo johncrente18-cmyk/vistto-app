@@ -1,10 +1,12 @@
-const CACHE = 'vistto-v61';
+const CACHE = 'vistto-v62';
 const CORE = ['./', './index.html', './checklist.html', './supabase.js', './pdf-vistto.js', './manifest.webmanifest', './icon-192.png', './icon-512.png',
   // Mapa 3D funcionando sem internet
   './mapa3d/', './mapa3d/index.html', './mapa3d/site.json', './mapa3d/ground.jpg', './mapa3d/lib/three.module.min.js',
   './mapa3d/lib/addons/controls/OrbitControls.js', './mapa3d/lib/addons/exporters/GLTFExporter.js', './mapa3d/lib/addons/utils/TextureUtils.js'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => Promise.all(CORE.map(u => fetch(u, { cache: 'no-cache' }).then(r => r.ok && c.put(u, r)).catch(() => {})))).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
+// sinal fraco: espera no máximo 4 s pelo servidor e depois usa a cópia salva no aparelho
+const comPrazo = (p, ms) => new Promise((ok, no) => { const t = setTimeout(() => no(new Error('tempo')), ms); p.then(r => { clearTimeout(t); ok(r); }, e => { clearTimeout(t); no(e); }); });
 const guarda = (req, r) => { if (r && r.ok) { const c = r.clone(); caches.open(CACHE).then(x => x.put(req, c)); } return r; };
 self.addEventListener('fetch', e => {
   const u = new URL(e.request.url);
@@ -13,7 +15,7 @@ self.addEventListener('fetch', e => {
   if (e.request.mode === 'navigate' || /\.(html|json)$/.test(u.pathname) || u.pathname.endsWith('/')) {
     const raiz = new URL('./', location.href).pathname;
     const chave = u.pathname === raiz ? './index.html' : e.request;
-    e.respondWith(fetch(e.request.url, { cache: 'no-cache' }).then(r => guarda(chave, r))
+    e.respondWith(caches.match(chave, { ignoreSearch: true }).then(tem => comPrazo(fetch(e.request.url, { cache: 'no-cache' }), tem ? 4000 : 30000)).then(r => guarda(chave, r))
       .catch(() => caches.match(chave, { ignoreSearch: true }).then(h => h || caches.match('./index.html'))));
     return;
   }
