@@ -29,7 +29,7 @@ Deno.serve(async (req) => {
     // 1) quem está pedindo?
     const adm = createClient(URL, SERVICE, { auth: { persistSession: false, autoRefreshToken: false } });
     const { data: eu, error: eEu } = await adm.auth.getUser(auth.slice(7));
-    if (eEu || !eu?.user) return resp(401, { erro: 'Sessão vencida. Faça login de novo.' });
+    if (eEu || !eu?.user) { console.warn('getUser falhou:', eEu?.message, '· chave de serviço presente:', !!SERVICE); return resp(401, { erro: 'Sessão vencida. Faça login de novo.', detalhe: eEu?.message || '' }); }
 
     const { data: perfil } = await adm.from('profiles').select('papel, ativo').eq('id', eu.user.id).maybeSingle();
     if (!perfil || perfil.papel !== 'admin' || perfil.ativo === false) return resp(403, { erro: 'Somente administradores podem alterar a senha de outra pessoa.' });
