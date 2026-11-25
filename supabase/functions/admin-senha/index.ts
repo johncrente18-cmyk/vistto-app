@@ -5,8 +5,12 @@
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
 const URL = Deno.env.get('SUPABASE_URL')!;
-const ANON = Deno.env.get('SUPABASE_ANON_KEY')!;
-const SERVICE = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
+function chaveServico(): string {
+  const k = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
+  if (k) return k;
+  try { const o = JSON.parse(Deno.env.get('SUPABASE_SECRET_KEYS') || '{}'); return o.default || Object.values(o)[0] as string || ''; } catch { return ''; }
+}
+const SERVICE = chaveServico();
 const CORS = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
@@ -23,11 +27,10 @@ Deno.serve(async (req) => {
     if (!auth.startsWith('Bearer ')) return resp(401, { erro: 'Faça login de novo.' });
 
     // 1) quem está pedindo?
-    const comoUsuario = createClient(URL, ANON, { global: { headers: { Authorization: auth } }, auth: { persistSession: false } });
-    const { data: eu, error: eEu } = await comoUsuario.auth.getUser();
+    const adm = createClient(URL, SERVICE, { auth: { persistSession: false, autoRefreshToken: false } });
+    const { data: eu, error: eEu } = await adm.auth.getUser(auth.slice(7));
     if (eEu || !eu?.user) return resp(401, { erro: 'Sessão vencida. Faça login de novo.' });
 
-    const adm = createClient(URL, SERVICE, { auth: { persistSession: false } });
     const { data: perfil } = await adm.from('profiles').select('papel, ativo').eq('id', eu.user.id).maybeSingle();
     if (!perfil || perfil.papel !== 'admin' || perfil.ativo === false) return resp(403, { erro: 'Somente administradores podem alterar a senha de outra pessoa.' });
 
