@@ -197,6 +197,21 @@
   .hero .sub { color: var(--muted); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; }
   .hero .hi { font-size: 15px; margin-top: 4px; }
   .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+  .xt-bar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 4px 0 12px; }
+  .xt-bar input[type=search] { flex: 1 1 220px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; color: inherit; }
+  .xt-f { border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 6px 12px; font-size: 13px; cursor: pointer; color: var(--muted); }
+  .xt-f[aria-pressed=true] { border-color: var(--accent); color: var(--text, inherit); background: color-mix(in srgb, var(--accent) 16%, transparent); }
+  .xt-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+  .xt { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 860px; }
+  .xt th { text-align: left; color: var(--muted); font-weight: 600; font-size: 12px; padding: 9px 10px; border-bottom: 1px solid var(--line); background: var(--surface); position: sticky; top: 0; }
+  .xt td { padding: 9px 10px; border-bottom: 1px solid color-mix(in srgb, var(--line) 60%, transparent); vertical-align: middle; }
+  .xt tr[data-x] { cursor: pointer; } .xt tr[data-x]:hover td { background: color-mix(in srgb, var(--accent) 7%, transparent); }
+  .xs { display: inline-block; font-size: 11.5px; font-weight: 700; padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
+  .xs.ok { background: color-mix(in srgb, var(--ok) 18%, transparent); color: var(--ok); } .xs.wa { background: color-mix(in srgb, var(--warn) 20%, transparent); color: var(--warn); }
+  .xs.bd { background: color-mix(in srgb, var(--bad) 18%, transparent); color: var(--bad); } .xs.nt { background: var(--surface-2); color: var(--muted); }
+  .xg { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; } .xg .full { grid-column: 1 / -1; }
+  .mbox.largo { width: min(820px, 100%); }
+  .xh { font-size: 13px; border-top: 1px solid var(--line); padding: 8px 0; display: flex; justify-content: space-between; gap: 10px; align-items: center; }
   .kpi { background: var(--surface); border-radius: 12px; padding: 14px; border: 1px solid var(--line); }
   .kpi b { display: block; font-size: 26px; line-height: 1.1; }
   .kpi span { font-size: 12px; color: var(--muted); }
@@ -289,7 +304,7 @@
   const MOD_NOMES = { base: 'Itens de todas as inspeções', escavacao: 'Escavação', eletrica: 'Eletricidade', icamento: 'Içamento', carga: 'Movimentação de carga' };
   const TIPOS_PADRAO = [{ id: 'caminhada', nome: 'Caminhada de segurança', descricao: 'Ferramentas, EPI, documentação e os riscos da atividade do dia', usa_atividade: true, ordem: 1, ativo: true },
     { id: 'vivencia', nome: 'Área de vivência (Meta 01)', descricao: 'Documentação e estrutura da área de vivência', usa_atividade: false, ordem: 2, ativo: true }];
-  const RESERVADOS = ['tipos', 'atividades', 'pessoas', 'historico', 'arquivo'];
+  const RESERVADOS = ['tipos', 'atividades', 'pessoas', 'historico', 'arquivo', 'extintores'];
   const GRUPOS = [['veiculos', 'Inspeções de Veículos-Máquinas-Equipamentos'], ['gerencia', 'Inspeção Gerência'], ['campo', 'Inspeções de Campo TSTs'], ['auditoria', 'Auditorias · Listas de Verificação']];
   const grupoDe = t => t.grupo || (t.id === 'caminhada' || t.id === 'vivencia' ? 'gerencia' : 'campo');
   const tipoDe = id => (S.tipos || []).find(t => t.id === id) || TIPOS_PADRAO.find(t => t.id === id) || { id, nome: id, usa_atividade: false };
@@ -415,13 +430,14 @@
     clip: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></svg>',
     list: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.2"/><circle cx="4.5" cy="12" r="1.2"/><circle cx="4.5" cy="18" r="1.2"/></svg>',
     folder: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2.5h8.5A1.5 1.5 0 0 1 21 9v9.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></svg>',
+    fire: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="8" height="13" rx="3"/><path d="M10 8V5h4v3M14 5h3l2 2M12 12v4"/></svg>',
     home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>',
     up: '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V5M7 9l5-5 5 5M5 20h14"/></svg>' };
 
   function render() {
     const tps = [...S.tipos].sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
     const navT = t => [t.id, t.nome + (t.ativo === false ? ' (desativado)' : ''), t.id === 'caminhada' ? 'walk' : t.id === 'vivencia' ? 'tent' : 'clip'];
-    const nav = [['', [['inicio', 'Início', 'home']]], ['Relatórios', [['historico', 'Histórico de inspeções', 'chart'], ['arquivo', 'Arquivo mensal (OneDrive)', 'folder']]], ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
+    const nav = [['', [['inicio', 'Início', 'home']]], ['Relatórios', [['historico', 'Histórico de inspeções', 'chart'], ['extintores', 'Extintores', 'fire'], ['arquivo', 'Arquivo mensal (OneDrive)', 'folder']]], ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
     const grupos = GRUPOS.slice().reverse().map(([g, l]) => ({ g, nome: l.replace('Inspeções de ', '').replace('Inspeção ', ''), its: tps.filter(t => grupoDe(t) === g).map(navT) })).filter(x => x.its.length);
     if (!S.navAberto) { try { S.navAberto = JSON.parse(localStorage.getItem('vistto_painel_menu')) || {}; } catch (e) { S.navAberto = {}; } }
     grupos.forEach(x => { if (x.its.some(([k]) => k === S.tab)) S.navAberto[x.g] = true; });
@@ -448,8 +464,8 @@
     $app.querySelectorAll('[data-busca]').forEach(inp => inp.oninput = () => { const q = semAc(inp.value).trim(); inp.parentElement.querySelectorAll('.nav').forEach(b => { b.style.display = !q || q.split(/\s+/).every(w => semAc(b.textContent).includes(w)) ? '' : 'none'; }); });
     const mb = document.getElementById('menuBtn'); if (mb) mb.onclick = () => document.body.classList.toggle('menu-aberto');
     setStatus(); arqPill();
-    document.getElementById('main').classList.toggle('wide', ['tipos', 'pessoas', 'atividades'].includes(S.tab));
-    if (S.tab === 'inicio') renderInicio(); else if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (S.tab === 'historico') renderHistorico(); else if (S.tab === 'arquivo') renderArquivo(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
+    document.getElementById('main').classList.toggle('wide', ['tipos', 'pessoas', 'atividades', 'extintores'].includes(S.tab));
+    if (S.tab === 'inicio') renderInicio(); else if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (S.tab === 'historico') renderHistorico(); else if (S.tab === 'extintores') renderExtintores(); else if (S.tab === 'arquivo') renderArquivo(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
   }
 
 
@@ -705,6 +721,104 @@
       scC: r.conformidade == null ? 'var(--muted)' : r.conformidade >= 90 ? 'var(--ok)' : r.conformidade >= 75 ? 'var(--warn)' : 'var(--bad)' };
   }
 
+
+  // ---------- Extintores (cadastro feito pelo app na inspeção, pela numeração do cilindro) ----------
+  const XT = { f: 'todos', q: '' };
+  const xtNome = e => e.ilegivel ? `${e.numero} (ilegível)` : `Nº ${e.numero}${e.marca ? ' · ' + e.marca : ''}`;
+  const xtMes = (ym, d = new Date()) => { if (!ym) return null; const [y, m] = ym.split('-').map(Number); return (y - d.getFullYear()) * 12 + (m - (d.getMonth() + 1)); };
+  const xtRec = e => { const m = xtMes(e.recarga_mes); return m == null ? { c: 'nt', t: '—', venc: false } : m < 0 ? { c: 'bd', t: 'vencida ' + e.recarga_mes.split('-').reverse().join('/'), venc: true } : m <= 1 ? { c: 'wa', t: 'vence ' + e.recarga_mes.split('-').reverse().join('/'), venc: false } : { c: 'ok', t: e.recarga_mes.split('-').reverse().join('/'), venc: false }; };
+  const xtHid = e => { if (!e.hidro_ano) return { c: 'nt', t: '—', venc: false }; const v = +e.hidro_ano + 5, y = new Date().getFullYear(); return v < y ? { c: 'bd', t: 'vencido (' + e.hidro_ano + ')', venc: true } : v === y ? { c: 'wa', t: 'vence em ' + v, venc: false } : { c: 'ok', t: 'até ' + v, venc: false }; };
+  async function renderExtintores() {
+    const main = document.getElementById('main');
+    main.innerHTML = `<h1 style="font-size:22px;margin:22px 0 4px">🧯 Extintores</h1><p class="hint" style="margin:0 0 14px">Cadastrados pelo app na primeira inspeção, pela numeração gravada no fundo do cilindro. Clique num extintor para ver o histórico${S.eu && S.eu.papel === 'admin' ? ' e corrigir a ficha' : ''}.</p><div id="xbox"><p class="hint">Carregando…</p></div>`;
+    try {
+      const desde = new Date(Date.now() - 400 * 864e5).toISOString();
+      const [ex, ins, nc, R] = await Promise.all([S.sb.from('extintores').select('*').order('numero'), S.sb.from('inspecoes').select('id,equipamento_id,criado_em,autor_id,conformidade,frente_id').like('equipamento_id', 'ext:%').gte('criado_em', desde).order('criado_em', { ascending: false }).limit(5000),
+        S.sb.from('ncs').select('id,equipamento,pergunta,status,criado_em,inspecao_id').like('equipamento', 'Extintor %').order('criado_em', { ascending: false }).limit(3000), refHist()]);
+      if (ex.error) throw ex.error;
+      XT.rows = ex.data || []; XT.ins = ins.data || []; XT.ncs = nc.data || []; XT.people = R.people || [];
+      drawExtintores();
+    } catch (e) { const b = document.getElementById('xbox'); if (b) b.innerHTML = `<p class="err">Não foi possível carregar: ${esc(e.message || e)}${/extintores/.test(String(e.message)) ? ' (a tabela de extintores ainda não foi criada no banco)' : ''}</p>`; }
+  }
+  function drawExtintores() {
+    const box = document.getElementById('xbox'); if (!box || S.tab !== 'extintores') return;
+    const ini = new Date(); ini.setDate(1); ini.setHours(0, 0, 0, 0);
+    const feitos = new Set(XT.ins.filter(i => new Date(i.criado_em) >= ini).map(i => i.equipamento_id));
+    const ncAb = {}; XT.ncs.filter(n => n.status !== 'encerrada').forEach(n => { const k = xtNcExt(n); if (k) ncAb[k] = (ncAb[k] || 0) + 1; });
+    const ativos = XT.rows.filter(e => e.ativo !== false);
+    const venc = e => xtRec(e).venc || xtHid(e).venc, semMes = e => !feitos.has(e.id);
+    const kp = [[ativos.length, 'extintores cadastrados', ''], [ativos.filter(e => !semMes(e)).length, 'inspecionados neste mês', 'var(--ok)'], [ativos.filter(semMes).length, 'sem inspeção neste mês', 'var(--warn)'], [ativos.filter(venc).length, 'recarga ou hidrostático vencido', 'var(--bad)']];
+    const FL = [['todos', 'Todos'], ['sem', 'Sem inspeção no mês'], ['venc', 'Vencidos'], ['nc', 'Com NC aberta'], ['ileg', 'Numeração ilegível'], ['inat', 'Desativados']];
+    const q = semAc(XT.q).trim();
+    const L = XT.rows.filter(e => XT.f === 'inat' ? e.ativo === false : e.ativo !== false).filter(e => XT.f === 'sem' ? semMes(e) : XT.f === 'venc' ? venc(e) : XT.f === 'nc' ? ncAb[e.id] : XT.f === 'ileg' ? e.ilegivel : true)
+      .filter(e => !q || q.split(/\s+/).every(w => semAc([e.numero, e.marca, e.agente, e.capacidade, e.local].join(' ')).includes(w)));
+    const nomeP = id => { const p = XT.people.find(x => x.id === id); return p ? (p.nome || p.email || '').split(' ').slice(0, 2).join(' ') : '—'; };
+    box.innerHTML = `<div class="kpis">${kp.map(([v, l, c], k) => `<div class="kpi" data-k="${k}" style="cursor:pointer"><b style="color:${v && c ? c : 'inherit'}">${v}</b><span>${l}</span></div>`).join('')}</div>
+      <div class="xt-bar"><input type="search" id="xq" placeholder="Buscar por número, marca, tipo ou local" value="${esc(XT.q)}">${FL.map(([k, l]) => `<button class="xt-f" data-f="${k}" aria-pressed="${XT.f === k}">${l}</button>`).join('')}<button class="ghost" id="xcsv">Exportar planilha</button></div>
+      ${L.length ? `<div class="xt-wrap"><table class="xt"><thead><tr><th>Nº do cilindro</th><th>Marca</th><th>Tipo</th><th>Local</th><th>Recarga</th><th>Hidrostático</th><th>Última inspeção</th><th>Este mês</th><th>NCs</th></tr></thead><tbody>
+        ${L.map(e => { const r = xtRec(e), h = xtHid(e), n = ncAb[e.id] || 0;
+          return `<tr data-x="${esc(e.id)}"><td><b>${esc(e.numero)}</b>${e.ilegivel ? ' <span class="xs wa">ilegível</span>' : ''}</td><td>${esc(e.marca || '—')}</td><td>${esc([e.agente, e.capacidade].filter(Boolean).join(' ') || '—')}</td><td>${esc(e.local || '—')}</td>
+            <td><span class="xs ${r.c}">${esc(r.t)}</span></td><td><span class="xs ${h.c}">${esc(h.t)}</span></td><td>${e.ultima_inspecao_em ? new Date(e.ultima_inspecao_em).toLocaleDateString('pt-BR') + ' · ' + esc(nomeP(e.ultima_inspecao_por)) : '—'}</td>
+            <td>${semMes(e) ? '<span class="xs wa">pendente</span>' : '<span class="xs ok">feita</span>'}</td><td>${n ? `<span class="xs bd">${n} aberta${n > 1 ? 's' : ''}</span>` : '—'}</td></tr>`; }).join('')}
+      </tbody></table></div>` : `<p class="hint">${XT.rows.length ? 'Nenhum extintor neste filtro.' : 'Nenhum extintor cadastrado ainda. Eles aparecem aqui conforme as inspeções de extintor forem feitas no app.'}</p>`}`;
+    box.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { XT.f = b.dataset.f; drawExtintores(); });
+    box.querySelectorAll('.kpi[data-k]').forEach(b => b.onclick = () => { XT.f = ['todos', 'todos', 'sem', 'venc'][+b.dataset.k]; drawExtintores(); });
+    const xq = box.querySelector('#xq'); xq.oninput = () => { XT.q = xq.value; clearTimeout(XT.t); XT.t = setTimeout(() => { drawExtintores(); const n = document.getElementById('xq'); if (n) { n.focus(); n.setSelectionRange(n.value.length, n.value.length); } }, 250); };
+    box.querySelectorAll('tr[data-x]').forEach(tr => tr.onclick = () => fichaExtintor(XT.rows.find(e => e.id === tr.dataset.x)));
+    box.querySelector('#xcsv').onclick = () => {
+      const lin = [['Nº do cilindro', 'Marca', 'Numeração ilegível', 'Tipo', 'Capacidade', 'Local', 'Vencimento recarga', 'Ano teste hidrostático', 'Hidrostático vence em', 'Última inspeção', 'Inspecionado por', 'Inspecionado neste mês', 'NCs abertas', 'Ativo']]
+        .concat(L.map(e => [e.numero, e.marca || '', e.ilegivel ? 'sim' : 'não', e.agente || '', e.capacidade || '', e.local || '', e.recarga_mes ? e.recarga_mes.split('-').reverse().join('/') : '', e.hidro_ano || '', e.hidro_ano ? +e.hidro_ano + 5 : '', e.ultima_inspecao_em ? new Date(e.ultima_inspecao_em).toLocaleDateString('pt-BR') : '', nomeP(e.ultima_inspecao_por), semMes(e) ? 'não' : 'sim', ncAb[e.id] || 0, e.ativo === false ? 'não' : 'sim']));
+      const csv = '﻿' + lin.map(r => r.map(v => `"${String(v).replace(/"/g, '""')}"`).join(';')).join('\r\n');
+      const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' })); a.download = `extintores-${new Date().toISOString().slice(0, 10)}.csv`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 4000); };
+  }
+  const xtNcExt = n => { const i = XT.ins.find(x => x.id === n.inspecao_id); if (i) return i.equipamento_id; const e = XT.rows.find(r => 'Extintor ' + xtNome2(r) === n.equipamento); return e ? e.id : null; };
+  const xtNome2 = e => e.ilegivel ? `${e.numero} (numeração ilegível)` : `Nº ${e.numero}${e.marca ? ' · ' + e.marca : ''}`;
+  function fichaExtintor(e) {
+    if (!e) return; const adm = S.eu && S.eu.papel === 'admin';
+    const ins = XT.ins.filter(i => i.equipamento_id === e.id), ncs = XT.ncs.filter(n => xtNcExt(n) === e.id);
+    const nomeP = id => { const p = XT.people.find(x => x.id === id); return p ? (p.nome || p.email) : '—'; };
+    const r = xtRec(e), h = xtHid(e), ST = { aberta: ['bd', 'Aberta'], vista: ['wa', 'Vista'], corrigida: ['ok', 'Corrigida'], encerrada: ['nt', 'Encerrada'] };
+    const AG = ['ÁGUA PRESSURIZADA', 'PQS - ABC', 'PQS - BC', 'LGE', 'CO²'], CAP = ['1 kg', '2 kg', '4 kg', '6 kg', '8 kg', '10 L', '12 kg', '20 kg', '50 kg', '75 L'];
+    const opt = (lst, v) => ['<option value="">—</option>'].concat((v && !lst.includes(v) ? [v] : []).concat(lst).map(o => `<option ${o === v ? 'selected' : ''}>${esc(o)}</option>`)).join('');
+    modal(`<h3 style="margin:0">🧯 ${esc(xtNome(e))}${e.ativo === false ? ' <span class="xs nt">desativado</span>' : ''}</h3>
+      <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="xs nt">${esc([e.agente, e.capacidade].filter(Boolean).join(' ') || 'Tipo não informado')}</span><span class="xs ${r.c}">Recarga ${esc(r.t)}</span><span class="xs ${h.c}">Hidrostático ${esc(h.t)}</span></div>
+      <div style="font-size:13px;color:var(--muted)">${esc(e.local || 'Local não informado')} · cadastrado em ${new Date(e.criado_em).toLocaleDateString('pt-BR')} por ${esc(nomeP(e.criado_por))}${e.obs ? '<br>Obs.: ' + esc(e.obs) : ''}</div>
+      ${e.foto_id ? `<div id="xfoto" class="hint">Carregando foto da numeração…</div>` : ''}
+      <div><b style="font-size:14px">Inspeções (${ins.length})</b>${ins.length ? ins.map(i => `<div class="xh"><span>${new Date(i.criado_em).toLocaleDateString('pt-BR')} · ${esc(nomeP(i.autor_id))}${i.conformidade != null ? ` · <b style="color:${i.conformidade >= 90 ? 'var(--ok)' : i.conformidade >= 75 ? 'var(--warn)' : 'var(--bad)'}">${i.conformidade}%</b>` : ''}</span><button class="ghost" data-rel="${esc(i.id)}">Ver relatório</button></div>`).join('') : '<p class="hint" style="margin:6px 0">Nenhuma inspeção no último ano.</p>'}</div>
+      <div><b style="font-size:14px">Não conformidades (${ncs.length})</b>${ncs.length ? ncs.map(n => `<div class="xh"><span>${new Date(n.criado_em).toLocaleDateString('pt-BR')} · ${esc(String(n.pergunta || '').replace(/^.*? · /, ''))}</span><span class="xs ${(ST[n.status] || ST.aberta)[0]}">${(ST[n.status] || ST.aberta)[1]}</span></div>`).join('') : '<p class="hint" style="margin:6px 0">Nenhuma.</p>'}</div>
+      ${adm ? `<details id="xed"><summary style="cursor:pointer;font-weight:600;font-size:14px">✏️ Corrigir ficha</summary>
+        <div class="xg" style="margin-top:10px">
+          <label class="lb">Nº do cilindro<input type="text" id="x_num" value="${esc(e.numero)}"></label>
+          <label class="lb">Marca<input type="text" id="x_mar" value="${esc(e.marca || '')}"></label>
+          <label class="lb">Tipo<select id="x_ag">${opt(AG, e.agente)}</select></label>
+          <label class="lb">Capacidade<select id="x_cap">${opt(CAP, e.capacidade)}</select></label>
+          <label class="lb full">Local<input type="text" id="x_loc" value="${esc(e.local || '')}"></label>
+          <label class="lb">Vencimento da recarga<input type="month" id="x_rec" value="${esc(e.recarga_mes || '')}" style="background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;color:inherit;color-scheme:dark"></label>
+          <label class="lb">Ano do teste hidrostático<input type="number" id="x_hid" min="1990" max="2100" value="${esc(e.hidro_ano || '')}" style="background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;color:inherit"></label>
+          <label class="lb full">Observação<input type="text" id="x_obs" value="${esc(e.obs || '')}"></label>
+          <label class="chip"><input type="checkbox" id="x_il" ${e.ilegivel ? 'checked' : ''}> Numeração ilegível</label>
+          <label class="chip"><input type="checkbox" id="x_at" ${e.ativo === false ? '' : 'checked'}> Ativo (desmarque se saiu da obra)</label>
+        </div><div class="err" id="x_err"></div>
+        <div class="acts2"><button class="primary" id="x_ok">Salvar ficha</button></div></details>` : ''}
+      <div class="acts2"><button class="ghost" id="x_x">Fechar</button></div>`,
+    async (box, fechar) => {
+      box.classList.add('largo');
+      box.querySelector('#x_x').onclick = fechar;
+      box.querySelectorAll('[data-rel]').forEach(b => b.onclick = () => abrirRelatorio(b.dataset.rel));
+      if (e.foto_id) { const { data } = await S.sb.from('fotos').select('dados').eq('id', e.foto_id).maybeSingle(); const fb = box.querySelector('#xfoto'); if (fb) fb.innerHTML = data && data.dados ? `<img src="${esc(data.dados)}" alt="Numeração do cilindro" style="max-width:220px;max-height:160px;border-radius:8px;display:block">` : ''; }
+      const ok = box.querySelector('#x_ok'); if (!ok) return;
+      ok.onclick = async () => {
+        const v = id => box.querySelector(id).value.trim(), err = m => { box.querySelector('#x_err').textContent = m; };
+        const hid = v('#x_hid'); if (hid && !/^(19|20)\d\d$/.test(hid)) return err('Ano do teste hidrostático inválido.');
+        if (!v('#x_num')) return err('Informe o número do cilindro.');
+        const patch = { numero: v('#x_num'), marca: v('#x_mar') || null, agente: v('#x_ag') || null, capacidade: v('#x_cap') || null, local: v('#x_loc') || null, recarga_mes: v('#x_rec') || null, hidro_ano: hid ? +hid : null, obs: v('#x_obs') || null, ilegivel: box.querySelector('#x_il').checked, ativo: box.querySelector('#x_at').checked };
+        ok.disabled = true; ok.textContent = 'Salvando…';
+        const { error } = await S.sb.from('extintores').update(patch).eq('id', e.id);
+        if (error) { ok.disabled = false; ok.textContent = 'Salvar ficha'; return err(error.message); }
+        Object.assign(e, patch); fechar(); toast('Ficha do extintor salva.'); drawExtintores();
+      };
+    });
+  }
   function renderHistorico() {
     const main = document.getElementById('main');
     main.innerHTML = `<h1 style="font-size:22px;margin:22px 0 0">Histórico de inspeções</h1><div id="hbox"></div>`;
