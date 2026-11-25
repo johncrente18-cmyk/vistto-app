@@ -1291,7 +1291,7 @@
           ${campo('telefone', 'Telefone *', 'tel', 'required inputmode="tel" placeholder=" "')}
           ${campo('usuario', 'Nome de usuário *', 'text', 'required autocapitalize="none"')}
           ${campo('matricula', 'Matrícula *', 'text', 'required')}
-          ${ed ? `<p class="hint" style="grid-column:1/-1;margin:0">A senha só pode ser trocada pela própria pessoa. Para criar um acesso novo, cadastre outra conta.</p>` : `
+          ${ed ? `<div class="hint" style="grid-column:1/-1;margin:0;display:flex;gap:12px;align-items:center;flex-wrap:wrap"><button type="button" class="ghost" id="altsenha">🔑 Alterar senha</button><span>Define uma senha nova para esta pessoa. Ela pode ser obrigada a trocar no próximo login.</span></div>` : `
           <label class="fl pw"><span>Senha *</span><input type="password" id="f_senha" value="${esc(F.senha)}" required minlength="6" autocomplete="new-password"><button type="button" class="eye" id="eye" title="Mostrar senha">${ICON.eye}</button></label>
           <label class="fl pw"><span>Confirme a senha *</span><input type="password" id="f_senha2" value="${esc(F.senha2)}" required minlength="6" autocomplete="new-password"></label>`}
           <div class="pfoot">
@@ -1319,7 +1319,58 @@
       if (b('d_cp')) b('d_cp').onclick = () => navigator.clipboard.writeText(msg).then(() => toast('Dados de acesso copiados.'), () => prompt('Copie:', msg));
       b('d_new').onclick = () => { S.form = vazio(); S.done = null; renderPessoas(); };
     }
+    const alt = document.getElementById('altsenha'); if (alt) alt.onclick = () => { keep(); alterarSenha(F); };
     document.getElementById('pf').onsubmit = async e => { e.preventDefault(); keep(); await salvarPessoa(); };
+  }
+
+  function gerarSenha() {
+    const L = 'abcdefghjkmnpqrstuvwxyz', N = '23456789', a = new Uint32Array(8); crypto.getRandomValues(a);
+    const c = i => (i < 2 ? L.toUpperCase() : i < 5 ? L : N);
+    return Array.from(a, (v, i) => { const t = c(i); return t[v % t.length]; }).join('');
+  }
+  function alterarSenha(F) {
+    const nome = F.nome || 'esta pessoa';
+    modal(`<h3>🔑 Alterar senha · ${esc(nome)}</h3>
+      <label class="lb">Senha nova *<div style="display:flex;gap:6px"><input type="text" id="m_s1" minlength="6" maxlength="72" autocomplete="new-password" style="flex:1"><button type="button" class="ghost" id="m_ger" title="Gerar uma senha provisória">Gerar senha provisória</button></div></label>
+      <label class="lb">Confirme a senha *<input type="text" id="m_s2" minlength="6" maxlength="72" autocomplete="new-password"></label>
+      <label class="check"><input type="checkbox" id="m_tr" checked> Pedir para a pessoa criar uma senha dela no próximo login</label>
+      <div class="err" id="m_err"></div>
+      <div class="acts2"><button class="ghost" id="m_x">Cancelar</button><button class="primary" id="m_ok">Alterar senha</button></div>`,
+    (box, fechar) => {
+      const q = id => box.querySelector(id), err = m => { q('#m_err').textContent = m; };
+      q('#m_x').onclick = fechar;
+      q('#m_ger').onclick = () => { const g = gerarSenha(); q('#m_s1').value = g; q('#m_s2').value = g; err(''); };
+      q('#m_ok').onclick = async () => {
+        const s1 = q('#m_s1').value, s2 = q('#m_s2').value, trocar = q('#m_tr').checked;
+        if (s1.length < 6) return err('A senha precisa de pelo menos 6 caracteres.');
+        if (s1.length > 72) return err('A senha pode ter no máximo 72 caracteres.');
+        if (s1 !== s2) return err('As senhas não conferem.');
+        const b = q('#m_ok'); b.disabled = true; b.textContent = 'Alterando…'; err('');
+        try {
+          const { data: ss } = await S.sb.auth.getSession(); const tk = ss && ss.session && ss.session.access_token;
+          if (!tk) throw new Error('Sua sessão venceu. Entre de novo no Painel.');
+          let r;
+          try { r = await fetch(S.url + '/functions/v1/admin-senha', { method: 'POST', headers: { 'Content-Type': 'application/json', apikey: S.key, Authorization: 'Bearer ' + tk }, body: JSON.stringify({ user_id: F.id, senha: s1, trocar }) }); }
+          catch (e) { throw new Error('Sem conexão com o servidor. Tente de novo.'); }
+          const j = await r.json().catch(() => ({}));
+          if (r.status === 404 && !j.erro) throw new Error('A função de troca de senha ainda não foi instalada no Supabase.');
+          if (!r.ok || !j.ok) throw new Error(j.erro || ('Erro ' + r.status));
+          fechar(); senhaPronta(F, s1, trocar);
+        } catch (e) { b.disabled = false; b.textContent = 'Alterar senha'; err(e.message || String(e)); }
+      };
+    });
+  }
+  function senhaPronta(F, senha, trocar) {
+    const pn = (F.nome || '').split(' ')[0] || '';
+    const msg = `Olá, ${pn}! Sua senha do Vistto Inspeções foi redefinida.\n\nApp: ${APP_URL}\nUsuário: ${F.usuario || F.email}\nSenha provisória: ${senha}\n\n${trocar ? 'Ao entrar, o app vai pedir para você criar uma senha sua.' : ''}`.trim();
+    modal(`<h3>✅ Senha alterada</h3>
+      <div class="okbox" style="margin:0"><div><b>${esc(F.nome || '')}</b> já pode entrar com a senha nova: <b style="font-family:monospace;font-size:15px">${esc(senha)}</b>${trocar ? '<br>No próximo login o app vai pedir para ela criar uma senha dela.' : ''}</div></div>
+      <div class="acts2"><button class="ghost" id="m_wa">Enviar por WhatsApp</button><button class="ghost" id="m_cp">Copiar mensagem</button><button class="primary" id="m_x">Fechar</button></div>`,
+    (box, fechar) => {
+      box.querySelector('#m_x').onclick = fechar;
+      box.querySelector('#m_wa').onclick = () => window.open(`https://wa.me/${F.telefone ? '55' + soDig(F.telefone).replace(/^55/, '') : ''}?text=${encodeURIComponent(msg)}`, '_blank');
+      box.querySelector('#m_cp').onclick = () => navigator.clipboard.writeText(msg).then(() => toast('Mensagem copiada.'), () => prompt('Copie:', msg));
+    });
   }
 
   function acessoTexto(D) {
