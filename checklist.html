@@ -304,7 +304,7 @@
   const MOD_NOMES = { base: 'Itens de todas as inspeções', escavacao: 'Escavação', eletrica: 'Eletricidade', icamento: 'Içamento', carga: 'Movimentação de carga' };
   const TIPOS_PADRAO = [{ id: 'caminhada', nome: 'Caminhada de segurança', descricao: 'Ferramentas, EPI, documentação e os riscos da atividade do dia', usa_atividade: true, ordem: 1, ativo: true },
     { id: 'vivencia', nome: 'Área de vivência (Meta 01)', descricao: 'Documentação e estrutura da área de vivência', usa_atividade: false, ordem: 2, ativo: true }];
-  const RESERVADOS = ['tipos', 'atividades', 'pessoas', 'historico', 'arquivo', 'extintores'];
+  const RESERVADOS = ['tipos', 'atividades', 'pessoas', 'historico', 'arquivo', 'extintores', 'sugestoes'];
   const GRUPOS = [['veiculos', 'Inspeções de Veículos-Máquinas-Equipamentos'], ['gerencia', 'Inspeção Gerência'], ['campo', 'Inspeções de Campo TSTs'], ['auditoria', 'Auditorias · Listas de Verificação']];
   const grupoDe = t => t.grupo || (t.id === 'caminhada' || t.id === 'vivencia' ? 'gerencia' : 'campo');
   const tipoDe = id => (S.tipos || []).find(t => t.id === id) || TIPOS_PADRAO.find(t => t.id === id) || { id, nome: id, usa_atividade: false };
@@ -430,6 +430,7 @@
     clip: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></svg>',
     list: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.2"/><circle cx="4.5" cy="12" r="1.2"/><circle cx="4.5" cy="18" r="1.2"/></svg>',
     folder: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2.5h8.5A1.5 1.5 0 0 1 21 9v9.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></svg>',
+    bulb: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg>',
     fire: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="8" height="13" rx="3"/><path d="M10 8V5h4v3M14 5h3l2 2M12 12v4"/></svg>',
     home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>',
     up: '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V5M7 9l5-5 5 5M5 20h14"/></svg>' };
@@ -437,7 +438,7 @@
   function render() {
     const tps = [...S.tipos].sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
     const navT = t => [t.id, t.nome + (t.ativo === false ? ' (desativado)' : ''), t.id === 'caminhada' ? 'walk' : t.id === 'vivencia' ? 'tent' : 'clip'];
-    const nav = [['', [['inicio', 'Início', 'home']]], ['Relatórios', [['historico', 'Histórico de inspeções', 'chart'], ['extintores', 'Extintores', 'fire'], ['arquivo', 'Arquivo mensal (OneDrive)', 'folder']]], ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
+    const nav = [['', [['inicio', 'Início', 'home']]], ['Relatórios', [['historico', 'Histórico de inspeções', 'chart'], ['extintores', 'Extintores', 'fire'], ['arquivo', 'Arquivo mensal (OneDrive)', 'folder']]], ['Configuração', [['tipos', 'Tipos de inspeção', 'list'], ['atividades', 'Atividades e riscos', 'bolt'], ['sugestoes', 'Sugestões da equipe', 'bulb']]], ['Pessoas', [['pessoas', 'Cadastro de pessoas', 'users']]]];
     const grupos = GRUPOS.slice().reverse().map(([g, l]) => ({ g, nome: l.replace('Inspeções de ', '').replace('Inspeção ', ''), its: tps.filter(t => grupoDe(t) === g).map(navT) })).filter(x => x.its.length);
     if (!S.navAberto) { try { S.navAberto = JSON.parse(localStorage.getItem('vistto_painel_menu')) || {}; } catch (e) { S.navAberto = {}; } }
     grupos.forEach(x => { if (x.its.some(([k]) => k === S.tab)) S.navAberto[x.g] = true; });
@@ -464,8 +465,8 @@
     $app.querySelectorAll('[data-busca]').forEach(inp => inp.oninput = () => { const q = semAc(inp.value).trim(); inp.parentElement.querySelectorAll('.nav').forEach(b => { b.style.display = !q || q.split(/\s+/).every(w => semAc(b.textContent).includes(w)) ? '' : 'none'; }); });
     const mb = document.getElementById('menuBtn'); if (mb) mb.onclick = () => document.body.classList.toggle('menu-aberto');
     setStatus(); arqPill();
-    document.getElementById('main').classList.toggle('wide', ['tipos', 'pessoas', 'atividades', 'extintores'].includes(S.tab));
-    if (S.tab === 'inicio') renderInicio(); else if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (S.tab === 'historico') renderHistorico(); else if (S.tab === 'extintores') renderExtintores(); else if (S.tab === 'arquivo') renderArquivo(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
+    document.getElementById('main').classList.toggle('wide', ['tipos', 'pessoas', 'atividades', 'extintores', 'sugestoes'].includes(S.tab));
+    if (S.tab === 'inicio') renderInicio(); else if (S.tab === 'atividades') renderAtividades(); else if (S.tab === 'pessoas') renderPessoas(); else if (S.tab === 'tipos') renderTipos(); else if (S.tab === 'historico') renderHistorico(); else if (S.tab === 'extintores') renderExtintores(); else if (S.tab === 'sugestoes') renderSugestoes(); else if (S.tab === 'arquivo') renderArquivo(); else if (ehForm(S.tab)) renderForm(S.tab); else renderItens(S.tab);
   }
 
 
@@ -722,6 +723,73 @@
   }
 
 
+
+  // ---------- Sugestões da equipe (enviadas pelo app: 💡 na pergunta ou Mais › Sugestões) ----------
+  const SG = { f: 'abertas', q: '' };
+  const SG_T = { alterar: 'Alterar pergunta', nova: 'Nova pergunta', remover: 'Remover pergunta', checklist: 'Novo checklist', app: 'Melhoria no app', problema: 'Problema / erro' };
+  const SG_ST = { nova: ['nt', '🆕 Nova'], analise: ['wa', '🟡 Em análise'], feita: ['ok', '✅ Feita'], recusada: ['bd', '❌ Não será feita'] };
+  async function renderSugestoes() {
+    const main = document.getElementById('main');
+    main.innerHTML = `<h1 style="font-size:22px;margin:22px 0 4px">💡 Sugestões da equipe</h1><p class="hint" style="margin:0 0 14px">Enviadas pelo app (💡 na pergunta do checklist ou Mais › Sugestões). Ao responder, quem sugeriu recebe um aviso no app.</p><div id="sgbox"><p class="hint">Carregando…</p></div>`;
+    try {
+      const [a, b, R] = await Promise.all([S.sb.from('sugestoes').select('*').order('criado_em', { ascending: false }).limit(2000), S.sb.from('sugestao_apoios').select('sugestao_id,user_id,ativo').limit(20000), refHist()]);
+      if (a.error) throw a.error;
+      SG.rows = a.data || []; SG.ap = (b.data || []).filter(x => x.ativo !== false); SG.people = R.people || [];
+      drawSugestoes();
+    } catch (e) { const bx = document.getElementById('sgbox'); if (bx) bx.innerHTML = `<p class="err">Não foi possível carregar: ${esc(e.message || e)}${/sugestoes/.test(String(e.message)) ? ' (a tabela de sugestões ainda não foi criada no banco)' : ''}</p>`; }
+  }
+  function drawSugestoes() {
+    const box = document.getElementById('sgbox'); if (!box || S.tab !== 'sugestoes') return;
+    const nome = id => { const p = SG.people.find(x => x.id === id); return p ? (p.nome || p.email || '—') : '—'; };
+    const nAp = id => SG.ap.filter(x => x.sugestao_id === id).length;
+    const ini = new Date(); ini.setDate(1); ini.setHours(0, 0, 0, 0);
+    const kp = [[SG.rows.filter(x => x.status === 'nova').length, 'novas', 'var(--accent)', 'nova'], [SG.rows.filter(x => x.status === 'analise').length, 'em análise', 'var(--warn)', 'analise'], [SG.rows.filter(x => x.status === 'feita' && x.respondido_em && new Date(x.respondido_em) >= ini).length, 'feitas no mês', 'var(--ok)', 'feita'], [SG.rows.filter(x => x.status === 'recusada').length, 'não serão feitas', 'var(--bad)', 'recusada']];
+    const FL = [['abertas', 'Em aberto'], ['todas', 'Todas'], ['nova', 'Novas'], ['analise', 'Em análise'], ['feita', 'Feitas'], ['recusada', 'Não serão feitas']];
+    const q = semAc(SG.q).trim();
+    const L = SG.rows.filter(x => SG.f === 'todas' ? true : SG.f === 'abertas' ? ['nova', 'analise'].includes(x.status) : x.status === SG.f)
+      .filter(x => !q || q.split(/\s+/).every(w => semAc([nome(x.autor_id), SG_T[x.tipo], x.tipo_nome, x.pergunta, x.texto, x.resposta].join(' ')).includes(w)))
+      .sort((a, b) => (SG.f === 'abertas' ? nAp(b.id) - nAp(a.id) : 0) || String(b.criado_em).localeCompare(String(a.criado_em)));
+    box.innerHTML = `<div class="kpis">${kp.map(([v, l, c, f]) => `<div class="kpi" data-k="${f}" style="cursor:pointer"><b style="color:${v ? c : 'inherit'}">${v}</b><span>${l}</span></div>`).join('')}</div>
+      <div class="xt-bar"><input type="search" id="sgq" placeholder="Buscar por pessoa, checklist ou texto" value="${esc(SG.q)}">${FL.map(([k, l]) => `<button class="xt-f" data-f="${k}" aria-pressed="${SG.f === k}">${l}</button>`).join('')}</div>
+      ${L.length ? `<div class="xt-wrap"><table class="xt"><thead><tr><th>Quem · quando</th><th>Tipo</th><th>Checklist › pergunta</th><th>O que deseja</th><th>Apoio</th><th>Status</th><th></th></tr></thead><tbody>
+        ${L.map(x => { const st = SG_ST[x.status] || SG_ST.nova, tp = x.tipo_inspecao && (S.tipos || []).some(t => t.id === x.tipo_inspecao);
+          return `<tr><td><b>${esc(String(nome(x.autor_id)).split(' ').slice(0, 2).join(' '))}</b><br><span class="hint" style="margin:0">${new Date(x.criado_em).toLocaleDateString('pt-BR')}</span></td>
+            <td>${esc(SG_T[x.tipo] || x.tipo)}</td><td>${x.tipo_nome || x.pergunta ? `${esc(x.tipo_nome || '')}${x.pergunta ? `<br><span class="hint" style="margin:0">${esc(x.pergunta)}</span>` : ''}` : '—'}</td>
+            <td style="max-width:340px;white-space:pre-wrap">${esc(x.texto)}${x.foto_id ? `<br><button class="ghost" data-foto="${esc(x.foto_id)}" style="margin-top:6px;padding:3px 9px;font-size:12px">📷 Ver foto</button>` : ''}${x.resposta ? `<div class="hint" style="margin:6px 0 0;border-left:3px solid var(--line);padding-left:8px;white-space:pre-wrap"><b>${esc(nome(x.respondido_por) === '—' ? 'Resposta' : String(nome(x.respondido_por)).split(' ')[0])}:</b> ${esc(x.resposta)}</div>` : ''}</td>
+            <td>👍 ${nAp(x.id)}</td><td><span class="xs ${st[0]}">${st[1]}</span>${x.respondido_em ? `<br><span class="hint" style="margin:0;font-size:11.5px">${new Date(x.respondido_em).toLocaleDateString('pt-BR')}${x.visto_autor === false ? ' · ainda não viu' : ''}</span>` : ''}</td>
+            <td style="white-space:nowrap"><button class="primary" data-resp="${esc(x.id)}" style="padding:6px 11px;font-size:13px">Responder</button>${tp ? `<br><button class="ghost" data-tipo="${esc(x.tipo_inspecao)}" style="margin-top:6px;padding:5px 10px;font-size:12.5px">Abrir checklist</button>` : ''}</td></tr>`; }).join('')}
+      </tbody></table></div>` : `<p class="hint">${SG.rows.length ? 'Nenhuma sugestão neste filtro.' : 'Nenhuma sugestão ainda. Elas chegam pelo app: na inspeção, o 💡 de cada pergunta; ou Mais › Sugestões.'}</p>`}`;
+    box.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { SG.f = b.dataset.f; drawSugestoes(); });
+    box.querySelectorAll('.kpi[data-k]').forEach(b => b.onclick = () => { SG.f = b.dataset.k; drawSugestoes(); });
+    const sq = box.querySelector('#sgq'); sq.oninput = () => { SG.q = sq.value; clearTimeout(SG.t); SG.t = setTimeout(() => { drawSugestoes(); const n = document.getElementById('sgq'); if (n) { n.focus(); n.setSelectionRange(n.value.length, n.value.length); } }, 250); };
+    box.querySelectorAll('[data-tipo]').forEach(b => b.onclick = () => { S.tab = b.dataset.tipo; render(); window.scrollTo(0, 0); });
+    box.querySelectorAll('[data-foto]').forEach(b => b.onclick = async () => { b.disabled = true; const { data } = await S.sb.from('fotos').select('dados').eq('id', b.dataset.foto).maybeSingle(); b.disabled = false;
+      modal(`<h3 style="margin:0">📷 Foto da sugestão</h3>${data && data.dados ? `<img src="${esc(data.dados)}" style="max-width:100%;max-height:70vh;border-radius:10px">` : '<p class="hint">Foto não encontrada.</p>'}<div class="acts2"><button class="primary" id="m_x">Fechar</button></div>`, (bx, fechar) => { bx.querySelector('#m_x').onclick = fechar; }); });
+    box.querySelectorAll('[data-resp]').forEach(b => b.onclick = () => responderSugestao(SG.rows.find(x => x.id === b.dataset.resp), nome));
+  }
+  function responderSugestao(x, nome) {
+    if (!x) return;
+    const OPS = [['nova', 'Nova'], ['analise', 'Em análise'], ['feita', 'Feita ✅'], ['recusada', 'Não será feita ❌']];
+    modal(`<h3 style="margin:0">💡 Responder sugestão</h3>
+      <div style="font-size:13.5px;line-height:1.5;background:var(--surface-2);border-radius:10px;padding:10px 12px"><b>${esc(nome(x.autor_id))}</b> · ${esc(SG_T[x.tipo] || x.tipo)}${x.tipo_nome ? ` · ${esc(x.tipo_nome)}` : ''}${x.pergunta ? `<br><span class="hint" style="margin:0">${esc(x.pergunta)}</span>` : ''}<div style="margin-top:6px;white-space:pre-wrap">${esc(x.texto)}</div></div>
+      <label class="lb">Status<select id="sg_st">${OPS.map(([k, l]) => `<option value="${k}" ${x.status === k ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
+      <label class="lb">Resposta para quem sugeriu<textarea id="sg_r" rows="4" placeholder="Ex.: Boa! Agora são duas perguntas, 1.7 e 1.8. Obrigado.">${esc(x.resposta || '')}</textarea></label>
+      <p class="hint" style="margin:0">Ao salvar, a pessoa recebe um aviso no app. Quando não for fazer, explique o motivo.</p>
+      <div class="err" id="sg_err"></div>
+      <div class="acts2"><button class="ghost" id="sg_x">Cancelar</button><button class="primary" id="sg_ok">Salvar resposta</button></div>`,
+    (bx, fechar) => {
+      bx.querySelector('#sg_x').onclick = fechar;
+      bx.querySelector('#sg_ok').onclick = async () => {
+        const st = bx.querySelector('#sg_st').value, r = bx.querySelector('#sg_r').value.trim(), err = m => { bx.querySelector('#sg_err').textContent = m; };
+        if (st === 'recusada' && !r) return err('Escreva o motivo para quem sugeriu.');
+        if (st === x.status && r === (x.resposta || '')) return fechar();
+        const ok = bx.querySelector('#sg_ok'); ok.disabled = true; ok.textContent = 'Salvando…';
+        const { data, error } = await S.sb.from('sugestoes').update({ status: st, resposta: r || null }).eq('id', x.id).select().maybeSingle();
+        if (error) { ok.disabled = false; ok.textContent = 'Salvar resposta'; return err(error.message); }
+        Object.assign(x, data || { status: st, resposta: r || null, respondido_em: new Date().toISOString(), visto_autor: false }); fechar(); toast('Resposta salva. Quem sugeriu vai ver o aviso no app.'); drawSugestoes();
+      };
+    });
+  }
   // ---------- Extintores (cadastro feito pelo app na inspeção, pela numeração do cilindro) ----------
   const XT = { f: 'todos', q: '' };
   const xtNome = e => e.ilegivel ? `${e.numero} (ilegível)` : `Nº ${e.numero}${e.marca ? ' · ' + e.marca : ''}`;
